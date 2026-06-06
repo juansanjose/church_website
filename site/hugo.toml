@@ -22,15 +22,15 @@ disableKinds = ['taxonomy', 'term']
     weight = 10
   [[menu.main]]
     name = 'Horarios'
-    url = '/horarios/'
+    url = '/celebraciones/horarios/'
     weight = 20
   [[menu.main]]
     name = 'Noticias'
-    url = '/noticias/'
+    url = '/noticias-de-la-parroquia-2/'
     weight = 30
   [[menu.main]]
     name = 'Formación'
-    url = '/catequesis/'
+    url = '/formacion/'
     weight = 40
 
 [taxonomies]

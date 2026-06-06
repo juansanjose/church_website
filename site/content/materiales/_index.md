@@ -1,26 +1,43 @@
 ---
 title: "Materiales"
-description: "Textos, reflexiones y recursos para la formación cristiana."
-date: 2015-03-14 12:58:07
-lastmod: 2026-06-06 22:45:00
+date: "2026-05-03T17:50:32"
+lastmod: "2026-05-03T17:50:32"
+url: "/materiales/"
+source: "wordpress-localhost"
+show_title: true
+description: "Materiales Textos, reflexiones y recursos complementarios a la formación impartida en nuestra parroquia. Formación Textos recomendados para profundizar en la fe. Tradición Grandes maestros de la espiritualidad. San Pablo Escritos de nuestro"
 ---
 
-Esta sección reúne textos y reflexiones para profundizar en la fe, la cultura y la vida de la Iglesia.
+# Materiales
 
-## Fe y sociedad
+Textos, reflexiones y recursos complementarios a la formación impartida en nuestra parroquia.
 
-- [Iglesia y sociedad](/posts/iglesia-y-sociedad/)
-- [Ecología y cristianismo](/posts/ecologia-y-cristianismo-por-benedicto-xvi/)
-- [Educación en la caridad](/posts/educacion-en-la-caridad/)
-- [La nueva tiranía](/posts/la-nueva-tirania/)
+Formación
 
-## Arte y cultura
+Textos recomendados para profundizar en la fe.
 
-- [Redención, de Eduardo Chillida](/posts/redencion-eduardo-chillida/)
-- [Cultura](/posts/cultura/)
+[Ver textos →](/category/textos-recomendados/)
 
-## Vida de la Iglesia
+Tradición
 
-- [Vida de la Iglesia](/posts/vida-de-la-iglesia/)
-- [Enlaces de acción social, caritativa y misionera](/posts/enlaces-accion-social-caritativa-y-misionera-de-la-iglesia/)
-- [San Pablo de la Cruz](/la-parroquia/san-pablo/)
+Grandes maestros de la espiritualidad.
+
+[Ver tradición →](/category/tradicion-grandes-maestros/)
+
+San Pablo
+
+Escritos de nuestro patrono.
+
+[Ver textos →](/category/textos-san-pablo-de-la-cruz/)
+
+Tesoros
+
+Tesoros culturales permanentes.
+
+[Ver tesoros →](/category/tesoros-culturales-permanentes/)
+
+Enlaces
+
+Enlaces recomendados por su contenido.
+
+[Ver enlaces →](/category/enlaces-recomendados/)

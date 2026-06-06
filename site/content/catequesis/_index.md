@@ -1,12 +1,49 @@
 ---
-title: "Formación"
-date: 2015-03-14 13:04:01
-lastmod: 2015-03-15 15:19:58
+title: "Catequesis"
+date: "2026-05-10T15:02:35"
+lastmod: "2026-05-10T15:02:35"
+url: "/catequesis/"
+source: "wordpress-localhost"
+show_title: false
+description: "Catequesis Formación en la fe para todas las edades en la Parroquia San Pablo de la Cruz. Niños Preparación para la Primera Comunión. Juveniles Formación tras la Primera Comunión. Jóvenes Preparación para la Confirmación. Familia Escuela de"
 ---
 
-> Lo importante en la vida es esto: Haber visto alguna vez algo, haber oído una cosa tan grande, tan magnífica que cualquier otra cosa en comparación suya es nada e incluso si uno se olvidase de todo, aquello no se olvidaría jamás.
+# Catequesis
 
-_S.Kierkegaard_
+Formación en la fe para todas las edades en la Parroquia San Pablo de la Cruz.
 
+Niños
 
-[![Faro, cual rocas en el oleaje](/images/wp-content/2015/03/faro-238x300.jpg)](/images/wp-content/2015/03/faro.jpg)
+Preparación para la Primera Comunión.
+
+[Infantiles →](/catequesis/infantiles-primera-comunion/)
+
+Juveniles
+
+Formación tras la Primera Comunión.
+
+[Juveniles →](/catequesis/juveniles-post-comunion/)
+
+Jóvenes
+
+Preparación para la Confirmación.
+
+[Jóvenes →](/catequesis/jovenes-confirmacion/)
+
+Familia
+
+Escuela de Padres y formación familiar.
+
+[Familia →](/catequesis/familia-escuela-de-padres/)
+
+Escuela de Cristianismo
+
+Formación para adultos en la fe.
+
+[Escuela →](/catequesis/escuela-de-cristianismo/)
+
+Inscripción
+
+Inscríbete en nuestras actividades.
+
+[Inscribirse →](/catequesis/inscripcion/)
