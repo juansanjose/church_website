@@ -17,41 +17,21 @@ disableKinds = ['taxonomy', 'term']
 
 [menu]
   [[menu.main]]
-    name = 'Inicio'
-    url = '/'
+    name = 'Celebraciones'
+    url = '/celebraciones/'
     weight = 10
-  [[menu.main]]
-    name = 'La Parroquia'
-    url = '/la-parroquia/'
-    weight = 20
   [[menu.main]]
     name = 'Horarios'
     url = '/horarios/'
-    weight = 30
-  [[menu.main]]
-    name = 'Celebraciones'
-    url = '/celebraciones/'
-    weight = 30
-  [[menu.main]]
-    name = 'Catequesis'
-    url = '/catequesis/'
-    weight = 50
-  [[menu.main]]
-    name = 'Caridad'
-    url = '/caridad/'
-    weight = 60
-  [[menu.main]]
-    name = 'Materiales'
-    url = '/materiales/'
-    weight = 70
-  [[menu.main]]
-    name = 'Contactar'
-    url = '/contactar/'
-    weight = 80
+    weight = 20
   [[menu.main]]
     name = 'Noticias'
     url = '/noticias/'
-    weight = 90
+    weight = 30
+  [[menu.main]]
+    name = 'Formación'
+    url = '/catequesis/'
+    weight = 40
 
 [taxonomies]
   tag = 'tags'

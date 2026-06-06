@@ -762,3 +762,233 @@ input, button, textarea, select {
     margin-top: 2rem;
   }
 }
+
+/* Current WordPress homepage design */
+.home-spacer {
+  height: 1.25rem;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 47.4% 52.6%;
+  align-items: stretch;
+}
+
+.home-slideshow {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #c2c2c1;
+}
+
+.home-slideshow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(194, 194, 193, 0.2);
+}
+
+.home-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.home-slide.is-active {
+  opacity: 1;
+}
+
+.home-times {
+  min-height: 100vh;
+  padding: 0 2.5rem 3.75rem 3.75rem;
+  background: #faf9f6;
+  color: #2c3e2d;
+}
+
+.home-times__title {
+  margin: 0 0 4.25rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.home-time-cards {
+  display: grid;
+  gap: 3.6rem;
+}
+
+.home-time-card {
+  padding: 1.9rem 1.5rem;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+}
+
+.home-time-card h2 {
+  margin-bottom: 1.25rem;
+  color: #8b9d83;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.home-time-card p {
+  font-family: var(--font-body);
+  font-size: clamp(0.901rem, 1.35vw, 1.35rem);
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.home-times__button,
+.footer-contact {
+  display: block;
+  border-radius: 50px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.home-times__button {
+  margin-top: 4.25rem;
+  padding: 0.62rem 1rem;
+  background: #2c3e2d;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.site-footer {
+  margin: 0;
+  padding-block: 1.875rem;
+  background: #2c3e2d;
+  color: #fff;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  align-items: center;
+  gap: 0;
+}
+
+.footer-title {
+  margin-bottom: 0.8rem;
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.footer-address,
+.footer-address a {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.footer-contact {
+  justify-self: center;
+  padding: 0.6rem 1.5rem;
+  background: #fff;
+  color: #2c3e2d;
+  font-size: 0.85rem;
+}
+
+.footer-social {
+  justify-self: end;
+  gap: 0.75rem;
+  text-align: right;
+}
+
+.footer-social p {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 48rem) {
+  .container {
+    max-width: 80rem;
+    padding-inline: 0;
+  }
+
+  .header-inner {
+    min-height: 8rem;
+  }
+
+  .nav-list {
+    gap: 0.2rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 47.99rem) {
+  .container {
+    padding-inline: 2.5rem;
+  }
+
+  .header-inner {
+    min-height: 7.25rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .home-spacer {
+    display: none;
+  }
+
+  .home-grid {
+    display: block;
+  }
+
+  .home-slideshow {
+    min-height: 100vh;
+  }
+
+  .home-times {
+    min-height: auto;
+    padding: 3.75rem 1.25rem;
+  }
+
+  .home-times__title {
+    margin-bottom: 2.5rem;
+  }
+
+  .home-time-cards {
+    gap: 1.25rem;
+  }
+
+  .home-times__button {
+    margin-top: 2rem;
+  }
+
+  .footer-inner {
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-self: auto;
+    margin-top: 0;
+    text-align: center;
+  }
+}

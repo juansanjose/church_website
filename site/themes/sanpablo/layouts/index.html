@@ -1,51 +1,30 @@
 {{ define "main" }}
-<section class="hero" aria-labelledby="hero-title">
-  <div class="container hero-inner">
-    <h1 id="hero-title" class="hero-title">Parroquia San<br>Pablo<br>de la Cruz</h1>
-    <p class="hero-lead">Avenida de los Madroños, 40 · Madrid</p>
-    <div class="hero-actions">
-      <a class="btn btn--primary" href="/horarios/">Ver Horarios de Misas</a>
-      <a class="btn btn--secondary" href="/contactar/">Contactar Parroquia</a>
-    </div>
+<div class="home-spacer" aria-hidden="true"></div>
+<section class="home-grid">
+  <div class="home-slideshow" aria-label="Imágenes de la parroquia">
+    <img class="home-slide is-active" src="/images/home/church-exterior.jpeg" alt="Exterior de la Parroquia San Pablo de la Cruz">
+    <img class="home-slide" src="/images/home/church-slide-2.jpeg" alt="">
+    <img class="home-slide" src="/images/home/church-slide-3.jpeg" alt="">
+    <img class="home-slide" src="/images/home/church-slide-4.jpeg" alt="">
   </div>
-</section>
 
-<section class="section section--times" aria-labelledby="times-title">
-  <div class="container">
-    <h2 id="times-title" class="section-title">Horarios de Misas</h2>
-    <div class="times-grid">
-      <article class="time-card">
-        <h3 class="time-card__day">Domingos y festivos</h3>
-        <ul class="time-card__list">
-          <li>11:30 y 13:00</li>
-          <li>20:00</li>
-        </ul>
+  <div class="home-times" aria-labelledby="times-title">
+    <h1 id="times-title" class="home-times__title">Horarios de Misas</h1>
+    <div class="home-time-cards">
+      <article class="home-time-card">
+        <h2>Domingos y Festivos</h2>
+        <p>11:30 y 13:00<br>20:00</p>
       </article>
-      <article class="time-card">
-        <h3 class="time-card__day">Lunes a viernes</h3>
-        <ul class="time-card__list">
-          <li>9:15 Mañana</li>
-          <li>19:30 / 20:00 Tarde</li>
-        </ul>
+      <article class="home-time-card">
+        <h2>Lunes a Viernes</h2>
+        <p>9:15 Mañana<br>20:00 Tarde</p>
       </article>
-      <article class="time-card">
-        <h3 class="time-card__day">Sábados</h3>
-        <ul class="time-card__list">
-          <li>20:00</li>
-          <li>Misa de Jóvenes</li>
-        </ul>
+      <article class="home-time-card">
+        <h2>Sábados</h2>
+        <p>20:00<br>Misa de Jóvenes</p>
       </article>
     </div>
-    <p class="section-cta"><a class="btn btn--dark" href="/horarios/">Ver Horarios Completos →</a></p>
-  </div>
-</section>
-
-<section class="section section--contact" aria-labelledby="contact-title">
-  <div class="container">
-    <h2 id="contact-title" class="section-title">Contacto</h2>
-    <p>Avenida de los Madroños, 40<br>28043 Madrid</p>
-    <p class="contact-phones"><a href="tel:+34628223783">628 223 783</a><br><a href="tel:+34913002981">91 300 29 81</a></p>
-    <p class="section-cta"><a class="btn btn--light" href="/contactar/">Contactar con la Parroquia →</a></p>
+    <a class="home-times__button" href="/horarios/">Ver Horarios Completos →</a>
   </div>
 </section>
 {{ end }}

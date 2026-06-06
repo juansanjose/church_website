@@ -18,4 +18,14 @@
       });
     });
   }
+
+  const slides = document.querySelectorAll('.home-slide');
+  if (slides.length > 1 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    let activeSlide = 0;
+    window.setInterval(function () {
+      slides[activeSlide].classList.remove('is-active');
+      activeSlide = (activeSlide + 1) % slides.length;
+      slides[activeSlide].classList.add('is-active');
+    }, 5000);
+  }
 })();
