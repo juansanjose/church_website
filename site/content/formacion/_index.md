@@ -1,5 +1,6 @@
 ---
 title: "Formación"
+slug: "formacion"
 date: "2026-05-15T16:03:28"
 lastmod: "2026-05-15T16:03:28"
 url: "/formacion/"

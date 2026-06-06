@@ -1,5 +1,6 @@
 ---
 title: "La nueva tiranía"
+slug: "la-nueva-tirania"
 date: "2015-03-15T14:48:46"
 lastmod: "2015-03-15T14:48:46"
 url: "/la-nueva-tirania/"
@@ -8,10 +9,8 @@ show_title: true
 description: "La nueva tiranía – Coloquios en el Parque II por Juan Manuel de Prada La Navidad es una guerra sin cuartel, pero cuando venía hacia aquí, reparé en las palabras que ilustran la iluminación navideña: paz, reposo, calma… ¡Parecía el prospecto"
 ---
 
-La nueva tiranía - Coloquios en el Parque II
+La nueva tiranía – Coloquios en el Parque II
 por Juan Manuel de Prada
-
-
 
 La Navidad es una guerra sin cuartel, pero cuando venía hacia aquí, reparé en las palabras que ilustran la iluminación navideña: paz, reposo, calma… ¡Parecía el prospecto de la morfina! Así nos quiere la nueva tiranía: sosegados. Los católicos estamos muy mal organizados. Nos faltan carismas; por ejemplo, el del gamberro, que se dedicara a destrozar la iluminación navideña.
 

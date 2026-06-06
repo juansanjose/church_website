@@ -1,5 +1,6 @@
 ---
 title: "Ecología y Cristianismo por Benedicto XVI"
+slug: "ecologia-y-cristianismo-por-benedicto-xvi"
 date: "2015-03-15T14:48:49"
 lastmod: "2015-03-15T14:48:49"
 url: "/ecologia-y-cristianismo-por-benedicto-xvi/"
@@ -30,8 +31,7 @@ SI QUIERES PROMOVER LA PAZ, PROTEGE LA CREACIÓN
 
 Vaticano, 8 de diciembre de 2009
 BENEDICTUS PP. XVI
-
-* * *
+- *
 
 [1] Catecismo de la Iglesia Católica, 198.
 [2] Mensaje para la Jornada Mundial de la Paz 2008, 7.

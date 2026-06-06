@@ -1,5 +1,6 @@
 ---
 title: "Familia – Escuela de Padres"
+slug: "familia-escuela-de-padres"
 date: "2015-03-15T15:54:44"
 lastmod: "2015-03-15T15:54:44"
 url: "/catequesis/familia-escuela-de-padres/"
@@ -8,89 +9,61 @@ show_title: true
 description: "“Educar para la sociedad de hoy: Escuelas de Familias” Enseñarás a volar, pero no volarán tu vuelo. Enseñarás a soñar, pero no soñarán tu sueño. Enseñarás a vivir, pero no vivirán tu vida. Sin embargo…en cada vuelo, en cada vida, en cada su"
 ---
 
-#### “Educar para la sociedad de hoy: Escuelas de Familias”
-
-
+### “Educar para la sociedad de hoy: Escuelas de Familias”
 
 > Enseñarás a volar,
 >  pero no volarán tu vuelo.
 >  Enseñarás a soñar,
 >  pero no soñarán tu sueño.
->
->
->
+
 > Enseñarás a vivir,
 >  pero no vivirán tu vida.
->
->
->
+
 > Sin embargo…en cada vuelo,
 >  en cada vida,
 >  en cada sueño,
 >  perdurará siempre la huella del camino enseñado.
->
->
->
+
 > Madre Teresa de Calcuta.
 
+### Introducción:
 
+[![Van Gogh - Primeros pasos](/images/wp-content/2015/03/vangoghpasos-300x238.jpg)](/images/wp-content/2015/03/vangoghpasos.jpg)
 
-#### Introducción:
-
-[![Van Gogh - Primeros pasos](/images/wp-content/2015/03/vangoghpasos-300x238.jpg)](/images/wp-content/2015/03/vangoghpasos.jpg)Van Gogh - Primeros Pasos
-
-
-
-
-
-
-
-
-
-
+_Van Gogh – Primeros Pasos_
 
 A todos nos gustaría que nuestros hijos fueran ordenados, estudiosos, obedientes, constantes, de memoria aceptable; pero los hijos no nacen ordenados, queriendo estudiar, ni con memoria, ni obedientes, ni con capacidad para prestar atención, todo esto lo tienen que aprender y los padres tenemos un gran papel en la educación de los hijos y debemos prepararnos. Educar hoy es diferente, no solamente porque han cambiado las circunstancias exteriores, sino porque las ciencias de la educación han evolucionado a la par que la carrera de los descubrimientos y hay nuevas pedagogías que debemos conocer.
 
-
-
 Los valores son los mismos de siempre, pero la forma de transmitirlos debemos actualizarla. Estamos viviendo el cambio más espectacular de la historia y hoy más que nunca nuestra sociedad necesita personas con valores, responsables y libres.
 Hoy es necesario que los padres tengan en cuenta:
-- Que son los primeros educadores de sus hijos.
-- Que está en sus manos.
-- Que deben aprender a hacerlo.
-- Que el futuro no es consecuencia de un azar.
+– Que son los primeros educadores de sus hijos.
+– Que está en sus manos.
+– Que deben aprender a hacerlo.
+– Que el futuro no es consecuencia de un azar.
 
 Afortunadamente, las investigaciones en el área del comportamiento humano han hecho valiosas aportaciones en el campo de la educación familiar. Los padres debemos aprender a educar mejor. Unos buenos resultados serán lo normal en una familia bien preparada, y los hijos-problema la excepción.
 En la sociedad actual hay que educar en FUTURO. El futuro no es consecuencia de un azar, hay que luchar por conseguirlo. El futuro lo estamos haciendo entre todos Cada familia presta su colaboración al esforzarse en ayudar a sus hijos a ser personas libres y responsables Es necesario formarse, prepararse y mejor aún, profesionalizarse.
 Educar no es fácil, el ambiente a veces juega en contra, pero también tenemos al alcance de la mano unos conocimientos capaces de convertir lo difícil, en posible.
 
-
-
 [![graficopef2](/images/wp-content/2015/03/graficopef2-300x231.png)](/images/wp-content/2015/03/graficopef2.png)
 
+### Objetivos:
 
+1. La Formación de los padres en las Nuevas Técnicas Educativas para educar con mayor eficacia y adelantarse a los problemas.
+1. Desarrollo de capacidades y mejora directa de los hijos a partir de su nacimiento.
+1. Abrir nuevas perspectivas en el área del asesoramiento personalizado familiar. Además de los beneficios que repercutirán de forma expansiva en sus amigos y conocidos.
 
-####
-
-#### Objetivos:
-
-1\. La Formación de los padres en las Nuevas Técnicas Educativas para educar con mayor eficacia y adelantarse a los problemas.
-2\. Desarrollo de capacidades y mejora directa de los hijos a partir de su nacimiento.
-3\. Abrir nuevas perspectivas en el área del asesoramiento personalizado familiar. Además de los beneficios que repercutirán de forma expansiva en sus amigos y conocidos.
-
-#### La Metodología:
+### La Metodología:
 
 Las Escuelas se organizan por grupos en edades similares C/C (Círculos de Calidad) con la participación de todos los padres y cada grupo cuenta con un Profesor- Asesor responsable del mismo. En los C/C se cuentan las experiencias positivas realizadas con los hijos y así, otros padres, pueden aprender de ellas, tomando lo que consideren más oportuno a su caso. Además se estudia y trabaja un libro escrito por un experto en educación.
 
-#### Asesoramiento personalizado:
+### Asesoramiento personalizado:
 
 El tratamiento de los temas más confidenciales, se realiza con el Asesor en entrevistas personales para conseguir una ayuda particular a cada familia, o progenitor y hablar de cada uno de los hijos en particular. Además de disponibilidad total del Asesor por correo electrónico para hacer consultas o enviar documentación así como atención telefónica siempre que se necesite.
 
 **El P.E.F. Características propias**
 
 [![graficopief](/images/wp-content/2015/03/graficopief-300x156.png)](/images/wp-content/2015/03/graficopief.png)
-
-
 
 **1ª.- Educación positiva:**
 
@@ -104,8 +77,8 @@ Los estudios se hacen con documentos y casos adecuados a las edades. Los alumnos
 
 La Escuela se organiza por grupos en C/C con la participación de todos los padres y cada grupo cuenta con un profesor del IEEE responsable del mismo.
 
-- En los C/C se cuentan las experiencias positivas realizadas con los hijos y así, otros padres, pueden aprender de estas experiencias positivas.
-- En los cursos Virtuales, los C/C son virtuales.
+– En los C/C se cuentan las experiencias positivas realizadas con los hijos y así, otros padres, pueden aprender de estas experiencias positivas.
+– En los cursos Virtuales, los C/C son virtuales.
 
 **4ª.- Sistema Activo Docente (S.A.D.):**
 
@@ -134,7 +107,5 @@ En las escuelas de familia el 90% del trabajo los padres lo realizan en su propi
 **10ª.- Profesionalidad:**
 
 Los profesores y asesores elegidos realizan sus trabajos con carácter profesional.
-
-
 
 Profesora y Asesora: Maite Mijancos: maitemijancos@telefonica.net

@@ -1,5 +1,6 @@
 ---
 title: "Infantiles – Primera Comunión"
+slug: "infantiles-primera-comunion"
 date: "2026-05-17T23:53:21"
 lastmod: "2026-05-17T23:53:21"
 url: "/catequesis/infantiles-primera-comunion/"

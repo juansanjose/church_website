@@ -1,5 +1,6 @@
 ---
 title: "Noticias"
+slug: "noticias-de-la-parroquia-2"
 date: "2026-05-23T23:56:45"
 lastmod: "2026-05-23T23:56:45"
 url: "/noticias-de-la-parroquia-2/"
@@ -26,26 +27,26 @@ Durante el viaje se participará en la **Eucaristía diaria** , se visitarán **
 
 👉 **En «Más información»** puedes consultar el **itinerario completo por días, horarios y actividades previstas** , así como todos los detalles de la peregrinación.
 
-[\+ **Más información**](/741-2/)
+[Más información](/741-2/)
 
-**Recaudación de la campaña de Navidad** Total Venta Mercadillo (Efectivo) | € 3.592,00
----|---
-Total Venta Mercadillo (Visa) | € 2.417,00
-Total Rifa | € 1.848,00
-TOTAL MERCADILLO | € 7.857,00
-Colectas de Navidad 2025 | € 2.645,00
-Colectas y Donativos Navidad 2025 | € 1.500,00
-TOTAL COLECTAS | € 4.145,00
-TOTAL RECAUDADO | € 12.002,00
+**Recaudación de la campaña de Navidad** | Total Venta Mercadillo (Efectivo) | € 3.592,00 |
+| --- | --- |
+| Total Venta Mercadillo (Visa) | € 2.417,00 |
+| Total Rifa | € 1.848,00 |
+| TOTAL MERCADILLO | € 7.857,00 |
+| Colectas de Navidad 2025 | € 2.645,00 |
+| Colectas y Donativos Navidad 2025 | € 1.500,00 |
+| TOTAL COLECTAS | € 4.145,00 |
+| TOTAL RECAUDADO | € 12.002,00 |
 
 de los cuales YA han sido DESTINADOS A
 
-1.- Ayuda Iglesia necesitada | € 3.000,00
----|---
-2.- Ayuda al Dispensario y comedor en Honduras | € 4.000,00
-3.- Ayuda a Misioneros Marianhill Curia Provincial | € 1.000,00
-4.- Ayuda a Sociedad de Misiones Africanas | € 2.000,00
-TOTAL DE DONATIVOS YA ENTREGADOS (CAMPAÑA NAVIDAD 2025) | € 10.000,00
+| 1.- Ayuda Iglesia necesitada | € 3.000,00 |
+| --- | --- |
+| 2.- Ayuda al Dispensario y comedor en Honduras | € 4.000,00 |
+| 3.- Ayuda a Misioneros Marianhill Curia Provincial | € 1.000,00 |
+| 4.- Ayuda a Sociedad de Misiones Africanas | € 2.000,00 |
+| TOTAL DE DONATIVOS YA ENTREGADOS (CAMPAÑA NAVIDAD 2025) | € 10.000,00 |
 
 **Números premiados en la rifa del mercadillo de Navidad:**
 
@@ -57,7 +58,7 @@ TOTAL DE DONATIVOS YA ENTREGADOS (CAMPAÑA NAVIDAD 2025) | € 10.000,00
 
 Tal como hemos anunciado, el lunes día 1 de diciembre, después de la misa de 19:30, iniciamos los diálogos FE y VIDA, con la participación de María San Gil Noaín. Estáis todos invitados y podéis animar a participar a quien consideréis.
 
-[\+ **Más información**](/dialogo-con-maria-san-gil/)
+[Más información](/dialogo-con-maria-san-gil/)
 
 **Mercadillo 2025**
 
@@ -65,7 +66,7 @@ Nuestro tradicional mercadillo solidario para colaborar con **Cáritas parroquia
 Encontrarás dulces caseros, manualidades, libros y una rifa solidaria.
 ¡Te esperamos con alegría para compartir y ayudar!
 
-[\+ **Más información**](/noticias-de-la-parroquia-2/mercadillo-2025/)
+[Más información](/noticias-de-la-parroquia-2/mercadillo-2025/)
 
 **Brotes verdes – Nuevo grupo de jóvenes**
 
@@ -73,7 +74,7 @@ Nuestro tradicional mercadillo solidario para colaborar con **Cáritas parroquia
 Encontrarás dulces caseros, manualidades, libros y una rifa solidaria.
 ¡Te esperamos con alegría para compartir y ayudar!
 
-[\+ **Más información**](/noticias-de-la-parroquia-2/mercadillo-2025/)
+[Más información](/noticias-de-la-parroquia-2/mercadillo-2025/)
 
 **Grupo Mostaza – Nuevo grupo de post-comunión**
 

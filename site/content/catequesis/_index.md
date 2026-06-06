@@ -1,5 +1,6 @@
 ---
 title: "Catequesis"
+slug: "catequesis"
 date: "2026-05-10T15:02:35"
 lastmod: "2026-05-10T15:02:35"
 url: "/catequesis/"

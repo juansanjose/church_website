@@ -1,5 +1,6 @@
 ---
 title: "Redención, Eduardo Chillida"
+slug: "redencion-eduardo-chillida"
 date: "2015-03-15T14:53:39"
 lastmod: "2015-03-15T14:54:15"
 url: "/redencion-eduardo-chillida/"

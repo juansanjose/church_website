@@ -1,5 +1,6 @@
 ---
 title: "Donativos"
+slug: "donativos"
 date: "2026-05-15T20:23:12"
 lastmod: "2026-05-15T20:23:12"
 url: "/donativos/"

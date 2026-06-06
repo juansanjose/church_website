@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="page container">
+<div class="page page--{{ .Slug }} container">
   {{ if and .Parent (ne .Params.source "wordpress-localhost") }}
   <nav class="breadcrumbs" aria-label="Migas de pan">
     <a href="/">Inicio</a><span aria-hidden="true">/</span>
@@ -15,7 +15,7 @@
   </header>{{ end }}
   <div class="page-content">
     {{ if .Content }}
-    <div class="prose">
+    <div class="prose content-prose">
       {{ .Content }}
     </div>
     {{ end }}

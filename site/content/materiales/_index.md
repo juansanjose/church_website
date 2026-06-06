@@ -1,5 +1,6 @@
 ---
 title: "Materiales"
+slug: "materiales"
 date: "2026-05-03T17:50:32"
 lastmod: "2026-05-03T17:50:32"
 url: "/materiales/"

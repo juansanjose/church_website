@@ -1,5 +1,6 @@
 ---
 title: "Horarios"
+slug: "horarios"
 date: "2026-05-23T23:56:30"
 lastmod: "2026-05-23T23:56:30"
 url: "/celebraciones/horarios/"
@@ -18,13 +19,13 @@ Encuentra aqui todos los horarios de misas y celebraciones de nuestra parroquia
 
 ## Horario de Misas
 
-| Lun| Mar| Mie| Jue| Vie| Sab| Dom
----|---|---|---|---|---|---|---
-**Manana**|  9:15| 9:15| 9:15| 9:15| 9:15| —| **11:30
-13:00**
-**Tarde** (Verano)| 20:00| 20:00| 20:00| 20:00| 20:00| **20:00****|  20:00
-**Tarde** (Invierno)| 19:30| 19:30| 19:30| 19:30| 19:30| **20:00****|  20:00
-****** Misa de Jovenes
+|  | Lun | Mar | Mie | Jue | Vie | Sab | Dom |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Manana | 9:15 | 9:15 | 9:15 | 9:15 | 9:15 | — | 11:30 / 13:00 |
+| Tarde / (Verano) | 20:00 | 20:00 | 20:00 | 20:00 | 20:00 | 20:00** | 20:00 |
+| Tarde / (Invierno) | 19:30 | 19:30 | 19:30 | 19:30 | 19:30 | 20:00** | 20:00 |
+
+ _** Misa de Jovenes_
 
 ### Despacho Parroquial
 
@@ -34,29 +35,29 @@ Encuentra aqui todos los horarios de misas y celebraciones de nuestra parroquia
 
 ## Otras Celebraciones y Servicios
 
-#### Confesiones
+### Confesiones
 
 Lunes a Viernes: una hora antes de la misa.
 Domingos y Festivos: una hora antes y durante la misa.
 
-#### Santo Rosario
+### Santo Rosario
 
 Todos los dias, media hora antes de la Eucaristia.
 
-#### Exposicion del Santisimo
+### Exposicion del Santisimo
 
 Primeros viernes de cada mes a las 18:40.
 
-#### Catequesis
+### Catequesis
 
 Ninos: Miercoles a las 18:00.
 Adolescentes y jovenes: Sabados a las 16:00.
 
-#### Bautismos
+### Bautismos
 
 Curso Prebautismal: segundo miercoles de mes a las 20:00.
 
-#### Matrimonios
+### Matrimonios
 
 Dias y horas previamente concertadas.
 Preparacion: Lunes, Miercoles y Viernes por la tarde.

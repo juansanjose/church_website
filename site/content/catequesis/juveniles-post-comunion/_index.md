@@ -1,5 +1,6 @@
 ---
 title: "Juveniles y Post Comunión"
+slug: "juveniles-post-comunion"
 date: "2026-05-15T16:48:26"
 lastmod: "2026-05-15T16:48:26"
 url: "/catequesis/juveniles-post-comunion/"

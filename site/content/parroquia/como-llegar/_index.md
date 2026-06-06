@@ -1,5 +1,6 @@
 ---
 title: "Localización y cómo llegar"
+slug: "como-llegar"
 date: "2025-11-07T10:03:24"
 lastmod: "2025-11-07T10:03:24"
 url: "/parroquia/como-llegar/"
@@ -15,7 +16,7 @@ Código Postal: 28043
 Madrid
 España
 
-**Teléfono: 91 300 29 81 - 628 223 783**
+**Teléfono: 91 300 29 81 – 628 223 783**
 
 **Email: sanpablodelacruz@gmail.com**
 

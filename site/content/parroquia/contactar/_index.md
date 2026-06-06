@@ -1,5 +1,6 @@
 ---
 title: "Contactar"
+slug: "contactar"
 date: "2026-05-10T19:25:04"
 lastmod: "2026-05-10T19:25:04"
 url: "/parroquia/contactar/"
@@ -30,16 +31,4 @@ Avenida de los Madroños, 40
 
 Rellena el formulario y te responderemos lo antes posible.
 
-Su nombre (requerido)
-
-Su e-mail (requerido)
-
-Su teléfono (requerido)
-
-Asunto (requerido)
-
-Información sobre la ParroquiaCelebraciones ParticularesSolicitud de atención domiciliariaSugerencias para Enlaces RecomendadosOtros
-
-Su mensaje (requerido)
-
-Repita este mismo código de comprobación: ![captcha](/images/wp-content/wpcf7_captcha/1426080510.png)
+[Enviar un correo a la parroquia →](mailto:sanpablodelacruz@gmail.com)

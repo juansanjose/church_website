@@ -1,5 +1,6 @@
 ---
 title: "Bautismos"
+slug: "bautismos"
 date: "2026-05-23T22:56:00"
 lastmod: "2026-05-23T22:56:00"
 url: "/celebraciones/bautismos/"
@@ -8,7 +9,7 @@ show_title: true
 description: "REQUISITOS PARA CELEBRAR EL SACRAMENTO DEL BAUTISMO: 1) Como NORMA GENERAL: Serán los TERCEROS SÁBADOS y los CUARTOS DOMINGOS de cada mes, por la tarde. 2) Se debe constatar que los padres viven en esta Parroquia. 3) Solicitar DÍA y HORA en"
 ---
 
-#### REQUISITOS PARA CELEBRAR EL SACRAMENTO DEL BAUTISMO:
+### REQUISITOS PARA CELEBRAR EL SACRAMENTO DEL BAUTISMO:
 
 1) Como NORMA GENERAL: Serán los TERCEROS SÁBADOS y los CUARTOS DOMINGOS de cada mes, por la tarde.
 

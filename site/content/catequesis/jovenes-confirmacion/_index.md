@@ -1,5 +1,6 @@
 ---
 title: "Jóvenes y Confirmación"
+slug: "jovenes-confirmacion"
 date: "2026-05-15T16:47:54"
 lastmod: "2026-05-15T16:47:54"
 url: "/catequesis/jovenes-confirmacion/"

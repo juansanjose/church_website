@@ -1,5 +1,6 @@
 ---
 title: "Celebraciones"
+slug: "celebraciones"
 date: "2026-05-23T23:05:26"
 lastmod: "2026-05-23T23:05:26"
 url: "/celebraciones/"

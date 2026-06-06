@@ -1,5 +1,6 @@
 ---
 title: "Diálogo con María San Gil"
+slug: "dialogo-con-maria-san-gil"
 date: "2025-11-25T07:50:45"
 lastmod: "2025-11-25T07:50:45"
 url: "/dialogo-con-maria-san-gil/"

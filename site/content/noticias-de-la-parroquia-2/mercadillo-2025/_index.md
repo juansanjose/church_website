@@ -1,5 +1,6 @@
 ---
 title: "MERCADILLO 2025"
+slug: "mercadillo-2025"
 date: "2025-11-05T12:04:44"
 lastmod: "2025-11-05T12:04:44"
 url: "/noticias-de-la-parroquia-2/mercadillo-2025/"

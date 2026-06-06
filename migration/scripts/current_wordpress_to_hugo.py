@@ -10,6 +10,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlparse
 
 import html2text
+from bs4 import BeautifulSoup, NavigableString
 
 ROOT = Path(__file__).resolve().parents[2]
 CONTENT = ROOT / "site/content"
@@ -19,6 +20,7 @@ POSTS_JSON = Path("/tmp/wp-current-posts.json")
 CATEGORIES_JSON = Path("/tmp/wp-current-categories.json")
 POSTS_TAX_JSON = Path("/tmp/wp-current-posts-tax.json")
 LINK_MAP = {}
+TABLES = {}
 
 FALLBACK_TITLES = {
     "formacion": "Formación",
@@ -37,6 +39,7 @@ def yaml_quote(value):
 
 
 def clean_html(value):
+    global TABLES
     value = re.sub(r"<(?:style|script)\b[^>]*>.*?</(?:style|script)>", "", value, flags=re.I | re.S)
     value = value.replace("http://localhost:8080/wp-content/uploads/", "/images/wp-content/")
     value = value.replace("http://localhost:8080/", "/")
@@ -47,10 +50,87 @@ def clean_html(value):
             rf'\1/{canonical_path}/\2',
             value,
         )
-    return value
+    soup = BeautifulSoup(value, "html.parser")
+
+    for form in soup.find_all("form"):
+        replacement = soup.new_tag("p")
+        link = soup.new_tag("a", href="mailto:sanpablodelacruz@gmail.com")
+        link.string = "Enviar un correo a la parroquia →"
+        replacement.append(link)
+        form.replace_with(replacement)
+
+    has_gallery_details = bool(soup.select_one(".pupup-element"))
+    for container in soup.select(".huge_it_gallery_container"):
+        if not has_gallery_details:
+            gallery = soup.new_tag("div")
+            seen = set()
+            for source_link in container.select("a[href]"):
+                source_image = source_link.find("img")
+                href = source_link.get("href")
+                if not source_image or not href or href in seen:
+                    continue
+                seen.add(href)
+                paragraph = soup.new_tag("p")
+                link = soup.new_tag("a", href=href)
+                image = soup.new_tag(
+                    "img",
+                    src=source_image.get("src") or href,
+                    alt=source_image.get("alt") or source_link.get("title") or "",
+                )
+                link.append(image)
+                paragraph.append(link)
+                gallery.append(paragraph)
+            container.replace_with(gallery)
+        else:
+            container.decompose()
+
+    for element in soup.select(
+        "script, style, noscript, .hidden-fields-container, input[type=hidden]"
+    ):
+        element.decompose()
+
+    for heading in soup.find_all("h4"):
+        heading.name = "h3"
+    for heading in soup.find_all(["h5", "h6"]):
+        heading.name = "h4"
+
+    for figure in soup.find_all("figure"):
+        caption = figure.find("figcaption")
+        if caption:
+            caption_text = caption.get_text(" ", strip=True)
+            caption.decompose()
+            if caption_text:
+                caption_p = soup.new_tag("p")
+                caption_em = soup.new_tag("em")
+                caption_em.string = caption_text
+                caption_p.append(caption_em)
+                figure.insert_after(caption_p)
+
+    for table in soup.find_all("table"):
+        rows = []
+        for row in table.find_all("tr"):
+            cells = [re.sub(r"\s+", " ", cell.get_text(" / ", strip=True)) for cell in row.find_all(["th", "td"])]
+            if cells:
+                rows.append(cells)
+        if rows:
+            width = max(len(row) for row in rows)
+            rows = [row + [""] * (width - len(row)) for row in rows]
+            token = f"WP_TABLE_{len(TABLES)}"
+            TABLES[token] = "\n".join(
+                [
+                    "| " + " | ".join(rows[0]) + " |",
+                    "| " + " | ".join(["---"] * width) + " |",
+                    *["| " + " | ".join(row) + " |" for row in rows[1:]],
+                ]
+            )
+            table.replace_with(NavigableString(token))
+
+    return str(soup)
 
 
 def to_markdown(value):
+    global TABLES
+    TABLES = {}
     converter = html2text.HTML2Text()
     converter.body_width = 0
     converter.ignore_images = False
@@ -59,6 +139,18 @@ def to_markdown(value):
     converter.wrap_links = False
     converter.wrap_list_items = False
     result = converter.handle(clean_html(value))
+    for token, table in TABLES.items():
+        result = result.replace(token, table)
+    result = re.sub(r"(?m)^#{5,}\s+", "#### ", result)
+    result = re.sub(r"(?m)^#+\s*$", "", result)
+    result = re.sub(r"(?m)^\s*\*\s+\s*\*\s+", "- ", result)
+    result = re.sub(r"(?m)^\s+\*\s+", "- ", result)
+    result = re.sub(r"(?m)^(\s*)\d+\\\.\s+", r"\g<1>1. ", result)
+    result = re.sub(r"\[\\\+\s*\*\*(.*?)\*\*\]", r"[Más información]", result)
+    result = re.sub(r"(?m)^count\(page_images\)\d+\s*$", "", result)
+    result = re.sub(r"(?m)^\s*[-*]\s*<\s*$|^>\s*$", "", result)
+    result = re.sub(r"(?m)(^#{1,6} .+?)\s+\+$", r"\1", result)
+    result = re.sub(r"(?m)^>\s+$", ">", result)
     result = re.sub(r"\n{3,}", "\n\n", result)
     return "\n".join(line.rstrip() for line in result.strip().splitlines())
 
@@ -84,6 +176,7 @@ def write_record(record, is_post=False):
     frontmatter = [
         "---",
         f"title: {yaml_quote(title)}",
+        f"slug: {yaml_quote(slug)}",
         f"date: {yaml_quote(record.get('date') or record.get('modified'))}",
         f"lastmod: {yaml_quote(record['modified'])}",
         f"url: {yaml_quote('/' + path + '/')}",
@@ -92,7 +185,9 @@ def write_record(record, is_post=False):
     ]
     if description:
         frontmatter.append(f"description: {yaml_quote(description[:240])}")
-    frontmatter.extend(["---", "", body, ""])
+    frontmatter.extend(["---", ""])
+    if body:
+        frontmatter.extend([body, ""])
     target.write_text("\n".join(frontmatter), encoding="utf-8")
 
 
