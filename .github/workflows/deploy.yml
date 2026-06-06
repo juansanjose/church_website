@@ -42,7 +42,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, church-vps]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -53,53 +53,23 @@ jobs:
           name: public
           path: public/
 
-      - name: Setup SSH
+      - name: Deploy site
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          VPS_HOST: ${{ secrets.VPS_HOST }}
-        run: |
-          test -n "$SSH_PRIVATE_KEY"
-          test -n "$VPS_HOST"
-          mkdir -p ~/.ssh
-          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
-          chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -H "$VPS_HOST" >> ~/.ssh/known_hosts 2>/dev/null
-
-      - name: Deploy with rsync
-        env:
-          VPS_HOST: ${{ secrets.VPS_HOST }}
-          VPS_USER: ${{ secrets.VPS_USER }}
           DEPLOY_PATH: /var/www/sanpablodelacruz.com
         run: |
           set -euo pipefail
-          test -n "$VPS_USER"
-
-          # Pre-deploy: backup current site for rollback
-          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes \
-            "${VPS_USER}@${VPS_HOST}" \
-            "set -e; mkdir -p '${DEPLOY_PATH}'; rm -rf '${DEPLOY_PATH}-previous'; cp -a '${DEPLOY_PATH}' '${DEPLOY_PATH}-previous'"
-
-          # Deploy new build
-          rsync -avz --delete \
-            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes" \
-            public/ \
-            "${VPS_USER}@${VPS_HOST}:${DEPLOY_PATH}/"
+          mkdir -p "$DEPLOY_PATH"
+          rm -rf "${DEPLOY_PATH}-previous"
+          cp -a "$DEPLOY_PATH" "${DEPLOY_PATH}-previous"
+          rsync -av --delete public/ "$DEPLOY_PATH/"
 
       - name: Deploy and validate Caddy configuration
-        env:
-          VPS_HOST: ${{ secrets.VPS_HOST }}
-          VPS_USER: ${{ secrets.VPS_USER }}
         run: |
           set -euo pipefail
-          scp -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes \
-            Caddyfile "${VPS_USER}@${VPS_HOST}:/etc/caddy/Caddyfile.new"
-          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes \
-            "${VPS_USER}@${VPS_HOST}" \
-            "caddy validate --config /etc/caddy/Caddyfile.new && mv /etc/caddy/Caddyfile.new /etc/caddy/Caddyfile && systemctl reload caddy"
+          install -m 0644 Caddyfile /etc/caddy/Caddyfile.new
+          caddy validate --config /etc/caddy/Caddyfile.new
+          mv /etc/caddy/Caddyfile.new /etc/caddy/Caddyfile
+          systemctl reload caddy
 
       - name: Verify production site
         run: curl --fail --silent --show-error --retry 5 --retry-delay 3 https://www.sanpablodelacruz.com/ > /dev/null
-
-      - name: Cleanup SSH key
-        if: always()
-        run: rm -f ~/.ssh/deploy_key

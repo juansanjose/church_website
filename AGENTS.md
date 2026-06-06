@@ -24,7 +24,7 @@ make rollback
 - **Static Generator:** Hugo (v0.159.2, extended)
 - **Web Server:** Caddy (automatic HTTPS)
 - **Hosting:** VPS at `root@moneymachine`
-- **CI/CD:** GitHub Actions → rsync over SSH
+- **CI/CD:** GitHub Actions build → self-hosted VPS deployment runner
 
 ## Content Editing
 

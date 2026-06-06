@@ -58,7 +58,7 @@ git push origin main
 - **Generator:** Hugo (single binary, fast builds, mature ecosystem)
 - **Server:** Caddy (automatic HTTPS, single binary, simple config)
 - **Hosting:** Personal VPS at `root@moneymachine`
-- **CI/CD:** GitHub Actions → rsync over SSH
+- **CI/CD:** GitHub Actions build → self-hosted VPS deployment runner
 
 ## Editing Content
 
@@ -70,7 +70,7 @@ See [AGENT_PROTOCOL.md](AGENT_PROTOCOL.md) for the AI agent editing protocol.
 - ✅ Images migrated to `site/static/images/wp-content/`
 - ✅ URL redirects generated for Caddy
 - ✅ Legacy WordPress code archived
-- GitHub Actions builds every change to `main` and deploys it to the VPS.
+- GitHub Actions builds every change to `main` and deploys it through a self-hosted runner on the VPS.
 - Production files live in `/var/www/sanpablodelacruz.com`.
 - Caddy serves `www.sanpablodelacruz.com` and redirects the apex domain to `www`.
 
