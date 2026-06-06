@@ -1,5 +1,12 @@
 {{ define "main" }}
 <article class="page container">
+  {{ if .Parent }}
+  <nav class="breadcrumbs" aria-label="Migas de pan">
+    <a href="/">Inicio</a><span aria-hidden="true">/</span>
+    {{ if not .Parent.IsHome }}<a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a><span aria-hidden="true">/</span>{{ end }}
+    <span aria-current="page">{{ .Title }}</span>
+  </nav>
+  {{ end }}
   <header class="page-header">
     <h1 class="page-title">{{ .Title }}</h1>
     {{ if .Params.subtitle }}

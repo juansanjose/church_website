@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
   {{ block "head" . }}{{ end }}
 </head>
-<body>
+<body class="{{ if .IsHome }}home-view{{ else }}inner-view{{ end }}">
   <a href="#main-content" class="skip-link">Ir al contenido principal</a>
 
   <header class="site-header">

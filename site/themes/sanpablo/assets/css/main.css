@@ -52,6 +52,7 @@ body {
   line-height: 1.6;
   color: var(--color-text);
   background-color: var(--color-bg);
+  overflow-x: clip;
 }
 
 img, picture, video, canvas, svg {
@@ -414,11 +415,12 @@ input, button, textarea, select {
 
 /* Page */
 .page {
-  padding-block: 4rem 7rem;
+  padding-block: 2.5rem 6rem;
 }
 
 .page-header {
-  margin-bottom: 4rem;
+  max-width: 52rem;
+  margin: 0 auto 3rem;
   text-align: center;
 }
 
@@ -428,6 +430,7 @@ input, button, textarea, select {
   color: #111;
   font-weight: 400;
   line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .page-subtitle {
@@ -452,6 +455,7 @@ input, button, textarea, select {
 .prose {
   max-width: 52rem;
   margin-inline: auto;
+  overflow-wrap: anywhere;
 }
 
 .prose > * + * {
@@ -512,8 +516,11 @@ input, button, textarea, select {
 }
 
 .prose img {
+  width: auto;
+  max-height: 38rem;
   border-radius: var(--radius-md);
-  margin-block: var(--space-md);
+  margin: 2.5rem auto;
+  object-fit: contain;
 }
 
 .prose figure {
@@ -562,9 +569,9 @@ input, button, textarea, select {
 .entry-list {
   list-style: none;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: var(--space-md);
   margin-top: var(--space-lg);
 }
 
@@ -572,7 +579,8 @@ input, button, textarea, select {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  padding: var(--space-sm) var(--space-md);
+  min-height: 100%;
+  padding: 1.5rem;
   border: 0;
   border-radius: var(--radius-md);
   text-decoration: none;
@@ -596,6 +604,35 @@ input, button, textarea, select {
 .entry-desc {
   color: var(--color-text-muted);
   font-size: 1rem;
+}
+
+.entry-more {
+  margin-top: auto;
+  padding-top: 1rem;
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 52rem;
+  margin: 0 auto 2rem;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.breadcrumbs a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
 }
 
 /* Footer */
@@ -947,8 +984,35 @@ input, button, textarea, select {
     min-height: 7.25rem;
   }
 
-  .nav-toggle {
+  .home-view .nav-toggle {
     display: none;
+  }
+
+  .inner-view .nav-toggle {
+    display: flex;
+    flex: 0 0 auto;
+    margin-left: auto;
+  }
+
+  .inner-view .main-nav {
+    box-shadow: 0 0.75rem 1.5rem rgb(0 0 0 / 8%);
+  }
+
+  .page {
+    padding-block: 2rem 4rem;
+  }
+
+  .page-header {
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .page-title {
+    font-size: 2.3rem;
+  }
+
+  .entry-list {
+    grid-template-columns: 1fr;
   }
 
   .home-spacer {

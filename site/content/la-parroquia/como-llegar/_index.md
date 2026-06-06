@@ -6,9 +6,9 @@ lastmod: 2025-11-07 10:03:24
 
 La dirección de la Parroquia es:
 
-Avenida de los Madroños, 40  
-Código Postal: 28043  
-Madrid  
+Avenida de los Madroños, 40
+Código Postal: 28043
+Madrid
 España
 
 **Teléfono: 91 300 29 81 - 628 223 783**
