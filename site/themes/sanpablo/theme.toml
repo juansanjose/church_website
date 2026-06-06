@@ -1,0 +1,13 @@
+name = "San Pablo"
+license = "MIT"
+licenselink = ""
+description = "Clean, accessible theme for Parroquia San Pablo de la Cruz"
+homepage = "https://www.sanpablodelacruz.com"
+demosite = ""
+tags = ["church", "responsive", "accessible", "minimal"]
+features = ["responsive", "accessible", "fast"]
+min_version = "0.118.0"
+
+[author]
+  name = "Parroquia San Pablo de la Cruz"
+  homepage = "https://www.sanpablodelacruz.com"

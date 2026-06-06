@@ -1,0 +1,33 @@
+# Caddyfile — Parroquia San Pablo de la Cruz
+# Deploy this to /etc/caddy/Caddyfile on the VPS
+
+www.sanpablodelacruz.com {
+    root * /var/www/sanpablodelacruz.com
+    file_server
+    encode gzip zstd
+
+    # Security headers
+    header {
+        X-Content-Type-Options nosniff
+        X-Frame-Options DENY
+        Referrer-Policy strict-origin-when-cross-origin
+        Content-Security-Policy "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src 'self'; font-src 'self';"
+    }
+
+    # Block WordPress admin paths
+    @wpadmin path /wp-admin* /wp-login.php /xmlrpc.php
+    redir @wpadmin / permanent
+
+    # Handle trailing slashes consistently
+    try_files {path} {path}/ =404
+
+    # Custom error page
+    handle_errors {
+        rewrite * /404.html
+        file_server
+    }
+}
+
+sanpablodelacruz.com {
+    redir https://www.sanpablodelacruz.com{uri} permanent
+}

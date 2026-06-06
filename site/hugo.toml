@@ -1,0 +1,56 @@
+baseURL = 'https://www.sanpablodelacruz.com'
+languageCode = 'es-ES'
+defaultContentLanguage = 'es'
+title = 'Parroquia San Pablo de la Cruz'
+theme = 'sanpablo'
+enableRobotsTXT = true
+enableGitInfo = false
+disableKinds = ['taxonomy', 'term']
+
+[params]
+  description = 'Parroquia San Pablo de la Cruz - Madrid'
+  author = 'Parroquia San Pablo de la Cruz'
+  phone = '91 300 29 81'
+  mobile = '628 223 783'
+  email = 'sanpablodelacruz@gmail.com'
+  address = 'Avenida de los Madroños, 40, 28043 Madrid'
+
+[menu]
+  [[menu.main]]
+    name = 'Inicio'
+    url = '/'
+    weight = 10
+  [[menu.main]]
+    name = 'La Parroquia'
+    url = '/la-parroquia/'
+    weight = 20
+  [[menu.main]]
+    name = 'Horarios'
+    url = '/horarios/'
+    weight = 30
+  [[menu.main]]
+    name = 'Celebraciones'
+    url = '/celebraciones/'
+    weight = 40
+  [[menu.main]]
+    name = 'Catequesis'
+    url = '/catequesis/'
+    weight = 50
+  [[menu.main]]
+    name = 'Contactar'
+    url = '/contactar/'
+    weight = 60
+
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      typographer = true
+  [markup.highlight]
+    style = 'github'
+    lineNos = false
