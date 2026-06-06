@@ -72,4 +72,4 @@ jobs:
           systemctl reload caddy
 
       - name: Verify production site
-        run: curl --fail --silent --show-error --retry 5 --retry-delay 3 https://www.sanpablodelacruz.com/ > /dev/null
+        run: curl --fail --silent --show-error --retry 8 --retry-delay 3 --retry-all-errors https://www.sanpablodelacruz.com/ > /dev/null
