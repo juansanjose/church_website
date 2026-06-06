@@ -31,15 +31,27 @@ disableKinds = ['taxonomy', 'term']
   [[menu.main]]
     name = 'Celebraciones'
     url = '/celebraciones/'
-    weight = 40
+    weight = 30
   [[menu.main]]
     name = 'Catequesis'
     url = '/catequesis/'
     weight = 50
   [[menu.main]]
+    name = 'Caridad'
+    url = '/caridad/'
+    weight = 60
+  [[menu.main]]
+    name = 'Materiales'
+    url = '/materiales/'
+    weight = 70
+  [[menu.main]]
     name = 'Contactar'
     url = '/contactar/'
-    weight = 60
+    weight = 80
+  [[menu.main]]
+    name = 'Noticias'
+    url = '/noticias/'
+    weight = 90
 
 [taxonomies]
   tag = 'tags'

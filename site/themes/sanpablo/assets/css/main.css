@@ -4,18 +4,18 @@
 
 /* CSS Custom Properties */
 :root {
-  --color-primary: #1a472a;
-  --color-primary-dark: #0f2e1a;
-  --color-accent: #c9a227;
-  --color-accent-light: #f0e6b3;
+  --color-primary: #28432e;
+  --color-primary-dark: #1d3323;
+  --color-accent: #d1ad6b;
+  --color-accent-light: #d1ad6b;
   --color-bg: #ffffff;
-  --color-bg-alt: #f8f6f1;
-  --color-text: #1f1f1f;
-  --color-text-light: #4a4a4a;
-  --color-text-muted: #6b6b6b;
-  --color-border: #e0ddd5;
-  --color-footer-bg: #1a1a1a;
-  --color-footer-text: #c9c9c9;
+  --color-bg-alt: #faf9f6;
+  --color-text: #111111;
+  --color-text-light: #173536;
+  --color-text-muted: #626262;
+  --color-border: #e7e7e7;
+  --color-footer-bg: #ffffff;
+  --color-footer-text: #626262;
 
   --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-heading: Georgia, "Times New Roman", serif;
@@ -28,7 +28,7 @@
   --space-xxl: 6rem;
 
   --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
+  --radius-md: 0.6rem;
 
   --max-width: 72rem;
   --transition: 0.2s ease-out;
@@ -48,8 +48,8 @@ html {
 
 body {
   font-family: var(--font-body);
-  font-size: 1.125rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.6;
   color: var(--color-text);
   background-color: var(--color-bg);
 }
@@ -85,7 +85,7 @@ input, button, textarea, select {
 /* Container */
 .container {
   width: 100%;
-  max-width: var(--max-width);
+  max-width: 80rem;
   margin-inline: auto;
   padding-inline: var(--space-md);
 }
@@ -98,28 +98,28 @@ input, button, textarea, select {
 
 /* Header */
 .site-header {
-  background-color: var(--color-primary);
-  color: #fff;
-  position: sticky;
-  top: 0;
+  background-color: #fff;
+  color: var(--color-text);
+  position: relative;
   z-index: 100;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: none;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 4rem;
+  min-height: 9.25rem;
 }
 
 .site-brand {
-  color: #fff;
+  color: #080808;
   text-decoration: none;
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .site-brand__title {
@@ -135,13 +135,20 @@ input, button, textarea, select {
   border: none;
   cursor: pointer;
   padding: 0.5rem;
+  color: #111;
+}
+
+.nav-toggle::after {
+  content: "☰";
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
 .nav-toggle__bar {
-  display: block;
+  display: none;
   width: 28px;
   height: 3px;
-  background: #fff;
+  background: #111;
   border-radius: 2px;
   transition: var(--transition);
 }
@@ -152,7 +159,7 @@ input, button, textarea, select {
   top: 100%;
   left: 0;
   right: 0;
-  background: var(--color-primary-dark);
+  background: #fff;
   padding: var(--space-sm);
 }
 
@@ -170,18 +177,21 @@ input, button, textarea, select {
 
 .nav-link {
   display: block;
-  color: #fff;
+  color: #080808;
   text-decoration: none;
   padding: var(--space-xs) var(--space-sm);
   border-radius: var(--radius-sm);
   font-weight: 500;
   transition: var(--transition);
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .nav-link:hover,
 .nav-link:focus,
 .nav-item--active .nav-link {
-  background: rgba(255,255,255,0.15);
+  background: transparent;
+  color: var(--color-primary);
   outline: none;
 }
 
@@ -204,48 +214,57 @@ input, button, textarea, select {
 /* Buttons */
 .btn {
   display: inline-block;
-  padding: 0.875rem 1.75rem;
-  border-radius: var(--radius-md);
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.25;
   transition: var(--transition);
   cursor: pointer;
   border: 2px solid transparent;
+  letter-spacing: 0.06em;
 }
 
 .btn--primary {
   background: var(--color-accent);
-  color: #1a1a1a;
+  color: #fff;
   border-color: var(--color-accent);
+  text-transform: uppercase;
 }
 
 .btn--primary:hover,
 .btn--primary:focus {
-  background: #b08d1f;
-  border-color: #b08d1f;
+  background: #b99555;
+  border-color: #b99555;
   outline: none;
 }
 
 .btn--secondary {
-  background: transparent;
-  color: #fff;
-  border-color: rgba(255,255,255,0.6);
+  background: #fff;
+  color: var(--color-primary-dark);
+  border-color: #111;
+  text-transform: uppercase;
 }
 
 .btn--secondary:hover,
 .btn--secondary:focus {
-  background: rgba(255,255,255,0.1);
-  border-color: #fff;
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
   outline: none;
 }
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  background:
+    linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.42)),
+    url("/images/hero-altar.jpg") center center / cover no-repeat;
   color: #fff;
-  padding-block: var(--space-xxl);
+  min-height: 62rem;
+  display: grid;
+  align-items: center;
+  padding-block: var(--space-xl);
 }
 
 .hero-inner {
@@ -254,18 +273,22 @@ input, button, textarea, select {
 
 .hero-title {
   font-family: var(--font-heading);
-  font-size: clamp(1.75rem, 5vw, 3rem);
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: var(--space-md);
+  font-size: clamp(3rem, 6vw, 5.4rem);
+  font-weight: 400;
+  line-height: 1.16;
+  margin-bottom: var(--space-lg);
+  max-width: 12ch;
+  margin-inline: auto;
 }
 
 .hero-lead {
-  font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+  font-size: 1.05rem;
   max-width: 50ch;
   margin-inline: auto;
   margin-bottom: var(--space-lg);
-  opacity: 0.92;
+  opacity: 1;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 
 .hero-actions {
@@ -273,11 +296,14 @@ input, button, textarea, select {
   flex-wrap: wrap;
   gap: var(--space-sm);
   justify-content: center;
+  flex-direction: column;
+  max-width: 38rem;
+  margin-inline: auto;
 }
 
 /* Sections */
 .section {
-  padding-block: var(--space-xl);
+  padding-block: 7rem;
 }
 
 .section--times {
@@ -286,10 +312,11 @@ input, button, textarea, select {
 
 .section-title {
   font-family: var(--font-heading);
-  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 400;
   text-align: center;
   margin-bottom: var(--space-lg);
-  color: var(--color-primary);
+  color: #111;
 }
 
 .section-cta {
@@ -301,24 +328,28 @@ input, button, textarea, select {
 .times-grid {
   display: grid;
   gap: var(--space-md);
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .time-card {
   background: #fff;
-  border: 1px solid var(--color-border);
+  border: 0;
   border-radius: var(--radius-md);
-  padding: var(--space-md);
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  padding: 3rem 1.5rem;
+  box-shadow: none;
+  text-align: center;
 }
 
 .time-card__day {
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  color: var(--color-primary);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: #829a83;
   margin-bottom: var(--space-sm);
-  padding-bottom: var(--space-xs);
-  border-bottom: 2px solid var(--color-accent-light);
+  padding-bottom: 0;
+  border-bottom: 0;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .time-card__list {
@@ -326,13 +357,13 @@ input, button, textarea, select {
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: var(--space-xs);
+  gap: 0.15rem;
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
 }
 
 .time-card__list li {
-  display: flex;
-  gap: var(--space-xs);
-  align-items: baseline;
+  display: block;
 }
 
 .time-card__list time {
@@ -383,18 +414,19 @@ input, button, textarea, select {
 
 /* Page */
 .page {
-  padding-block: var(--space-xl);
+  padding-block: 4rem 7rem;
 }
 
 .page-header {
-  margin-bottom: var(--space-lg);
+  margin-bottom: 4rem;
   text-align: center;
 }
 
 .page-title {
   font-family: var(--font-heading);
-  font-size: clamp(1.75rem, 5vw, 2.75rem);
-  color: var(--color-primary);
+  font-size: clamp(2.5rem, 5vw, 3.6rem);
+  color: #111;
+  font-weight: 400;
   line-height: 1.2;
 }
 
@@ -418,7 +450,7 @@ input, button, textarea, select {
 
 /* Prose */
 .prose {
-  max-width: 65ch;
+  max-width: 52rem;
   margin-inline: auto;
 }
 
@@ -428,17 +460,18 @@ input, button, textarea, select {
 
 .prose h2, .prose h3, .prose h4 {
   font-family: var(--font-heading);
-  color: var(--color-primary);
+  color: #123f40;
+  font-weight: 400;
   line-height: 1.3;
 }
 
 .prose h2 {
-  font-size: 1.625rem;
+  font-size: 2.25rem;
   margin-top: var(--space-lg);
 }
 
 .prose h3 {
-  font-size: 1.375rem;
+  font-size: 1.7rem;
   margin-top: var(--space-lg);
 }
 
@@ -448,11 +481,11 @@ input, button, textarea, select {
 }
 
 .prose p {
-  color: var(--color-text-light);
+  color: #111;
 }
 
 .prose a {
-  color: var(--color-primary);
+  color: #164e50;
   text-decoration: underline;
   text-underline-offset: 0.15em;
 }
@@ -510,7 +543,7 @@ input, button, textarea, select {
 .prose th {
   background: var(--color-bg-alt);
   font-weight: 600;
-  color: var(--color-primary);
+  color: #123f40;
 }
 
 .prose tr:nth-child(even) {
@@ -540,11 +573,12 @@ input, button, textarea, select {
   flex-direction: column;
   gap: 0.25rem;
   padding: var(--space-sm) var(--space-md);
-  border: 1px solid var(--color-border);
+  border: 0;
   border-radius: var(--radius-md);
   text-decoration: none;
   color: inherit;
   transition: var(--transition);
+  background: var(--color-bg-alt);
 }
 
 .entry-link:hover,
@@ -555,7 +589,7 @@ input, button, textarea, select {
 
 .entry-title {
   font-weight: 600;
-  color: var(--color-primary);
+  color: #123f40;
   font-size: 1.125rem;
 }
 
@@ -568,7 +602,7 @@ input, button, textarea, select {
 .site-footer {
   background: var(--color-footer-bg);
   color: var(--color-footer-text);
-  padding-block: var(--space-xl);
+  padding-block: 7rem;
   margin-top: auto;
 }
 
@@ -576,13 +610,15 @@ input, button, textarea, select {
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
-  text-align: center;
+  text-align: left;
 }
 
 .footer-title {
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  color: #fff;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: #080808;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
 .footer-address {
@@ -591,7 +627,7 @@ input, button, textarea, select {
 }
 
 .footer-address a {
-  color: var(--color-accent-light);
+  color: var(--color-text-muted);
   text-decoration: none;
 }
 
@@ -606,9 +642,14 @@ input, button, textarea, select {
   text-underline-offset: 0.15em;
 }
 
-.footer-copy {
-  font-size: 0.875rem;
-  color: #888;
+.footer-social {
+  display: grid;
+  gap: 1rem;
+}
+
+.footer-social a {
+  color: #111;
+  text-decoration: none;
 }
 
 /* Error page */
@@ -625,6 +666,99 @@ input, button, textarea, select {
     text-align: left;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
+  }
+}
+
+.btn--dark {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn--dark:hover,
+.btn--dark:focus {
+  background: var(--color-primary-dark);
+}
+
+.btn--light {
+  background: #fff;
+  color: var(--color-primary-dark);
+}
+
+.section--contact {
+  background: var(--color-primary);
+  color: #fff;
+  text-align: center;
+}
+
+.section--contact .section-title {
+  color: #fff;
+}
+
+.section--contact p {
+  margin-top: 1.5rem;
+}
+
+.contact-phones a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 60rem) {
+  .header-inner {
+    min-height: 7rem;
+  }
+
+  .hero {
+    min-height: 38rem;
+  }
+
+  .times-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 47.99rem) {
+  .site-brand {
+    max-width: none;
+    white-space: normal;
+    font-size: 0.95rem;
+  }
+
+  .main-nav {
+    border-top: 1px solid var(--color-border);
+  }
+
+  .nav-link {
+    padding-block: 0.75rem;
+  }
+
+  .hero {
+    min-height: 37rem;
+    background-position: 52% center;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+    max-width: 9ch;
+  }
+
+  .hero-lead,
+  .hero-actions {
+    display: none;
+  }
+
+  .section,
+  .page {
+    padding-block: 5rem;
+  }
+
+  .site-footer {
+    padding-block: 5rem;
+  }
+
+  .footer-social {
+    margin-top: 2rem;
   }
 }

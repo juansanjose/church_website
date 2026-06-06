@@ -1,67 +1,51 @@
 {{ define "main" }}
 <section class="hero" aria-labelledby="hero-title">
   <div class="container hero-inner">
-    <h1 id="hero-title" class="hero-title">Bienvenidos a la Parroquia San Pablo de la Cruz</h1>
-    <p class="hero-lead">Una comunidad de fe en el barrio de Hortaleza, Madrid. Te invitamos a participar en nuestra vida litúrgica y pastoral.</p>
+    <h1 id="hero-title" class="hero-title">Parroquia San<br>Pablo<br>de la Cruz</h1>
+    <p class="hero-lead">Avenida de los Madroños, 40 · Madrid</p>
     <div class="hero-actions">
       <a class="btn btn--primary" href="/horarios/">Ver Horarios de Misas</a>
       <a class="btn btn--secondary" href="/contactar/">Contactar Parroquia</a>
-      <a class="btn btn--secondary" href="/catequesis/">Inscripción Catequesis</a>
     </div>
   </div>
 </section>
 
 <section class="section section--times" aria-labelledby="times-title">
   <div class="container">
-    <h2 id="times-title" class="section-title">Horarios de Celebraciones</h2>
+    <h2 id="times-title" class="section-title">Horarios de Misas</h2>
     <div class="times-grid">
       <article class="time-card">
-        <h3 class="time-card__day">Domingos</h3>
+        <h3 class="time-card__day">Domingos y festivos</h3>
         <ul class="time-card__list">
-          <li><time datetime="11:30">11:30</time> — Misa</li>
-          <li><time datetime="13:00">13:00</time> — Misa</li>
-          <li><time datetime="20:00">20:00</time> — Misa</li>
+          <li>11:30 y 13:00</li>
+          <li>20:00</li>
         </ul>
       </article>
       <article class="time-card">
-        <h3 class="time-card__day">Lunes a Sábado</h3>
+        <h3 class="time-card__day">Lunes a viernes</h3>
         <ul class="time-card__list">
-          <li><time datetime="09:00">09:00</time> — Misa (Lunes a Viernes)</li>
-          <li><time datetime="20:00">20:00</time> — Misa</li>
+          <li>9:15 Mañana</li>
+          <li>19:30 / 20:00 Tarde</li>
         </ul>
       </article>
       <article class="time-card">
-        <h3 class="time-card__day">Festivos</h3>
+        <h3 class="time-card__day">Sábados</h3>
         <ul class="time-card__list">
-          <li><time datetime="11:30">11:30</time> — Misa</li>
-          <li><time datetime="20:00">20:00</time> — Misa</li>
+          <li>20:00</li>
+          <li>Misa de Jóvenes</li>
         </ul>
       </article>
     </div>
-    <p class="section-cta"><a class="btn btn--primary" href="/horarios/">Ver todos los horarios</a></p>
+    <p class="section-cta"><a class="btn btn--dark" href="/horarios/">Ver Horarios Completos →</a></p>
   </div>
 </section>
 
-<section class="section section--featured" aria-labelledby="featured-title">
+<section class="section section--contact" aria-labelledby="contact-title">
   <div class="container">
-    <h2 id="featured-title" class="section-title">Información Parroquial</h2>
-    <div class="featured-grid">
-      <article class="featured-card">
-        <h3 class="featured-card__title">La Parroquia</h3>
-        <p class="featured-card__text">Conoce nuestra historia, nuestro patrón San Pablo de la Cruz y el recorrido fotográfico de nuestro templo.</p>
-        <a class="featured-card__link" href="/la-parroquia/">Saber más</a>
-      </article>
-      <article class="featured-card">
-        <h3 class="featured-card__title">Celebraciones</h3>
-        <p class="featured-card__text">Bautismos, matrimonios, liturgia y acompañamiento sacramental.</p>
-        <a class="featured-card__link" href="/celebraciones/">Saber más</a>
-      </article>
-      <article class="featured-card">
-        <h3 class="featured-card__title">Catequesis</h3>
-        <p class="featured-card__text">Formación para niños, jóvenes y familias. Primera Comunión, Confirmación y Post Comunión.</p>
-        <a class="featured-card__link" href="/catequesis/">Saber más</a>
-      </article>
-    </div>
+    <h2 id="contact-title" class="section-title">Contacto</h2>
+    <p>Avenida de los Madroños, 40<br>28043 Madrid</p>
+    <p class="contact-phones"><a href="tel:+34628223783">628 223 783</a><br><a href="tel:+34913002981">91 300 29 81</a></p>
+    <p class="section-cta"><a class="btn btn--light" href="/contactar/">Contactar con la Parroquia →</a></p>
   </div>
 </section>
 {{ end }}
