@@ -1,18 +1,20 @@
 /* ========================================
    Parroquia San Pablo de la Cruz
-   Minimal, consistent styles
+   Clean, Consistent Design
    ======================================== */
 
 /* Variables */
 :root {
   --green: #2d4a33;
   --green-dark: #1a2f1e;
+  --green-light: #3d6144;
   --gold: #c9a55c;
   --bg: #ffffff;
   --bg-warm: #f8f7f4;
   --text: #1a1a1a;
   --text-light: #555555;
-  --border: #e5e5e5;
+  --text-muted: #777777;
+  --border: #e8e8e8;
 }
 
 /* Reset */
@@ -27,10 +29,14 @@ html {
 }
 
 body {
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   color: var(--text);
+  background: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -40,22 +46,6 @@ img {
 
 a {
   color: var(--green);
-  text-decoration: none;
-}
-
-/* Skip link */
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: var(--green);
-  color: white;
-  padding: 8px 16px;
-  z-index: 100;
-}
-
-.skip-link:focus {
-  top: 0;
 }
 
 /* Container */
@@ -80,18 +70,16 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  height: 60px;
 }
 
 .site-brand {
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--text);
 }
 
-/* Mobile menu toggle */
 .nav-toggle {
-  display: block;
   background: none;
   border: none;
   font-size: 1.5rem;
@@ -103,7 +91,6 @@ a {
   display: none;
 }
 
-/* Navigation */
 .main-nav {
   display: none;
   position: absolute;
@@ -132,43 +119,41 @@ a {
   border-bottom: 1px solid var(--border);
 }
 
-.nav-link:hover {
-  color: var(--green);
-}
-
+.nav-link:hover,
 .nav-item--active .nav-link {
   color: var(--green);
-  font-weight: 600;
 }
 
-/* Desktop nav */
 @media (min-width: 768px) {
   .nav-toggle {
     display: none;
   }
-
   .main-nav {
     display: block !important;
     position: static;
     border: none;
     padding: 0;
   }
-
   .nav-list {
     display: flex;
     gap: 8px;
   }
-
   .nav-link {
     padding: 8px 16px;
     border: none;
     border-radius: 6px;
   }
-
   .nav-link:hover,
   .nav-item--active .nav-link {
     background: var(--bg-warm);
   }
+}
+
+/* ========================================
+   Main Content
+   ======================================== */
+.main-content {
+  flex: 1;
 }
 
 /* ========================================
@@ -181,11 +166,10 @@ a {
 @media (min-width: 768px) {
   .home-grid {
     grid-template-columns: 1fr 1fr;
-    min-height: calc(100vh - 64px);
+    min-height: calc(100vh - 60px);
   }
 }
 
-/* Slideshow */
 .home-slideshow {
   position: relative;
   height: 50vh;
@@ -206,53 +190,52 @@ a {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 1.5s;
 }
 
 .home-slide.is-active {
   opacity: 1;
 }
 
-/* Times section */
 .home-times {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 48px 24px;
+  padding: 40px 24px;
   background: var(--bg-warm);
   text-align: center;
 }
 
 .home-times__title {
   font-family: Georgia, serif;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 400;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   color: var(--green-dark);
 }
 
 .home-time-cards {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
   width: 100%;
-  max-width: 320px;
+  max-width: 280px;
 }
 
 .home-time-card {
   background: white;
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 24px;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .home-time-card h2 {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--green);
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-weight: 600;
 }
 
@@ -263,7 +246,7 @@ a {
 
 .home-times__button {
   display: inline-block;
-  margin-top: 32px;
+  margin-top: 24px;
   padding: 12px 28px;
   background: var(--green);
   color: white;
@@ -278,19 +261,17 @@ a {
 }
 
 /* ========================================
-   Inner Pages (List + Single)
+   Inner Pages
    ======================================== */
 .page {
-  padding-bottom: 64px;
+  padding: 40px 0 60px;
 }
 
-/* Page header */
 .page-header {
   background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
   color: white;
-  padding: 48px 20px 40px;
+  padding: 40px 0 32px;
   margin-bottom: 40px;
-  text-align: center;
 }
 
 .page-title {
@@ -302,30 +283,19 @@ a {
 
 .page-subtitle {
   font-size: 1.1rem;
-  margin-top: 12px;
+  margin-top: 8px;
   opacity: 0.85;
 }
 
-/* Breadcrumbs */
-.breadcrumbs {
-  margin-bottom: 24px;
-  font-size: 0.85rem;
-  color: var(--text-light);
-}
-
-.breadcrumbs a {
-  color: var(--green);
-}
-
-/* Page content */
+/* Page content area */
 .page-content {
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 /* ========================================
-   Typography (Prose)
+   Prose (Markdown content)
    ======================================== */
 .prose {
   font-size: 1.05rem;
@@ -336,19 +306,32 @@ a {
   margin-top: 1.25rem;
 }
 
+/* Make first heading look like page title if no page-header */
+.prose > h1:first-child,
+.prose > h2:first-child {
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--green-dark);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--gold);
+  margin-top: 0;
+}
+
 .prose h2 {
   font-family: Georgia, serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: var(--green-dark);
   margin-top: 2rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 8px;
   border-bottom: 2px solid var(--gold);
 }
 
 .prose h3 {
   font-family: Georgia, serif;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 400;
   color: var(--green);
   margin-top: 1.5rem;
@@ -358,25 +341,28 @@ a {
   color: var(--text-light);
 }
 
-.prose a {
-  text-decoration: underline;
-  text-underline-offset: 2px;
+/* Style standalone paragraphs that look like section headers
+   (short paragraphs followed by another paragraph) */
+.prose p:has(+ p) {
+  color: var(--text);
 }
 
-.prose a:hover {
-  color: var(--gold);
+/* Hide duplicate h1 when page-header is present */
+.page-header + .container .content-prose > h1:first-child {
+  display: none;
 }
 
-/* Inline buttons */
+/* Buttons in prose */
 .prose p > a:only-child:not(:has(img)) {
   display: inline-block;
   padding: 10px 24px;
   background: var(--green);
   color: white;
-  text-decoration: none;
   border-radius: 100px;
   font-weight: 600;
   font-size: 0.9rem;
+  text-decoration: none;
+  margin: 4px 0;
 }
 
 .prose p > a:only-child:not(:has(img)):hover {
@@ -437,7 +423,7 @@ a {
 }
 
 /* ========================================
-   Entry Cards (List pages)
+   Entry Cards
    ======================================== */
 .entry-list {
   list-style: none;
@@ -445,6 +431,7 @@ a {
   display: grid;
   gap: 16px;
   margin-top: 32px;
+  align-items: stretch;
 }
 
 @media (min-width: 640px) {
@@ -454,13 +441,19 @@ a {
 }
 
 .entry-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 24px;
   background: white;
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 10px;
   color: inherit;
   transition: all 0.2s;
+}
+
+.entry-item {
+  height: 100%;
 }
 
 .entry-link:hover {
@@ -478,9 +471,13 @@ a {
 }
 
 .entry-desc {
-  color: var(--text-light);
+  color: var(--text-muted);
   font-size: 0.95rem;
   margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .entry-more {
@@ -489,6 +486,8 @@ a {
   color: var(--green);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  margin-top: auto;
+  padding-top: 8px;
 }
 
 /* ========================================
@@ -497,7 +496,8 @@ a {
 .site-footer {
   background: var(--green-dark);
   color: rgba(255,255,255,0.8);
-  padding: 40px 0 24px;
+  padding: 32px 0 24px;
+  margin-top: auto;
 }
 
 .footer-inner {
@@ -566,22 +566,28 @@ a {
   color: var(--gold);
 }
 
-/* Page footer (meta) */
+/* Page footer meta */
 .page-footer {
-  max-width: 700px;
+  max-width: 720px;
   margin: 40px auto 0;
   padding: 20px;
   text-align: center;
-  color: var(--text-light);
+  color: var(--text-muted);
   font-size: 0.9rem;
   border-top: 1px solid var(--border);
 }
 
-/* ========================================
-   Utilities
-   ======================================== */
-.main-content {
-  min-height: calc(100vh - 64px - 200px);
+/* Breadcrumbs */
+.breadcrumbs {
+  max-width: 720px;
+  margin: 0 auto 20px;
+  padding: 0 20px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.breadcrumbs a {
+  color: var(--green);
 }
 
 /* Gallery pages */
@@ -613,4 +619,20 @@ a {
   place-content: center;
   text-align: center;
   gap: 16px;
+  padding: 40px 20px;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--green);
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
 }

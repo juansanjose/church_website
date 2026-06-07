@@ -1,41 +1,48 @@
 {{ define "main" }}
-<div class="page page--{{ .Slug }} container">
-  {{ if and .Parent (ne .Params.source "wordpress-localhost") }}
-  <nav class="breadcrumbs" aria-label="Migas de pan">
-    <a href="/">Inicio</a><span aria-hidden="true">/</span>
-    {{ if not .Parent.IsHome }}<a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a><span aria-hidden="true">/</span>{{ end }}
-    <span aria-current="page">{{ .Title }}</span>
-  </nav>
-  {{ end }}
-  {{ if ne .Params.show_title false }}<header class="page-header">
-    <h1 class="page-title">{{ .Title }}</h1>
-    {{ if .Params.subtitle }}
-    <p class="page-subtitle">{{ .Params.subtitle }}</p>
-    {{ end }}
-  </header>{{ end }}
-  <div class="page-content">
-    {{ if .Content }}
-    <div class="prose content-prose">
-      {{ .Content }}
-    </div>
-    {{ end }}
-    {{ if and .Pages (ne .Params.source "wordpress-localhost") }}
-    <ul class="entry-list">
-      {{ range .Pages }}
-      <li class="entry-item">
-        <a class="entry-link" href="{{ .RelPermalink }}">
-          <span class="entry-title">{{ .Title }}</span>
-          {{ if .Params.description }}
-          <span class="entry-desc">{{ .Params.description }}</span>
-          {{ else if .Summary }}
-          <span class="entry-desc">{{ .Summary | plainify | truncate 150 }}</span>
-          {{ end }}
-          <span class="entry-more">Ver información →</span>
-        </a>
-      </li>
+<div class="page page--{{ .Slug }}">
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-title">{{ .Title }}</h1>
+      {{ if .Params.subtitle }}
+      <p class="page-subtitle">{{ .Params.subtitle }}</p>
       {{ end }}
-    </ul>
+    </div>
+  </header>
+
+  <div class="container">
+    {{ if and .Parent (ne .Params.source "wordpress-localhost") }}
+    <nav class="breadcrumbs" aria-label="Migas de pan">
+      <a href="/">Inicio</a><span aria-hidden="true">/</span>
+      {{ if not .Parent.IsHome }}<a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a><span aria-hidden="true">/</span>{{ end }}
+      <span aria-current="page">{{ .Title }}</span>
+    </nav>
     {{ end }}
+
+    <div class="page-content">
+      {{ if .Content }}
+      <div class="prose content-prose">
+        {{ .Content }}
+      </div>
+      {{ end }}
+
+      {{ if .Pages }}
+      <ul class="entry-list">
+        {{ range .Pages }}
+        <li class="entry-item">
+          <a class="entry-link" href="{{ .RelPermalink }}">
+            <span class="entry-title">{{ .Title }}</span>
+            {{ if .Params.description }}
+            <span class="entry-desc">{{ .Params.description }}</span>
+            {{ else if .Summary }}
+            <span class="entry-desc">{{ .Summary | plainify | truncate 150 }}</span>
+            {{ end }}
+            <span class="entry-more">Ver información →</span>
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </div>
   </div>
 </div>
 {{ end }}

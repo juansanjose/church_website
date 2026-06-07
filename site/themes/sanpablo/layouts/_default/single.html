@@ -1,21 +1,28 @@
 {{ define "main" }}
-<article class="page page--{{ .Slug }} container">
-  {{ if and .Parent (ne .Params.source "wordpress-localhost") }}
-  <nav class="breadcrumbs" aria-label="Migas de pan">
-    <a href="/">Inicio</a><span aria-hidden="true">/</span>
-    {{ if not .Parent.IsHome }}<a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a><span aria-hidden="true">/</span>{{ end }}
-    <span aria-current="page">{{ .Title }}</span>
-  </nav>
-  {{ end }}
-  {{ if ne .Params.show_title false }}<header class="page-header">
-    <h1 class="page-title">{{ .Title }}</h1>
-    {{ if .Params.subtitle }}
-    <p class="page-subtitle">{{ .Params.subtitle }}</p>
+<article class="page page--{{ .Slug }}">
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-title">{{ .Title }}</h1>
+      {{ if .Params.subtitle }}
+      <p class="page-subtitle">{{ .Params.subtitle }}</p>
+      {{ end }}
+    </div>
+  </header>
+
+  <div class="container">
+    {{ if and .Parent (ne .Params.source "wordpress-localhost") }}
+    <nav class="breadcrumbs" aria-label="Migas de pan">
+      <a href="/">Inicio</a><span aria-hidden="true">/</span>
+      {{ if not .Parent.IsHome }}<a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a><span aria-hidden="true">/</span>{{ end }}
+      <span aria-current="page">{{ .Title }}</span>
+    </nav>
     {{ end }}
-  </header>{{ end }}
-  <div class="page-content prose content-prose">
-    {{ .Content }}
+
+    <div class="page-content prose content-prose">
+      {{ .Content }}
+    </div>
   </div>
+
   {{ if and .Lastmod (ne .Params.source "wordpress-localhost") }}
   <footer class="page-footer">
     <p class="page-meta">Última actualización: {{ .Lastmod | time.Format ":date_long" }}</p>
