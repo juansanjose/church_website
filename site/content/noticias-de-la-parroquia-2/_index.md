@@ -2,88 +2,117 @@
 title: "Noticias"
 slug: "noticias-de-la-parroquia-2"
 date: "2026-05-23T23:56:45"
-lastmod: "2026-05-23T23:56:45"
+lastmod: "2026-06-14T10:00:00"
 url: "/noticias-de-la-parroquia-2/"
 source: "wordpress-localhost"
-show_title: false
-description: "Eventos Futuros No hay eventos programados actualmente. Vuelve pronto para conocer las próximas actividades de nuestra parroquia. Eventos Pasados"
+description: "Últimas noticias, eventos y actividades de la Parroquia San Pablo de la Cruz."
+custom_css: |
+  .event--past {
+    margin-block: 0.75rem;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-warm);
+    color: var(--text-muted);
+  }
+  .event--past[open] {
+    color: var(--text-light);
+  }
+  .event--past summary {
+    color: inherit;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  .event--past summary:hover,
+  .event--past summary:focus-visible {
+    color: var(--green);
+  }
+  .event--past summary:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 0.25rem;
+  }
+  .event--past > :last-child {
+    margin-bottom: 0;
+  }
 ---
 
-## Eventos Futuros
+## Próximos Eventos
 
 No hay eventos programados actualmente. Vuelve pronto para conocer las próximas actividades de nuestra parroquia.
 
-## Eventos Pasados
+---
 
-**Encuentro Fe y Vida. Diálogo con José Luis Martínez Almeida, alcalde de Madrid**. **Jueves 12, a las 20:00h**
+## Eventos Anteriores
 
-Un espacio de diálogo y reflexión con José Luis Martínez-Almeida, alcalde de Madrid, para conversar sobre fe, vida pública y los desafíos de la sociedad actual. **Jueves 12 a las 20:00 h.**
+<details class="event--past">
+<summary>Encuentro Fe y Vida con José Luis Martínez Almeida</summary>
 
-**Peregrinación – Retiro en Valencia Parroquia de San Pablo de la Cruz (Madrid)**
+**Jueves 12, a las 20:00h**
 
-La **Parroquia de San Pablo de la Cruz** organiza una **peregrinación–retiro a Valencia** del **27 de febrero al 1 de marzo de 2026** , una experiencia de **tres días** pensada para unir **oración, formación y convivencia**.
+Un espacio de diálogo y reflexión con José Luis Martínez-Almeida, alcalde de Madrid, para conversar sobre fe, vida pública y los desafíos de la sociedad actual.
 
-Durante el viaje se participará en la **Eucaristía diaria** , se visitarán **lugares emblemáticos de Valencia** y se disfrutarán momentos de **reflexión, descanso y fraternidad** , culminando con paradas de especial valor espiritual y cultural como la **Basílica de la Virgen de los Desamparados** , la **Catedral de Valencia con el Santo Cáliz** , la **Albufera** y el **Monasterio de Uclés**.
+</details>
 
-👉 **En «Más información»** puedes consultar el **itinerario completo por días, horarios y actividades previstas** , así como todos los detalles de la peregrinación.
+<details class="event--past">
+<summary>Peregrinación – Retiro en Valencia</summary>
+
+Del **27 de febrero al 1 de marzo de 2026**. Una experiencia de tres días para unir oración, formación y convivencia.
+
+Se visitarán lugares emblemáticos como la Basílica de la Virgen de los Desamparados, la Catedral de Valencia con el Santo Cáliz, la Albufera y el Monasterio de Uclés.
 
 [Más información](/741-2/)
+</details>
 
-**Recaudación de la campaña de Navidad** | Total Venta Mercadillo (Efectivo) | € 3.592,00 |
+<details class="event--past">
+<summary>Recaudación de la campaña de Navidad</summary>
+
+**Total recaudado: € 12.002,00**
+
+| Concepto | Importe |
 | --- | --- |
-| Total Venta Mercadillo (Visa) | € 2.417,00 |
-| Total Rifa | € 1.848,00 |
-| TOTAL MERCADILLO | € 7.857,00 |
-| Colectas de Navidad 2025 | € 2.645,00 |
-| Colectas y Donativos Navidad 2025 | € 1.500,00 |
-| TOTAL COLECTAS | € 4.145,00 |
-| TOTAL RECAUDADO | € 12.002,00 |
+| Total Mercadillo | € 7.857,00 |
+| Total Colectas | € 4.145,00 |
+| **TOTAL** | **€ 12.002,00** |
 
-de los cuales YA han sido DESTINADOS A
+**Destinado a:**
 
-| 1.- Ayuda Iglesia necesitada | € 3.000,00 |
+| Concepto | Importe |
 | --- | --- |
-| 2.- Ayuda al Dispensario y comedor en Honduras | € 4.000,00 |
-| 3.- Ayuda a Misioneros Marianhill Curia Provincial | € 1.000,00 |
-| 4.- Ayuda a Sociedad de Misiones Africanas | € 2.000,00 |
-| TOTAL DE DONATIVOS YA ENTREGADOS (CAMPAÑA NAVIDAD 2025) | € 10.000,00 |
+| Ayuda Iglesia necesitada | € 3.000,00 |
+| Dispensario y comedor en Honduras | € 4.000,00 |
+| Misioneros Marianhill | € 1.000,00 |
+| Sociedad de Misiones Africanas | € 2.000,00 |
+| **TOTAL ENTREGADO** | **€ 10.000,00** |
 
-**Números premiados en la rifa del mercadillo de Navidad:**
+**Números premiados:**
+- 1º premio: **nº 0166**
+- 2º premio: **nº 0945**
+</details>
 
-1ºpremio **nº 0166**
+<details class="event--past">
+<summary>Diálogo con María San Gil</summary>
 
-2ºpremio**nº 0945**
-
-**Diálogo con María San Gil**
-
-Tal como hemos anunciado, el lunes día 1 de diciembre, después de la misa de 19:30, iniciamos los diálogos FE y VIDA, con la participación de María San Gil Noaín. Estáis todos invitados y podéis animar a participar a quien consideréis.
+Lunes 1 de diciembre, después de la misa de 19:30. Diálogo Fe y Vida con la participación de María San Gil Noaín.
 
 [Más información](/dialogo-con-maria-san-gil/)
+</details>
 
-**Mercadillo 2025**
+<details class="event--past">
+<summary>Mercadillo 2025</summary>
 
-Nuestro tradicional mercadillo solidario para colaborar con **Cáritas parroquial**.
-Encontrarás dulces caseros, manualidades, libros y una rifa solidaria.
-¡Te esperamos con alegría para compartir y ayudar!
-
-[Más información](/noticias-de-la-parroquia-2/mercadillo-2025/)
-
-**Brotes verdes – Nuevo grupo de jóvenes**
-
-Nuestro tradicional mercadillo solidario para colaborar con **Cáritas parroquial**.
-Encontrarás dulces caseros, manualidades, libros y una rifa solidaria.
-¡Te esperamos con alegría para compartir y ayudar!
+Nuestro tradicional mercadillo solidario para colaborar con Cáritas parroquial. Dulces caseros, manualidades, libros y rifa solidaria.
 
 [Más información](/noticias-de-la-parroquia-2/mercadillo-2025/)
+</details>
 
-**Grupo Mostaza – Nuevo grupo de post-comunión**
+<details class="event--past">
+<summary>Brotes verdes – Nuevo grupo de jóvenes</summary>
 
-El próximo domingo 9 de noviembre a las 12:15, retomaremos nuestro
-camino como «Grupo Mostaza».
-Se trata de un encuentro mensual, dirigido a niños y niñas de entre 6 y 12
-años, con el objetivo de aprender jugando las principales necesidades y
-exigencias del afecto y la inteligencia: la atención a lo real, el deseo de
-belleza, el gusto por lo sencillo, la inquietud del corazón…
-El curso pasado comenzamos a descubrir la originalidad que porta la
-mirada cristiana aplicada a lo cotidiano de cada día y este año deseamos
-seguir creciendo en este descubrimiento constante.
+Nuevo grupo de jóvenes en la parroquia. Encuentros de formación, oración y convivencia.
+</details>
+
+<details class="event--past">
+<summary>Grupo Mostaza – Nuevo grupo de post-comunión</summary>
+
+Encuentro mensual para niños y niñas de entre 6 y 12 años. Aprender jugando las principales necesidades y exigencias del afecto y la inteligencia.
+</details>
