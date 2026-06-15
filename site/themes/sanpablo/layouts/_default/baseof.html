@@ -9,6 +9,11 @@
   <link rel="canonical" href="{{ .Permalink }}">
   {{ $style := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+  {{ with .Params.custom_css }}
+  <style>
+  {{ . | safeCSS }}
+  </style>
+  {{ end }}
   {{ block "head" . }}{{ end }}
 </head>
 <body class="{{ if .IsHome }}home-view{{ else }}inner-view{{ end }}">
@@ -50,7 +55,7 @@
           <a href="tel:+34{{ replace .Site.Params.phone " " "" }}">{{ .Site.Params.phone }}</a>
         </address>
       </div>
-      <a class="footer-contact" href="/parroquia/contactar/">Contactar →</a>
+      <a class="footer-contact" href="/parroquia/contactar/">Contactar</a>
       <div class="footer-social">
         <p>Síguenos</p>
         <a href="https://www.instagram.com/parroquiaspc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>

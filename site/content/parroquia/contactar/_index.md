@@ -13,9 +13,9 @@ description: "Contactar con la Parroquia Estamos aquí para ayudarte. Llámanos 
 
 Estamos aquí para ayudarte. Llámanos o envíanos un mensaje.
 
-[Llamar: 628 223 783 →](tel:628223783)
+[Llamar: 628 223 783](tel:628223783)
 
-[Ver Horarios →](/celebraciones/horarios)
+[Ver Horarios](/celebraciones/horarios)
 
 ### Dirección
 
@@ -31,4 +31,4 @@ Avenida de los Madroños, 40
 
 Rellena el formulario y te responderemos lo antes posible.
 
-[Enviar un correo a la parroquia →](mailto:sanpablodelacruz@gmail.com)
+[Enviar un correo a la parroquia](mailto:sanpablodelacruz@gmail.com)

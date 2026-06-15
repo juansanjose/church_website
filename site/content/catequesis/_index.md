@@ -17,34 +17,34 @@ Niños
 
 Preparación para la Primera Comunión.
 
-[Infantiles →](/catequesis/infantiles-primera-comunion/)
+[Infantiles](/catequesis/infantiles-primera-comunion/)
 
 Juveniles
 
 Formación tras la Primera Comunión.
 
-[Juveniles →](/catequesis/juveniles-post-comunion/)
+[Juveniles](/catequesis/juveniles-post-comunion/)
 
 Jóvenes
 
 Preparación para la Confirmación.
 
-[Jóvenes →](/catequesis/jovenes-confirmacion/)
+[Jóvenes](/catequesis/jovenes-confirmacion/)
 
 Familia
 
 Escuela de Padres y formación familiar.
 
-[Familia →](/catequesis/familia-escuela-de-padres/)
+[Familia](/catequesis/familia-escuela-de-padres/)
 
 Escuela de Cristianismo
 
 Formación para adultos en la fe.
 
-[Escuela →](/catequesis/escuela-de-cristianismo/)
+[Escuela](/catequesis/escuela-de-cristianismo/)
 
 Inscripción
 
 Inscríbete en nuestras actividades.
 
-[Inscribirse →](/catequesis/inscripcion/)
+[Inscribirse](/catequesis/inscripcion/)

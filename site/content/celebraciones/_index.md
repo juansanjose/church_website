@@ -19,22 +19,22 @@ Misas, sacramentos y celebraciones especiales en nuestra parroquia.
 
 Información sobre matrimonios, preparación y reserva de fechas.
 
-[Matrimonios →](/celebraciones/matrimonios)
+[Matrimonios](/celebraciones/matrimonios)
 
 ## Bautismos
 
 Bautismos y preparación para los sacramentos.
 
-[Bautismos →](/celebraciones/bautismos)
+[Bautismos](/celebraciones/bautismos)
 
 ## Horarios
 
 Consulta los horarios de misas y celebraciones.
 
-[Ver horarios →](/celebraciones/horarios/)
+[Ver horarios](/celebraciones/horarios/)
 
 ## Tiempos Litúrgicos
 
 Conoce el calendario litúrgico y el significado de sus celebraciones.
 
-[Tiempos Litúrgicos →](/celebraciones/tiempos-liturgicos/)
+[Tiempos Litúrgicos](/celebraciones/tiempos-liturgicos/)

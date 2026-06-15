@@ -17,28 +17,28 @@ Formación
 
 Textos recomendados para profundizar en la fe.
 
-[Ver textos →](/category/textos-recomendados/)
+[Ver textos](/category/textos-recomendados/)
 
 Tradición
 
 Grandes maestros de la espiritualidad.
 
-[Ver tradición →](/category/tradicion-grandes-maestros/)
+[Ver tradición](/category/tradicion-grandes-maestros/)
 
 San Pablo
 
 Escritos de nuestro patrono.
 
-[Ver textos →](/category/textos-san-pablo-de-la-cruz/)
+[Ver textos](/category/textos-san-pablo-de-la-cruz/)
 
 Tesoros
 
 Tesoros culturales permanentes.
 
-[Ver tesoros →](/category/tesoros-culturales-permanentes/)
+[Ver tesoros](/category/tesoros-culturales-permanentes/)
 
 Enlaces
 
 Enlaces recomendados por su contenido.
 
-[Ver enlaces →](/category/enlaces-recomendados/)
+[Ver enlaces](/category/enlaces-recomendados/)
