@@ -19,4 +19,4 @@ Para lograr paulatinamente la autofinanciación de la Iglesia, que es una condic
 
 [![apoyanos](/images/wp-content/2015/03/apoyanos-300x225.jpg)](/images/wp-content/2015/03/apoyanos.jpg)
 
-[Enviar un correo a la parroquia →](mailto:sanpablodelacruz@gmail.com)
+[Enviar un correo a la parroquia](mailto:sanpablodelacruz@gmail.com)

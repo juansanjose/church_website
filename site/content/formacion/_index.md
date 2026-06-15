@@ -8,7 +8,7 @@ source: "wordpress-localhost"
 page_class: "content--cards"
 description: "Grupos de formación de la Parroquia San Pablo de la Cruz."
 custom_css: |
-  .page--formacion.content--cards {
+  .page--formacion {
     display: block;
   }
   .formacion-grid {
@@ -22,9 +22,32 @@ custom_css: |
     flex-direction: column;
     padding: 1.5rem;
     border: 1px solid var(--border);
+    border-top: 4px solid var(--card-accent, var(--green));
     border-radius: var(--radius);
     background: var(--bg);
     box-shadow: var(--shadow-sm);
+  }
+  .formacion-card--infantiles {
+    --card-accent: #c9a55c;
+  }
+  .formacion-card--juveniles {
+    --card-accent: #3d6144;
+  }
+  .formacion-card--universitarios {
+    --card-accent: #506b8b;
+  }
+  .formacion-card--inscripcion {
+    --card-accent: #8b5f68;
+  }
+  .formacion-card__icon {
+    display: grid;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    place-items: center;
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--card-accent) 14%, white);
+    font-size: 1.5rem;
   }
   .formacion-card h2 {
     margin: 0 0 0.75rem;
@@ -60,24 +83,28 @@ custom_css: |
 Grupos de formación para todas las edades en nuestra parroquia.
 
 <div class="formacion-grid">
-  <article class="formacion-card">
+  <article class="formacion-card formacion-card--infantiles">
+    <span class="formacion-card__icon" aria-hidden="true">🧒</span>
     <h2>Infantiles</h2>
     <p>Preparación para la Primera Comunión. Niños de 8 años en adelante.</p>
-    <a href="/catequesis/infantiles-primera-comunion/">Acceder →</a>
+    <a href="/catequesis/infantiles-primera-comunion/">Acceder</a>
   </article>
-  <article class="formacion-card">
+  <article class="formacion-card formacion-card--juveniles">
+    <span class="formacion-card__icon" aria-hidden="true">🌱</span>
     <h2>Juveniles</h2>
     <p>Grupo de jóvenes Post-Comunión. Convivencias, retiros y formación cristiana.</p>
-    <a href="/catequesis/juveniles-post-comunion/">Acceder →</a>
+    <a href="/catequesis/juveniles-post-comunion/">Acceder</a>
   </article>
-  <article class="formacion-card">
+  <article class="formacion-card formacion-card--universitarios">
+    <span class="formacion-card__icon" aria-hidden="true">🎓</span>
     <h2>Universitarios</h2>
     <p>Espacio de encuentro y reflexión para jóvenes universitarios.</p>
-    <a href="/catequesis/jovenes-confirmacion/">Acceder →</a>
+    <a href="/catequesis/jovenes-confirmacion/">Acceder</a>
   </article>
-  <article class="formacion-card">
+  <article class="formacion-card formacion-card--inscripcion">
+    <span class="formacion-card__icon" aria-hidden="true">✍️</span>
     <h2>Inscripción</h2>
     <p>Inscríbete en nuestros grupos de formación.</p>
-    <a href="/formacion/inscripcion/">Inscripción →</a>
+    <a href="/formacion/inscripcion/">Inscripción</a>
   </article>
 </div>
