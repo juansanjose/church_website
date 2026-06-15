@@ -7,6 +7,9 @@ url: "/noticias-de-la-parroquia-2/mercadillo-2025/"
 source: "wordpress-localhost"
 show_title: true
 description: "Amigos,Os invitamos al MERCADILLO que cada año se realiza en nuestra Parroquia San Pablo de la Cruz, Avenida de los Madroños, 40 -28043- Madrid. Como siempre, encontraréis dulces caseros, manualidades, objetos usados, libros, bisutería y la"
+build:
+  list: never
+  render: always
 ---
 
 Amigos,
