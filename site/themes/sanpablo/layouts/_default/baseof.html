@@ -7,7 +7,12 @@
   <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta name="theme-color" content="#1a472a">
   <link rel="canonical" href="{{ .Permalink }}">
-  {{ $style := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
+  {{ $base := resources.Get "css/01-base.css" }}
+  {{ $layout := resources.Get "css/02-layout.css" }}
+  {{ $components := resources.Get "css/03-components.css" }}
+  {{ $content := resources.Get "css/04-content.css" }}
+  {{ $pages := resources.Get "css/05-pages.css" }}
+  {{ $style := slice $base $layout $components $content $pages | resources.Concat "css/main.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
   {{ with .Params.custom_css }}
   <style>

@@ -2,16 +2,11 @@
 title: "Juveniles y Post Comunión"
 slug: "juveniles-post-comunion"
 date: "2026-05-15T16:48:26"
-lastmod: "2026-05-15T16:48:26"
+lastmod: "2026-06-07T10:00:00"
 url: "/catequesis/juveniles-post-comunion/"
 source: "wordpress-localhost"
-show_title: false
-description: "🌱 Juveniles – Post Comunión Grupo de formación cristiana para jóvenes Los horarios de Catequesis de Post Comunión este año son: Cada domingo después de la misa de 11:30 Se recomienda especialmente la fidelidad a la celebración de la Eucaris"
+description: "Grupo de formación cristiana para jóvenes."
 ---
-
-🌱
-
-# Juveniles – Post Comunión
 
 Grupo de formación cristiana para jóvenes
 

@@ -2,16 +2,11 @@
 title: "Infantiles – Primera Comunión"
 slug: "infantiles-primera-comunion"
 date: "2026-05-17T23:53:21"
-lastmod: "2026-05-17T23:53:21"
+lastmod: "2026-06-07T10:00:00"
 url: "/catequesis/infantiles-primera-comunion/"
 source: "wordpress-localhost"
-show_title: false
-description: "🧒 Infantiles – Primera Comunión Preparación para el sacramento de la Primera Comunión Los horarios de Catequesis de Primera Comunión este año son cada Miércoles a las 18:00 h. La formación de Catequistas: Miércoles alternos a las 17:00 h. C"
+description: "Preparación para el sacramento de la Primera Comunión."
 ---
-
-🧒
-
-# Infantiles – Primera Comunión
 
 Preparación para el sacramento de la Primera Comunión
 

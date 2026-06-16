@@ -88,15 +88,66 @@ If `hugo --minify` fails:
 - Fix the error (usually invalid Markdown or front matter YAML)
 - Re-run the build check
 
-## 6. Prohibited Actions
+## 6. CSS Architecture & Content Styling
+
+The theme uses a **modular CSS system** split into logical files:
+
+```
+site/themes/sanpablo/assets/css/
+├── 01-base.css      # Variables, reset, base typography
+├── 02-layout.css    # Header, nav, footer, container
+├── 03-components.css # Buttons, cards, tables, breadcrumbs
+├── 04-content.css   # Default .content class (clean, neutral)
+└── 05-pages.css     # Home, gallery, error overrides
+```
+
+### Default content styling: `.content`
+
+All Markdown content is wrapped in a `.content` container. It provides:
+- Clean heading hierarchy with gold bottom borders on `h2`
+- Proper paragraph spacing and line height
+- Styled links (colored, underlined) — **never auto-converted to buttons**
+- Clean tables, lists, blockquotes, and images
+
+### Per-page modifiers
+
+Use front matter to customize styling per page:
+
+**`page_class`** — adds CSS class to the page wrapper:
+```yaml
+---
+title: "Catequesis"
+page_class: "content--cards"
+---
+```
+
+Available modifiers:
+- `content--cards` — Turns heading+text+link sections into styled cards with pill buttons
+
+**`custom_css`** — injects raw CSS for one-off overrides:
+```yaml
+---
+title: "Mi Página Especial"
+custom_css: |
+  .content h2 { color: #8b0000; }
+---
+```
+
+### When to modify CSS
+
+- **Content edits only** — no CSS changes needed (default `.content` handles everything)
+- **Layout changes** — ask the user before editing templates or CSS files
+- **Per-page tweaks** — use `custom_css` or `page_class` front matter
+
+## 7. Prohibited Actions
 
 - NEVER edit files outside `site/content/` and `site/static/images/`
-- NEVER modify `hugo.toml`, layouts, or CSS without explicit permission
+- NEVER modify `hugo.toml`, layouts, or CSS files without explicit permission
 - NEVER commit without running `hugo --minify` first
 - NEVER use inline HTML unless absolutely necessary (use Markdown)
 - NEVER delete archived WordPress files in `archive/legacy-wordpress/`
 
-## 7. UX Improvement Guidelines
+## 8. UX Improvement Guidelines
 
 When editing or creating content:
 
@@ -107,7 +158,7 @@ When editing or creating content:
 - **Load performance:** Optimize images before adding; use Hugo image processing for heavy galleries
 - **Accessibility:** Always add `alt` text; use descriptive link text (not "click here")
 
-## 8. Code Quality Checklist
+## 9. Code Quality Checklist
 
 For any structural or template changes:
 

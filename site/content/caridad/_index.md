@@ -9,7 +9,7 @@ show_title: true
 description: "La propuesta de la acción caritativa, responde a unos motivos claros. No se trata de dar curso a acciones filantrópicas o de pretender ofrecer con tales iniciativas respuestas exhaustivas a necesidades a menudo vastas y complejas; sino de a"
 ---
 
-[![Van Gogh - El buen samaritano](/images/wp-content/2015/03/samaritano-242x300.jpg)](/images/wp-content/2015/03/samaritano.jpg)
+![Van Gogh - El buen samaritano](/images/wp-content/2015/03/samaritano.jpg)
 
 _Van Gogh – El buen samaritano_
 
@@ -28,7 +28,7 @@ Nosotros hacemos acción caritativa para aprender a vivir como Cristo
 
 Bastaría incluso con participar una vez al mes.
 
-![bartimeo](/images/wp-content/2015/03/bartimeo-257x300.gif)
+![bartimeo](/images/wp-content/2015/03/bartimeo.gif)
 
 **Acción Caritativa de la Parroquia:**
 - **Campaña Especial de Navidad** : Con ella contribuimos al Banco de Alimentos y de otras necesidades de la Parroquia y de la zona de nuestro Arciprestazgo. Tradicionalmente esta campaña se centra en las tres semanas anteriores al día de Navidad. Cada año, **El Mercadillo de Navidad** se suma al a campaña proponiendonos nuevas ideas.

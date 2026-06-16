@@ -1,0 +1,264 @@
+/* ========================================
+   05-pages.css — Page-Specific Overrides
+   ======================================== */
+
+/* ========================================
+   Homepage
+   ======================================== */
+
+.home-spacer {
+  height: 0;
+}
+
+.home-grid {
+  display: grid;
+}
+
+@media (min-width: 768px) {
+  .home-grid {
+    grid-template-columns: 1fr 1fr;
+    min-height: calc(100vh - 60px);
+  }
+}
+
+.home-slideshow {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: min(72vw, 280px);
+  gap: 12px;
+  padding: 16px 20px 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  background: var(--bg-warm);
+}
+
+@media (min-width: 768px) {
+  .home-slideshow {
+    position: relative;
+    display: block;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+    background: #ddd;
+  }
+}
+
+.home-slide {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  opacity: 1;
+  scroll-snap-align: center;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+@media (min-width: 768px) {
+  .home-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    opacity: 0;
+    border-radius: 0;
+    box-shadow: none;
+    transition: opacity 1.5s;
+  }
+
+  .home-slide.is-active {
+    opacity: 1;
+  }
+}
+
+.home-times {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 24px;
+  background: var(--bg-warm);
+  text-align: center;
+}
+
+.home-times__title {
+  font-family: Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+  color: var(--green-dark);
+}
+
+.home-time-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 280px;
+}
+
+.home-time-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.home-time-card h2 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--green);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.home-time-card p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+.home-times__button {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 28px;
+  background: var(--green);
+  color: white;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.home-times__button:hover {
+  background: var(--green-dark);
+  color: white;
+}
+
+/* Welcome section */
+.home-welcome {
+  padding: 60px 0;
+  text-align: center;
+  background: white;
+}
+
+.home-welcome__title {
+  font-family: Georgia, serif;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 400;
+  color: var(--green-dark);
+  margin-bottom: 16px;
+}
+
+.home-welcome__text {
+  font-size: 1.15rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Quick links */
+.home-quick-links {
+  padding: 40px 0 60px;
+  background: var(--bg-warm);
+}
+
+.quick-links-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .quick-links-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.quick-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 32px 24px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.quick-link:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+  color: inherit;
+}
+
+.quick-link__icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.quick-link__title {
+  font-family: Georgia, serif;
+  font-size: 1.25rem;
+  color: var(--green-dark);
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.quick-link__desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ========================================
+   Gallery pages
+   ======================================== */
+
+.page--galeria-fotografica .content,
+.page--galeria-de-eventos .content {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.page--galeria-fotografica .content > :not(p:has(img)),
+.page--galeria-de-eventos .content > :not(p:has(img)) {
+  grid-column: 1 / -1;
+}
+
+.page--galeria-fotografica .content img,
+.page--galeria-de-eventos .content img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin: 0;
+}
+
+/* ========================================
+   Error page
+   ======================================== */
+
+.error-page {
+  min-height: 60vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 16px;
+  padding: 40px 20px;
+}
+
+/* ========================================
+   Sticky header scroll state
+   ======================================== */
+
+.site-header.is-scrolled {
+  box-shadow: var(--shadow-sm);
+}

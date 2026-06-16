@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="page page--{{ .Slug }}">
+<div class="page page--{{ .Slug }}{{ with .Params.page_class }} {{ . }}{{ end }}">
   <header class="page-header">
     <div class="container">
       <h1 class="page-title">{{ .Title }}</h1>
@@ -20,7 +20,7 @@
 
     <div class="page-content">
       {{ if .Content }}
-      <div class="prose content-prose">
+      <div class="content">
         {{ .Content }}
       </div>
       {{ end }}

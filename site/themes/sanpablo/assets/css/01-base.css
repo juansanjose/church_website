@@ -1,0 +1,60 @@
+/* ========================================
+   01-base.css — Design Tokens & Reset
+   ======================================== */
+
+/* Variables */
+:root {
+  --green: #2d4a33;
+  --green-dark: #1a2f1e;
+  --green-light: #3d6144;
+  --gold: #c9a55c;
+  --bg: #ffffff;
+  --bg-warm: #f8f7f4;
+  --text: #1a1a1a;
+  --text-light: #555555;
+  --text-muted: #777777;
+  --border: #e8e8e8;
+  --radius: 10px;
+  --radius-pill: 100px;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --max-content: 720px;
+  --max-container: 1100px;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: var(--green-dark);
+}
