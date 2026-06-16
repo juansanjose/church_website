@@ -2,19 +2,14 @@
 title: "Jóvenes y Confirmación"
 slug: "jovenes-confirmacion"
 date: "2026-05-15T16:47:54"
-lastmod: "2026-05-15T16:47:54"
+lastmod: "2026-06-07T10:00:00"
 url: "/catequesis/jovenes-confirmacion/"
 source: "wordpress-localhost"
-show_title: false
-description: "🌿 Grupo de Jóvenes Enlace Grupo de Jóvenes WhatsApp: https://chat.whatsapp.com/Bha2cAq5QAK9aKLiz5X4Fq Nos reunimos los Sábados para celebrar la misa de 20:00h y luego a continuación tenemos un encuentro de formación, testimonios y convivenc"
+description: "Grupo de Jóvenes – Formación, testimonios y convivencia."
 ---
 
-🌿
-
-# Grupo de Jóvenes
-
 **Enlace Grupo de Jóvenes WhatsApp:**
-[https://chat.whatsapp.com/Bha2cAq5QAK9aKLiz5X4Fq](https://chat.whatsapp.com/Bha2cAq5QAK9aKLiz5X4Fq?mode=ems_copy_t)
+[https://chat.whatsapp.com/Bha2cAq5QAK9aKLiz5X4Fq](https://chat.whatsapp.com/Bha2cAq5QAK9aKLiz5X4Fq)
 
 Nos reunimos los **Sábados para celebrar la misa de 20:00h** y luego a continuación tenemos un encuentro de formación, testimonios y convivencia.
 

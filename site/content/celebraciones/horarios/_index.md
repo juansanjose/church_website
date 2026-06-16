@@ -2,20 +2,17 @@
 title: "Horarios"
 slug: "horarios"
 date: "2026-05-23T23:56:30"
-lastmod: "2026-05-23T23:56:30"
+lastmod: "2026-06-07T10:00:00"
 url: "/celebraciones/horarios/"
 source: "wordpress-localhost"
-show_title: false
-description: "Horarios de Celebraciones Encuentra aqui todos los horarios de misas y celebraciones de nuestra parroquia Verano (aproximadamente de marzo a octubre): Las misas de tarde son a las 20:00. Invierno (aproximadamente de octubre a marzo): Las mi"
+description: "Horarios de misas y celebraciones de la Parroquia San Pablo de la Cruz."
 ---
 
-# Horarios de Celebraciones
+Encuentra aquí todos los horarios de misas y celebraciones de nuestra parroquia.
 
-Encuentra aqui todos los horarios de misas y celebraciones de nuestra parroquia
+**Verano (marzo a octubre):** Las misas de tarde son a las **20:00**.
 
-**Verano (aproximadamente de marzo a octubre):** Las misas de tarde son a las **20:00**.
-
-**Invierno (aproximadamente de octubre a marzo):** Las misas de tarde son a las **19:30**.
+**Invierno (octubre a marzo):** Las misas de tarde son a las **19:30**.
 
 ## Horario de Misas
 
@@ -25,7 +22,7 @@ Encuentra aqui todos los horarios de misas y celebraciones de nuestra parroquia
 | Tarde / (Verano) | 20:00 | 20:00 | 20:00 | 20:00 | 20:00 | 20:00** | 20:00 |
 | Tarde / (Invierno) | 19:30 | 19:30 | 19:30 | 19:30 | 19:30 | 20:00** | 20:00 |
 
- _** Misa de Jovenes_
+_** Misa de Jóvenes_
 
 ### Despacho Parroquial
 

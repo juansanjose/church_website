@@ -1,0 +1,160 @@
+/* ========================================
+   03-components.css — Reusable Components
+   ======================================== */
+
+/* Buttons (explicit only — never auto-generated) */
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn--primary {
+  background: var(--green);
+  color: white;
+}
+
+.btn--primary:hover {
+  background: var(--green-dark);
+  color: white;
+}
+
+.btn--secondary {
+  background: white;
+  color: var(--green-dark);
+  border: 1px solid var(--border);
+}
+
+.btn--secondary:hover {
+  background: var(--bg-warm);
+}
+
+/* Page header */
+.page-header {
+  background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+  color: white;
+  padding: 40px 0 32px;
+  margin-bottom: 40px;
+}
+
+.page-title {
+  font-family: Georgia, serif;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.page-subtitle {
+  font-size: 1.1rem;
+  margin-top: 8px;
+  opacity: 0.85;
+}
+
+/* Page content wrapper */
+.page-content {
+  max-width: var(--max-content);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  max-width: var(--max-content);
+  margin: 0 auto 20px;
+  padding: 0 20px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.breadcrumbs a {
+  color: var(--green);
+}
+
+/* Entry cards (used in list pages) */
+.entry-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+  margin-top: 32px;
+  align-items: stretch;
+}
+
+@media (min-width: 640px) {
+  .entry-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.entry-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 24px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.entry-link:hover {
+  border-color: var(--green);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  color: inherit;
+}
+
+.entry-item {
+  height: 100%;
+}
+
+.entry-title {
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  color: var(--green-dark);
+  margin-bottom: 8px;
+}
+
+.entry-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.entry-more {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+/* Page footer meta */
+.page-footer {
+  max-width: var(--max-content);
+  margin: 40px auto 0;
+  padding: 20px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border);
+}
+
+.page-meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}

@@ -1,0 +1,360 @@
+/* ========================================
+   04-content.css — Default Content Styling
+   ========================================
+
+   This is the default styling for all Markdown content.
+   It is clean, neutral, and readable.
+   Use front matter modifiers for custom layouts per page.
+
+   Available modifiers:
+   - .content--cards   : Turns heading+text+link sections into cards
+*/
+
+.content {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.content > * + * {
+  margin-top: 1.25rem;
+}
+
+/* Headings */
+.content h1 {
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--green-dark);
+  line-height: 1.2;
+  margin-top: 2rem;
+}
+
+.content h2 {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--green-dark);
+  margin-top: 2rem;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--gold);
+}
+
+.content h3 {
+  font-family: Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--green);
+  margin-top: 1.5rem;
+}
+
+.content h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 1.25rem;
+}
+
+/* First heading has no top margin */
+.content > h1:first-child,
+.content > h2:first-child,
+.content > h3:first-child {
+  margin-top: 0;
+}
+
+/* Paragraphs */
+.content p {
+  color: var(--text-light);
+}
+
+.content p:first-child {
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+/* Links — styled as links, never buttons */
+.content a {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.content a:hover {
+  color: var(--green-dark);
+}
+
+/* Images — full width by default */
+.content img {
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Small inline images (in links, emojis, icons) */
+.content a img,
+.content p img[src*="icon"],
+.content p img[src*="emoji"] {
+  width: auto;
+  max-height: none;
+  object-fit: none;
+}
+
+/* Blockquotes */
+.content blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 3px solid var(--gold);
+  background: var(--bg-warm);
+  font-style: italic;
+  color: var(--text-light);
+}
+
+.content blockquote p:first-child {
+  color: var(--text-light);
+  font-size: 1.05rem;
+}
+
+/* Lists */
+.content ul,
+.content ol {
+  padding-left: 1.5rem;
+  color: var(--text-light);
+}
+
+.content li + li {
+  margin-top: 0.5rem;
+}
+
+/* Tables */
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.content th,
+.content td {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+.content th {
+  background: var(--green);
+  color: white;
+}
+
+.content tr:nth-child(even) {
+  background: var(--bg-warm);
+}
+
+@media (max-width: 640px) {
+  .content table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+/* ========================================
+   Schedule / Timetable Tables
+   ======================================== */
+
+.content table.schedule {
+  border: none;
+  font-size: 1rem;
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.content table.schedule th {
+  background: var(--green-dark);
+  padding: 14px 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.85rem;
+}
+
+.content table.schedule td {
+  padding: 12px 16px;
+  border: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.content table.schedule tr:last-child td {
+  border-bottom: none;
+}
+
+.content table.schedule tr:nth-child(even) {
+  background: white;
+}
+
+.content table.schedule tr:hover {
+  background: var(--bg-warm);
+}
+
+/* Highlight Sunday column */
+.content table.schedule td:last-child {
+  background: rgba(201, 165, 92, 0.08);
+  font-weight: 600;
+}
+
+/* Horizontal rule */
+.content hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+/* Strong / bold */
+.content strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* ========================================
+   Modifier: .content--cards
+   ======================================== */
+
+/* When a page uses `page_class: "content--cards"` in front matter,
+   sections become styled cards.
+   
+   Expected structure per card:
+   ## Heading
+   Description paragraph
+   [Link text](/path)
+*/
+
+.content--cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Card header */
+.content--cards > h2,
+.content--cards > h3 {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius) var(--radius) 0 0;
+  padding: 24px 24px 16px;
+  margin: 0;
+  border-bottom: none;
+  font-size: 1.35rem;
+}
+
+/* Card body paragraphs */
+.content--cards > h2 + p,
+.content--cards > h3 + p,
+.content--cards > h2 + p + p,
+.content--cards > h3 + p + p {
+  background: white;
+  border: 1px solid var(--border);
+  border-top: none;
+  border-bottom: none;
+  padding: 0 24px;
+  margin: 0;
+}
+
+/* Last paragraph (usually has the link) */
+.content--cards > h2 + p:last-child,
+.content--cards > h3 + p:last-child,
+.content--cards > h2 + p + p:last-child,
+.content--cards > h3 + p + p:last-child {
+  border-radius: 0 0 var(--radius) var(--radius);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 24px;
+}
+
+/* Single paragraph after heading */
+.content--cards > h2 + p:only-of-type,
+.content--cards > h3 + p:only-of-type {
+  border-radius: 0 0 var(--radius) var(--radius);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 24px;
+}
+
+/* Links inside cards become buttons */
+.content--cards p > a:only-child {
+  display: inline-block;
+  padding: 10px 24px;
+  background: var(--green);
+  color: white;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-top: 12px;
+}
+
+.content--cards p > a:only-child:hover {
+  background: var(--green-dark);
+  color: white;
+}
+
+/* ========================================
+   Accordion / Toggleable Sections
+   ======================================== */
+
+/* Use <details> and <summary> in Markdown for collapsible sections */
+.content details {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+.content details[open] {
+  box-shadow: var(--shadow-sm);
+}
+
+.content summary {
+  padding: 16px 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--green-dark);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.content summary:hover {
+  background: var(--bg-warm);
+}
+
+.content summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  color: var(--gold);
+  font-weight: 300;
+}
+
+.content details[open] summary::after {
+  content: '−';
+}
+
+.content details > *:not(summary) {
+  padding: 0 20px 16px;
+  margin: 0;
+}
+
+/* Past events — faded */
+.content .event--past {
+  opacity: 0.5;
+}
+
+.content .event--past summary {
+  color: var(--text-muted);
+}
+
+.content .event--past:hover {
+  opacity: 0.75;
+}
