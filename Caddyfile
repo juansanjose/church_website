@@ -31,3 +31,6 @@ www.sanpablodelacruz.com {
 sanpablodelacruz.com {
     redir https://www.sanpablodelacruz.com{uri} permanent
 }
+
+# Additional independently deployed sites
+import /etc/caddy/sites/*.caddy
