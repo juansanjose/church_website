@@ -12,6 +12,7 @@ disableKinds = ['taxonomy', 'term']
   author = 'Parroquia San Pablo de la Cruz'
   phone = '91 300 29 81'
   mobile = '628 223 783'
+  mobile2 = '607 883 119'
   email = 'sanpablodelacruz@gmail.com'
   address = 'Avenida de los Madroños, 40, 28043 Madrid'
 
@@ -32,6 +33,10 @@ disableKinds = ['taxonomy', 'term']
     name = 'Formación'
     url = '/formacion/'
     weight = 40
+  [[menu.main]]
+    name = 'Donar'
+    url = '/donaciones/'
+    weight = 50
 
 [taxonomies]
   tag = 'tags'

@@ -60,7 +60,7 @@
 .page-content {
   max-width: var(--max-content);
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px 48px;
 }
 
 /* Breadcrumbs */

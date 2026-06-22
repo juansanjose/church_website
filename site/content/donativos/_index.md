@@ -1,21 +1,32 @@
 ---
-title: "Donativos"
-slug: "donativos"
+title: "Donaciones"
+slug: "donaciones"
 date: "2026-05-15T20:23:12"
-lastmod: "2026-06-07T10:00:00"
-url: "/donativos/"
+lastmod: "2026-06-22T00:00:00+02:00"
+url: "/donaciones/"
+aliases:
+  - "/donativos/"
 source: "wordpress-localhost"
-description: "Su contribución nos ayuda a mantener nuestra misión y actividades pastorales."
+description: "Haz una donación a la Parroquia San Pablo de la Cruz mediante transferencia bancaria o Bizum."
+custom_css: |
+  .page--donaciones .content img {
+    max-height: none;
+    object-fit: contain;
+  }
 ---
 
-Su contribución nos ayuda a mantener nuestra misión y actividades pastorales.
+Tu contribución nos ayuda a mantener la misión y las actividades pastorales de nuestra parroquia.
 
-## Banco Santander
+![Información para realizar donaciones a la Parroquia San Pablo de la Cruz](/images/donaciones/donativos-parroquia.png)
 
-**ES17 0049 6038 1527 9304 5334**
+## Transferencia bancaria
+
+**Banco Santander**
+
+**IBAN: ES17 0049 6038 1527 9304 5334**
 
 ## Bizum
 
-**00155**
+**Código: 00155**
 
-_¡Gracias por su generosidad!_
+_¡Gracias por tu generosidad!_

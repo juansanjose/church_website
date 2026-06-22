@@ -105,6 +105,22 @@
   color: var(--green);
 }
 
+.nav-item--donate .nav-link {
+  background: var(--gold);
+  color: var(--green-dark);
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 10px 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.nav-item--donate .nav-link:hover,
+.nav-item--donate.nav-item--active .nav-link {
+  background: var(--green-dark);
+  color: white;
+}
+
 @media (min-width: 768px) {
   .nav-toggle {
     display: none;
@@ -179,7 +195,14 @@
   color: var(--gold);
 }
 
-.footer-contact {
+.footer-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-contact,
+.footer-donate {
   display: inline-block;
   padding: 10px 24px;
   background: white;
@@ -190,9 +213,14 @@
   text-decoration: none;
 }
 
-.footer-contact:hover {
+.footer-contact:hover,
+.footer-donate:hover {
   background: var(--gold);
   color: var(--green-dark);
+}
+
+.footer-donate {
+  background: var(--gold);
 }
 
 .footer-social p {
