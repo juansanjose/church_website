@@ -195,14 +195,7 @@
   color: var(--gold);
 }
 
-.footer-actions {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.footer-contact,
-.footer-donate {
+.footer-contact {
   display: inline-block;
   padding: 10px 24px;
   background: white;
@@ -213,14 +206,9 @@
   text-decoration: none;
 }
 
-.footer-contact:hover,
-.footer-donate:hover {
+.footer-contact:hover {
   background: var(--gold);
   color: var(--green-dark);
-}
-
-.footer-donate {
-  background: var(--gold);
 }
 
 .footer-social p {
