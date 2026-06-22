@@ -8,16 +8,9 @@ aliases:
   - "/donativos/"
 source: "wordpress-localhost"
 description: "Haz una donación a la Parroquia San Pablo de la Cruz mediante transferencia bancaria o Bizum."
-custom_css: |
-  .page--donaciones .content img {
-    max-height: none;
-    object-fit: contain;
-  }
 ---
 
 Tu contribución nos ayuda a mantener la misión y las actividades pastorales de nuestra parroquia.
-
-![Información para realizar donaciones a la Parroquia San Pablo de la Cruz](/images/donaciones/donativos-parroquia.png)
 
 ## Transferencia bancaria
 
