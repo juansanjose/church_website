@@ -43,6 +43,7 @@ Key rules:
 - [x] Test everything locally first
 - [x] Run `hugo --minify` and verify 0 errors before commit
 - [x] BACKUP before major changes via `make archive`
+- [x] ALWAYS commit and push completed changes to `origin/main`
 
 ## Legacy WordPress
 
@@ -91,5 +92,6 @@ Custom minimal theme in `site/themes/sanpablo/`:
 Site parameters in `site/hugo.toml`:
 - Phone: 91 300 29 81
 - Mobile: 628 223 783
+- Additional mobile: 607 883 119
 - Email: sanpablodelacruz@gmail.com
 - Address: Avenida de los Madroños, 40, 28043 Madrid
