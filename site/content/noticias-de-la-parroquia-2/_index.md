@@ -2,7 +2,7 @@
 title: "Noticias"
 slug: "noticias-de-la-parroquia-2"
 date: "2026-05-23T23:56:45"
-lastmod: "2026-06-14T10:00:00"
+lastmod: "2026-06-22T20:31:59+02:00"
 url: "/noticias-de-la-parroquia-2/"
 source: "wordpress-localhost"
 description: "Últimas noticias, eventos y actividades de la Parroquia San Pablo de la Cruz."
@@ -38,7 +38,11 @@ custom_css: |
 
 ## Próximos Eventos
 
-No hay eventos programados actualmente. Vuelve pronto para conocer las próximas actividades de nuestra parroquia.
+### Actividad de verano 2026
+
+Los días **24 y 29 de junio** y **1, 6 y 8 de julio**, de **16:30 a 18:30**, tendremos películas, actividades y mucho más. Una oportunidad para compartir, divertirse y crecer en amistad y fe.
+
+[Consulta toda la información sobre la actividad de verano](/noticias-de-la-parroquia-2/actividad-verano-2026/)
 
 ---
 
