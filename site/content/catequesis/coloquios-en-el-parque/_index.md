@@ -2,11 +2,11 @@
 title: "Coloquios en el Parque"
 slug: "coloquios-en-el-parque"
 date: "2015-03-15T16:11:33"
-lastmod: "2015-03-15T16:11:33"
+lastmod: "2026-06-23T00:00:00+02:00"
 url: "/catequesis/coloquios-en-el-parque/"
 source: "wordpress-localhost"
 show_title: true
-description: "La Iglesia es «una realidad viviente que no envejecerá nunca», cuya «fuerza es una fuerza presente» (John Henry Newman), un hecho presente que es un gusto de vida nueva y que, como tal, juzga con criterio propio toda la existencia, personal"
+description: "Coloquios sobre la fe cristiana como experiencia viva capaz de iluminar la existencia personal y la realidad contemporánea."
 ---
 
 La Iglesia es «una realidad viviente que no envejecerá nunca», cuya «fuerza es una fuerza presente» (John Henry Newman), un hecho presente que es un gusto de vida nueva y que, como tal, juzga con criterio propio toda la existencia, personal y social.

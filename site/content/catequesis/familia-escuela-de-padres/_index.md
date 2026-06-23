@@ -2,11 +2,11 @@
 title: "Familia – Escuela de Padres"
 slug: "familia-escuela-de-padres"
 date: "2015-03-15T15:54:44"
-lastmod: "2015-03-15T15:54:44"
+lastmod: "2026-06-23T00:00:00+02:00"
 url: "/catequesis/familia-escuela-de-padres/"
 source: "wordpress-localhost"
 show_title: true
-description: "“Educar para la sociedad de hoy: Escuelas de Familias” Enseñarás a volar, pero no volarán tu vuelo. Enseñarás a soñar, pero no soñarán tu sueño. Enseñarás a vivir, pero no vivirán tu vida. Sin embargo…en cada vuelo, en cada vida, en cada su"
+description: "Escuela de familias para acompañar a los padres en la educación integral y personalizada de sus hijos."
 ---
 
 ### “Educar para la sociedad de hoy: Escuelas de Familias”
@@ -45,7 +45,7 @@ Afortunadamente, las investigaciones en el área del comportamiento humano han h
 En la sociedad actual hay que educar en FUTURO. El futuro no es consecuencia de un azar, hay que luchar por conseguirlo. El futuro lo estamos haciendo entre todos Cada familia presta su colaboración al esforzarse en ayudar a sus hijos a ser personas libres y responsables Es necesario formarse, prepararse y mejor aún, profesionalizarse.
 Educar no es fácil, el ambiente a veces juega en contra, pero también tenemos al alcance de la mano unos conocimientos capaces de convertir lo difícil, en posible.
 
-[![graficopef2](/images/wp-content/2015/03/graficopef2-300x231.png)](/images/wp-content/2015/03/graficopef2.png)
+[![Gráfico del Proyecto Educativo Familiar](/images/wp-content/2015/03/graficopef2-300x231.png)](/images/wp-content/2015/03/graficopef2.png)
 
 ### Objetivos:
 
@@ -61,9 +61,9 @@ Las Escuelas se organizan por grupos en edades similares C/C (Círculos de Calid
 
 El tratamiento de los temas más confidenciales, se realiza con el Asesor en entrevistas personales para conseguir una ayuda particular a cada familia, o progenitor y hablar de cada uno de los hijos en particular. Además de disponibilidad total del Asesor por correo electrónico para hacer consultas o enviar documentación así como atención telefónica siempre que se necesite.
 
-**El P.E.F. Características propias**
+**El P. E. F.: características propias**
 
-[![graficopief](/images/wp-content/2015/03/graficopief-300x156.png)](/images/wp-content/2015/03/graficopief.png)
+[![Características del Proyecto Educativo Familiar](/images/wp-content/2015/03/graficopief-300x156.png)](/images/wp-content/2015/03/graficopief.png)
 
 **1ª.- Educación positiva:**
 
@@ -80,9 +80,9 @@ La Escuela se organiza por grupos en C/C con la participación de todos los padr
 – En los C/C se cuentan las experiencias positivas realizadas con los hijos y así, otros padres, pueden aprender de estas experiencias positivas.
 – En los cursos Virtuales, los C/C son virtuales.
 
-**4ª.- Sistema Activo Docente (S.A.D.):**
+**4.ª. Sistema Activo Docente (S. A. D.):**
 
-El S.A.D. es un sistema de enseñanza de alto rendimiento. Cuando una persona está motivada para aprender, el S.A.D. facilita el aprendizaje con menor esfuerzo. Los padres estudian en sus casas las tareas programadas, trabajan las guías de trabajo, actúan con los hijos a través de los Planes de Acción, exponen en los C/C sus experiencias y resuelven las dudas que surjan de los libros.
+El S. A. D. es un sistema de enseñanza de alto rendimiento. Cuando una persona está motivada para aprender, el S. A. D. facilita el aprendizaje con menor esfuerzo. Los padres estudian en sus casas las tareas programadas, trabajan las guías de trabajo, actúan con los hijos a través de los planes de acción, exponen en los C/C sus experiencias y resuelven las dudas que surjan de los libros.
 
 **5ª.- Los Planes de Acción:**
 
@@ -108,4 +108,4 @@ En las escuelas de familia el 90% del trabajo los padres lo realizan en su propi
 
 Los profesores y asesores elegidos realizan sus trabajos con carácter profesional.
 
-Profesora y Asesora: Maite Mijancos: maitemijancos@telefonica.net
+Profesora y asesora: Maite Mijancos (maitemijancos@telefonica.net)

@@ -2,11 +2,11 @@
 title: "Peregrinación – Retiro en Valencia"
 slug: "741-2"
 date: "2026-01-13T00:19:34"
-lastmod: "2026-01-13T00:19:34"
+lastmod: "2026-06-23T00:00:00+02:00"
 url: "/741-2/"
 source: "wordpress-localhost"
 show_title: true
-description: "Parroquia de San Pablo de la Cruz (Madrid) 3 días | 27 de febrero al 1 de marzo de 2026 | P.C. Precio 350 € por persona Programa Día 1 · Madrid – Godella 15:30 h encuentro en la Parroquia y salida dirección Godella, con parada en ruta. Lleg"
+description: "Peregrinación parroquial a Valencia, Godella y Uclés del 27 de febrero al 1 de marzo de 2026."
 ---
 
 Parroquia de San Pablo de la Cruz (Madrid)
@@ -24,7 +24,7 @@ Día 1 · Madrid – Godella
 - Llegada y celebración de la Eucaristía en la Abadía de San José. Cena, rezo de completas y descanso.
 
 Día 2 · Valencia – Albufera
-- Desayuno y salida hacia Valencia. Celebración de la Santa Misa en la Basílica de la Mare de Deu.
+- Desayuno y salida hacia Valencia. Celebración de la santa misa en la basílica de la Mare de Déu.
 - Charla de Vicente Navarro de Luján en el Palacio de Colomina – CEU.
 - Visita de la Lonja y tiempo libre en el Mercado Central. Almuerzo en la Malvarrosa.
 - Por la tarde, paseo en barca por la Albufera para contemplar el anochecer. Regreso al alojamiento, tertulia, cena, rezo de completas y descanso.
@@ -53,7 +53,7 @@ Condiciones y plazas
 - Consultar suplemento para grupo inferior y habitación individual.
 - Fecha límite de inscripción y pago: **30 de enero de 2026**.
 
-**Inscripciones online:**
+**Inscripciones en línea:**
 
 [
 Formulario de inscripción

@@ -2,11 +2,11 @@
 title: "Educación en la Caridad"
 slug: "educacion-en-la-caridad"
 date: "2015-03-15T14:51:48"
-lastmod: "2015-03-15T14:54:50"
+lastmod: "2026-06-23T00:00:00+02:00"
 url: "/educacion-en-la-caridad/"
 source: "wordpress-localhost"
 show_title: true
-description: "Educación en la Caridad por Juan Pablo II y Benedicto XVI Con los ojos de Cristo El amor al prójimo consiste justamente en que, en Dios y con Dios, amo también a la persona que no me agrada o ni siquiera conozco. Esto sólo puede llevarse a "
+description: "Reflexiones de Juan Pablo II y Benedicto XVI sobre la educación en la caridad y el amor cristiano al prójimo."
 ---
 
 Educación en la Caridad por Juan Pablo II y Benedicto XVI

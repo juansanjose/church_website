@@ -2,7 +2,7 @@
 title: "La Parroquia"
 slug: "parroquia"
 date: "2026-05-15T13:39:42"
-lastmod: "2026-06-07T10:00:00"
+lastmod: "2026-06-23T00:00:00+02:00"
 url: "/parroquia/"
 source: "wordpress-localhost"
 description: "Conoce nuestra historia, nuestro patrono y cómo formar parte de esta comunidad de fe."
@@ -10,7 +10,7 @@ description: "Conoce nuestra historia, nuestro patrono y cómo formar parte de e
 
 Conoce nuestra historia, nuestro patrono y cómo formar parte de esta comunidad de fe.
 
-En este apartado de nuestra web podrá ver un recorrido histórico a través de una serie de fotografías de la Parroquia y de su Vía Crucis acompañadas de textos cuidadosamente escogidos, así como leer una breve semblanza sobre nuestro Patrono San Pablo de la Cruz. También podrá conocer los últimos avisos de la Parroquia, ver un mapa de acceso y contactar con el Despacho Parroquial. Además encontrará un formulario con el que colaborar apoyando a su Parroquia.
+En este apartado de nuestra web podrá ver un recorrido histórico a través de una serie de fotografías de la parroquia y de su vía crucis acompañadas de textos cuidadosamente escogidos, así como leer una breve semblanza sobre nuestro patrono, San Pablo de la Cruz. También podrá conocer los últimos avisos de la parroquia, ver un mapa de acceso y contactar con el despacho parroquial. Además, encontrará un formulario con el que colaborar apoyando a su parroquia.
 
 Él está aquí. Está como el primer día. Está entre nosotros como el día de su muerte. Eternamente está entre nosotros como el primer día. Eternamente todos los días. Está aquí entre nosotros durante todos los días de su eternidad.
 
@@ -32,9 +32,9 @@ Es la misma historia, exactamente la misma, eternamente la misma, la que tuvo lu
 >
 > — Ch. Péguy
 
-¿Sabías que Parroquia quiere decir comunidad de vecinos? Eso exactamente.
+¿Sabías que parroquia quiere decir comunidad de vecinos? Eso exactamente.
 
-Los vecinos se agrupan en comunidades para hacer proyectos comunes, para defender sus intereses y para facilitar la convivencia. Lo mismo la Parroquia. Las personas tenemos unos intereses más altos, más sublimes y más necesarios que los puramente materiales, y necesitamos una luz intensa para ver claro, apoyarnos para no desfallecer en el duro camino de la vida, sentirnos «pueblo de Dios» que camina seguro hacia la casa paterna.
+Los vecinos se agrupan en comunidades para hacer proyectos comunes, para defender sus intereses y para facilitar la convivencia. Lo mismo ocurre con la parroquia. Las personas tenemos unos intereses más altos, más sublimes y más necesarios que los puramente materiales, y necesitamos una luz intensa para ver claro, apoyarnos para no desfallecer en el duro camino de la vida y sentirnos «pueblo de Dios» que camina seguro hacia la casa paterna.
 
 ![Vista panorámica](/images/wp-content/2015/03/panoramica2.jpg)
 
@@ -43,15 +43,15 @@ _Vista panorámica de la Parroquia_
 Eso es la Parroquia. Para lograr esos fines tenemos un domicilio común y un guía (sacer-dux) que nos reúne (nos convoca constantemente).
 Nuestra casa común es ciertamente bonita. Está ideada para resumir y acrecentar los intereses espirituales de los vecinos. Por eso, un patio o una gran plaza sirven de reclamo o convocatoria y nos sitúa ante un triángulo enorme (el templo).
 
-El ángulo principal -sobre el altar- representa a Dios Padre que, ante la limitación y pobreza del hombre, urde un plan riquísimo de salvación. Otro ángulo está representado por la puerta principal con el anagrama de Jesús. Cristo es la puerta ineludible de la salvación. El tercer ángulo está representado por la capilla penitencial. Es el espíritu Santo que inspira y dirige por el camino de la Salvación.
+El ángulo principal —sobre el altar— representa a Dios Padre que, ante la limitación y pobreza del hombre, urde un plan riquísimo de salvación. Otro ángulo está representado por la puerta principal con el anagrama de Jesús. Cristo es la puerta ineludible de la salvación. El tercer ángulo está representado por la capilla penitencial. Es el Espíritu Santo quien inspira y dirige por el camino de la salvación.
 
-![Ángulo Principal sobre el altar](/images/wp-content/2015/03/anguloPrincipal.jpg)
+![Ángulo principal sobre el altar](/images/wp-content/2015/03/anguloPrincipal.jpg)
 
-_Ángulo Principal sobre el altar_
+_Ángulo principal sobre el altar_
 
 El templo, sobrio, íntimo y profundo, es la síntesis de la historia de salvación. Esta historia implica a Dios y al hombre. El recinto es la gran asamblea -el hombre que necesita ser salvado-. Todos penden del designio de Dios. Por eso están orientados por unas flechas hacia la gran claraboya -Dios-, que proyecta la luz de la salvación sobre el hombre.
 
-![Detalle del abujardado en los muros del Templo](/images/wp-content/2015/03/abujardado.jpg)
+![Detalle del abujardado en los muros del templo](/images/wp-content/2015/03/abujardado.jpg)
 
 _Detalle del abujardado_
 
@@ -65,11 +65,11 @@ _María, la primera salvada en la Estación XIV_
 
 El anticipo de ese hombre triunfante es la Virgen: la primera salvada. La Asunción de María invita a todos a seguir su estela.
 
-![Bajorrelieve de la virgen Maria](/images/wp-content/2015/03/bajorrelieveMaria.jpg)
+![Bajorrelieve de la Virgen María](/images/wp-content/2015/03/bajorrelieveMaria.jpg)
 
-_Bajorrelieve de la virgen Maria_
+_Bajorrelieve de la Virgen María_
 
-Pero esa historia hay que repetirla en cada hombre. De ahí que unas grandes flechas -unas vigas enormes, otra vez. Nos dirigen hacia una cruz gigantesca que deja entrever la realidad de la vida: la calle, el escenario donde el hombre plasma su existencia.
+Pero esa historia hay que repetirla en cada hombre. De ahí que unas grandes flechas —unas vigas enormes, otra vez— nos dirijan hacia una cruz gigantesca que deja entrever la realidad de la vida: la calle, el escenario donde el hombre plasma su existencia.
 
 ![Altar de la Parroquia](/images/wp-content/2015/03/flechas.jpg)
 

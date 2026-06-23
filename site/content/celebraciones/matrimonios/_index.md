@@ -2,11 +2,11 @@
 title: "Matrimonios"
 slug: "matrimonios"
 date: "2026-05-23T22:57:10"
-lastmod: "2026-05-23T22:57:10"
+lastmod: "2026-06-23T00:00:00+02:00"
 url: "/celebraciones/matrimonios/"
 source: "wordpress-localhost"
 show_title: true
-description: "Requisitos para celebrar el sacramento del Matrimonio en esta Parroquia: 1) CONCERTAR, con suficiente antelación, DÍA y HORA de la BODA. 2) Hacer el CURSILLO prematrimonial (en centro oficial). 3) Dos meses antes: Gestionar el EXPEDIENTE MA"
+description: "Requisitos, preparación y documentación para celebrar el sacramento del matrimonio en la Parroquia San Pablo de la Cruz."
 ---
 
 **Requisitos para celebrar el sacramento del Matrimonio en esta Parroquia:**

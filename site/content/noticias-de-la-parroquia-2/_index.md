@@ -2,7 +2,7 @@
 title: "Noticias"
 slug: "noticias-de-la-parroquia-2"
 date: "2026-05-23T23:56:45"
-lastmod: "2026-06-22T20:31:59+02:00"
+lastmod: "2026-06-23T00:00:00+02:00"
 url: "/noticias-de-la-parroquia-2/"
 source: "wordpress-localhost"
 description: "Últimas noticias, eventos y actividades de la Parroquia San Pablo de la Cruz."
@@ -89,8 +89,8 @@ Se visitarán lugares emblemáticos como la Basílica de la Virgen de los Desamp
 | **TOTAL ENTREGADO** | **€ 10.000,00** |
 
 **Números premiados:**
-- 1º premio: **nº 0166**
-- 2º premio: **nº 0945**
+- 1.er premio: **n.º 0166**
+- 2.º premio: **n.º 0945**
 </details>
 
 <details class="event--past">
@@ -116,7 +116,7 @@ Nuevo grupo de jóvenes en la parroquia. Encuentros de formación, oración y co
 </details>
 
 <details class="event--past">
-<summary>Grupo Mostaza – Nuevo grupo de post-comunión</summary>
+<summary>Grupo Mostaza — Nuevo grupo de poscomunión</summary>
 
 Encuentro mensual para niños y niñas de entre 6 y 12 años. Aprender jugando las principales necesidades y exigencias del afecto y la inteligencia.
 </details>

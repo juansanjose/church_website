@@ -2,14 +2,14 @@
 title: "Haciendo Camino Con San Pablo de la Cruz"
 slug: "haciendo-camino"
 date: "2015-03-15T12:59:40"
-lastmod: "2015-03-15T12:59:40"
+lastmod: "2026-06-23T00:00:00+02:00"
 url: "/parroquia/haciendo-camino/"
 source: "wordpress-localhost"
 show_title: true
-description: "Via Crucis – guiados por San Pablo de la Cruz hacia la plenitud del Amor El vía crucis es recordar con amor y agradecimiento infinitos lo mucho que Jesús sufrió por salvarnos del pecado. En Jesús hallaremos sentido y fortaleza para nuestras"
+description: "Vía crucis guiado por San Pablo de la Cruz para meditar la pasión de Jesús y caminar hacia la plenitud del amor."
 ---
 
-Via Crucis – guiados por San Pablo de la Cruz hacia la plenitud del Amor
+Vía crucis — guiados por San Pablo de la Cruz hacia la plenitud del amor
 
 El vía crucis es recordar con amor y agradecimiento infinitos lo mucho que Jesús sufrió por salvarnos del pecado.
 
@@ -113,7 +113,7 @@ En Jesús hallaremos sentido y fortaleza para nuestras vidas y para poder ayudar
 “Al día siguiente de la Parasceve (preparación para la Pascua) se reunieron los sumos sacerdotes y los fariseos con Pilato, y le dijeron: Señor, nos hemos acordado que ese impostor cuando estaba en vida dijo: “Resucitaré al tercer día”. Manda, pues, que el sepulcro esté vigilado hasta el tercer día...Pilato les dijo: Ustedes disponen de guardia propia; vayan y vigilen como lo crean mejor. Y ellos fueron y aseguraron el sepulcro, sellaron la piedra y pusieron vigilancia.” (Mt 27, 62-66)
 **Reflexión:** La devoción a la Pasión de Jesucristo es el camino más seguro para salvarse. El Crucifijo es un libro en el que se aprenden todas las virtudes, se adquiere la ciencia de los santos y se encuentra todo. (San Pablo de la Cruz)
 
-_Las imágenes del Via Crucis del Templo Parroquial son obra de Miguel Oliver López de Carrizosa._
+_Las imágenes del vía crucis del templo parroquial son obra de Miguel Oliver López de Carrizosa._
 
 > **Oración Final:**
 

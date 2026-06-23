@@ -2,7 +2,7 @@
 title: "Galería Fotográfica"
 slug: "galeria-fotografica"
 date: "2015-03-15T12:36:12"
-lastmod: "2015-03-15T12:36:12"
+lastmod: "2026-06-23T00:00:00+02:00"
 url: "/parroquia/galeria-fotografica/"
 source: "wordpress-localhost"
 show_title: true
@@ -31,11 +31,11 @@ Aquí podrá disfrutar de un recorrido fotográfico comentado de la construcció
 
 [![Proceso de abujardado](/images/wp-content/2015/03/galeria_010.jpg)](/images/wp-content/2015/03/galeria_010.jpg)
 
-[![Diseño del Via Crucis](/images/wp-content/2015/03/galeria_011.jpg)](/images/wp-content/2015/03/galeria_011.jpg)
+[![Diseño del vía crucis](/images/wp-content/2015/03/galeria_011.jpg)](/images/wp-content/2015/03/galeria_011.jpg)
 
-[![Proceso de tallado del Via Crucis](/images/wp-content/2015/03/galeria_012.jpg)](/images/wp-content/2015/03/galeria_012.jpg)
+[![Proceso de tallado del vía crucis](/images/wp-content/2015/03/galeria_012.jpg)](/images/wp-content/2015/03/galeria_012.jpg)
 
-[![Via Crucis finalizado](/images/wp-content/2015/03/galeria_013.jpg)](/images/wp-content/2015/03/galeria_013.jpg)
+[![Vía crucis finalizado](/images/wp-content/2015/03/galeria_013.jpg)](/images/wp-content/2015/03/galeria_013.jpg)
 
 [![Bajorrelieve - Asunción de la Virgen María](/images/wp-content/2015/03/galeria_016.jpg)](/images/wp-content/2015/03/galeria_016.jpg)
 

@@ -2,11 +2,11 @@
 title: "Ecología y Cristianismo por Benedicto XVI"
 slug: "ecologia-y-cristianismo-por-benedicto-xvi"
 date: "2015-03-15T14:48:49"
-lastmod: "2015-03-15T14:48:49"
+lastmod: "2026-06-23T00:00:00+02:00"
 url: "/ecologia-y-cristianismo-por-benedicto-xvi/"
 source: "wordpress-localhost"
 show_title: true
-description: "BENEDICTO XVI PARA LA CELEBRACIÓN DE LA XLIII JORNADA MUNDIAL DE LA PAZ 1 DE ENERO DE 2010 SI QUIERES PROMOVER LA PAZ, PROTEGE LA CREACIÓN Con ocasión del comienzo del Año Nuevo, quisiera dirigir mis más fervientes deseos de paz a todas las"
+description: "Mensaje de Benedicto XVI para la XLIII Jornada Mundial de la Paz: «Si quieres promover la paz, protege la creación»."
 ---
 
 BENEDICTO XVI PARA LA CELEBRACIÓN DE LA XLIII JORNADA MUNDIAL DE LA PAZ
@@ -42,7 +42,7 @@ BENEDICTUS PP. XVI
 [7] Mensaje para la Jornada Mundial de la Paz 1990 1990, 10.
 [8] Cf. Carta enc. Caritas in veritate, 32.
 [9] Catecismo de la Iglesia Católica, 295.
-[10] Heráclito de Éfeso (535 a.C. ca. – 475 a.C. ca.), Fragmento 22B124, en H. Diels-W. Kranz, Die Fragmente der Vorsokratiker, Weidmann, Berlín19526.
+[10] Heráclito de Éfeso (ca. 535 a. C.-ca. 475 a. C.), fragmento 22B124, en H. Diels-W. Kranz, _Die Fragmente der Vorsokratiker_, Weidmann, Berlín, 1952.
 [11] Cf. Carta enc. Caritas in veritate, 48.
 [12] Juan Pablo II, Carta enc. Centesimus annus, 37.
 [13] Cf. Carta enc. Caritas in veritate, 50.
@@ -55,7 +55,7 @@ BENEDICTUS PP. XVI
 [20] Ibíd.
 [21] Cf. Santo Tomás de Aquino, S. Th., II-II, q. 49, 5.
 [22] Cf. n. 9.
-[23] Cf .n. 8.
+[23] Cf. n. 8.
 [24] Pablo VI, Carta enc. Populorum progressio, 43.
 [25] Carta enc. Caritas in veritate, 69.
 [26] Juan Pablo II, Carta enc. Centesimus annus, 36.

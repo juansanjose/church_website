@@ -2,21 +2,21 @@
 title: "Ayuda a sostener tu Parroquia"
 slug: "apoya-a-tu-parroquia"
 date: "2025-11-03T20:12:28"
-lastmod: "2025-11-03T20:12:28"
+lastmod: "2026-06-23T00:00:00+02:00"
 url: "/parroquia/apoya-a-tu-parroquia/"
 source: "wordpress-localhost"
 show_title: true
-description: "Participamos en la Iglesia cuando nos unimos para orar en común y celebrar la Eucaristía y los sacramentos de la Iglesia; también cuando nos comprometemos en los procesos educativos de la fe y cuando procuramos llevar a otros -los que sufre"
+description: "Información para colaborar económicamente con la misión, las actividades y el sostenimiento de la parroquia."
 ---
 
 > Participamos en la Iglesia cuando nos unimos para orar en común y celebrar la Eucaristía y los sacramentos de la Iglesia; también cuando nos comprometemos en los procesos educativos de la fe y cuando procuramos llevar a otros -los que sufren o padecen necesidades espirituales o materiales- el anuncio del Evangelio.
 
 > Para responder a estas necesidades es preciso darnos a nosotros mismos y compartir con los demás los dones que hemos recibido, empezando por nuestras cualidades personales, nuestro tiempo y nuestros propios bienes.
 
-**Domiciliación Bancaria a favor de la Parroquia** :
+**Domiciliación bancaria a favor de la parroquia:**
 
 Para lograr paulatinamente la autofinanciación de la Iglesia, que es una condición importante para el ejercicio de su misión en libertad ofrecemos la oportunidad de hacer una suscripción periódica en favor del sostenimiento de nuestra Parroquia.
 
-[![apoyanos](/images/wp-content/2015/03/apoyanos-300x225.jpg)](/images/wp-content/2015/03/apoyanos.jpg)
+[![Apóyanos](/images/wp-content/2015/03/apoyanos-300x225.jpg)](/images/wp-content/2015/03/apoyanos.jpg)
 
 [Enviar un correo a la parroquia](mailto:sanpablodelacruz@gmail.com)

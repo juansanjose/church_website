@@ -2,11 +2,11 @@
 title: "La nueva tiranía"
 slug: "la-nueva-tirania"
 date: "2015-03-15T14:48:46"
-lastmod: "2015-03-15T14:48:46"
+lastmod: "2026-06-23T00:00:00+02:00"
 url: "/la-nueva-tirania/"
 source: "wordpress-localhost"
 show_title: true
-description: "La nueva tiranía – Coloquios en el Parque II por Juan Manuel de Prada La Navidad es una guerra sin cuartel, pero cuando venía hacia aquí, reparé en las palabras que ilustran la iluminación navideña: paz, reposo, calma… ¡Parecía el prospecto"
+description: "Reflexión de Juan Manuel de Prada sobre la libertad, la educación y los mecanismos culturales de la nueva tiranía."
 ---
 
 La nueva tiranía – Coloquios en el Parque II

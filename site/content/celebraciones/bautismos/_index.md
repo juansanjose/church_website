@@ -2,11 +2,11 @@
 title: "Bautismos"
 slug: "bautismos"
 date: "2026-05-23T22:56:00"
-lastmod: "2026-05-23T22:56:00"
+lastmod: "2026-06-23T00:00:00+02:00"
 url: "/celebraciones/bautismos/"
 source: "wordpress-localhost"
 show_title: true
-description: "REQUISITOS PARA CELEBRAR EL SACRAMENTO DEL BAUTISMO: 1) Como NORMA GENERAL: Serán los TERCEROS SÁBADOS y los CUARTOS DOMINGOS de cada mes, por la tarde. 2) Se debe constatar que los padres viven en esta Parroquia. 3) Solicitar DÍA y HORA en"
+description: "Requisitos, fechas y preparación para celebrar el sacramento del bautismo en la Parroquia San Pablo de la Cruz."
 ---
 
 ### REQUISITOS PARA CELEBRAR EL SACRAMENTO DEL BAUTISMO:
