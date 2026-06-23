@@ -6,72 +6,55 @@ lastmod: "2026-06-23T00:00:00+02:00"
 url: "/celebraciones/horarios/"
 source: "wordpress-localhost"
 description: "Horarios de misas y celebraciones de la Parroquia San Pablo de la Cruz."
+subtitle: "Misas, despacho parroquial, oración y sacramentos"
 ---
 
-Encuentra aquí todos los horarios de misas y celebraciones de nuestra parroquia.
+Consulta los horarios habituales de la parroquia. Los cambios puntuales se anuncian en la sección de [Noticias](/noticias-de-la-parroquia-2/).
 
-**Verano (marzo a octubre):** Las misas de tarde son a las **20:00**.
+## Ir directamente a
 
-**Invierno (octubre a marzo):** Las misas de tarde son a las **19:30**.
+- [Horario de misas](#horario-de-misas)
+- [Despacho parroquial](#despacho-parroquial)
+- [Oración y confesiones](#oración-y-confesiones)
+- [Catequesis y sacramentos](#catequesis-y-sacramentos)
+- [Celebraciones especiales](#celebraciones-especiales)
 
 ## Horario de misas
 
-|  | Lun. | Mar. | Mié. | Jue. | Vie. | Sáb. | Dom. |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Mañana | 9:15 | 9:15 | 9:15 | 9:15 | 9:15 | — | 11:30 / 13:00 |
-| Tarde / (Verano) | 20:00 | 20:00 | 20:00 | 20:00 | 20:00 | 20:00** | 20:00 |
-| Tarde / (Invierno) | 19:30 | 19:30 | 19:30 | 19:30 | 19:30 | 20:00** | 20:00 |
+| Día | Mañana | Tarde |
+| --- | --- | --- |
+| Lunes a viernes | **9:15** | **20:00** en verano · **19:30** en invierno |
+| Sábado | — | **20:00** · Misa de jóvenes |
+| Domingo | **11:30** y **13:00** | **20:00** |
 
-_** Misa de Jóvenes_
+### Horario de temporada
 
-### Despacho parroquial
+- **Verano (marzo a octubre):** las misas de tarde de lunes a viernes son a las **20:00**.
+- **Invierno (octubre a marzo):** las misas de tarde de lunes a viernes son a las **19:30**.
 
-**Verano:** lunes, miércoles y viernes de 11:00 a 13:00 y de 18:00 a 20:00.
+## Despacho parroquial
 
-**Invierno:** lunes, miércoles y viernes de 11:00 a 13:00 y de 17:00 a 19:00.
+| Temporada | Mañana | Tarde |
+| --- | --- | --- |
+| Verano | Lunes, miércoles y viernes · **11:00–13:00** | Lunes, miércoles y viernes · **18:00–20:00** |
+| Invierno | Lunes, miércoles y viernes · **11:00–13:00** | Lunes, miércoles y viernes · **17:00–19:00** |
 
-## Otras celebraciones y servicios
+## Oración y confesiones
 
-### Confesiones
+- **Confesiones, de lunes a viernes:** una hora antes de la misa.
+- **Confesiones, domingos y festivos:** una hora antes y durante la misa.
+- **Santo rosario:** todos los días, media hora antes de la Eucaristía.
+- **Exposición del Santísimo:** primeros viernes de cada mes a las **18:40**.
 
-Lunes a viernes: una hora antes de la misa.
+## Catequesis y sacramentos
 
-Domingos y festivos: una hora antes y durante la misa.
-
-### Santo Rosario
-
-Todos los días, media hora antes de la Eucaristía.
-
-### Exposición del Santísimo
-
-Primeros viernes de cada mes a las 18:40.
-
-### Catequesis
-
-Niños: miércoles a las 18:00.
-
-Adolescentes y jóvenes: sábados a las 16:00.
-
-### Bautismos
-
-Curso prebautismal: segundo miércoles de mes a las 20:00.
-
-### Matrimonios
-
-Días y horas previamente concertados.
-
-Preparación: lunes, miércoles y viernes por la tarde.
+- **Catequesis de niños:** miércoles a las **18:00**.
+- **Catequesis de adolescentes y jóvenes:** sábados a las **16:00**.
+- **Curso prebautismal:** segundo miércoles de cada mes a las **20:00**.
+- **Matrimonios:** días y horas previamente concertados. Preparación los lunes, miércoles y viernes por la tarde.
 
 ## Celebraciones especiales
 
-**Navidad — 24 de diciembre:**
-
-Misa vespertina de Nochebuena a las 19:00 en el parque (tradición familiar).
-
-**Día del Enfermo y Santa Unción:**
-
-Se anunciará la fecha con antelación en cada curso pastoral.
-
-**Pastoral sanitaria:**
-
-Atención domiciliaria. Contactar con la parroquia para más información.
+- **Navidad — 24 de diciembre:** misa vespertina de Nochebuena a las **19:00** en el parque (tradición familiar).
+- **Día del Enfermo y Santa Unción:** la fecha se anuncia durante cada curso pastoral.
+- **Pastoral sanitaria:** atención domiciliaria. [Contacta con la parroquia](/parroquia/contactar/) para solicitar información.

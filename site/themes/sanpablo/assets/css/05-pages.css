@@ -218,6 +218,173 @@
 }
 
 /* ========================================
+   Horarios
+   ======================================== */
+
+.page--horarios .page-content {
+  max-width: 900px;
+}
+
+.page--horarios .content > p:first-child {
+  padding: 18px 20px;
+  background: var(--bg-warm);
+  border-left: 4px solid var(--gold);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  color: var(--text);
+}
+
+.page--horarios .content h2 {
+  scroll-margin-top: 84px;
+  margin-top: 3rem;
+}
+
+.page--horarios #ir-directamente-a {
+  margin-top: 2rem;
+  border-bottom: 0;
+  padding-bottom: 0;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.page--horarios #ir-directamente-a + ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.page--horarios #ir-directamente-a + ul li,
+.page--horarios #ir-directamente-a + ul li + li {
+  margin: 0;
+}
+
+.page--horarios #ir-directamente-a + ul li:last-child {
+  grid-column: 1 / -1;
+}
+
+.page--horarios #ir-directamente-a + ul a {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: white;
+  color: var(--green-dark);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+}
+
+.page--horarios #ir-directamente-a + ul a::after {
+  content: "↓";
+  margin-left: auto;
+  color: var(--gold);
+  font-size: 1.1rem;
+}
+
+.page--horarios #ir-directamente-a + ul a:hover,
+.page--horarios #ir-directamente-a + ul a:focus-visible {
+  border-color: var(--gold);
+  background: var(--bg-warm);
+}
+
+.page--horarios .content table {
+  display: table;
+  table-layout: fixed;
+  overflow: visible;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.page--horarios .content th,
+.page--horarios .content td {
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.page--horarios .content th {
+  background: var(--green-dark);
+}
+
+.page--horarios .content th:first-child {
+  border-radius: var(--radius) 0 0 0;
+}
+
+.page--horarios .content th:last-child {
+  border-radius: 0 var(--radius) 0 0;
+}
+
+.page--horarios .content td:first-child {
+  width: 24%;
+  color: var(--green-dark);
+  font-weight: 700;
+}
+
+.page--horarios .content tr:last-child td {
+  border-bottom: 0;
+}
+
+.page--horarios [id="oración-y-confesiones"] + ul,
+.page--horarios [id="catequesis-y-sacramentos"] + ul,
+.page--horarios [id="celebraciones-especiales"] + ul,
+.page--horarios #horario-de-temporada + ul {
+  display: grid;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.page--horarios [id="oración-y-confesiones"] + ul li,
+.page--horarios [id="catequesis-y-sacramentos"] + ul li,
+.page--horarios [id="celebraciones-especiales"] + ul li,
+.page--horarios #horario-de-temporada + ul li {
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: white;
+  box-shadow: var(--shadow-sm);
+}
+
+@media (min-width: 640px) {
+  .page--horarios #ir-directamente-a + ul {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .page--horarios #ir-directamente-a + ul li:last-child {
+    grid-column: auto;
+  }
+
+  .page--horarios #horario-de-temporada + ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .page--horarios .content table {
+    font-size: 0.82rem;
+  }
+
+  .page--horarios .content th,
+  .page--horarios .content td {
+    padding: 9px 7px;
+  }
+}
+
+/* ========================================
    Gallery pages
    ======================================== */
 
