@@ -31,7 +31,8 @@ make rollback
 See `AGENT_PROTOCOL.md` for the complete AI agent editing protocol.
 
 Key rules:
-- Edit only in `site/content/` and `site/static/images/`
+- By default, edit only in `site/content/` and `site/static/images/`
+- If the user explicitly requests a template, CSS, config, script, or other structural change, that explicit request overrides the default content-only restriction
 - Run `hugo --minify` before committing
 - Use root-relative image paths: `/images/section/file.jpg`
 - Follow front matter conventions

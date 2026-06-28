@@ -136,13 +136,13 @@ custom_css: |
 ### When to modify CSS
 
 - **Content edits only** — no CSS changes needed (default `.content` handles everything)
-- **Layout changes** — ask the user before editing templates or CSS files
+- **Layout changes** — ask the user before editing templates or CSS files unless the user has already explicitly requested that change
 - **Per-page tweaks** — use `custom_css` or `page_class` front matter
 
 ## 7. Prohibited Actions
 
-- NEVER edit files outside `site/content/` and `site/static/images/`
-- NEVER modify `hugo.toml`, layouts, or CSS files without explicit permission
+- Do not edit files outside `site/content/` and `site/static/images/` unless the user explicitly requests or approves a change that requires it
+- Do not modify `hugo.toml`, layouts, CSS files, scripts, or deployment/config files without explicit permission
 - NEVER commit without running `hugo --minify` first
 - NEVER use inline HTML unless absolutely necessary (use Markdown)
 - NEVER delete archived WordPress files in `archive/legacy-wordpress/`
