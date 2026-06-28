@@ -360,8 +360,7 @@
 
 .page--horarios [id="oración-y-confesiones"] + ul,
 .page--horarios [id="catequesis-y-sacramentos"] + ul,
-.page--horarios [id="celebraciones-especiales"] + ul,
-.page--horarios #horario-de-temporada + ul {
+.page--horarios [id="celebraciones-especiales"] + ul {
   display: grid;
   gap: 10px;
   padding: 0;
@@ -370,8 +369,7 @@
 
 .page--horarios [id="oración-y-confesiones"] + ul li,
 .page--horarios [id="catequesis-y-sacramentos"] + ul li,
-.page--horarios [id="celebraciones-especiales"] + ul li,
-.page--horarios #horario-de-temporada + ul li {
+.page--horarios [id="celebraciones-especiales"] + ul li {
   margin: 0;
   padding: 14px 16px;
   border: 1px solid var(--border);
@@ -388,10 +386,6 @@
 
   .page--horarios #ir-directamente-a + ul li:last-child {
     grid-column: auto;
-  }
-
-  .page--horarios #horario-de-temporada + ul {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

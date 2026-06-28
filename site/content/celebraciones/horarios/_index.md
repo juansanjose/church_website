@@ -2,7 +2,7 @@
 title: "Horarios"
 slug: "horarios"
 date: "2026-05-23T23:56:30"
-lastmod: "2026-06-29T01:14:14+02:00"
+lastmod: "2026-06-29T01:18:58+02:00"
 url: "/celebraciones/horarios/"
 source: "wordpress-localhost"
 description: "Horarios de misas y celebraciones de la Parroquia San Pablo de la Cruz."
@@ -56,11 +56,6 @@ Durante los meses de <strong>julio y agosto</strong>, los horarios de misas ser�
 | Lunes a viernes | **9:15** | **20:00** en verano · **19:30** en invierno |
 | Sábado | — | **20:00** · Misa de jóvenes |
 | Domingo | **11:30** y **13:00** | **20:00** |
-
-### Horario de temporada
-
-- **Verano (marzo a octubre):** las misas de tarde de lunes a viernes son a las **20:00**.
-- **Invierno (octubre a marzo):** las misas de tarde de lunes a viernes son a las **19:30**.
 
 ## Despacho parroquial
 
