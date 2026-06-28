@@ -2,14 +2,44 @@
 title: "Horarios"
 slug: "horarios"
 date: "2026-05-23T23:56:30"
-lastmod: "2026-06-23T00:00:00+02:00"
+lastmod: "2026-06-29T01:14:14+02:00"
 url: "/celebraciones/horarios/"
 source: "wordpress-localhost"
 description: "Horarios de misas y celebraciones de la Parroquia San Pablo de la Cruz."
 subtitle: "Misas, despacho parroquial, oración y sacramentos"
+custom_css: |
+  .page--horarios .summer-mass-notice {
+    margin: 1.75rem 0 2rem;
+    padding: 22px 24px;
+    border: 2px solid var(--gold);
+    border-left-width: 8px;
+    border-radius: var(--radius);
+    background: var(--bg-warm);
+    box-shadow: var(--shadow-sm);
+    color: var(--green-dark);
+    font-size: 1.22rem;
+    font-stretch: semi-expanded;
+    font-weight: 800;
+    line-height: 1.45;
+  }
+
+  .page--horarios .summer-mass-notice strong {
+    color: var(--green-dark);
+  }
+
+  @media (max-width: 480px) {
+    .page--horarios .summer-mass-notice {
+      padding: 18px;
+      font-size: 1.08rem;
+    }
+  }
 ---
 
 Consulta los horarios habituales de la parroquia. Los cambios puntuales se anuncian en la sección de [Noticias](/noticias-de-la-parroquia-2/).
+
+<div class="summer-mass-notice">
+Durante los meses de <strong>julio y agosto</strong>, los horarios de misas serán: a diario a las <strong>20:00h</strong>; domingos y festivos a las <strong>13:00h</strong> y <strong>20:00h</strong>. Retomaremos el horario habitual el <strong>domingo 6 de septiembre de 2026</strong>.
+</div>
 
 ## Ir directamente a
 
