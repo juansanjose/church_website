@@ -87,8 +87,17 @@
   font-family: Georgia, serif;
   font-size: 1.75rem;
   font-weight: 400;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   color: var(--green-dark);
+}
+
+.home-times__season {
+  margin-bottom: 20px;
+  color: var(--green-dark);
+  font-size: 1.05rem;
+  font-stretch: semi-expanded;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .home-time-cards {
@@ -116,8 +125,21 @@
 }
 
 .home-time-card p {
-  font-size: 1.1rem;
+  font-size: 1.22rem;
+  font-stretch: semi-expanded;
+  font-weight: 800;
   color: var(--text-light);
+}
+
+.home-times__note {
+  width: 100%;
+  max-width: 320px;
+  margin-top: 18px;
+  color: var(--green-dark);
+  font-size: 0.95rem;
+  font-stretch: semi-expanded;
+  font-weight: 700;
+  line-height: 1.45;
 }
 
 .home-times__button {
