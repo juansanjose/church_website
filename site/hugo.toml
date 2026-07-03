@@ -34,6 +34,10 @@ disableKinds = ['taxonomy', 'term']
     url = '/formacion/'
     weight = 40
   [[menu.main]]
+    name = 'Pastoral de la Salud'
+    url = '/pastoral-de-la-salud/'
+    weight = 45
+  [[menu.main]]
     name = 'Donar'
     url = '/donaciones/'
     weight = 50
