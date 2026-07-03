@@ -7,35 +7,55 @@ url: "/pastoral-de-la-salud/"
 description: "Pastoral de la Salud de la Parroquia San Pablo de la Cruz: acompañamiento eclesial, cuidado comunitario y apoyo espiritual."
 custom_css: |
   .page--pastoral-de-la-salud .page-content {
-    max-width: 860px;
+    max-width: 1180px;
     margin: 0 auto;
   }
-  .page--pastoral-de-la-salud .pastoral-intro {
-    text-align: center;
-    margin-bottom: 2rem;
+  .page--pastoral-de-la-salud .pastoral-overview {
+    max-width: 780px;
+    margin: 0 auto 3rem;
   }
-  .page--pastoral-de-la-salud .pastoral-intro img {
-    max-width: 360px;
-    margin: 0 auto 1rem;
-  }
-  .page--pastoral-de-la-salud .pastoral-intro p {
-    color: var(--green-dark);
-    font-size: 1.2rem;
-    margin: 0;
-  }
-  .page--pastoral-de-la-salud .pastoral-action {
+  .page--pastoral-de-la-salud .pastoral-source-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 170px;
-    gap: 1.25rem;
-    align-items: center;
-    background: var(--bg-warm);
-    border-left: 4px solid var(--gold);
-    padding: 1rem 1.25rem;
-    margin: 1.5rem 0;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 3rem 2.25rem;
+    align-items: start;
+    margin: 2.5rem 0 3rem;
   }
-  .page--pastoral-de-la-salud .pastoral-action img {
-    max-width: 170px;
+  .page--pastoral-de-la-salud .pastoral-source-grid h3 {
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 1.08rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 1.35rem;
+  }
+  .page--pastoral-de-la-salud .pastoral-source-grid p,
+  .page--pastoral-de-la-salud .pastoral-source-grid li {
+    color: var(--text);
+    font-size: 0.98rem;
+    line-height: 1.55;
+  }
+  .page--pastoral-de-la-salud .pastoral-source-grid ul {
+    padding-left: 1.2rem;
+    list-style-type: square;
+  }
+  .page--pastoral-de-la-salud .pastoral-source-grid li + li {
+    margin-top: 0.45rem;
+  }
+  .page--pastoral-de-la-salud .pastoral-source-grid img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
     margin: 0;
+  }
+  .page--pastoral-de-la-salud .pastoral-source-grid .pastoral-qr img {
+    height: 255px;
+    object-fit: contain;
+  }
+  .page--pastoral-de-la-salud .pastoral-source-grid .pastoral-text {
+    padding-top: 0.9rem;
   }
   .page--pastoral-de-la-salud .pastoral-note {
     background: var(--bg-warm);
@@ -43,30 +63,27 @@ custom_css: |
     padding: 1rem 1.25rem;
     margin: 1.5rem 0;
   }
-  .page--pastoral-de-la-salud .pastoral-small-image {
-    max-width: 320px;
-    margin: 1.5rem auto;
-  }
   .page--pastoral-de-la-salud .pastoral-links h3 {
     margin-top: 0.5rem;
   }
+  @media (max-width: 960px) {
+    .page--pastoral-de-la-salud .pastoral-source-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2rem;
+    }
+  }
   @media (max-width: 640px) {
-    .page--pastoral-de-la-salud .pastoral-action {
+    .page--pastoral-de-la-salud .pastoral-source-grid {
       grid-template-columns: 1fr;
     }
-    .page--pastoral-de-la-salud .pastoral-action img {
-      margin: 0 auto;
+    .page--pastoral-de-la-salud .pastoral-source-grid img,
+    .page--pastoral-de-la-salud .pastoral-source-grid .pastoral-qr img {
+      height: auto;
     }
   }
 ---
 
-<div class="pastoral-intro">
-
-![Pastoral de la Salud GPS+](/images/pastoral-de-la-salud/pastoral-salud-01.jpg)
-
-<p><strong>GPS+</strong></p>
-
-</div>
+<div class="pastoral-overview">
 
 ## ¿Qué es?
 
@@ -74,47 +91,54 @@ Un camino de acompañamiento eclesial insertado en la parroquia y una expresión
 
 Contemplando las palabras de Jesús sobre la compasión del buen samaritano, buscamos hacernos prójimos mediante un cuidado comunitario y espiritual de quienes sufren enfermedades, así como de aquellos que participan en la misión compartida del cuidado de la salud en nuestro entorno parroquial.
 
-### ¿A quiénes damos apoyo?
-
-- A los enfermos.
-- A quienes los cuidan y, en especial, a sus familias.
-- A las personas que trabajan en el ámbito sanitario.
-- A nosotros mismos como miembros activos de la parroquia.
-
-### ¿Quieres unirte o conoces alguna necesidad en el entorno de nuestra parroquia?
-
-<div class="pastoral-action">
-
-<div>
-
-Déjanos la información accediendo con el QR o [pinchando aquí](https://forms.gle/6bpC6rH5dCh2sdrz6).
-
 </div>
 
-![Código QR para contactar con la Pastoral de la Salud](/images/pastoral-de-la-salud/pastoral-salud-02.png)
+<div class="pastoral-source-grid">
 
+<img src="/images/pastoral-de-la-salud/pastoral-salud-01.jpg" alt="Enrédate en la compasión">
+
+<div class="pastoral-text">
+<h3>¿A quiénes damos apoyo?</h3>
+<ul>
+<li>a los enfermos</li>
+<li>a quienes los cuidan y en especial a sus familias,</li>
+<li>a las personas que trabajan en el ámbito sanitario</li>
+<li>y a nosotros mismos como miembros activos de la parroquia.</li>
+</ul>
 </div>
 
-### Hacernos prójimos
-
-Llevar y sentir el amor compasivo de Dios Samaritano:
-
-- Acercándose a quien sufre.
-- Acompañando.
-- Cargando con el dolor de otros.
-- Ofreciendo tiempo y presencia.
-- Apoyando el cuidado y la sanación.
-- Facilitando la vida espiritual y los sacramentos.
-
-<div class="pastoral-small-image">
-
-![Pastoral de la Salud](/images/pastoral-de-la-salud/pastoral-salud-03.png)
-
+<div class="pastoral-qr">
+<img src="/images/pastoral-de-la-salud/pastoral-salud-02.png" alt="Código QR para contactar con la Pastoral de la Salud">
 </div>
 
-### Una participación en el dolor redentor de Cristo
+<div class="pastoral-text">
+<h3>¿Quieres unirte o conoces alguna necesidad en el entorno de nuestra parroquia?</h3>
+<p>Déjanos la información accediendo con este QR o <a href="https://forms.gle/6bpC6rH5dCh2sdrz6">pinchando aquí</a>.</p>
+</div>
 
-Atender al enfermo es atender al mismo Cristo ([Mateo 25:40](https://www.biblegateway.com/passage/?search=Mateo%2025%3A34-40&version=RVR1960)). Aliviar a un miembro de la Iglesia es sanar el cuerpo místico de Cristo.
+<img src="/images/wp-content/2015/03/samaritano.jpg" alt="El buen samaritano">
+
+<div class="pastoral-text">
+<h3>Hacernos prójimos</h3>
+<p>Llevar y sentir el amor compasivo de Dios Samaritano.</p>
+<ul>
+<li>acercándose a quien sufre,</li>
+<li>acompañando,</li>
+<li>cargando con el dolor de otros,</li>
+<li>ofreciendo tiempo/presencia</li>
+<li>apoyando el cuidado y la sanación,</li>
+<li>facilitando la vida espiritual y los sacramentos.</li>
+</ul>
+</div>
+
+<img src="/images/pastoral-de-la-salud/pastoral-salud-03.png" alt="Cristo cargando con el dolor">
+
+<div class="pastoral-text">
+<h3>Una participación en el dolor redentor de Cristo</h3>
+<p>Atender al enfermo es <strong>atender al mismo Cristo</strong> (<a href="https://www.biblegateway.com/passage/?search=Mateo%2025%3A34-40&version=RVR1960">Mateo 25:40</a>). Aliviar a un miembro de la Iglesia es sanar el cuerpo místico de Cristo.</p>
+</div>
+
+</div>
 
 ## Acceso al área de Miembros del GPS+
 
