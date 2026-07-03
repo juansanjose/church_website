@@ -35,8 +35,6 @@ custom_css: |
   }
 ---
 
-Consulta los horarios habituales de la parroquia. Los cambios puntuales se anuncian en la sección de [Noticias](/noticias-de-la-parroquia-2/).
-
 <div class="summer-mass-notice">
 Durante los meses de <strong>julio y agosto</strong>, los horarios de misas serán: a diario a las <strong>20:00h</strong>; domingos y festivos a las <strong>13:00h</strong> y <strong>20:00h</strong>. Retomaremos el horario habitual el <strong>domingo 6 de septiembre de 2026</strong>.
 </div>
