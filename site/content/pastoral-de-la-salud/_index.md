@@ -141,7 +141,7 @@ Contemplando las palabras de Jesús sobre la compasión del buen samaritano, bus
 </ul>
 </div>
 
-<img src="/images/imported/2015/03/samaritano.jpg" alt="El buen samaritano">
+<img src="/images/pastoral-de-la-salud/pastoral-salud-03.png" alt="Cristo cargando con el dolor">
 
 <div class="pastoral-text">
 <h3>Una participación en el dolor redentor de Cristo</h3>

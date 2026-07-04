@@ -8,10 +8,6 @@ show_title: true
 description: "La acción caritativa de la parroquia nace de la gratuidad y el compromiso cristiano con las necesidades de los demás."
 ---
 
-![Van Gogh - El buen samaritano](/images/imported/2015/03/samaritano.jpg)
-
-_Van Gogh – El buen samaritano_
-
 La propuesta de la acción caritativa responde a unos motivos claros.
 
 No se trata de dar curso a acciones filantrópicas o de pretender ofrecer con tales iniciativas respuestas exhaustivas a necesidades a menudo vastas y complejas; sino de aprender, a través de la fidelidad a un gesto ejemplar, que la ley última de la existencia es la caridad, la gratuidad.
