@@ -4,14 +4,13 @@ slug: "tiempos-liturgicos"
 date: "2015-03-15T14:59:35"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/celebraciones/tiempos-liturgicos/"
-source: "wordpress-localhost"
 show_title: true
 description: "Explicación del año litúrgico y de la celebración del misterio cristiano a lo largo del tiempo."
 ---
 
 La liturgia es el culto ofrecido a Dios por medio de Cristo y su Iglesia. La celebración del misterio cristiano se realiza a través del tiempo: cada año se conmemoran los principales acontecimientos de la intervención de Dios y su salvación en la historia del hombre.
 
-[![Gráfico del año litúrgico](/images/wp-content/2015/03/anyoliturgico.png)](/images/wp-content/2015/03/anyoliturgico.png)
+[![Gráfico del año litúrgico](/images/imported/2015/03/anyoliturgico.png)](/images/imported/2015/03/anyoliturgico.png)
 
 _Gráfico del año litúrgico_
 

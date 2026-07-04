@@ -4,7 +4,6 @@ slug: "noticias-de-la-parroquia-2"
 date: "2026-05-23T23:56:45"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/noticias-de-la-parroquia-2/"
-source: "wordpress-localhost"
 description: "Últimas noticias, eventos y actividades de la Parroquia San Pablo de la Cruz."
 custom_css: |
   .event--past {

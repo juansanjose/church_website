@@ -4,7 +4,6 @@ slug: "nuestro-patrono"
 date: "2015-03-15T13:09:17"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/parroquia/nuestro-patrono/"
-source: "wordpress-localhost"
 show_title: true
 description: "Vida de San Pablo de la Cruz, fundador de la Congregación de la Pasión y patrono de nuestra parroquia."
 ---
@@ -26,7 +25,7 @@ Cuando regresó a Castellazzo se le unió su hermano Juan Bautista, quien habrí
 Además de como fundador, a San Pablo de la Cruz se le recuerda como notable director espiritual y por su gran actividad apostólica. Falleció en Roma en el convento de San Juan y San Pablo. Fue canonizado en 1867 por el papa Pío IX.
 SAN PABLO DE LA CRUZ nos enseña el valor de mantener, en unidad de vida, acción y contemplación.
 
-[![San Pablo de la Cruz](/images/wp-content/2015/03/sanPabloDLCruz-183x300.jpg)](/images/wp-content/2015/03/sanPabloDLCruz.jpg)
+[![San Pablo de la Cruz](/images/imported/2015/03/sanPabloDLCruz-183x300.jpg)](/images/imported/2015/03/sanPabloDLCruz.jpg)
 
 Oficio de lectura, 19 de octubre, San Pablo de la Cruz, presbítero
 
@@ -37,13 +36,13 @@ Es cosa muy buena y santa pensar en la pasión del Señor y meditar sobre ella, 
 
 El amor, en efecto, es una fuerza unitiva y hace suyos los tormentos del Bueno por excelencia, que es amado por nosotros. Este fuego, que llega hasta lo más íntimo de nuestro ser, transforma al amante en el amado y, mezclándose de un modo profundo el amor con el dolor y el dolor con el amor, resulta una fusión de amor y de dolor tan estrecha que ya no es posible separar el amor del dolor ni el dolor del amor; por esto, el alma enamorada se alegra en sus dolores y se regocija en su amor doliente.
 
-[![San Pablo de la Cruz, imagen segunda](/images/wp-content/2015/03/spdlc2.jpg)](/images/wp-content/2015/03/spdlc2.jpg)
+[![San Pablo de la Cruz, imagen segunda](/images/imported/2015/03/spdlc2.jpg)](/images/imported/2015/03/spdlc2.jpg)
 
 Sed, pues, constantes en la práctica de todas las virtudes, principalmente en la imitación del dulce Jesús paciente, porque esta es la cumbre del puro amor. Obrad de manera que todos vean que lleváis, no sólo en lo interior, sino también en lo exterior, la imagen de Cristo crucificado, modelo de toda dulzura y mansedumbre. Porque el que internamente está unido al Hijo de Dios vivo exhibe también externamente la imagen del mismo, mediante la práctica continua de una virtud heroica, principalmente de una paciencia llena de fortaleza, que nunca se queja ni en oculto ni en público. Escondeos, pues, en Jesús crucificado, sin desear otra cosa sino que todos se conviertan a su voluntad en todo.
 
 Convertidos así en verdaderos amadores del Crucificado, celebraréis siempre la fiesta de la cruz en vuestro templo interior, aguantando en silencio y sin confiar en criatura alguna; y, ya que las fiestas se han de celebrar con alegría, los que aman al Crucificado procurarán celebrar esta fiesta de la cruz sufriendo en silencio, con su rostro alegre y sereno, de tal manera, que quede oculta a los hombres y conocida sólo de aquel que es el sumo Bien. En esta fiesta se celebran continuamente solemnes banquetes, en los que el alimento es la voluntad divina, según el ejemplo que nos dejó nuestro Amor crucificado.
 
-[![San Pablo de la Cruz, imagen primera](/images/wp-content/2015/03/spdlc1.jpg)](/images/wp-content/2015/03/spdlc1.jpg)
+[![San Pablo de la Cruz, imagen primera](/images/imported/2015/03/spdlc1.jpg)](/images/imported/2015/03/spdlc1.jpg)
 
 > Oración Litúrgica:
 

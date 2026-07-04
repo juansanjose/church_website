@@ -4,7 +4,6 @@ slug: "infantiles-primera-comunion"
 date: "2026-05-17T23:53:21"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/catequesis/infantiles-primera-comunion/"
-source: "wordpress-localhost"
 description: "Preparación para el sacramento de la Primera Comunión."
 ---
 

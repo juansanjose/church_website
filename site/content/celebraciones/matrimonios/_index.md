@@ -4,7 +4,6 @@ slug: "matrimonios"
 date: "2026-05-23T22:57:10"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/celebraciones/matrimonios/"
-source: "wordpress-localhost"
 show_title: true
 description: "Requisitos, preparación y documentación para celebrar el sacramento del matrimonio en la Parroquia San Pablo de la Cruz."
 ---
@@ -38,6 +37,6 @@ b) Aportar la siguiente documentación para cada uno de los futuros contrayentes
 Nota final:
 Con ocasión de la Celebración se llama a vuestro agradecimiento y se invita a vuestra generosidad para contribuir, libremente, con las necesidades de la Parroquia.
 
-[![Marko Iván Rupnik - Bodas de Caná](/images/wp-content/2015/03/matrimonio2-300x145.jpg)](/images/wp-content/2015/03/matrimonio2.jpg)
+[![Marko Iván Rupnik - Bodas de Caná](/images/imported/2015/03/matrimonio2-300x145.jpg)](/images/imported/2015/03/matrimonio2.jpg)
 
 _Marko Iván Rupnik – Bodas de Caná_

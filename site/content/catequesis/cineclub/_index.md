@@ -4,7 +4,6 @@ slug: "cineclub"
 date: "2015-03-15T16:24:12"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/catequesis/cineclub/"
-source: "wordpress-localhost"
 show_title: true
 description: "Una propuesta para aprender a mirar el cine, confrontar nuestra experiencia con sus historias y crecer en un juicio cultural cristiano."
 ---
@@ -28,7 +27,7 @@ Seguiremos durante los próximos tres años la secuencia de las tres grandes pre
 
 También propondremos itinerarios alternativos para jóvenes y niños a lo largo de cada curso. La programación se irá comunicando con suficiente tiempo de antelación.
 
-[![Fotograma de la película La rosa púrpura de El Cairo, 1985 \(Woody Allen\)](/images/wp-content/2015/03/cineclub-300x170.jpg)](/images/wp-content/2015/03/cineclub.jpg)
+[![Fotograma de la película La rosa púrpura de El Cairo, 1985 \(Woody Allen\)](/images/imported/2015/03/cineclub-300x170.jpg)](/images/imported/2015/03/cineclub.jpg)
 
 _Fotograma de la película La rosa púrpura de El Cairo, 1985 (Woody Allen)._
 

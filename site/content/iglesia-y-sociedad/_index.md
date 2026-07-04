@@ -4,7 +4,6 @@ slug: "iglesia-y-sociedad"
 date: "2015-03-15T14:29:05"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/iglesia-y-sociedad/"
-source: "wordpress-localhost"
 show_title: true
 description: "Enlaces sobre la actualidad política, social, cultural y religiosa desde la perspectiva de la doctrina social de la Iglesia."
 ---

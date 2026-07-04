@@ -4,12 +4,11 @@ slug: "caridad"
 date: "2025-11-19T09:09:16"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/caridad/"
-source: "wordpress-localhost"
 show_title: true
 description: "La acción caritativa de la parroquia nace de la gratuidad y el compromiso cristiano con las necesidades de los demás."
 ---
 
-![Van Gogh - El buen samaritano](/images/wp-content/2015/03/samaritano.jpg)
+![Van Gogh - El buen samaritano](/images/imported/2015/03/samaritano.jpg)
 
 _Van Gogh – El buen samaritano_
 
@@ -28,7 +27,7 @@ Nosotros hacemos acción caritativa para aprender a vivir como Cristo.
 
 Bastaría incluso con participar una vez al mes.
 
-![Bartimeo](/images/wp-content/2015/03/bartimeo.gif)
+![Bartimeo](/images/imported/2015/03/bartimeo.gif)
 
 **Acción caritativa de la parroquia:**
 

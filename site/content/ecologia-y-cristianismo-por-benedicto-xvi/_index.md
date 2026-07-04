@@ -4,7 +4,6 @@ slug: "ecologia-y-cristianismo-por-benedicto-xvi"
 date: "2015-03-15T14:48:49"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/ecologia-y-cristianismo-por-benedicto-xvi/"
-source: "wordpress-localhost"
 show_title: true
 description: "Mensaje de Benedicto XVI para la XLIII Jornada Mundial de la Paz: «Si quieres promover la paz, protege la creación»."
 ---

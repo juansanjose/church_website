@@ -8,7 +8,6 @@ set -euo pipefail
 DOMAIN="sanpablodelacruz.com"
 DEPLOY_DIR="/var/www/${DOMAIN}"
 PREVIOUS_DIR="${DEPLOY_DIR}-previous"
-WORDPRESS_BACKUP="/var/www/${DOMAIN}-wordpress-backup"
 VPS_HOST="${VPS_HOST:-moneymachine}"
 VPS_USER="${VPS_USER:-root}"
 
@@ -28,7 +27,6 @@ Usage: $0 [OPTION]
 
 Options:
   previous    Restore the previous static deploy (default)
-  wordpress   Restore the old WordPress site from backup
   status      Show current deploy status
 
 Environment:
@@ -37,7 +35,6 @@ Environment:
 
 Examples:
   VPS_HOST=moneymachine VPS_USER=root $0 previous
-  $0 wordpress
 EOF
   exit 1
 }
@@ -90,41 +87,6 @@ REMOTESCRIPT
   log "Rollback to previous deploy COMPLETE."
 }
 
-rollback_wordpress() {
-  log "Restoring WordPress backup..."
-  
-  ssh "${VPS_USER}@${VPS_HOST}" bash -s <<'REMOTESCRIPT'
-    set -euo pipefail
-    DEPLOY_DIR="/var/www/sanpablodelacruz.com"
-    WORDPRESS_DIR="${DEPLOY_DIR}-wordpress-backup"
-    
-    if [[ ! -d "${WORDPRESS_DIR}" ]] || [[ -z "$(ls -A "${WORDPRESS_DIR}")" ]]; then
-      echo "ERROR: No WordPress backup found at ${WORDPRESS_DIR}"
-      exit 1
-    fi
-    
-    # Save current static to previous
-    rm -rf "${DEPLOY_DIR}-previous"
-    cp -a "${DEPLOY_DIR}" "${DEPLOY_DIR}-previous"
-    
-    # Restore WordPress
-    rm -rf "${DEPLOY_DIR}"
-    cp -a "${WORDPRESS_DIR}" "${DEPLOY_DIR}"
-    
-    # Fix ownership
-    chown -R www-data:www-data "${DEPLOY_DIR}"
-    
-    # Note: PHP-FPM and database must also be running for WordPress to work
-    echo "WordPress files restored."
-    echo "IMPORTANT: Ensure PHP-FPM and MySQL/MariaDB are running:"
-    echo "  systemctl start php8.2-fpm"
-    echo "  systemctl start mariadb"
-REMOTESCRIPT
-
-  verify_ssh
-  log "WordPress restore COMPLETE."
-}
-
 show_status() {
   ssh "${VPS_USER}@${VPS_HOST}" bash -s <<'REMOTESCRIPT'
     set -euo pipefail
@@ -132,7 +94,6 @@ show_status() {
     echo "=== Deploy Status ==="
     echo "Current deploy size: $(du -sh "${DEPLOY_DIR}" 2>/dev/null | cut -f1)"
     echo "Previous deploy: $([ -d "${DEPLOY_DIR}-previous" ] && echo 'EXISTS' || echo 'MISSING')"
-    echo "WordPress backup: $([ -d "${DEPLOY_DIR}-wordpress-backup" ] && echo 'EXISTS' || echo 'MISSING')"
     echo ""
     echo "=== Caddy Status ==="
     systemctl is-active caddy || echo "Caddy: INACTIVE"
@@ -149,10 +110,6 @@ case "${ACTION}" in
   previous)
     verify_ssh
     rollback_previous
-    ;;
-  wordpress)
-    verify_ssh
-    rollback_wordpress
     ;;
   status)
     show_status

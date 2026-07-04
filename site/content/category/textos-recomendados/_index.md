@@ -1,7 +1,6 @@
 ---
 title: "Textos Recomendados"
 url: "/category/textos-recomendados/"
-source: "wordpress-localhost"
 show_title: true
 ---
 

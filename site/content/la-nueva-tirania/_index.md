@@ -4,7 +4,6 @@ slug: "la-nueva-tirania"
 date: "2015-03-15T14:48:46"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/la-nueva-tirania/"
-source: "wordpress-localhost"
 show_title: true
 description: "Reflexión de Juan Manuel de Prada sobre la libertad, la educación y los mecanismos culturales de la nueva tiranía."
 ---

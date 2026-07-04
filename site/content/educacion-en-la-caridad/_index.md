@@ -4,7 +4,6 @@ slug: "educacion-en-la-caridad"
 date: "2015-03-15T14:51:48"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/educacion-en-la-caridad/"
-source: "wordpress-localhost"
 show_title: true
 description: "Reflexiones de Juan Pablo II y Benedicto XVI sobre la educación en la caridad y el amor cristiano al prójimo."
 ---

@@ -1,7 +1,6 @@
 ---
 title: "Enlaces Recomendados"
 url: "/category/enlaces-recomendados/"
-source: "wordpress-localhost"
 show_title: true
 ---
 

@@ -4,7 +4,6 @@ slug: "cultura"
 date: "2015-03-15T14:32:06"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/cultura/"
-source: "wordpress-localhost"
 show_title: true
 description: "Recursos de cultura, universidad, literatura, música y cine para poner en diálogo la fe cristiana con la inteligencia y la sociedad."
 ---

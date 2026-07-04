@@ -4,7 +4,6 @@ slug: "coloquios-en-el-parque"
 date: "2015-03-15T16:11:33"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/catequesis/coloquios-en-el-parque/"
-source: "wordpress-localhost"
 show_title: true
 description: "Coloquios sobre la fe cristiana como experiencia viva capaz de iluminar la existencia personal y la realidad contemporánea."
 ---
@@ -15,7 +14,7 @@ La fe es una experiencia sólo cuando tiene que ver con toda la vida y cuando se
 
 La alternativa a esta experiencia es la de soportar lo mejor posible las circunstancias que nos tocan, relegando la fe a la ritualidad de lo privado. Desde siempre ésta ha sido la pretensión del poder frente al cristianismo y la Iglesia: reducirlos a factores sentimentales o éticos, pero sin incidencia en la vida real de los hombres y los pueblos.
 
-[![Van Gogh - Terraza del café de la Place du Forum en Arlés por la noche](/images/wp-content/2015/03/vangoghcafe-236x300.jpg)](/images/wp-content/2015/03/vangoghcafe.jpg)
+[![Van Gogh - Terraza del café de la Place du Forum en Arlés por la noche](/images/imported/2015/03/vangoghcafe-236x300.jpg)](/images/imported/2015/03/vangoghcafe.jpg)
 
 _Van Gogh – Terraza del café de la Place du Forum en Arlés por la noche_
 

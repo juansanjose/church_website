@@ -9,7 +9,6 @@ DOMAIN="sanpablodelacruz.com"
 PRIMARY_DOMAIN="www.${DOMAIN}"
 HUGO_VERSION="0.159.2"
 DEPLOY_DIR="/var/www/${DOMAIN}"
-LEGACY_DIR="/var/www/${DOMAIN}-wordpress"
 SITE_USER="www-data"
 
 # Colors
@@ -150,9 +149,7 @@ caddy version
 # ========================================
 log "Creating deploy directories..."
 mkdir -p "${DEPLOY_DIR}"
-mkdir -p "${LEGACY_DIR}"
 chown -R "${SITE_USER}:${SITE_USER}" "${DEPLOY_DIR}"
-chown -R "${SITE_USER}:${SITE_USER}" "${LEGACY_DIR}"
 
 # ========================================
 # CADDY CONFIGURATION
@@ -171,10 +168,6 @@ ${PRIMARY_DOMAIN} {
         Referrer-Policy strict-origin-when-cross-origin
         Content-Security-Policy "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src 'self'; font-src 'self';"
     }
-
-    # WordPress legacy redirects (will be updated post-migration)
-    @wpadmin path /wp-admin* /wp-login.php
-    redir @wpadmin / permanent
 
     try_files {path} {path}/ =404
 
@@ -202,9 +195,7 @@ systemctl restart caddy
 # CREATE ROLLBACK DIRECTORIES
 # ========================================
 mkdir -p "${DEPLOY_DIR}-previous"
-mkdir -p "${DEPLOY_DIR}-wordpress-backup"
 chown -R "${SITE_USER}:${SITE_USER}" "${DEPLOY_DIR}-previous"
-chown -R "${SITE_USER}:${SITE_USER}" "${DEPLOY_DIR}-wordpress-backup"
 
 # ========================================
 # FINAL VERIFICATION

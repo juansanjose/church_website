@@ -2,7 +2,7 @@
 
 [![Build and Deploy](https://github.com/juansanjose/church_website/actions/workflows/deploy.yml/badge.svg)](https://github.com/juansanjose/church_website/actions/workflows/deploy.yml)
 
-Static Hugo site for [Parroquia San Pablo de la Cruz](https://www.sanpablodelacruz.com), migrated from WordPress.
+Static Hugo site for [Parroquia San Pablo de la Cruz](https://www.sanpablodelacruz.com).
 
 ## Quickstart
 
@@ -27,13 +27,8 @@ git push origin main
 ```
 .
 ├── .github/workflows/deploy.yml   # CI/CD: build + rsync to VPS
-├── archive/legacy-wordpress/      # Archived WordPress code (post-migration)
-├── migration/
-│   ├── scripts/wordpress_to_hugo.py  # SQL → Markdown converter
-│   └── redirects.caddy            # Caddy redirect rules
 ├── scripts/
 │   ├── vps-setup.sh               # One-time VPS provisioning
-│   ├── archive-wordpress.sh       # Archive legacy code
 │   └── rollback.sh                # Revert bad deploys
 ├── site/                          # Hugo site source
 │   ├── archetypes/                # Content templates
@@ -64,12 +59,8 @@ git push origin main
 
 See [AGENT_PROTOCOL.md](AGENT_PROTOCOL.md) for the AI agent editing protocol.
 
-## Migration Status
+## Deployment
 
-- ✅ WordPress content extracted to Markdown
-- ✅ Images migrated to `site/static/images/wp-content/`
-- ✅ URL redirects generated for Caddy
-- ✅ Legacy WordPress code archived
 - GitHub Actions builds every change to `main` and deploys it through a self-hosted runner on the VPS.
 - Production files live in `/var/www/sanpablodelacruz.com`.
 - Caddy serves `www.sanpablodelacruz.com` and redirects the apex domain to `www`.
@@ -79,9 +70,6 @@ See [AGENT_PROTOCOL.md](AGENT_PROTOCOL.md) for the AI agent editing protocol.
 ```bash
 # Revert to previous static deploy (< 60 seconds)
 make rollback
-
-# Or restore WordPress temporarily
-VPS_HOST=moneymachine VPS_USER=root scripts/rollback.sh wordpress
 ```
 
 ## License

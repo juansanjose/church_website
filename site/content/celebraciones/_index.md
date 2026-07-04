@@ -4,7 +4,6 @@ slug: "celebraciones"
 date: "2026-05-23T23:05:26"
 lastmod: "2026-06-15T10:00:00"
 url: "/celebraciones/"
-source: "wordpress-localhost"
 page_class: "content--cards"
 description: "Misas, sacramentos y celebraciones en la Parroquia San Pablo de la Cruz."
 cascade:

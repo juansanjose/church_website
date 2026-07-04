@@ -1,7 +1,6 @@
 ---
 title: "Tesoros Permanentes"
 url: "/category/tesoros-culturales-permanentes/"
-source: "wordpress-localhost"
 show_title: true
 ---
 

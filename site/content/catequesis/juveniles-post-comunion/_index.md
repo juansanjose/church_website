@@ -4,7 +4,6 @@ slug: "juveniles-post-comunion"
 date: "2026-05-15T16:48:26"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/catequesis/juveniles-post-comunion/"
-source: "wordpress-localhost"
 description: "Grupo de formación cristiana para jóvenes."
 ---
 

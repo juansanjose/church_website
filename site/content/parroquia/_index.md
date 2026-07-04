@@ -4,7 +4,6 @@ slug: "parroquia"
 date: "2026-05-15T13:39:42"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/parroquia/"
-source: "wordpress-localhost"
 description: "Conoce nuestra historia, nuestro patrono y cómo formar parte de esta comunidad de fe."
 ---
 
@@ -14,7 +13,7 @@ En este apartado de nuestra web podrá ver un recorrido histórico a través de 
 
 Él está aquí. Está como el primer día. Está entre nosotros como el día de su muerte. Eternamente está entre nosotros como el primer día. Eternamente todos los días. Está aquí entre nosotros durante todos los días de su eternidad.
 
-[![William Congdon, Crucifijo](/images/wp-content/2015/03/Congdon.jpg)](/images/wp-content/2015/03/Congdon.jpg)
+[![William Congdon, Crucifijo](/images/imported/2015/03/Congdon.jpg)](/images/imported/2015/03/Congdon.jpg)
 
 *William Congdon, Crucifijo*
 
@@ -36,7 +35,7 @@ Es la misma historia, exactamente la misma, eternamente la misma, la que tuvo lu
 
 Los vecinos se agrupan en comunidades para hacer proyectos comunes, para defender sus intereses y para facilitar la convivencia. Lo mismo ocurre con la parroquia. Las personas tenemos unos intereses más altos, más sublimes y más necesarios que los puramente materiales, y necesitamos una luz intensa para ver claro, apoyarnos para no desfallecer en el duro camino de la vida y sentirnos «pueblo de Dios» que camina seguro hacia la casa paterna.
 
-![Vista panorámica](/images/wp-content/2015/03/panoramica2.jpg)
+![Vista panorámica](/images/imported/2015/03/panoramica2.jpg)
 
 _Vista panorámica de la Parroquia_
 
@@ -45,13 +44,13 @@ Nuestra casa común es ciertamente bonita. Está ideada para resumir y acrecenta
 
 El ángulo principal —sobre el altar— representa a Dios Padre que, ante la limitación y pobreza del hombre, urde un plan riquísimo de salvación. Otro ángulo está representado por la puerta principal con el anagrama de Jesús. Cristo es la puerta ineludible de la salvación. El tercer ángulo está representado por la capilla penitencial. Es el Espíritu Santo quien inspira y dirige por el camino de la salvación.
 
-![Ángulo principal sobre el altar](/images/wp-content/2015/03/anguloPrincipal.jpg)
+![Ángulo principal sobre el altar](/images/imported/2015/03/anguloPrincipal.jpg)
 
 _Ángulo principal sobre el altar_
 
 El templo, sobrio, íntimo y profundo, es la síntesis de la historia de salvación. Esta historia implica a Dios y al hombre. El recinto es la gran asamblea -el hombre que necesita ser salvado-. Todos penden del designio de Dios. Por eso están orientados por unas flechas hacia la gran claraboya -Dios-, que proyecta la luz de la salvación sobre el hombre.
 
-![Detalle del abujardado en los muros del templo](/images/wp-content/2015/03/abujardado.jpg)
+![Detalle del abujardado en los muros del templo](/images/imported/2015/03/abujardado.jpg)
 
 _Detalle del abujardado_
 
@@ -59,19 +58,19 @@ Un gran muro de hormigón abujardado semeja el desierto de la vida («La gran tr
 
 Cristo asume todas las situaciones viciadas del hombre: injusticias, impotencia, pasividad, duda, materialismo. Y todo lo destruye. Muere. Purifica lo defectuoso del hombre. Por eso, al morir aparece crecido, agrandado, triunfante. Es el triunfo del hombre de la mano de Cristo.
 
-![María, la primera salvada en la Estación XIV](/images/wp-content/2015/03/viacrucis_014.jpg)
+![María, la primera salvada en la Estación XIV](/images/imported/2015/03/viacrucis_014.jpg)
 
 _María, la primera salvada en la Estación XIV_
 
 El anticipo de ese hombre triunfante es la Virgen: la primera salvada. La Asunción de María invita a todos a seguir su estela.
 
-![Bajorrelieve de la Virgen María](/images/wp-content/2015/03/bajorrelieveMaria.jpg)
+![Bajorrelieve de la Virgen María](/images/imported/2015/03/bajorrelieveMaria.jpg)
 
 _Bajorrelieve de la Virgen María_
 
 Pero esa historia hay que repetirla en cada hombre. De ahí que unas grandes flechas —unas vigas enormes, otra vez— nos dirijan hacia una cruz gigantesca que deja entrever la realidad de la vida: la calle, el escenario donde el hombre plasma su existencia.
 
-![Altar de la Parroquia](/images/wp-content/2015/03/flechas.jpg)
+![Altar de la Parroquia](/images/imported/2015/03/flechas.jpg)
 
 _Altar de la Parroquia_
 

@@ -52,7 +52,7 @@ Optional fields:
 
 ### Where to put images
 - New images: `site/static/images/{section}/{filename}`
-- Existing WordPress images: `site/static/images/wp-content/...` (auto-migrated)
+- Shared historical images: `site/static/images/imported/...`
 
 ### How to reference images
 Use root-relative paths:
@@ -145,7 +145,6 @@ custom_css: |
 - Do not modify `hugo.toml`, layouts, CSS files, scripts, or deployment/config files without explicit permission
 - NEVER commit without running `hugo --minify` first
 - NEVER use inline HTML unless absolutely necessary (use Markdown)
-- NEVER delete archived WordPress files in `archive/legacy-wordpress/`
 
 ## 8. UX Improvement Guidelines
 

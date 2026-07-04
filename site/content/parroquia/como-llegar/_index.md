@@ -4,7 +4,6 @@ slug: "como-llegar"
 date: "2025-11-07T10:03:24"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/parroquia/como-llegar/"
-source: "wordpress-localhost"
 show_title: true
 description: "Dirección, teléfonos, correo electrónico y localización de la Parroquia San Pablo de la Cruz en Madrid."
 ---

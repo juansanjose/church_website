@@ -1,7 +1,6 @@
 ---
 title: "Textos de San Pablo de la Cruz"
 url: "/category/textos-san-pablo-de-la-cruz/"
-source: "wordpress-localhost"
 show_title: true
 ---
 

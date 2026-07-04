@@ -4,7 +4,6 @@ slug: "vida-de-la-iglesia"
 date: "2015-03-15T13:26:43"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/vida-de-la-iglesia/"
-source: "wordpress-localhost"
 show_title: true
 description: "Enlaces de la Santa Sede, la Archidiócesis de Madrid, la Conferencia Episcopal Española y medios de información católica."
 ---

@@ -6,7 +6,6 @@ lastmod: "2026-06-22T00:00:00+02:00"
 url: "/donaciones/"
 aliases:
   - "/donativos/"
-source: "wordpress-localhost"
 description: "Haz una donación a la Parroquia San Pablo de la Cruz mediante transferencia bancaria o Bizum."
 ---
 

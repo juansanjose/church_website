@@ -14,10 +14,6 @@ www.sanpablodelacruz.com {
         Content-Security-Policy "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src 'self'; font-src 'self';"
     }
 
-    # Block WordPress admin paths
-    @wpadmin path /wp-admin* /wp-login.php /xmlrpc.php
-    redir @wpadmin / permanent
-
     # Handle trailing slashes consistently
     try_files {path} {path}/ =404
 

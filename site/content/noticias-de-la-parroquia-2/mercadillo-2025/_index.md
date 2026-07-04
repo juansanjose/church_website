@@ -4,7 +4,6 @@ slug: "mercadillo-2025"
 date: "2025-11-05T12:04:44"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/noticias-de-la-parroquia-2/mercadillo-2025/"
-source: "wordpress-localhost"
 show_title: true
 description: "Mercadillo parroquial de Adviento con dulces caseros, manualidades, libros, bisutería y otros artículos."
 build:

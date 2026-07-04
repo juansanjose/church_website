@@ -4,7 +4,6 @@ slug: "741-2"
 date: "2026-01-13T00:19:34"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/741-2/"
-source: "wordpress-localhost"
 show_title: true
 description: "Peregrinación parroquial a Valencia, Godella y Uclés del 27 de febrero al 1 de marzo de 2026."
 ---

@@ -4,7 +4,6 @@ slug: "horarios"
 date: "2026-05-23T23:56:30"
 lastmod: "2026-06-29T01:18:58+02:00"
 url: "/celebraciones/horarios/"
-source: "wordpress-localhost"
 description: "Horarios de misas y celebraciones de la Parroquia San Pablo de la Cruz."
 subtitle: "Misas, despacho parroquial, oración y sacramentos"
 custom_css: |

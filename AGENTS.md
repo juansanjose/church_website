@@ -1,8 +1,8 @@
 # Parroquia San Pablo de la Cruz — Agent Instructions
 
-## Project Status: MIGRATED TO STATIC SITE
+## Project Status: STATIC SITE
 
-This project has been migrated from WordPress to a Hugo static site.
+This project is a Hugo static site.
 
 ## Quick Commands
 
@@ -10,7 +10,6 @@ This project has been migrated from WordPress to a Hugo static site.
 # Local development
 make serve          # Hugo dev server at http://localhost:8080
 make build          # Build production site
-make migrate        # Re-run WordPress → Hugo migration
 
 # Deployment (automated via GitHub Actions)
 git push origin main
@@ -46,28 +45,13 @@ Key rules:
 - [x] BACKUP before major changes via `make archive`
 - [x] ALWAYS commit and push completed changes to `origin/main`
 
-## Legacy WordPress
-
-The old WordPress code is archived in `archive/legacy-wordpress/`.
-Database dumps, uploads, and sanitized wp-config.php are preserved.
-
-To temporarily restore WordPress:
-```bash
-VPS_HOST=moneymachine VPS_USER=root scripts/rollback.sh wordpress
-```
-
 ## Repository Structure
 
 ```
 church_website/
 ├── .github/workflows/deploy.yml    # CI/CD pipeline
-├── archive/legacy-wordpress/       # Archived PHP/WordPress
-├── migration/
-│   ├── scripts/wordpress_to_hugo.py
-│   └── redirects.caddy             # WP → Static redirects
 ├── scripts/
 │   ├── vps-setup.sh                # VPS one-time setup
-│   ├── archive-wordpress.sh
 │   └── rollback.sh
 ├── site/                           # Hugo site
 │   ├── content/                    # Markdown pages & posts

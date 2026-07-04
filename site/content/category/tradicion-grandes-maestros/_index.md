@@ -1,7 +1,6 @@
 ---
 title: "Tradición y Grandes Maestros"
 url: "/category/tradicion-grandes-maestros/"
-source: "wordpress-localhost"
 show_title: true
 ---
 

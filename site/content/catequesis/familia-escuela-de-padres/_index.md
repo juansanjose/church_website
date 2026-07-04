@@ -4,7 +4,6 @@ slug: "familia-escuela-de-padres"
 date: "2015-03-15T15:54:44"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/catequesis/familia-escuela-de-padres/"
-source: "wordpress-localhost"
 show_title: true
 description: "Escuela de familias para acompañar a los padres en la educación integral y personalizada de sus hijos."
 ---
@@ -28,7 +27,7 @@ description: "Escuela de familias para acompañar a los padres en la educación 
 
 ### Introducción:
 
-[![Van Gogh - Primeros pasos](/images/wp-content/2015/03/vangoghpasos-300x238.jpg)](/images/wp-content/2015/03/vangoghpasos.jpg)
+[![Van Gogh - Primeros pasos](/images/imported/2015/03/vangoghpasos-300x238.jpg)](/images/imported/2015/03/vangoghpasos.jpg)
 
 _Van Gogh – Primeros Pasos_
 
@@ -45,7 +44,7 @@ Afortunadamente, las investigaciones en el área del comportamiento humano han h
 En la sociedad actual hay que educar en FUTURO. El futuro no es consecuencia de un azar, hay que luchar por conseguirlo. El futuro lo estamos haciendo entre todos Cada familia presta su colaboración al esforzarse en ayudar a sus hijos a ser personas libres y responsables Es necesario formarse, prepararse y mejor aún, profesionalizarse.
 Educar no es fácil, el ambiente a veces juega en contra, pero también tenemos al alcance de la mano unos conocimientos capaces de convertir lo difícil, en posible.
 
-[![Gráfico del Proyecto Educativo Familiar](/images/wp-content/2015/03/graficopef2-300x231.png)](/images/wp-content/2015/03/graficopef2.png)
+[![Gráfico del Proyecto Educativo Familiar](/images/imported/2015/03/graficopef2-300x231.png)](/images/imported/2015/03/graficopef2.png)
 
 ### Objetivos:
 
@@ -63,7 +62,7 @@ El tratamiento de los temas más confidenciales, se realiza con el Asesor en ent
 
 **El P. E. F.: características propias**
 
-[![Características del Proyecto Educativo Familiar](/images/wp-content/2015/03/graficopief-300x156.png)](/images/wp-content/2015/03/graficopief.png)
+[![Características del Proyecto Educativo Familiar](/images/imported/2015/03/graficopief-300x156.png)](/images/imported/2015/03/graficopief.png)
 
 **1ª.- Educación positiva:**
 

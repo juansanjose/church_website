@@ -4,7 +4,6 @@ slug: "bautismos"
 date: "2026-05-23T22:56:00"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/celebraciones/bautismos/"
-source: "wordpress-localhost"
 show_title: true
 description: "Requisitos, fechas y preparación para celebrar el sacramento del bautismo en la Parroquia San Pablo de la Cruz."
 ---

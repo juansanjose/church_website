@@ -4,7 +4,6 @@ slug: "jovenes-confirmacion"
 date: "2026-05-15T16:47:54"
 lastmod: "2026-06-07T10:00:00"
 url: "/catequesis/jovenes-confirmacion/"
-source: "wordpress-localhost"
 description: "Grupo de Jóvenes – Formación, testimonios y convivencia."
 ---
 

@@ -4,7 +4,6 @@ slug: "escuela-de-cristianismo"
 date: "2015-03-15T16:07:51"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/catequesis/escuela-de-cristianismo/"
-source: "wordpress-localhost"
 show_title: true
 description: "Camino de formación, lectura y trabajo común para profundizar en el conocimiento de Cristo y de la fe cristiana."
 ---
@@ -26,6 +25,6 @@ caminando siempre **en sintonía con el ritmo del tiempo litúrgico.**
 **Duración:** Sesiones de 90 minutos.
 **Hora:** 20:45 horas.
 
-[![La Última Cena, de Giotto](/images/wp-content/2015/03/ultima_cena_giotto.jpg)](/images/wp-content/2015/03/ultima_cena_giotto.jpg) [![Benedicto XVI durante una audiencia](/images/wp-content/2015/03/benedicto_audiencia.jpg)](/images/wp-content/2015/03/benedicto_audiencia.jpg)
+[![La Última Cena, de Giotto](/images/imported/2015/03/ultima_cena_giotto.jpg)](/images/imported/2015/03/ultima_cena_giotto.jpg) [![Benedicto XVI durante una audiencia](/images/imported/2015/03/benedicto_audiencia.jpg)](/images/imported/2015/03/benedicto_audiencia.jpg)
 
-[![Audiencia en el Vaticano](/images/wp-content/2015/03/vaticano_audiencia_alemana-201x300.jpg)](/images/wp-content/2015/03/vaticano_audiencia_alemana.jpg)
+[![Audiencia en el Vaticano](/images/imported/2015/03/vaticano_audiencia_alemana-201x300.jpg)](/images/imported/2015/03/vaticano_audiencia_alemana.jpg)

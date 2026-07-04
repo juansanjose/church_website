@@ -4,7 +4,6 @@ slug: "enlaces-accion-social-caritativa-y-misionera-de-la-iglesia"
 date: "2015-03-15T14:32:50"
 lastmod: "2026-06-23T00:00:00+02:00"
 url: "/enlaces-accion-social-caritativa-y-misionera-de-la-iglesia/"
-source: "wordpress-localhost"
 show_title: true
 description: "Enlaces de organizaciones de acción social, acogida, cooperación internacional y sensibilidad misionera vinculadas a la Iglesia."
 ---

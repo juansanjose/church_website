@@ -4,7 +4,6 @@ slug: "catequesis"
 date: "2026-05-10T15:02:35"
 lastmod: "2026-06-07T10:00:00"
 url: "/catequesis/"
-source: "wordpress-localhost"
 page_class: "content--cards"
 description: "Formación en la fe para todas las edades en la Parroquia San Pablo de la Cruz."
 ---

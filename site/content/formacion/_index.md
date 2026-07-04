@@ -4,7 +4,6 @@ slug: "formacion"
 date: "2026-05-15T16:03:28"
 lastmod: "2026-06-14T10:00:00"
 url: "/formacion/"
-source: "wordpress-localhost"
 page_class: "content--cards"
 description: "Grupos de formación de la Parroquia San Pablo de la Cruz."
 custom_css: |
