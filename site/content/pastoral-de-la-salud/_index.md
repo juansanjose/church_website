@@ -128,6 +128,8 @@ Contemplando las palabras de Jesús sobre la compasión del buen samaritano, bus
 <p>Déjanos la información accediendo con este QR o <a href="https://forms.gle/6bpC6rH5dCh2sdrz6">pinchando aquí</a>.</p>
 </div>
 
+<img src="/images/pastoral-de-la-salud/pastoral-salud-03.jpg" alt="Cristo acompañando a quien sufre">
+
 <div class="pastoral-text pastoral-text--wide">
 <h3>Hacernos prójimos</h3>
 <p>Llevar y sentir el amor compasivo de Dios Samaritano.</p>
@@ -141,7 +143,7 @@ Contemplando las palabras de Jesús sobre la compasión del buen samaritano, bus
 </ul>
 </div>
 
-<img src="/images/pastoral-de-la-salud/pastoral-salud-03.png" alt="Cristo cargando con el dolor">
+<img src="/images/pastoral-de-la-salud/pastoral-salud-04.png" alt="Cristo cargando con el dolor">
 
 <div class="pastoral-text">
 <h3>Una participación en el dolor redentor de Cristo</h3>
