@@ -7,6 +7,9 @@ url: "/pastoral-de-la-salud/"
 description: "Pastoral de la Salud de la Parroquia San Pablo de la Cruz: acompañamiento eclesial, cuidado comunitario y apoyo espiritual."
 hide_breadcrumbs: true
 custom_css: |
+  .page--pastoral-de-la-salud .breadcrumbs {
+    display: none;
+  }
   .page--pastoral-de-la-salud .page-content {
     max-width: 1180px;
     margin: 0 auto;
@@ -63,6 +66,14 @@ custom_css: |
   }
   .page--pastoral-de-la-salud .pastoral-links h3 {
     margin-top: 0.5rem;
+  }
+  .page--pastoral-de-la-salud .pastoral-contact,
+  .page--pastoral-de-la-salud .pastoral-contact p,
+  .page--pastoral-de-la-salud .pastoral-contact a {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
   }
   @media (max-width: 960px) {
     .page--pastoral-de-la-salud .pastoral-source-grid {
@@ -130,7 +141,7 @@ Contemplando las palabras de Jesús sobre la compasión del buen samaritano, bus
 </ul>
 </div>
 
-<img src="/images/pastoral-de-la-salud/pastoral-salud-03.png" alt="Cristo cargando con el dolor">
+<img src="/images/imported/2015/03/samaritano.jpg" alt="El buen samaritano">
 
 <div class="pastoral-text">
 <h3>Una participación en el dolor redentor de Cristo</h3>
@@ -145,9 +156,13 @@ Contemplando las palabras de Jesús sobre la compasión del buen samaritano, bus
 
 ## ¿Tienes alguna pregunta que nos invite a responderte?
 
-Envía un correo a [GPS.sanpablodelacruz@gmail.com](mailto:GPS.sanpablodelacruz@gmail.com) o pásate por la parroquia en [Avenida de los Madroños, 40 · 28043 Madrid](https://www.google.com/maps/place/40%C2%B027%2723.9%22N+3%C2%B038%2719.9%22W/@40.456756,-3.638754,16z/data=!4m4!3m3!8m2!3d40.45664!4d-3.638858?hl=es&entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D).
+<div class="pastoral-contact">
 
-628 223 783 · 91 300 29 81
+<p>Envía un correo a <a href="mailto:GPS.sanpablodelacruz@gmail.com">GPS.sanpablodelacruz@gmail.com</a> o pásate por la parroquia en <a href="https://www.google.com/maps/place/40%C2%B027%2723.9%22N+3%C2%B038%2719.9%22W/@40.456756,-3.638754,16z/data=!4m4!3m3!8m2!3d40.45664!4d-3.638858?hl=es&entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D">Avenida de los Madroños, 40 · 28043 Madrid</a>.</p>
+
+<p>628 223 783 · 91 300 29 81</p>
+
+</div>
 
 ## Si quieres saber más sobre la Pastoral de la Salud
 
