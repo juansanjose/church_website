@@ -5,6 +5,7 @@ date: "2026-07-04T01:20:00+02:00"
 lastmod: "2026-07-04T01:20:00+02:00"
 url: "/pastoral-de-la-salud/"
 description: "Pastoral de la Salud de la Parroquia San Pablo de la Cruz: acompañamiento eclesial, cuidado comunitario y apoyo espiritual."
+hide_breadcrumbs: true
 custom_css: |
   .page--pastoral-de-la-salud .page-content {
     max-width: 1180px;
@@ -57,11 +58,8 @@ custom_css: |
   .page--pastoral-de-la-salud .pastoral-source-grid .pastoral-text {
     padding-top: 0.9rem;
   }
-  .page--pastoral-de-la-salud .pastoral-note {
-    background: var(--bg-warm);
-    border-left: 4px solid var(--gold);
-    padding: 1rem 1.25rem;
-    margin: 1.5rem 0;
+  .page--pastoral-de-la-salud .pastoral-text--wide {
+    grid-column: span 2;
   }
   .page--pastoral-de-la-salud .pastoral-links h3 {
     margin-top: 0.5rem;
@@ -79,6 +77,9 @@ custom_css: |
     .page--pastoral-de-la-salud .pastoral-source-grid img,
     .page--pastoral-de-la-salud .pastoral-source-grid .pastoral-qr img {
       height: auto;
+    }
+    .page--pastoral-de-la-salud .pastoral-text--wide {
+      grid-column: auto;
     }
   }
 ---
@@ -116,9 +117,7 @@ Contemplando las palabras de Jesús sobre la compasión del buen samaritano, bus
 <p>Déjanos la información accediendo con este QR o <a href="https://forms.gle/6bpC6rH5dCh2sdrz6">pinchando aquí</a>.</p>
 </div>
 
-<img src="/images/wp-content/2015/03/samaritano.jpg" alt="El buen samaritano">
-
-<div class="pastoral-text">
+<div class="pastoral-text pastoral-text--wide">
 <h3>Hacernos prójimos</h3>
 <p>Llevar y sentir el amor compasivo de Dios Samaritano.</p>
 <ul>
@@ -146,13 +145,9 @@ Contemplando las palabras de Jesús sobre la compasión del buen samaritano, bus
 
 ## ¿Tienes alguna pregunta que nos invite a responderte?
 
-<div class="pastoral-note">
-
 Envía un correo a [GPS.sanpablodelacruz@gmail.com](mailto:GPS.sanpablodelacruz@gmail.com) o pásate por la parroquia en [Avenida de los Madroños, 40 · 28043 Madrid](https://www.google.com/maps/place/40%C2%B027%2723.9%22N+3%C2%B038%2719.9%22W/@40.456756,-3.638754,16z/data=!4m4!3m3!8m2!3d40.45664!4d-3.638858?hl=es&entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D).
 
 628 223 783 · 91 300 29 81
-
-</div>
 
 ## Si quieres saber más sobre la Pastoral de la Salud
 
