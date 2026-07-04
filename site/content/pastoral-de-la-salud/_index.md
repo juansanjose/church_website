@@ -20,8 +20,8 @@ custom_css: |
   }
   .page--pastoral-de-la-salud .pastoral-source-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 3rem 2.25rem;
+    grid-template-columns: minmax(220px, 0.85fr) minmax(0, 1.15fr);
+    gap: 2.25rem 2.5rem;
     align-items: start;
     margin: 2.5rem 0 3rem;
   }
@@ -59,10 +59,8 @@ custom_css: |
     object-fit: contain;
   }
   .page--pastoral-de-la-salud .pastoral-source-grid .pastoral-text {
-    padding-top: 0.9rem;
-  }
-  .page--pastoral-de-la-salud .pastoral-text--wide {
-    grid-column: span 2;
+    align-self: center;
+    padding-top: 0;
   }
   .page--pastoral-de-la-salud .pastoral-links h3 {
     margin-top: 0.5rem;
@@ -77,7 +75,7 @@ custom_css: |
   }
   @media (max-width: 960px) {
     .page--pastoral-de-la-salud .pastoral-source-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: minmax(190px, 0.9fr) minmax(0, 1.1fr);
       gap: 2rem;
     }
   }
@@ -88,9 +86,6 @@ custom_css: |
     .page--pastoral-de-la-salud .pastoral-source-grid img,
     .page--pastoral-de-la-salud .pastoral-source-grid .pastoral-qr img {
       height: auto;
-    }
-    .page--pastoral-de-la-salud .pastoral-text--wide {
-      grid-column: auto;
     }
   }
 ---
@@ -130,7 +125,7 @@ Contemplando las palabras de Jesús sobre la compasión del buen samaritano, bus
 
 <img src="/images/pastoral-de-la-salud/pastoral-salud-03.jpg" alt="Cristo acompañando a quien sufre">
 
-<div class="pastoral-text pastoral-text--wide">
+<div class="pastoral-text">
 <h3>Hacernos prójimos</h3>
 <p>Llevar y sentir el amor compasivo de Dios Samaritano.</p>
 <ul>
