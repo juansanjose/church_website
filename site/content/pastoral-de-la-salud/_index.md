@@ -20,8 +20,8 @@ custom_css: |
   }
   .page--pastoral-de-la-salud .pastoral-source-grid {
     display: grid;
-    grid-template-columns: minmax(220px, 0.85fr) minmax(0, 1.15fr);
-    gap: 2.25rem 2.5rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 3rem 2.25rem;
     align-items: start;
     margin: 2.5rem 0 3rem;
   }
@@ -59,8 +59,7 @@ custom_css: |
     object-fit: contain;
   }
   .page--pastoral-de-la-salud .pastoral-source-grid .pastoral-text {
-    align-self: center;
-    padding-top: 0;
+    padding-top: 0.9rem;
   }
   .page--pastoral-de-la-salud .pastoral-links h3 {
     margin-top: 0.5rem;
@@ -75,7 +74,7 @@ custom_css: |
   }
   @media (max-width: 960px) {
     .page--pastoral-de-la-salud .pastoral-source-grid {
-      grid-template-columns: minmax(190px, 0.9fr) minmax(0, 1.1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 2rem;
     }
   }
@@ -170,7 +169,7 @@ Contemplando las palabras de Jesús sobre la compasión del buen samaritano, bus
 - [Mensaje del Santo Padre León XIV para la XXXIV Jornada Mundial del Enfermo - Enero 2026](https://press.vatican.va/content/salastampa/es/bollettino/pubblico/2026/01/20/200126a.html)
 - [Conferencia Episcopal Española - Pastoral de la Salud](https://social.conferenciaepiscopal.es/pastoral-de-la-salud/)
 - [Delegación Episcopal de Pastoral de la Salud - Archidiócesis de Madrid](https://transparencia.archimadrid.es/delegacion-episcopal-de-pastoral-de-la-salud-3/)
-- [Salvifici Doloris - Carta Apostólica - San Juan Pablo II - 11 Feb 1984](https://drive.google.com/open?id=1AIsyGMOie8bepEt5m-dt_g4LabQbL2rU&usp=drive_copy)
+- [Salvifici Doloris - Carta Apostólica - San Juan Pablo II - 11 Feb 1984](https://www.vatican.va/content/john-paul-ii/es/apost_letters/1984/documents/hf_jp-ii_apl_11021984_salvifici-doloris.html)
 - [Reseña del libro El Arte de la Vida Sana - Fabio Rossini](https://drive.google.com/open?id=1_mcs8h3ZLTJ70uAy8sv1SP6lDAv9tAB3&usp=drive_copy)
 
 </div>
