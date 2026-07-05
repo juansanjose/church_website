@@ -12,25 +12,33 @@
 
 .home-grid {
   display: grid;
+  background: var(--bg-warm);
 }
 
 @media (min-width: 900px) {
   .home-grid {
     grid-template-columns: 1fr 1fr;
     min-height: calc(100vh - 60px);
+    background: transparent;
   }
 }
 
 .home-slideshow {
   position: relative;
-  height: clamp(200px, 42vh, 320px);
+  width: min(100% - 32px, 420px);
+  height: clamp(160px, 30vh, 220px);
+  margin: 20px auto 0;
   overflow: hidden;
   background: #ddd;
+  border-radius: var(--radius);
 }
 
 @media (min-width: 900px) {
   .home-slideshow {
+    width: 100%;
     height: auto;
+    margin: 0;
+    border-radius: 0;
   }
 }
 
