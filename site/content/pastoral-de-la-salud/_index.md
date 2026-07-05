@@ -10,6 +10,9 @@ custom_css: |
   .page--pastoral-de-la-salud .breadcrumbs {
     display: none;
   }
+  .page--pastoral-de-la-salud .container {
+    max-width: 1180px;
+  }
   .page--pastoral-de-la-salud .page-content {
     max-width: 1180px;
     margin: 0 auto;
@@ -20,9 +23,10 @@ custom_css: |
   }
   .page--pastoral-de-la-salud .pastoral-source-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: minmax(210px, 230px) minmax(260px, 1fr) minmax(210px, 230px) minmax(260px, 1fr);
     gap: 3rem 2.25rem;
     align-items: start;
+    justify-content: center;
     margin: 2.5rem 0 3rem;
   }
   .page--pastoral-de-la-salud .pastoral-source-grid h3 {
@@ -31,15 +35,19 @@ custom_css: |
     font-size: 1.08rem;
     font-weight: 700;
     line-height: 1.3;
-    margin: 0 0 1.35rem;
+    margin: 0 0 1rem;
   }
   .page--pastoral-de-la-salud .pastoral-source-grid p,
   .page--pastoral-de-la-salud .pastoral-source-grid li {
     color: var(--text);
-    font-size: 0.98rem;
-    line-height: 1.55;
+    font-size: 0.93rem;
+    line-height: 1.38;
+  }
+  .page--pastoral-de-la-salud .pastoral-source-grid p {
+    margin: 0 0 0.65rem;
   }
   .page--pastoral-de-la-salud .pastoral-source-grid ul {
+    margin: 0.35rem 0 0;
     padding-left: 1.2rem;
     list-style-type: square;
   }
@@ -74,7 +82,7 @@ custom_css: |
   }
   @media (max-width: 960px) {
     .page--pastoral-de-la-salud .pastoral-source-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: minmax(190px, 0.85fr) minmax(0, 1.15fr);
       gap: 2rem;
     }
   }
