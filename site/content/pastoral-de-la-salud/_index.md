@@ -72,6 +72,14 @@ custom_css: |
   .page--pastoral-de-la-salud .pastoral-links h3 {
     margin-top: 0.5rem;
   }
+  .page--pastoral-de-la-salud .pastoral-member-access {
+    text-align: center;
+    margin: 1rem 0 2.5rem;
+  }
+  .page--pastoral-de-la-salud .pastoral-member-access .btn {
+    min-width: 130px;
+    text-decoration: none;
+  }
   .page--pastoral-de-la-salud .pastoral-contact,
   .page--pastoral-de-la-salud .pastoral-contact p,
   .page--pastoral-de-la-salud .pastoral-contact a {
@@ -101,9 +109,9 @@ custom_css: |
 
 ## ¿Qué es?
 
-Un camino de acompañamiento eclesial insertado en la parroquia y una expresión del amor a Dios y al prójimo.
+Un camino de acompañamiento eclesial insertado en la parroquia y una **expresión del amor a Dios y al prójimo.**
 
-Contemplando las palabras de Jesús sobre la compasión del buen samaritano, buscamos hacernos prójimos mediante un cuidado comunitario y espiritual de quienes sufren enfermedades, así como de aquellos que participan en la misión compartida del cuidado de la salud en nuestro entorno parroquial.
+Contemplando las palabras de Jesús sobre la compasión del buen samaritano, buscamos **hacernos prójimos** mediante un cuidado comunitario y espiritual de quienes sufren enfermedades, así como de aquellos que participan en la **misión compartida** del cuidado de la salud en nuestro entorno parroquial.
 
 </div>
 
@@ -122,7 +130,9 @@ Contemplando las palabras de Jesús sobre la compasión del buen samaritano, bus
 </div>
 
 <div class="pastoral-qr">
+<a href="https://forms.gle/6bpC6rH5dCh2sdrz6" aria-label="Abrir formulario de contacto de la Pastoral de la Salud">
 <img src="/images/pastoral-de-la-salud/pastoral-salud-02.png" alt="Código QR para contactar con la Pastoral de la Salud">
+</a>
 </div>
 
 <div class="pastoral-text">
@@ -156,7 +166,9 @@ Contemplando las palabras de Jesús sobre la compasión del buen samaritano, bus
 
 ## Acceso al área de Miembros del GPS+
 
-[Pulsa aquí para acceder al área privada de los miembros de la Pastoral de la Salud](https://sites.google.com/view/gps-sanpablodelacruz/area-de-miembros-del-gps).
+<div class="pastoral-member-access">
+<a class="btn btn--primary" href="https://sites.google.com/view/gps-sanpablodelacruz/area-de-miembros-del-gps">Acceso</a>
+</div>
 
 ## ¿Tienes alguna pregunta que nos invite a responderte?
 
