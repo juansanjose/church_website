@@ -78,7 +78,12 @@ custom_css: |
   }
   .page--pastoral-de-la-salud .pastoral-member-access .btn {
     min-width: 130px;
+    color: white;
     text-decoration: none;
+  }
+  .page--pastoral-de-la-salud .pastoral-member-access .btn:hover,
+  .page--pastoral-de-la-salud .pastoral-member-access .btn:focus-visible {
+    color: white;
   }
   .page--pastoral-de-la-salud .pastoral-contact,
   .page--pastoral-de-la-salud .pastoral-contact p,
