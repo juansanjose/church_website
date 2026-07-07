@@ -172,7 +172,7 @@ Contemplando las palabras de Jesús sobre la compasión del buen samaritano, bus
 ## Acceso al área de Miembros del GPS+
 
 <div class="pastoral-member-access">
-<a class="btn btn--primary" href="https://sites.google.com/view/gps-sanpablodelacruz/area-de-miembros-del-gps">Acceso al área de Miembros del GPS+</a>
+<a class="btn btn--primary" href="https://sites.google.com/view/gps-sanpablodelacruz/area-de-miembros-del-gps">Acceso a la área de miembros</a>
 </div>
 
 ## ¿Tienes alguna pregunta que nos invite a responderte?
