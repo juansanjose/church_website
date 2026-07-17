@@ -2,7 +2,7 @@
 title: "Localización y cómo llegar"
 slug: "como-llegar"
 date: "2025-11-07T10:03:24"
-lastmod: "2026-06-23T00:00:00+02:00"
+lastmod: "2026-07-17T00:00:00+02:00"
 url: "/parroquia/como-llegar/"
 show_title: true
 description: "Dirección, teléfonos, correo electrónico y localización de la Parroquia San Pablo de la Cruz en Madrid."
@@ -15,7 +15,7 @@ Código Postal: 28043
 Madrid
 España
 
-**Teléfono: 91 300 29 81 – 628 223 783**
+**Teléfono: 91 300 29 81**
 
 **Correo electrónico: sanpablodelacruz@gmail.com**
 

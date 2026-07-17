@@ -11,7 +11,6 @@ disableKinds = ['taxonomy', 'term']
   description = 'Parroquia San Pablo de la Cruz - Madrid'
   author = 'Parroquia San Pablo de la Cruz'
   phone = '91 300 29 81'
-  mobile = '628 223 783'
   mobile2 = '607 883 119'
   email = 'sanpablodelacruz@gmail.com'
   address = 'Avenida de los Madroños, 40, 28043 Madrid'

@@ -2,7 +2,7 @@
 title: "Contactar"
 slug: "contactar"
 date: "2026-05-10T19:25:04"
-lastmod: "2026-06-22T00:00:00+02:00"
+lastmod: "2026-07-17T00:00:00+02:00"
 url: "/parroquia/contactar/"
 show_title: false
 description: "Contacta con la Parroquia San Pablo de la Cruz por teléfono o correo electrónico. Estamos en Avenida de los Madroños, 40, 28043 Madrid."
@@ -19,7 +19,6 @@ Avenida de los Madroños, 40, 28043 Madrid
 ### Teléfonos
 
 - [91 300 29 81](tel:+34913002981)
-- [628 223 783](tel:+34628223783)
 - [607 883 119](tel:+34607883119)
 
 ## Envíanos un mensaje
