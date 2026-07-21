@@ -2,7 +2,7 @@
 title: "Noticias"
 slug: "noticias-de-la-parroquia-2"
 date: "2026-05-23T23:56:45"
-lastmod: "2026-06-23T00:00:00+02:00"
+lastmod: "2026-07-22T00:00:00+02:00"
 url: "/noticias-de-la-parroquia-2/"
 description: "Últimas noticias, eventos y actividades de la Parroquia San Pablo de la Cruz."
 custom_css: |
@@ -37,15 +37,23 @@ custom_css: |
 
 ## Próximos Eventos
 
-### Actividad de verano 2026
+### Camino de Santiago 2026
 
-Los días **24 y 29 de junio** y **1, 6 y 8 de julio**, de **16:30 a 18:30**, tendremos películas, actividades y mucho más. Una oportunidad para compartir, divertirse y crecer en amistad y fe.
+El **26 de julio**, 26 jóvenes de nuestra parroquia iniciarán juntos el Camino de Santiago como peregrinos de fe, amistad y esperanza.
 
-[Consulta toda la información sobre la actividad de verano](/noticias-de-la-parroquia-2/actividad-verano-2026/)
+[Conoce más sobre el Camino de Santiago](/noticias-de-la-parroquia-2/camino-de-santiago-2026/)
 
 ---
 
 ## Eventos Anteriores
+
+<details class="event--past">
+<summary>Actividad de verano 2026</summary>
+
+Los días **24 y 29 de junio** y **1, 6 y 8 de julio** compartimos películas, actividades y mucho más: una oportunidad para divertirnos y crecer en amistad y fe.
+
+[Más información](/noticias-de-la-parroquia-2/actividad-verano-2026/)
+</details>
 
 <details class="event--past">
 <summary>Encuentro Fe y Vida con José Luis Martínez Almeida</summary>
