@@ -21,18 +21,26 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+  height: 72px;
 }
 
 .site-brand {
-  font-weight: 700;
-  font-size: 1.05rem;
-  color: var(--text);
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
   text-decoration: none;
 }
 
-.site-brand:hover {
-  color: var(--green);
+.site-brand__logo {
+  display: block;
+  width: 150px;
+  height: auto;
+}
+
+.site-brand:focus-visible {
+  border-radius: 4px;
+  outline: 2px solid var(--gold);
+  outline-offset: 4px;
 }
 
 /* Mobile nav toggle */
@@ -122,6 +130,12 @@
 }
 
 @media (min-width: 1024px) {
+  .header-inner {
+    height: 84px;
+  }
+  .site-brand__logo {
+    width: 180px;
+  }
   .nav-toggle {
     display: none;
   }
