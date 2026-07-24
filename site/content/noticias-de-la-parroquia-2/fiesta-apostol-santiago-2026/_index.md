@@ -2,10 +2,16 @@
 title: "Fiesta del Apóstol Santiago"
 slug: "fiesta-apostol-santiago-2026"
 date: "2026-07-24T16:19:17+02:00"
-lastmod: "2026-07-24T16:19:17+02:00"
+lastmod: "2026-07-24T16:21:27+02:00"
 url: "/noticias-de-la-parroquia-2/fiesta-apostol-santiago-2026/"
 description: "Horario especial de celebraciones por la fiesta del Apóstol Santiago, del 24 al 26 de julio de 2026."
 show_title: true
+custom_css: |
+  .content img {
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+  }
 build:
   list: never
   render: always
