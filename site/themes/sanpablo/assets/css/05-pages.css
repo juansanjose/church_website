@@ -17,9 +17,6 @@
   --text-light: #555555;
   --text-muted: #777777;
   --border: #e8e8e8;
-  --font-heading: Georgia, serif;
-  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  font-family: var(--font-body);
 }
 
 .home-spacer {
