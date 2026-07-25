@@ -6,13 +6,29 @@
    Homepage
    ======================================== */
 
+.home-view {
+  --green: #2d4a33;
+  --green-dark: #1a2f1e;
+  --green-light: #3d6144;
+  --gold: #c9a55c;
+  --bg: #ffffff;
+  --bg-warm: #f8f7f4;
+  --text: #1a1a1a;
+  --text-light: #555555;
+  --text-muted: #777777;
+  --border: #e8e8e8;
+  --font-heading: Georgia, serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-body);
+}
+
 .home-spacer {
   height: 0;
 }
 
 .home-grid {
   display: grid;
-  background: var(--bg);
+  background: var(--bg-warm);
 }
 
 @media (min-width: 900px) {
@@ -29,7 +45,7 @@
   height: clamp(220px, 62vw, 280px);
   margin: 0;
   overflow: hidden;
-  background: var(--sage);
+  background: #ddd;
 }
 
 @media (min-width: 480px) {
@@ -81,7 +97,7 @@
   justify-content: center;
   align-items: center;
   padding: 36px 16px;
-  background: var(--bg);
+  background: var(--bg-warm);
   text-align: center;
 }
 
