@@ -12,8 +12,6 @@ cascade:
     render: always
 ---
 
-Misas, sacramentos y celebraciones especiales en nuestra parroquia.
-
 ## Matrimonios
 
 Información sobre matrimonios, preparación y reserva de fechas.
