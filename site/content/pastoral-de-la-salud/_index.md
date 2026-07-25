@@ -5,11 +5,7 @@ date: "2026-07-04T01:20:00+02:00"
 lastmod: "2026-07-17T00:00:00+02:00"
 url: "/pastoral-de-la-salud/"
 description: "Pastoral de la Salud de la Parroquia San Pablo de la Cruz: acompañamiento eclesial, cuidado comunitario y apoyo espiritual."
-hide_breadcrumbs: true
 custom_css: |
-  .page--pastoral-de-la-salud .breadcrumbs {
-    display: none;
-  }
   .page--pastoral-de-la-salud .container {
     max-width: 1180px;
   }

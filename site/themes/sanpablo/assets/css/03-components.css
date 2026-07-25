@@ -63,19 +63,6 @@
   padding: 0 20px 48px;
 }
 
-/* Breadcrumbs */
-.breadcrumbs {
-  max-width: var(--max-content);
-  margin: 0 auto 20px;
-  padding: 0 20px;
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-
-.breadcrumbs a {
-  color: var(--green);
-}
-
 /* Entry cards (used in list pages) */
 .entry-list {
   list-style: none;
