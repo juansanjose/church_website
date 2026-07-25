@@ -27,16 +27,16 @@ custom_css: |
     box-shadow: var(--shadow-sm);
   }
   .formacion-card--infantiles {
-    --card-accent: #c9a55c;
+    --card-accent: var(--gold);
   }
   .formacion-card--juveniles {
-    --card-accent: #3d6144;
+    --card-accent: var(--forest);
   }
   .formacion-card--universitarios {
-    --card-accent: #506b8b;
+    --card-accent: var(--olive);
   }
   .formacion-card--inscripcion {
-    --card-accent: #8b5f68;
+    --card-accent: var(--sage);
   }
   .formacion-card__icon {
     display: grid;

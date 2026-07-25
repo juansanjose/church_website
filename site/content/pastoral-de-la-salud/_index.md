@@ -31,7 +31,7 @@ custom_css: |
   }
   .page--pastoral-de-la-salud .pastoral-source-grid h3 {
     color: var(--text);
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-family: var(--font-heading);
     font-size: 1.08rem;
     font-weight: 700;
     line-height: 1.3;
@@ -88,7 +88,7 @@ custom_css: |
   .page--pastoral-de-la-salud .pastoral-contact,
   .page--pastoral-de-la-salud .pastoral-contact p,
   .page--pastoral-de-la-salud .pastoral-contact a {
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-family: var(--font-body);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.6;
