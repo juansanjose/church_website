@@ -2,7 +2,7 @@
 title: "Noticias"
 slug: "noticias-de-la-parroquia-2"
 date: "2026-05-23T23:56:45"
-lastmod: "2026-07-24T16:19:17+02:00"
+lastmod: "2026-08-10T00:00:00+02:00"
 url: "/noticias-de-la-parroquia-2/"
 description: "Últimas noticias, eventos y actividades de la Parroquia San Pablo de la Cruz."
 custom_css: |
@@ -37,23 +37,31 @@ custom_css: |
 
 ## Próximos Eventos
 
-### Fiesta del Apóstol Santiago
+### Encuentro parroquial en el Cerro de los Ángeles
 
-Del **viernes 24 al domingo 26 de julio** celebraremos la fiesta del Apóstol Santiago con un horario especial de misas.
+El **19 de septiembre** comenzaremos juntos el curso 2026/2027 con un encuentro para niños, jóvenes y adultos.
 
-[Consulta los horarios de las celebraciones](/noticias-de-la-parroquia-2/fiesta-apostol-santiago-2026/)
-
----
-
-### Camino de Santiago 2026
-
-El **26 de julio**, 26 jóvenes de nuestra parroquia iniciarán juntos el Camino de Santiago como peregrinos de fe, amistad y esperanza.
-
-[Conoce más sobre el Camino de Santiago](/noticias-de-la-parroquia-2/camino-de-santiago-2026/)
+[Consulta la invitación al encuentro parroquial](/noticias-de-la-parroquia-2/encuentro-parroquial-cerro-angeles-2026/)
 
 ---
 
 ## Eventos Anteriores
+
+<details class="event--past">
+<summary>Fiesta del Apóstol Santiago 2026</summary>
+
+Del **viernes 24 al domingo 26 de julio** celebramos la fiesta del Apóstol Santiago con un horario especial de misas.
+
+[Consulta los horarios de las celebraciones](/noticias-de-la-parroquia-2/fiesta-apostol-santiago-2026/)
+</details>
+
+<details class="event--past">
+<summary>Camino de Santiago 2026</summary>
+
+El **26 de julio**, 26 jóvenes de nuestra parroquia iniciaron juntos el Camino de Santiago como peregrinos de fe, amistad y esperanza.
+
+[Conoce más sobre el Camino de Santiago](/noticias-de-la-parroquia-2/camino-de-santiago-2026/)
+</details>
 
 <details class="event--past">
 <summary>Actividad de verano 2026</summary>
