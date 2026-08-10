@@ -6,6 +6,12 @@ lastmod: "2026-08-10T00:00:00+02:00"
 url: "/noticias-de-la-parroquia-2/encuentro-parroquial-cerro-angeles-2026/"
 description: "Encuentro de la Parroquia San Pablo de la Cruz en el Cerro de los Ángeles el 19 de septiembre para comenzar juntos el curso 2026/2027."
 show_title: true
+custom_css: |
+  .content img {
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+  }
 build:
   list: never
   render: always
