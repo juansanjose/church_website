@@ -2,7 +2,7 @@
 title: "Celebraciones"
 slug: "celebraciones"
 date: "2026-05-23T23:05:26"
-lastmod: "2026-06-15T10:00:00"
+lastmod: "2026-08-10T00:00:00+02:00"
 url: "/celebraciones/"
 page_class: "content--cards"
 description: "Misas, sacramentos y celebraciones en la Parroquia San Pablo de la Cruz."
@@ -14,24 +14,18 @@ cascade:
 
 ## Matrimonios
 
-Información sobre matrimonios, preparación y reserva de fechas.
+Orientación para la preparación y reserva de fechas.
 
-[Matrimonios](/celebraciones/matrimonios)
+[Preparar el matrimonio](/celebraciones/matrimonios)
 
 ## Bautismos
 
-Bautismos y preparación para los sacramentos.
+Información para preparar y celebrar el bautismo.
 
-[Bautismos](/celebraciones/bautismos)
+[Preparar el bautismo](/celebraciones/bautismos)
 
 ## Horarios
 
 Consulta los horarios de misas y celebraciones.
 
 [Ver horarios](/celebraciones/horarios/)
-
-## Tiempos Litúrgicos
-
-Conoce el calendario litúrgico y el significado de sus celebraciones.
-
-[Tiempos Litúrgicos](/celebraciones/tiempos-liturgicos/)
