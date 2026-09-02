@@ -127,8 +127,12 @@
   text-transform: uppercase;
 }
 
-.home-schedule-period {
+.home-schedule-period:not([hidden]) {
   display: contents;
+}
+
+.home-schedule-period[hidden] {
+  display: none !important;
 }
 
 .home-schedule {
