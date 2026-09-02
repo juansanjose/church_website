@@ -2,26 +2,52 @@
 title: "Horarios"
 slug: "horarios"
 date: "2026-05-23T23:56:30"
-lastmod: "2026-09-02T12:00:00+02:00"
+lastmod: "2026-09-02T15:00:00+02:00"
 url: "/celebraciones/horarios/"
 description: "Horarios de misas y celebraciones de la Parroquia San Pablo de la Cruz."
 subtitle: "Misas, despacho parroquial, oración y sacramentos"
 ---
 
-## Horario de misas
+<section data-schedule-before>
+  <div class="schedule-notice">
+    <strong>Horario de julio y agosto.</strong> El horario habitual se retomará automáticamente el domingo 6 de septiembre.
+  </div>
+  <h2>Horario de misas</h2>
+  <table>
+    <thead><tr><th>Día</th><th>Mañana</th><th>Tarde</th></tr></thead>
+    <tbody>
+      <tr><td>Lunes a sábado</td><td>—</td><td><strong>20:00</strong></td></tr>
+      <tr><td>Domingos y festivos</td><td><strong>13:00</strong></td><td><strong>20:00</strong></td></tr>
+    </tbody>
+  </table>
+  <h2>Despacho parroquial</h2>
+  <table>
+    <thead><tr><th>Día</th><th>Mañana</th><th>Tarde</th></tr></thead>
+    <tbody>
+      <tr><td>Lunes, miércoles y viernes</td><td><strong>11:00–13:00</strong></td><td><strong>18:00–20:00</strong></td></tr>
+    </tbody>
+  </table>
+</section>
 
-| Día | Mañana | Tarde |
-| --- | --- | --- |
-| Lunes a viernes | **9:15** | **20:00** |
-| Sábado | — | **20:00** · Misa de jóvenes |
-| Domingo | **11:30** y **13:00** | **20:00** |
-
-## Despacho parroquial
-
-| Día | Mañana | Tarde |
-| --- | --- | --- |
-| Lunes y miércoles | **11:00–13:00** | **17:00–19:00** |
-| Viernes | **11:00–13:00** | — |
+<section data-schedule-from hidden>
+  <h2>Horario de misas</h2>
+  <table>
+    <thead><tr><th>Día</th><th>Mañana</th><th>Tarde</th></tr></thead>
+    <tbody>
+      <tr><td>Lunes a viernes</td><td><strong>9:15</strong></td><td><strong>20:00</strong></td></tr>
+      <tr><td>Sábado</td><td>—</td><td><strong>20:00</strong> · Misa de jóvenes</td></tr>
+      <tr><td>Domingo</td><td><strong>11:30</strong> y <strong>13:00</strong></td><td><strong>20:00</strong></td></tr>
+    </tbody>
+  </table>
+  <h2>Despacho parroquial</h2>
+  <table>
+    <thead><tr><th>Día</th><th>Mañana</th><th>Tarde</th></tr></thead>
+    <tbody>
+      <tr><td>Lunes y miércoles</td><td><strong>11:00–13:00</strong></td><td><strong>17:00–19:00</strong></td></tr>
+      <tr><td>Viernes</td><td><strong>11:00–13:00</strong></td><td>—</td></tr>
+    </tbody>
+  </table>
+</section>
 
 ## Oración y confesiones
 

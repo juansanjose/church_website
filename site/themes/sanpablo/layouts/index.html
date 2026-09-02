@@ -10,21 +10,37 @@
 
   <div class="home-times" aria-labelledby="times-title">
     <h1 id="times-title" class="home-times__title">Horarios de Misas</h1>
-    <p class="home-times__season">Desde el 6 de septiembre</p>
-    <dl class="home-schedule">
-      <div class="home-schedule__row">
-        <dt>A diario</dt>
-        <dd><span>9:15</span><span>20:00</span></dd>
-      </div>
-      <div class="home-schedule__row">
-        <dt>Sábados</dt>
-        <dd><span>20:00</span></dd>
-      </div>
-      <div class="home-schedule__row">
-        <dt>Domingos</dt>
-        <dd><span>11:30</span><span>13:00</span><span>20:00</span></dd>
-      </div>
-    </dl>
+    <div class="home-schedule-period" data-schedule-before>
+      <p class="home-times__season">Julio y agosto</p>
+      <dl class="home-schedule">
+        <div class="home-schedule__row">
+          <dt>A diario</dt>
+          <dd><span>20:00</span></dd>
+        </div>
+        <div class="home-schedule__row">
+          <dt>Domingos y festivos</dt>
+          <dd><span>13:00</span><span>20:00</span></dd>
+        </div>
+      </dl>
+      <p class="home-times__change">Nuevo horario desde el 6 de septiembre.</p>
+    </div>
+    <div class="home-schedule-period" data-schedule-from hidden>
+      <p class="home-times__season">Desde el 6 de septiembre</p>
+      <dl class="home-schedule">
+        <div class="home-schedule__row">
+          <dt>A diario</dt>
+          <dd><span>9:15</span><span>20:00</span></dd>
+        </div>
+        <div class="home-schedule__row">
+          <dt>Sábados</dt>
+          <dd><span>20:00</span></dd>
+        </div>
+        <div class="home-schedule__row">
+          <dt>Domingos</dt>
+          <dd><span>11:30</span><span>13:00</span><span>20:00</span></dd>
+        </div>
+      </dl>
+    </div>
     <a class="home-times__button" href="/celebraciones/horarios/">Ver Horarios Completos</a>
   </div>
 </section>

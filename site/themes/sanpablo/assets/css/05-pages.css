@@ -127,6 +127,10 @@
   text-transform: uppercase;
 }
 
+.home-schedule-period {
+  display: contents;
+}
+
 .home-schedule {
   width: 100%;
   max-width: 430px;
@@ -167,6 +171,13 @@
   font-size: 1.08rem;
   font-stretch: semi-expanded;
   font-weight: 800;
+}
+
+.home-times__change {
+  margin-top: 14px;
+  color: var(--text-light);
+  font-size: 0.88rem;
+  font-weight: 600;
 }
 
 .home-times__button {
@@ -391,6 +402,16 @@
 .page--horarios .content h2 {
   scroll-margin-top: 84px;
   margin-top: 3rem;
+}
+
+.page--horarios .schedule-notice {
+  margin-bottom: 2rem;
+  padding: 18px 20px;
+  border-left: 4px solid var(--gold);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--bg-warm);
+  color: var(--green-dark);
+  line-height: 1.55;
 }
 
 .page--horarios #ir-directamente-a {
