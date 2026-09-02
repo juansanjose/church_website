@@ -8,14 +8,6 @@ description: "Horarios de misas y celebraciones de la Parroquia San Pablo de la 
 subtitle: "Misas, despacho parroquial, oración y sacramentos"
 ---
 
-## Ir directamente a
-
-- [Horario de misas](#horario-de-misas)
-- [Despacho parroquial](#despacho-parroquial)
-- [Oración y confesiones](#oración-y-confesiones)
-- [Catequesis y sacramentos](#catequesis-y-sacramentos)
-- [Celebraciones especiales](#celebraciones-especiales)
-
 ## Horario de misas
 
 | Día | Mañana | Tarde |
