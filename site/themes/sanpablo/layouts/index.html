@@ -2,26 +2,29 @@
 <div class="home-spacer" aria-hidden="true"></div>
 <section class="home-grid">
   <div class="home-slideshow" aria-label="Imágenes de la parroquia">
-    <img class="home-slide is-active" src="/images/home/church-exterior.jpeg" alt="Exterior de la Parroquia San Pablo de la Cruz">
-    <img class="home-slide" src="/images/home/church-slide-2.jpeg" alt="">
-    <img class="home-slide" src="/images/home/church-slide-3.jpeg" alt="">
-    <img class="home-slide" src="/images/home/church-slide-4.jpeg" alt="">
+    <img class="home-slide is-active" src="/images/home/church-exterior.jpeg" width="1067" height="1600" alt="Exterior de la Parroquia San Pablo de la Cruz" fetchpriority="high" decoding="async">
+    <img class="home-slide" src="/images/home/church-slide-2.jpeg" width="1067" height="1600" alt="" loading="lazy" decoding="async">
+    <img class="home-slide" src="/images/home/church-slide-3.jpeg" width="1067" height="1600" alt="" loading="lazy" decoding="async">
+    <img class="home-slide" src="/images/home/church-slide-4.jpeg" width="1067" height="1600" alt="" loading="lazy" decoding="async">
   </div>
 
   <div class="home-times" aria-labelledby="times-title">
     <h1 id="times-title" class="home-times__title">Horarios de Misas</h1>
     <p class="home-times__season">Desde el 6 de septiembre</p>
-    <div class="home-time-cards">
-      <article class="home-time-card">
-        <h2>A diario</h2>
-        <p>9:15<br>20:00</p>
-      </article>
-      <article class="home-time-card">
-        <h2>Domingos</h2>
-        <p>11:30<br>13:00<br>20:00</p>
-      </article>
-    </div>
-    <p class="home-times__note">Sábados: 20:00</p>
+    <dl class="home-schedule">
+      <div class="home-schedule__row">
+        <dt>A diario</dt>
+        <dd><span>9:15</span><span>20:00</span></dd>
+      </div>
+      <div class="home-schedule__row">
+        <dt>Sábados</dt>
+        <dd><span>20:00</span></dd>
+      </div>
+      <div class="home-schedule__row">
+        <dt>Domingos</dt>
+        <dd><span>11:30</span><span>13:00</span><span>20:00</span></dd>
+      </div>
+    </dl>
     <a class="home-times__button" href="/celebraciones/horarios/">Ver Horarios Completos</a>
   </div>
 </section>
