@@ -2,41 +2,11 @@
 title: "Horarios"
 slug: "horarios"
 date: "2026-05-23T23:56:30"
-lastmod: "2026-06-29T01:18:58+02:00"
+lastmod: "2026-09-02T12:00:00+02:00"
 url: "/celebraciones/horarios/"
 description: "Horarios de misas y celebraciones de la Parroquia San Pablo de la Cruz."
 subtitle: "Misas, despacho parroquial, oración y sacramentos"
-custom_css: |
-  .page--horarios .summer-mass-notice {
-    margin: 1.75rem 0 2rem;
-    padding: 22px 24px;
-    border: 2px solid var(--gold);
-    border-left-width: 8px;
-    border-radius: var(--radius);
-    background: var(--bg-warm);
-    box-shadow: var(--shadow-sm);
-    color: var(--green-dark);
-    font-size: 1.22rem;
-    font-stretch: semi-expanded;
-    font-weight: 800;
-    line-height: 1.45;
-  }
-
-  .page--horarios .summer-mass-notice strong {
-    color: var(--green-dark);
-  }
-
-  @media (max-width: 480px) {
-    .page--horarios .summer-mass-notice {
-      padding: 18px;
-      font-size: 1.08rem;
-    }
-  }
 ---
-
-<div class="summer-mass-notice">
-Durante los meses de <strong>julio y agosto</strong>, los horarios de misas serán: a diario a las <strong>20:00h</strong>; domingos y festivos a las <strong>13:00h</strong> y <strong>20:00h</strong>. Retomaremos el horario habitual el <strong>domingo 6 de septiembre de 2026</strong>.
-</div>
 
 ## Ir directamente a
 
@@ -50,16 +20,16 @@ Durante los meses de <strong>julio y agosto</strong>, los horarios de misas ser�
 
 | Día | Mañana | Tarde |
 | --- | --- | --- |
-| Lunes a viernes | **9:15** | **20:00** en verano · **19:30** en invierno |
+| Lunes a viernes | **9:15** | **20:00** |
 | Sábado | — | **20:00** · Misa de jóvenes |
 | Domingo | **11:30** y **13:00** | **20:00** |
 
 ## Despacho parroquial
 
-| Temporada | Mañana | Tarde |
+| Día | Mañana | Tarde |
 | --- | --- | --- |
-| Verano | Lunes, miércoles y viernes · **11:00–13:00** | Lunes, miércoles y viernes · **18:00–20:00** |
-| Invierno | Lunes, miércoles y viernes · **11:00–13:00** | Lunes, miércoles y viernes · **17:00–19:00** |
+| Lunes y miércoles | **11:00–13:00** | **17:00–19:00** |
+| Viernes | **11:00–13:00** | — |
 
 ## Oración y confesiones
 

@@ -2,7 +2,7 @@
 title: "Noticias"
 slug: "noticias-de-la-parroquia-2"
 date: "2026-05-23T23:56:45"
-lastmod: "2026-08-10T00:00:00+02:00"
+lastmod: "2026-09-02T12:00:00+02:00"
 url: "/noticias-de-la-parroquia-2/"
 description: "Últimas noticias, eventos y actividades de la Parroquia San Pablo de la Cruz."
 custom_css: |
@@ -36,6 +36,14 @@ custom_css: |
 ---
 
 ## Próximos Eventos
+
+### En septiembre retomamos los horarios habituales
+
+Desde el **domingo 6 de septiembre** se reanudan los horarios habituales de misas y del despacho parroquial.
+
+[Consulta el aviso y todos los horarios](/noticias-de-la-parroquia-2/horarios-septiembre-2026/)
+
+---
 
 ### Encuentro parroquial en el Cerro de los Ángeles
 
