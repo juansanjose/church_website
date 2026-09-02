@@ -59,7 +59,12 @@
       schedule.hidden = newScheduleIsActive;
     });
     schedulesFrom.forEach(function (schedule) {
-      schedule.hidden = !newScheduleIsActive;
+      schedule.hidden = !newScheduleIsActive && !schedule.hasAttribute('data-schedule-preview');
+    });
+    document.querySelectorAll('[data-schedule-label]').forEach(function (label) {
+      label.textContent = newScheduleIsActive
+        ? 'Desde el 6 de septiembre'
+        : 'Nuevo horario desde el 6 de septiembre';
     });
   }
 

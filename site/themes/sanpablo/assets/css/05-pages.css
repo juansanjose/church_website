@@ -135,6 +135,10 @@
   display: none !important;
 }
 
+.home-schedule-period[data-schedule-preview]:not([hidden]) .home-times__season {
+  margin-top: 24px;
+}
+
 .home-schedule {
   width: 100%;
   max-width: 430px;
