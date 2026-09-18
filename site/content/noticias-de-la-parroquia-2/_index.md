@@ -53,14 +53,6 @@ Del **9 al 11 de octubre de 2026**, viviremos una peregrinación y convivencia p
 
 ---
 
-### En septiembre retomamos los horarios habituales
-
-Desde el **domingo 6 de septiembre** se reanudan los horarios habituales de misas y del despacho parroquial.
-
-[Consulta el aviso y todos los horarios](/noticias-de-la-parroquia-2/horarios-septiembre-2026/)
-
----
-
 ### Encuentro parroquial en el Cerro de los Ángeles
 
 El **19 de septiembre** comenzaremos juntos el curso 2026/2027 con un encuentro para niños, jóvenes y adultos.
