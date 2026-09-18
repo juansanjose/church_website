@@ -6,6 +6,12 @@ lastmod: "2026-09-02T15:00:00+02:00"
 url: "/celebraciones/horarios/"
 description: "Horarios de misas y celebraciones de la Parroquia San Pablo de la Cruz."
 subtitle: "Misas, despacho parroquial, oración y sacramentos"
+custom_css: |
+  .content img {
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+  }
 ---
 
 <section data-schedule-before>
