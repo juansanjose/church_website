@@ -19,8 +19,6 @@ custom_css: |
 
 ![Cartel con los horarios de Eucaristías, rosario, confesiones y despacho parroquial](/images/celebraciones/horarios-2026.webp)
 
-El cartel recoge los horarios actuales de misas, oración, confesiones y despacho parroquial.
-
 ## Catequesis y sacramentos
 
 - **Catequesis de niños:** miércoles a las **18:00**.
