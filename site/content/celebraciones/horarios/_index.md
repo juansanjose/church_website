@@ -15,9 +15,13 @@ custom_css: |
     object-fit: contain;
     width: 100%;
   }
+  .content h2 {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
 ---
 
-![Cartel con los horarios de Eucaristías, rosario, confesiones y despacho parroquial](/images/celebraciones/horarios-2026-sin-lineas.webp)
+![Cartel con los horarios de Eucaristías, rosario, confesiones y despacho parroquial](/images/celebraciones/horarios-2026.webp)
 
 ## Catequesis y sacramentos
 
