@@ -37,6 +37,14 @@ custom_css: |
 
 ## Próximos Eventos
 
+### Adoración eucarística: ven a adorarle
+
+El **primer viernes de cada mes**, de octubre a junio, te invitamos a acompañar al Señor en la adoración al Santísimo, de 9:15 a 20:00 h, en la capilla de la parroquia.
+
+[Consulta la información e inscríbete en un turno de 30 minutos](/noticias-de-la-parroquia-2/adoracion-eucaristica-2026/)
+
+---
+
 ### ¡En camino! Peregrinación y convivencia
 
 Del **9 al 11 de octubre de 2026**, viviremos una peregrinación y convivencia por **Ourense, Oseira y la Ribeira Sacra**, con el lema «La alegría, un modo estable de ser».
