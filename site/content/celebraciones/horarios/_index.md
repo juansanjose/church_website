@@ -8,59 +8,18 @@ description: "Horarios de misas y celebraciones de la Parroquia San Pablo de la 
 subtitle: "Misas, despacho parroquial, oración y sacramentos"
 custom_css: |
   .content img {
+    display: block;
     height: auto;
     max-height: none;
+    max-width: 100%;
     object-fit: contain;
+    width: 100%;
   }
 ---
 
-<section data-schedule-before>
-  <div class="schedule-notice">
-    <strong>Horario de julio y agosto.</strong> El horario habitual se retomará automáticamente el domingo 6 de septiembre.
-  </div>
-  <h2>Horario de misas</h2>
-  <table>
-    <thead><tr><th>Día</th><th>Mañana</th><th>Tarde</th></tr></thead>
-    <tbody>
-      <tr><td>Lunes a sábado</td><td>—</td><td><strong>20:00</strong></td></tr>
-      <tr><td>Domingos y festivos</td><td><strong>13:00</strong></td><td><strong>20:00</strong></td></tr>
-    </tbody>
-  </table>
-  <h2>Despacho parroquial</h2>
-  <table>
-    <thead><tr><th>Día</th><th>Mañana</th><th>Tarde</th></tr></thead>
-    <tbody>
-      <tr><td>Lunes, miércoles y viernes</td><td><strong>11:00–13:00</strong></td><td><strong>18:00–20:00</strong></td></tr>
-    </tbody>
-  </table>
-</section>
+![Cartel con los horarios de Eucaristías, rosario, confesiones y despacho parroquial](/images/celebraciones/horarios-2026.webp)
 
-<section data-schedule-from hidden>
-  <h2>Horario de misas</h2>
-  <table>
-    <thead><tr><th>Día</th><th>Mañana</th><th>Tarde</th></tr></thead>
-    <tbody>
-      <tr><td>Lunes a viernes</td><td><strong>9:15</strong></td><td><strong>20:00</strong></td></tr>
-      <tr><td>Sábado</td><td>—</td><td><strong>20:00</strong> · Misa de jóvenes</td></tr>
-      <tr><td>Domingo</td><td><strong>11:30</strong> y <strong>13:00</strong></td><td><strong>20:00</strong></td></tr>
-    </tbody>
-  </table>
-  <h2>Despacho parroquial</h2>
-  <table>
-    <thead><tr><th>Día</th><th>Mañana</th><th>Tarde</th></tr></thead>
-    <tbody>
-      <tr><td>Lunes y miércoles</td><td><strong>11:00–13:00</strong></td><td><strong>17:00–19:00</strong></td></tr>
-      <tr><td>Viernes</td><td><strong>11:00–13:00</strong></td><td>—</td></tr>
-    </tbody>
-  </table>
-</section>
-
-## Oración y confesiones
-
-- **Confesiones, de lunes a viernes:** una hora antes de la misa.
-- **Confesiones, domingos y festivos:** una hora antes y durante la misa.
-- **Santo rosario:** todos los días, media hora antes de la Eucaristía.
-- **Exposición del Santísimo:** primeros viernes de cada mes a las **18:40**.
+El cartel recoge los horarios actuales de misas, oración, confesiones y despacho parroquial.
 
 ## Catequesis y sacramentos
 
@@ -74,5 +33,3 @@ custom_css: |
 - **Navidad — 24 de diciembre:** misa vespertina de Nochebuena a las **19:00** en el parque (tradición familiar).
 - **Día del Enfermo y Santa Unción:** la fecha se anuncia durante cada curso pastoral.
 - **Pastoral sanitaria:** atención domiciliaria. [Contacta con la parroquia](/parroquia/contactar/) para solicitar información.
-
-![Cartel con los horarios de Eucaristías, rosario, confesiones y despacho parroquial](/images/celebraciones/horarios-2026.webp)
