@@ -33,8 +33,8 @@ También puedes inscribirte en el tablón de la parroquia, desde nuestras histor
 
 La adoración es detenerte ante Jesús, realmente presente en la Eucaristía; entregarle tu tiempo, tu amor, tu gratitud y todo lo que llevas en el corazón, para recibir su paz, su Palabra, luz para el camino, consuelo y fuerzas renovadas.
 
-![Cartel de la adoración eucarística: Ven a adorarle, el primer viernes de cada mes](/images/noticias/adoracion-eucaristica-2026/ven-a-adorarle.webp)
+![Cartel explicativo sobre la adoración al Santísimo](/images/noticias/adoracion-eucaristica-2026/que-es-la-adoracion.webp)
 
 ![Cartel sobre qué entregar al Señor y qué recibir en la adoración eucarística](/images/noticias/adoracion-eucaristica-2026/en-la-adoracion.webp)
 
-![Cartel explicativo sobre la adoración al Santísimo](/images/noticias/adoracion-eucaristica-2026/que-es-la-adoracion.webp)
+![Cartel de la adoración eucarística: Ven a adorarle, el primer viernes de cada mes](/images/noticias/adoracion-eucaristica-2026/ven-a-adorarle.webp)

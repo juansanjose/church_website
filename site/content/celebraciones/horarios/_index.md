@@ -15,9 +15,11 @@ custom_css: |
     object-fit: contain;
     width: 100%;
   }
-  .content h2 {
-    border-bottom: 0;
-    padding-bottom: 0;
+  .page--horarios .content > p:first-child {
+    padding: 0;
+    background: transparent;
+    border-left: 0;
+    border-radius: 0;
   }
 ---
 
