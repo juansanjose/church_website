@@ -68,3 +68,5 @@ subtitle: "Misas, despacho parroquial, oración y sacramentos"
 - **Navidad — 24 de diciembre:** misa vespertina de Nochebuena a las **19:00** en el parque (tradición familiar).
 - **Día del Enfermo y Santa Unción:** la fecha se anuncia durante cada curso pastoral.
 - **Pastoral sanitaria:** atención domiciliaria. [Contacta con la parroquia](/parroquia/contactar/) para solicitar información.
+
+![Cartel con los horarios de Eucaristías, rosario, confesiones y despacho parroquial](/images/celebraciones/horarios-2026.webp)

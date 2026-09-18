@@ -6,6 +6,12 @@ lastmod: "2026-09-18T12:00:00+02:00"
 url: "/noticias-de-la-parroquia-2/adoracion-eucaristica-2026/"
 description: "Adoración eucarística el primer viernes de cada mes, de octubre a junio, en la capilla de la parroquia."
 show_title: true
+custom_css: |
+  .content img {
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+  }
 build:
   list: never
   render: always
