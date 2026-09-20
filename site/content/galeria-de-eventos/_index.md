@@ -2,11 +2,31 @@
 title: "Fotos"
 slug: "galeria-de-eventos"
 date: "2026-03-17T00:12:27"
-lastmod: "2026-08-10T00:00:00+02:00"
+lastmod: "2026-09-21T12:00:00+02:00"
 url: "/galeria-de-eventos/"
 show_title: true
 description: "Fotos y carteles de los encuentros, celebraciones y actividades de la Parroquia San Pablo de la Cruz."
 ---
+
+## Encuentro parroquial en el Cerro de los Ángeles 2026
+
+Celebración y convivencia para comenzar juntos el curso 2026/2027, el 19 de septiembre.
+
+[![Sacerdote y monaguillos tras la celebración de la misa](/images/galeria/encuentro-cerro-angeles-2026/encuentro-cerro-angeles-2026-01.webp)](/images/galeria/encuentro-cerro-angeles-2026/encuentro-cerro-angeles-2026-01.webp)
+
+[![Celebración de la misa del encuentro parroquial](/images/galeria/encuentro-cerro-angeles-2026/encuentro-cerro-angeles-2026-02.webp)](/images/galeria/encuentro-cerro-angeles-2026/encuentro-cerro-angeles-2026-02.webp)
+
+[![Explicación durante la visita a la Ermita de Nuestra Señora de los Ángeles](/images/galeria/encuentro-cerro-angeles-2026/encuentro-cerro-angeles-2026-03.webp)](/images/galeria/encuentro-cerro-angeles-2026/encuentro-cerro-angeles-2026-03.webp)
+
+[![Participantes en la celebración del encuentro parroquial](/images/galeria/encuentro-cerro-angeles-2026/encuentro-cerro-angeles-2026-04.webp)](/images/galeria/encuentro-cerro-angeles-2026/encuentro-cerro-angeles-2026-04.webp)
+
+[![Exterior de la Ermita de Nuestra Señora de los Ángeles](/images/galeria/encuentro-cerro-angeles-2026/encuentro-cerro-angeles-2026-05.webp)](/images/galeria/encuentro-cerro-angeles-2026/encuentro-cerro-angeles-2026-05.webp)
+
+[![Momento de convivencia tras la visita a la ermita](/images/galeria/encuentro-cerro-angeles-2026/encuentro-cerro-angeles-2026-06.webp)](/images/galeria/encuentro-cerro-angeles-2026/encuentro-cerro-angeles-2026-06.webp)
+
+[![Visita guiada en la Ermita de Nuestra Señora de los Ángeles](/images/galeria/encuentro-cerro-angeles-2026/encuentro-cerro-angeles-2026-07.webp)](/images/galeria/encuentro-cerro-angeles-2026/encuentro-cerro-angeles-2026-07.webp)
+
+[![Monumento al Sagrado Corazón de Jesús en el Cerro de los Ángeles](/images/galeria/encuentro-cerro-angeles-2026/encuentro-cerro-angeles-2026-08.webp)](/images/galeria/encuentro-cerro-angeles-2026/encuentro-cerro-angeles-2026-08.webp)
 
 ## Camino de Santiago 2026
 

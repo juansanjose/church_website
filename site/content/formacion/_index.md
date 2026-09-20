@@ -2,7 +2,7 @@
 title: "Formación"
 slug: "formacion"
 date: "2026-05-15T16:03:28"
-lastmod: "2026-06-14T10:00:00"
+lastmod: "2026-09-21T12:00:00+02:00"
 url: "/formacion/"
 page_class: "content--cards"
 description: "Grupos de formación de la Parroquia San Pablo de la Cruz."
@@ -82,6 +82,11 @@ custom_css: |
 Grupos de formación para todas las edades en nuestra parroquia.
 
 <div class="formacion-grid">
+  <article class="formacion-card formacion-card--infantiles">
+    <span class="formacion-card__icon" aria-hidden="true">🧒</span>
+    <h2>Niños</h2>
+    <p>A partir de 5 años, primeros encuentros amenos y dinámicos para la iniciación en la oración y en el conocimiento de Jesús.</p>
+  </article>
   <article class="formacion-card formacion-card--infantiles">
     <span class="formacion-card__icon" aria-hidden="true">🧒</span>
     <h2>Infantiles</h2>
