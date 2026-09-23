@@ -2,29 +2,13 @@
 title: "Fotos"
 slug: "galeria-de-eventos"
 date: "2026-03-17T00:12:27"
-lastmod: "2026-09-22T09:00:00+02:00"
+lastmod: "2026-09-23T10:00:00+02:00"
 url: "/galeria-de-eventos/"
 show_title: true
 description: "Fotos y carteles de los encuentros, celebraciones y actividades de la Parroquia San Pablo de la Cruz."
 ---
 
 ## Encuentro parroquial en el Cerro de los Ángeles 2026
-
-**Comenzamos el curso poniendo el corazón en el centro.**
-
-El pasado sábado, un grupo de feligreses de San Pablo de la Cruz compartimos una jornada muy especial en el Cerro de los Ángeles para celebrar juntos el inicio del nuevo curso pastoral.
-
-Fue un día de encuentro, convivencia y fe que nos ayudó a recordar algo esencial: el amor de Cristo es el centro y el sentido de todo lo que hacemos como parroquia. ❤️
-
-Recorrimos el Cerro acompañados por una guía, compartimos una catequesis y celebramos juntos la Eucaristía en la Basílica. Después, alrededor de la mesa, pudimos conocer algunas de las acciones que iremos viviendo durante este nuevo curso.
-
-Volvemos a casa con el corazón lleno y con un lema que queremos que nos acompañe durante todo el año:
-
-> «La alegría, un modo estable de ser».
-
-Que esa alegría que nace de sabernos amados se note también en nuestra forma de vivir, de encontrarnos y de caminar juntos. 🌿
-
-**¡Comenzamos! 🤍**
 
 [![Sacerdote y monaguillos tras la celebración de la misa](/images/galeria/encuentro-cerro-angeles-2026/encuentro-cerro-angeles-2026-01.webp)](/images/galeria/encuentro-cerro-angeles-2026/encuentro-cerro-angeles-2026-01.webp)
 
