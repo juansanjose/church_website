@@ -2,7 +2,7 @@
 title: "Noticias"
 slug: "noticias-de-la-parroquia-2"
 date: "2026-05-23T23:56:45"
-lastmod: "2026-09-12T00:00:00+02:00"
+lastmod: "2026-09-23T09:00:00+02:00"
 url: "/noticias-de-la-parroquia-2/"
 description: "Últimas noticias, eventos y actividades de la Parroquia San Pablo de la Cruz."
 custom_css: |
@@ -53,15 +53,15 @@ Del **9 al 11 de octubre de 2026**, viviremos una peregrinación y convivencia p
 
 ---
 
-### Encuentro parroquial en el Cerro de los Ángeles
-
-El **19 de septiembre** comenzaremos juntos el curso 2026/2027 con un encuentro para niños, jóvenes y adultos.
-
-[Consulta la invitación al encuentro parroquial](/noticias-de-la-parroquia-2/encuentro-parroquial-cerro-angeles-2026/)
-
----
-
 ## Eventos Anteriores
+
+<details class="event--past">
+<summary>Encuentro parroquial en el Cerro de los Ángeles</summary>
+
+El **19 de septiembre** comenzamos juntos el curso 2026/2027 con una jornada de encuentro, convivencia y fe para niños, jóvenes y adultos.
+
+[Consulta la crónica y las fotos del encuentro](/galeria-de-eventos/#encuentro-parroquial-en-el-cerro-de-los-angeles-2026)
+</details>
 
 <details class="event--past">
 <summary>Fiesta del Apóstol Santiago 2026</summary>
