@@ -1,8 +1,8 @@
 ---
-title: "Materiales"
+title: "Textos"
 slug: "materiales"
 date: "2026-05-03T17:50:32"
-lastmod: "2026-06-07T10:00:00"
+lastmod: "2026-09-24T09:00:00+02:00"
 url: "/materiales/"
 page_class: "content--cards"
 description: "Textos, reflexiones y recursos complementarios a la formación impartida en nuestra parroquia."
