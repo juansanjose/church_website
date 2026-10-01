@@ -2,7 +2,7 @@
 title: "Noticias"
 slug: "noticias-de-la-parroquia-2"
 date: "2026-05-23T23:56:45"
-lastmod: "2026-09-25T23:00:00+02:00"
+lastmod: "2026-10-01T15:00:00+02:00"
 url: "/noticias-de-la-parroquia-2/"
 description: "Últimas noticias, eventos y actividades de la Parroquia San Pablo de la Cruz."
 custom_css: |
@@ -36,6 +36,14 @@ custom_css: |
 ---
 
 ## Próximos Eventos
+
+### Comienza un nuevo curso de catequesis
+
+Un espacio para crecer, rezar, conocer a Jesús y vivir la fe en comunidad. Descubre los grupos y horarios para niños, Primera Comunión, poscomunión, Confirmación y jóvenes.
+
+[Consulta los horarios y cómo apuntarte](/noticias-de-la-parroquia-2/nuevo-curso-catequesis-2026/)
+
+---
 
 ### Adoración eucarística: ven a adorarle
 
