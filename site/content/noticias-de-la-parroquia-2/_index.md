@@ -2,7 +2,7 @@
 title: "Noticias"
 slug: "noticias-de-la-parroquia-2"
 date: "2026-05-23T23:56:45"
-lastmod: "2026-10-01T15:00:00+02:00"
+lastmod: "2026-10-02T00:00:00+02:00"
 url: "/noticias-de-la-parroquia-2/"
 description: "Últimas noticias, eventos y actividades de la Parroquia San Pablo de la Cruz."
 custom_css: |
@@ -47,7 +47,7 @@ Un espacio para crecer, rezar, conocer a Jesús y vivir la fe en comunidad. Desc
 
 ### Adoración eucarística: ven a adorarle
 
-El **primer viernes de cada mes**, de octubre a junio, te invitamos a acompañar al Señor en la adoración al Santísimo, de 9:15 a 20:00 h, en la capilla de la parroquia.
+El **primer viernes de cada mes**, de octubre a junio, te invitamos a acompañar al Señor en la adoración al Santísimo, de 9:45 a 20:00 h, en la capilla de la parroquia.
 
 [Consulta la información e inscríbete en un turno de 30 minutos](/noticias-de-la-parroquia-2/adoracion-eucaristica-2026/)
 

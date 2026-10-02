@@ -181,6 +181,18 @@
   font-weight: 800;
 }
 
+.home-times__note {
+  max-width: 430px;
+  margin: 14px 0 0;
+  padding: 10px 12px;
+  border-left: 3px solid var(--gold);
+  background: white;
+  color: var(--text-light);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  text-align: left;
+}
+
 .home-times__button {
   display: inline-block;
   margin-top: 24px;

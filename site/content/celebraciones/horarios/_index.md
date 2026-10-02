@@ -2,7 +2,7 @@
 title: "Horarios"
 slug: "horarios"
 date: "2026-05-23T23:56:30"
-lastmod: "2026-09-02T15:00:00+02:00"
+lastmod: "2026-10-02T00:00:00+02:00"
 url: "/celebraciones/horarios/"
 description: "Horarios de misas y celebraciones de la Parroquia San Pablo de la Cruz."
 subtitle: "Misas, despacho parroquial, oración y sacramentos"
@@ -33,6 +33,10 @@ custom_css: |
 - **Catequesis de adolescentes y jóvenes:** miércoles a las **18:00** y sábados después de la misa de las **20:00**.
 - **Curso prebautismal:** concretar con los catequistas.
 - **Matrimonios:** cursillos en días y horas previamente concretados.
+
+## Oración
+
+- **Adoración eucarística:** el primer viernes de cada mes, de **9:45 a 20:00 h**.
 
 ## Celebraciones especiales
 

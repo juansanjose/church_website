@@ -2,7 +2,7 @@
 title: "Adoración eucarística: ven a adorarle"
 slug: "adoracion-eucaristica-2026"
 date: "2026-09-18T12:00:00+02:00"
-lastmod: "2026-09-18T12:00:00+02:00"
+lastmod: "2026-10-02T00:00:00+02:00"
 url: "/noticias-de-la-parroquia-2/adoracion-eucaristica-2026/"
 description: "Adoración eucarística el primer viernes de cada mes, de octubre a junio, en la capilla de la parroquia."
 show_title: true
@@ -21,7 +21,7 @@ build:
 
 Desde octubre hasta junio, el **primer viernes de cada mes**, te invitamos a acompañar al Señor en la adoración al Santísimo.
 
-La adoración tendrá lugar en la **capilla de la parroquia**, de **9:15 a 20:00 h**. Puedes apuntarte a un turno de **30 minutos** y unir varios turnos si deseas permanecer más tiempo.
+La adoración tendrá lugar en la **capilla de la parroquia**, de **9:45 a 20:00 h**. Puedes apuntarte a un turno de **30 minutos** y unir varios turnos si deseas permanecer más tiempo.
 
 ## ¿Te apuntas?
 
