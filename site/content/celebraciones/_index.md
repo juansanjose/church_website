@@ -26,10 +26,4 @@ cascade:
     <span class="celebration-card__action">Preparar el bautismo <span aria-hidden="true">→</span></span>
   </a>
 
-  <a class="celebration-card" href="/celebraciones/horarios/">
-    <span class="celebration-card__icon" aria-hidden="true">◷</span>
-    <span class="celebration-card__title">Horarios</span>
-    <span class="celebration-card__description">Consulta los horarios de misas y celebraciones.</span>
-    <span class="celebration-card__action">Ver horarios <span aria-hidden="true">→</span></span>
-  </a>
 </nav>

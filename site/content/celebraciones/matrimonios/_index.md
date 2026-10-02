@@ -13,7 +13,7 @@ Para celebrar el sacramento del matrimonio en nuestra parroquia, estos son los p
 ## Antes de la boda
 
 1. **Reservar la fecha:** concertad con suficiente antelación el día y la hora de la boda.
-2. **Realizar el cursillo prematrimonial** en un centro oficial.
+2. **Realizar el cursillo prematrimonial.**
 3. **Gestionar el expediente matrimonial** al menos dos meses antes de la boda.
 
 ## Expediente matrimonial
@@ -44,7 +44,3 @@ Para respetar las normas de la parroquia, os pedimos:
 ## Colaboración con la parroquia
 
 Con ocasión de la celebración, os invitamos a contribuir libremente y con generosidad a las necesidades de la parroquia.
-
-[![Marko Iván Rupnik - Bodas de Caná](/images/imported/2015/03/matrimonio2-300x145.jpg)](/images/imported/2015/03/matrimonio2.jpg)
-
-_Marko Iván Rupnik – Bodas de Caná_

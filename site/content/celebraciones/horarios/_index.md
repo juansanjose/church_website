@@ -27,10 +27,12 @@ custom_css: |
 
 ## Catequesis y sacramentos
 
-- **Catequesis de niños:** miércoles a las **18:00**.
-- **Catequesis de adolescentes y jóvenes:** sábados a las **16:00**.
-- **Curso prebautismal:** segundo miércoles de cada mes a las **20:00**.
-- **Matrimonios:** días y horas previamente concertados. Preparación los lunes, miércoles y viernes por la tarde.
+- **Catequesis de niños de 5 a 7 años:** martes a las **17:30**.
+- **Poscomunión:** domingos después de la misa de las **11:30**.
+- **Preparación para la Primera Comunión:** miércoles a las **18:00**.
+- **Catequesis de adolescentes y jóvenes:** miércoles a las **18:00** y sábados después de la misa de las **20:00**.
+- **Curso prebautismal:** concretar con los catequistas.
+- **Matrimonios:** cursillos en días y horas previamente concretados.
 
 ## Celebraciones especiales
 
