@@ -10,7 +10,7 @@ description: "Grupo de Jóvenes – Formación, testimonios y convivencia."
 **Enlace Grupo de Jóvenes WhatsApp:**
 [https://chat.whatsapp.com/Bha2cAq5QAK9aKLiz5X4Fq](https://chat.whatsapp.com/Bha2cAq5QAK9aKLiz5X4Fq)
 
-Nos reunimos los **Sábados para celebrar la misa de 20:00h** y luego a continuación tenemos un encuentro de formación, testimonios y convivencia.
+Nos reunimos los **Sábados para celebrar la misa de 20:00h** y luego a continuación tenemos un encuentro de formación, testimonios, oración y convivencia.
 
 Realizaremos otro tipo de actividades y salidas complementarias de carácter cultural, musical y social.
 

@@ -90,7 +90,7 @@ Grupos de formación para todas las edades en nuestra parroquia.
   <article class="formacion-card formacion-card--infantiles">
     <span class="formacion-card__icon" aria-hidden="true">🧒</span>
     <h2>Infantiles</h2>
-    <p>Preparación para la Primera Comunión. Niños de 8 años en adelante.</p>
+    <p>Preparación para la Primera Comunión. Niños de 7 años en adelante.</p>
     <a href="/catequesis/infantiles-primera-comunion/">Acceder</a>
   </article>
   <article class="formacion-card formacion-card--juveniles">
@@ -104,11 +104,5 @@ Grupos de formación para todas las edades en nuestra parroquia.
     <h2>Universitarios</h2>
     <p>Espacio de encuentro y reflexión para jóvenes universitarios.</p>
     <a href="/catequesis/jovenes-confirmacion/">Acceder</a>
-  </article>
-  <article class="formacion-card formacion-card--inscripcion">
-    <span class="formacion-card__icon" aria-hidden="true">✍️</span>
-    <h2>Inscripción</h2>
-    <p>Inscríbete en nuestros grupos de formación.</p>
-    <a href="/formacion/inscripcion/">Inscripción</a>
   </article>
 </div>
