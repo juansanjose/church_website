@@ -181,6 +181,19 @@
   font-weight: 800;
 }
 
+.home-schedule__row--stacked dd {
+  display: grid;
+  gap: 2px;
+  justify-items: end;
+}
+
+.home-schedule__row--stacked dd span:first-child {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: right;
+}
+
 .home-times__note {
   max-width: 430px;
   margin: 14px 0 0;
