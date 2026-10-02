@@ -7,7 +7,7 @@ url: "/materiales/"
 description: "Catequesis y textos de formación de la Parroquia San Pablo de la Cruz."
 ---
 
-Aquí encontrarás catequesis y otros textos de formación. Cada publicación incluirá un breve resumen y el documento completo para consultar o descargar.
+Aquí encontrarás catequesis y otros textos de formación.
 
 ## La alegría, un modo estable de ser
 
