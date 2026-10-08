@@ -2,7 +2,7 @@
 title: "Horarios"
 slug: "horarios"
 date: "2026-05-23T23:56:30"
-lastmod: "2026-10-02T00:00:00+02:00"
+lastmod: "2026-10-08T12:00:00+02:00"
 url: "/celebraciones/horarios/"
 description: "Horarios de misas y celebraciones de la Parroquia San Pablo de la Cruz."
 subtitle: "Misas, despacho parroquial, oración y sacramentos"
@@ -23,7 +23,28 @@ custom_css: |
   }
 ---
 
-![Cartel con los horarios de Eucaristías, rosario, confesiones y despacho parroquial](/images/celebraciones/horarios-2026.webp)
+## Eucaristías
+
+- **Lunes a viernes:** 9:15 y 20:00 h.
+- **Sábados:** 9:15 y 20:00 h.
+- **Vísperas de festivos:** 20:00 h.
+- **Domingos:** 11:30, 13:00 y 20:00 h.
+
+Con el cambio al horario de invierno en España, la misa de lunes a viernes por la tarde pasa a las **19:30 h**.
+
+## Rezo del Santo Rosario
+
+- **Lunes a viernes:** 19:30 h.
+
+## Confesiones
+
+- **Laborables:** de 19:00 a 20:00 h.
+- **Festivos:** antes y durante la Eucaristía.
+
+## Despacho parroquial
+
+- **Lunes y miércoles:** de 11:00 a 13:00 h y de 17:00 a 19:00 h.
+- **Viernes:** de 11:00 a 13:00 h.
 
 ## Catequesis y sacramentos
 
