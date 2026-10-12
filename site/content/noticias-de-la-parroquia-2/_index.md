@@ -2,7 +2,7 @@
 title: "Noticias"
 slug: "noticias-de-la-parroquia-2"
 date: "2026-05-23T23:56:45"
-lastmod: "2026-10-02T00:00:00+02:00"
+lastmod: "2026-10-12T12:33:54+02:00"
 url: "/noticias-de-la-parroquia-2/"
 description: "Últimas noticias, eventos y actividades de la Parroquia San Pablo de la Cruz."
 custom_css: |
@@ -37,6 +37,14 @@ custom_css: |
 
 ## Próximos Eventos
 
+### Fiesta de San Pablo de la Cruz — domingo 18 de octubre
+
+Celebramos la fiesta del titular de nuestra parroquia con misas a las **11:30 h**, **13:00 h** y **20:00 h**. La Eucaristía de las **13:00 h** será la misa solemne.
+
+[Lee la invitación y consulta el cartel](/noticias-de-la-parroquia-2/fiesta-san-pablo-de-la-cruz-2026/)
+
+---
+
 ### Comienza un nuevo curso de catequesis
 
 Un espacio para crecer, rezar, conocer a Jesús y vivir la fe en comunidad. Descubre los grupos y horarios para niños, Primera Comunión, poscomunión, Confirmación y jóvenes.
@@ -53,15 +61,15 @@ El **primer viernes de cada mes**, de octubre a junio, te invitamos a acompañar
 
 ---
 
-### ¡En camino! Peregrinación y convivencia
-
-Del **9 al 11 de octubre de 2026**, viviremos una peregrinación y convivencia por **Ourense, Oseira y la Ribeira Sacra**, con el lema «La alegría, un modo estable de ser».
-
-[Consulta el programa y la información para inscribirte](/noticias-de-la-parroquia-2/peregrinacion-ourense-oseira-ribeira-sacra-2026/)
-
----
-
 ## Eventos Anteriores
+
+<details class="event--past">
+<summary>¡En camino! Peregrinación y convivencia</summary>
+
+Peregrinación y convivencia programadas del **9 al 11 de octubre de 2026** por **Ourense, Oseira y la Ribeira Sacra**, con el lema «La alegría, un modo estable de ser».
+
+[Consulta el programa de la peregrinación](/noticias-de-la-parroquia-2/peregrinacion-ourense-oseira-ribeira-sacra-2026/)
+</details>
 
 <details class="event--past">
 <summary>Encuentro parroquial en el Cerro de los Ángeles</summary>
