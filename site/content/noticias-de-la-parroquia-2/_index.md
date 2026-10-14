@@ -2,7 +2,7 @@
 title: "Noticias"
 slug: "noticias-de-la-parroquia-2"
 date: "2026-05-23T23:56:45"
-lastmod: "2026-10-12T12:33:54+02:00"
+lastmod: "2026-10-14T05:36:04+02:00"
 url: "/noticias-de-la-parroquia-2/"
 description: "Últimas noticias, eventos y actividades de la Parroquia San Pablo de la Cruz."
 custom_css: |
@@ -36,6 +36,14 @@ custom_css: |
 ---
 
 ## Próximos Eventos
+
+### Curso de Teología del Cuerpo
+
+El profesor **Rafael Gil** nos acompañará en diez charlas sobre la Teología del Cuerpo de san Juan Pablo II. Primeras fechas: **24 de octubre, 14 y 28 de noviembre y 12 de diciembre**.
+
+[Conoce el curso y consulta el cartel](/noticias-de-la-parroquia-2/curso-teologia-del-cuerpo-2026/)
+
+---
 
 ### Fiesta de San Pablo de la Cruz — domingo 18 de octubre
 
