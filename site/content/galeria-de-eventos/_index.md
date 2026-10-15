@@ -2,11 +2,37 @@
 title: "Fotos"
 slug: "galeria-de-eventos"
 date: "2026-03-17T00:12:27"
-lastmod: "2026-09-23T10:00:00+02:00"
+lastmod: "2026-10-15T05:07:29+02:00"
 url: "/galeria-de-eventos/"
 show_title: true
 description: "Fotos y carteles de los encuentros, celebraciones y actividades de la Parroquia San Pablo de la Cruz."
 ---
+
+## En camino
+
+Peregrinación de la parroquia al Pórtico del Paraíso en Ourense, la Ribeira Sacra, Ribadavia y la Virgen de la Leche en el Monasterio de Oseira.
+
+[![Dos peregrinas durante una parada en un entorno arbolado](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-01.webp)](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-01.webp)
+
+[![Grupo de peregrinos en las escaleras de una iglesia en Ourense](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-02.webp)](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-02.webp)
+
+La siguiente imagen lleva la marca «Contenido generado por IA».
+
+[![Imagen generada por IA de la fachada de una iglesia](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-03.webp)](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-03.webp)
+
+[![Estela de una embarcación durante el recorrido por el río](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-04.webp)](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-04.webp)
+
+[![Riberas arboladas y rocosas vistas desde el río](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-05.webp)](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-05.webp)
+
+[![Imagen de la Virgen en un retablo dorado](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-06.webp)](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-06.webp)
+
+[![Imagen de la Virgen con el Niño en un retablo](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-07.webp)](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-07.webp)
+
+[![Celebración de la Eucaristía durante la peregrinación](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-08.webp)](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-08.webp)
+
+[![Grupo de peregrinos ante la entrada de un monasterio](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-09.webp)](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-09.webp)
+
+[![Escultura de la Virgen entre columnas de piedra](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-10.webp)](/images/galeria/en-camino-ourense-oseira-2026/en-camino-2026-10.webp)
 
 ## Encuentro parroquial en el Cerro de los Ángeles 2026
 

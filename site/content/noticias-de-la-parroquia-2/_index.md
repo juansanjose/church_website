@@ -2,7 +2,7 @@
 title: "Noticias"
 slug: "noticias-de-la-parroquia-2"
 date: "2026-05-23T23:56:45"
-lastmod: "2026-10-14T05:36:04+02:00"
+lastmod: "2026-10-15T05:07:29+02:00"
 url: "/noticias-de-la-parroquia-2/"
 description: "Últimas noticias, eventos y actividades de la Parroquia San Pablo de la Cruz."
 custom_css: |
@@ -77,6 +77,8 @@ El **primer viernes de cada mes**, de octubre a junio, te invitamos a acompañar
 Peregrinación y convivencia programadas del **9 al 11 de octubre de 2026** por **Ourense, Oseira y la Ribeira Sacra**, con el lema «La alegría, un modo estable de ser».
 
 [Consulta el programa de la peregrinación](/noticias-de-la-parroquia-2/peregrinacion-ourense-oseira-ribeira-sacra-2026/)
+
+[Ver las fotos de la peregrinación](/galeria-de-eventos/#en-camino)
 </details>
 
 <details class="event--past">

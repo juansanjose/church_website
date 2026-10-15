@@ -2,7 +2,7 @@
 title: "¡En camino! Peregrinación y convivencia"
 slug: "peregrinacion-ourense-oseira-ribeira-sacra-2026"
 date: "2026-09-12T00:00:00+02:00"
-lastmod: "2026-09-12T00:00:00+02:00"
+lastmod: "2026-10-15T05:07:29+02:00"
 url: "/noticias-de-la-parroquia-2/peregrinacion-ourense-oseira-ribeira-sacra-2026/"
 description: "Del 9 al 11 de octubre de 2026, peregrinación y convivencia por Ourense, Oseira y la Ribeira Sacra: «La alegría, un modo estable de ser»."
 show_title: true
@@ -36,3 +36,5 @@ Unos días para descubrir lugares llenos de fe y belleza, rezar, descansar y dis
 Más información e inscripciones en la parroquia, por [WhatsApp en el 607 88 31 19](https://wa.me/34607883119) o mediante un mensaje en Instagram.
 
 ![Cartel de la peregrinación y convivencia del 9 al 11 de octubre por Ourense, el Monasterio de Oseira y la Ribeira Sacra, con el lema «La alegría, un modo estable de ser»](/images/noticias/peregrinacion-ourense-oseira-ribeira-sacra-2026.png)
+
+[Ver las fotos de la peregrinación](/galeria-de-eventos/#en-camino).
