@@ -2,11 +2,39 @@
 title: "Fotos"
 slug: "galeria-de-eventos"
 date: "2026-03-17T00:12:27"
-lastmod: "2026-10-15T05:07:29+02:00"
+lastmod: "2026-10-18T21:03:55+02:00"
 url: "/galeria-de-eventos/"
 show_title: true
 description: "Fotos y carteles de los encuentros, celebraciones y actividades de la Parroquia San Pablo de la Cruz."
 ---
+
+## Fiesta de San Pablo de la Cruz 2026
+
+Imágenes de la celebración de la fiesta del titular de nuestra parroquia, el domingo 18 de octubre de 2026.
+
+[![Monaguillos y sacerdotes entrando en la iglesia durante la fiesta parroquial](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-01.webp)](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-01.webp)
+
+[![Tres monaguillos durante la procesión de entrada](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-02.webp)](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-02.webp)
+
+[![Sacerdotes y fieles al comienzo de la celebración](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-03.webp)](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-03.webp)
+
+[![Sacerdotes avanzando hacia el altar durante la fiesta](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-04.webp)](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-04.webp)
+
+[![Monaguillos junto al cirio en la celebración](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-05.webp)](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-05.webp)
+
+[![Vista de la iglesia durante la Eucaristía de la fiesta](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-06.webp)](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-06.webp)
+
+[![Lectura durante la celebración de San Pablo de la Cruz](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-07.webp)](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-07.webp)
+
+[![Fiel leyendo desde el ambón durante la fiesta parroquial](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-08.webp)](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-08.webp)
+
+[![Imagen de la Virgen con flores en la iglesia](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-09.webp)](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-09.webp)
+
+[![Comunidad parroquial reunida ante el altar](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-10.webp)](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-10.webp)
+
+[![Dos jóvenes llevan las ofrendas durante la celebración](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-11.webp)](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-11.webp)
+
+[![Presentación de las ofrendas al sacerdote durante la Eucaristía](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-12.webp)](/images/galeria/fiesta-san-pablo-de-la-cruz-2026/fiesta-san-pablo-2026-12.webp)
 
 ## En camino
 

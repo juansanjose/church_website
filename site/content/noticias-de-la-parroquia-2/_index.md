@@ -2,7 +2,7 @@
 title: "Noticias"
 slug: "noticias-de-la-parroquia-2"
 date: "2026-05-23T23:56:45"
-lastmod: "2026-10-15T05:07:29+02:00"
+lastmod: "2026-10-18T21:03:55+02:00"
 url: "/noticias-de-la-parroquia-2/"
 description: "Últimas noticias, eventos y actividades de la Parroquia San Pablo de la Cruz."
 custom_css: |
@@ -50,6 +50,8 @@ El profesor **Rafael Gil** nos acompañará en diez charlas sobre la Teología d
 Celebramos la fiesta del titular de nuestra parroquia con misas a las **11:30 h**, **13:00 h** y **20:00 h**. La Eucaristía de las **13:00 h** será la misa solemne.
 
 [Lee la invitación y consulta el cartel](/noticias-de-la-parroquia-2/fiesta-san-pablo-de-la-cruz-2026/)
+
+[Ver las fotos de la fiesta](/galeria-de-eventos/#fiesta-de-san-pablo-de-la-cruz-2026)
 
 ---
 
