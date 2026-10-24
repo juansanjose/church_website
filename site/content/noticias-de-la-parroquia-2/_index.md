@@ -2,7 +2,7 @@
 title: "Noticias"
 slug: "noticias-de-la-parroquia-2"
 date: "2026-05-23T23:56:45"
-lastmod: "2026-10-18T21:03:55+02:00"
+lastmod: "2026-10-25T00:28:31+02:00"
 url: "/noticias-de-la-parroquia-2/"
 description: "Últimas noticias, eventos y actividades de la Parroquia San Pablo de la Cruz."
 custom_css: |
@@ -36,6 +36,14 @@ custom_css: |
 ---
 
 ## Próximos Eventos
+
+### Corazones inquietos — miércoles alternos
+
+Te invitamos a un espacio de reflexión y diálogo a partir del libro *Seréis como dioses*, del sacerdote Jesús Silva. Comenzamos el **miércoles 28 de octubre**, después de la misa de las **19:30 h**. El libro se podrá adquirir en la parroquia.
+
+[Lee la invitación y consulta el cartel](/noticias-de-la-parroquia-2/corazones-inquietos-2026/)
+
+---
 
 ### Curso de Teología del Cuerpo
 
