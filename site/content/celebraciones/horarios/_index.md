@@ -2,7 +2,7 @@
 title: "Horarios"
 slug: "horarios"
 date: "2026-05-23T23:56:30"
-lastmod: "2026-10-08T12:00:00+02:00"
+lastmod: "2026-10-25T15:50:00+01:00"
 url: "/celebraciones/horarios/"
 description: "Horarios de misas y celebraciones de la Parroquia San Pablo de la Cruz."
 subtitle: "Misas, despacho parroquial, oración y sacramentos"
@@ -23,14 +23,12 @@ custom_css: |
   }
 ---
 
-## Eucaristías
+## Eucaristías — horario de invierno
 
-- **Lunes a viernes:** 9:15 y 20:00 h.
+- **Lunes a viernes:** 9:15 y 19:30 h.
 - **Sábados:** 9:15 y 20:00 h.
 - **Vísperas de festivos:** 20:00 h.
 - **Domingos:** 11:30, 13:00 y 20:00 h.
-
-Con el cambio al horario de invierno en España, la misa de lunes a viernes por la tarde pasa a las **19:30 h**.
 
 ## Rezo del Santo Rosario
 
