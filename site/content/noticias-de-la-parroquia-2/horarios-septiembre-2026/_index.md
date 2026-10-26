@@ -2,7 +2,7 @@
 title: "En septiembre retomamos los horarios habituales"
 slug: "horarios-septiembre-2026"
 date: "2026-09-02T12:00:00+02:00"
-lastmod: "2026-10-08T12:00:00+02:00"
+lastmod: "2026-10-26T12:00:00+01:00"
 url: "/noticias-de-la-parroquia-2/horarios-septiembre-2026/"
 description: "Horarios de misas y del despacho parroquial desde el 6 de septiembre de 2026."
 show_title: true
@@ -21,7 +21,7 @@ Desde el **domingo 6 de septiembre** retomamos los horarios habituales de la par
 
 ## Horario de misas
 
-- **A diario:** 9:15 y 20:00.
+- **A diario:** 9:15 y 19:30.
 - **Sábados:** 9:15 y 20:00.
 - **Domingos:** 11:30, 13:00 y 20:00.
 
