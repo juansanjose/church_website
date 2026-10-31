@@ -108,8 +108,7 @@ Grupos de formación para todas las edades en nuestra parroquia.
   <article class="formacion-card">
     <span class="formacion-card__icon" aria-hidden="true">💼</span>
     <h2>Profesionales</h2>
-    <p>Un espacio de encuentro y formación para jóvenes profesionales que desean crecer en la fe y vivirla con mayor profundidad en su día a día.</p>
-    <p>Nos reunimos los <em>martes alternos, a las 20:00 h</em>, para compartir un tiempo de oración y profundizar en los temas centrales de nuestra fe.</p>
-    <p>Juntos iniciamos un camino de formación y maduración que nos ayude a conocer mejor aquello que amamos, vivir el Evangelio con más autenticidad y dar un testimonio más claro de Cristo en el mundo.</p>
+    <p>Encuentro, oración y formación para jóvenes profesionales. Martes alternos a las 20:00 h.</p>
+    <a href="/formacion/profesionales/">Acceder</a>
   </article>
 </div>
