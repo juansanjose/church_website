@@ -2,7 +2,7 @@
 title: "Textos"
 slug: "materiales"
 date: "2026-05-03T17:50:32"
-lastmod: "2026-10-29T00:00:00+01:00"
+lastmod: "2026-11-12T00:00:00+01:00"
 url: "/materiales/"
 description: "Catequesis y textos de formación de la Parroquia San Pablo de la Cruz."
 ---
@@ -20,3 +20,9 @@ Catequesis de inicio de curso impartida por el sacerdote Juan José Infantes Bar
 Primera parte de la catequesis sobre la Eucaristía. Recorre la Historia de la Salvación como una historia de amor y fidelidad en la que Dios busca al hombre y renueva sin cansancio su Alianza; desde la Pascua de Israel y el Cordero señalado por Juan, hasta la Alianza nueva y eterna que Cristo entrega en la Cruz.
 
 [Leer la catequesis completa (PDF)](/documentos/textos/la-eucaristia-primera-parte.pdf)
+
+## La Eucaristía, centro y culmen de la vida cristiana — Segunda parte
+
+Segunda parte de la catequesis sobre la Eucaristía. Profundiza en la presencia real de Cristo, la transubstanciación y el memorial de su pasión y resurrección, a partir de la Última Cena. Explica los distintos nombres de este sacramento e incluye preguntas para la reflexión y el diálogo en grupo.
+
+[Leer la catequesis completa (PDF)](/documentos/textos/la-eucaristia-segunda-parte.pdf)
