@@ -31,11 +31,7 @@ Nos compartirá su testimonio de fe y cómo su relación con Dios inspira su vid
 - **Cuándo:** jueves 26 de noviembre de 2026, de **20:00 a 21:00 h**, después de la Eucaristía.
 - **Dónde:** Parroquia San Pablo de la Cruz, Avenida de los Madroños, 40, Madrid.
 
-## Inscripciones
-
 <p><a class="btn btn--primary" href="https://wa.me/34607883119?text=Hola%2C%20me%20gustar%C3%ADa%20inscribirme%20en%20el%20encuentro%20Fe%20y%20Vida%20con%20Paco%20Arango%20del%2026%20de%20noviembre.">Inscribirme por WhatsApp</a></p>
-
-Puedes inscribirte por **WhatsApp al 607 88 31 19**, por mensaje directo en el [Instagram de la parroquia](https://www.instagram.com/parroquiaspc/) o acercándote a la parroquia.
 
 ¡Os esperamos!
 
