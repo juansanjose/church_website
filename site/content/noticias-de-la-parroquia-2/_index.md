@@ -2,7 +2,7 @@
 title: "Noticias"
 slug: "noticias-de-la-parroquia-2"
 date: "2026-05-23T23:56:45"
-lastmod: "2026-10-25T00:28:31+02:00"
+lastmod: "2026-11-16T12:00:00+01:00"
 url: "/noticias-de-la-parroquia-2/"
 description: "Últimas noticias, eventos y actividades de la Parroquia San Pablo de la Cruz."
 custom_css: |
@@ -36,6 +36,14 @@ custom_css: |
 ---
 
 ## Próximos Eventos
+
+### Encuentro Fe y Vida con Paco Arango — jueves 26 de noviembre
+
+Recibimos a **Paco Arango**, fundador y presidente de la Fundación Aladina, para conocer su testimonio de fe y su compromiso con los niños y adolescentes con cáncer y sus familias. El encuentro será de **20:00 a 21:00 h**, después de la Eucaristía.
+
+[Consulta el cartel y cómo inscribirte por WhatsApp](/noticias-de-la-parroquia-2/fe-y-vida-paco-arango-2026/)
+
+---
 
 ### Corazones inquietos — miércoles alternos
 

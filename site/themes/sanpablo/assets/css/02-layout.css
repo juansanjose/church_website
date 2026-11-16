@@ -242,6 +242,30 @@
   color: var(--gold);
 }
 
+.footer-legal {
+  grid-column: 1 / -1;
+}
+
+.footer-legal ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-legal a {
+  color: inherit;
+  font-size: 0.9rem;
+  text-underline-offset: 0.15em;
+}
+
+.footer-legal a:hover {
+  color: var(--gold);
+}
+
 /* Skip link */
 .skip-link {
   position: absolute;
