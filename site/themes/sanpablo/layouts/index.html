@@ -1,14 +1,6 @@
 {{ define "main" }}
-<div class="home-spacer" aria-hidden="true"></div>
-<section class="home-grid">
-  <div class="home-slideshow" aria-label="Imágenes de la parroquia">
-    <img class="home-slide is-active" src="/images/home/church-exterior.jpeg" width="1067" height="1600" alt="Exterior de la Parroquia San Pablo de la Cruz" fetchpriority="high" decoding="async">
-    <img class="home-slide" src="/images/home/church-slide-2.jpeg" width="1067" height="1600" alt="" loading="lazy" decoding="async">
-    <img class="home-slide" src="/images/home/church-slide-3.jpeg" width="1067" height="1600" alt="" loading="lazy" decoding="async">
-    <img class="home-slide" src="/images/home/church-slide-4.jpeg" width="1067" height="1600" alt="" loading="lazy" decoding="async">
-  </div>
-
-  <div class="home-times" aria-labelledby="times-title">
+<section class="container home-grid" aria-labelledby="times-title">
+  <div class="home-times">
     <h1 id="times-title" class="home-times__title">Horarios de Misas</h1>
     <div class="home-schedule-period" data-schedule-before>
       <p class="home-times__season">Julio y agosto</p>
@@ -45,6 +37,13 @@
       </dl>
     </div>
     <a class="home-times__button" href="/celebraciones/horarios/">Ver Horarios Completos</a>
+  </div>
+
+  <div class="home-slideshow" aria-label="Imágenes de la parroquia">
+    <img class="home-slide is-active" src="/images/home/church-exterior.jpeg" width="1067" height="1600" alt="Exterior de la Parroquia San Pablo de la Cruz" fetchpriority="high" decoding="async">
+    <img class="home-slide" src="/images/home/church-slide-2.jpeg" width="1067" height="1600" alt="" loading="lazy" decoding="async">
+    <img class="home-slide" src="/images/home/church-slide-3.jpeg" width="1067" height="1600" alt="" loading="lazy" decoding="async">
+    <img class="home-slide" src="/images/home/church-slide-4.jpeg" width="1067" height="1600" alt="" loading="lazy" decoding="async">
   </div>
 </section>
 

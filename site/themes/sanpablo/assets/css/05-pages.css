@@ -19,52 +19,41 @@
   --border: #e8e8e8;
 }
 
-.home-spacer {
-  height: 0;
+.home-view .main-content {
+  background: var(--bg-warm);
 }
 
 .home-grid {
   display: grid;
-  background: var(--bg-warm);
+  gap: 20px;
+  padding-block: 24px;
 }
 
 @media (min-width: 900px) {
   .home-grid {
-    grid-template-columns: 1fr 1fr;
-    min-height: clamp(560px, calc(100vh - 84px), 760px);
-    background: transparent;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: "photos times";
+    gap: 24px;
+    padding-block: 36px 24px;
+  }
+
+  .home-grid .home-times {
+    grid-area: times;
+  }
+
+  .home-grid .home-slideshow {
+    grid-area: photos;
+    height: auto;
   }
 }
 
 .home-slideshow {
   position: relative;
-  width: 100%;
-  height: clamp(220px, 62vw, 280px);
-  margin: 0;
+  height: clamp(220px, 58vw, 360px);
   overflow: hidden;
+  border-radius: var(--radius);
   background: #ddd;
-}
-
-@media (min-width: 480px) {
-  .home-slideshow {
-    height: clamp(280px, 48vw, 360px);
-  }
-}
-
-@media (min-width: 640px) {
-  .home-slideshow {
-    height: clamp(320px, 44vw, 420px);
-  }
-}
-
-@media (min-width: 900px) {
-  .home-slideshow {
-    width: 100%;
-    height: auto;
-    max-height: none;
-    margin: 0;
-    border-radius: 0;
-  }
+  box-shadow: var(--shadow-sm);
 }
 
 .home-slide {
@@ -73,7 +62,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 54%;
+  object-position: center 56%;
   opacity: 0;
   transition: opacity 0.75s ease-in-out;
 }
@@ -88,51 +77,31 @@
   }
 }
 
-@media (min-width: 900px) {
-  .home-slide {
-    object-position: center center;
-  }
-}
-
 .home-times {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 36px 16px;
-  background: var(--bg-warm);
-  text-align: center;
-}
-
-@media (min-width: 480px) {
-  .home-times {
-    padding: 40px 24px;
-  }
+  min-width: 0;
+  padding: clamp(16px, 3vw, 36px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: white;
+  box-shadow: var(--shadow-sm);
 }
 
 .home-times__title {
   font-family: var(--font-heading);
-  font-size: 1.75rem;
-  font-weight: 400;
-  margin-bottom: 8px;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 10px;
   color: var(--green-dark);
 }
 
 .home-times__season {
-  margin-bottom: 20px;
-  color: var(--green-dark);
-  font-size: 1.05rem;
-  font-stretch: semi-expanded;
-  font-weight: 800;
+  margin-bottom: 16px;
+  color: var(--green);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-
-.home-schedule-period:not([hidden]) {
-  display: contents;
-}
-
-.home-schedule-period[hidden] {
-  display: none !important;
 }
 
 .home-schedule-period[data-schedule-preview]:not([hidden]) .home-times__season {
@@ -140,21 +109,18 @@
 }
 
 .home-schedule {
-  width: 100%;
-  max-width: 430px;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: white;
-  box-shadow: var(--shadow-sm);
+  background: var(--bg-warm);
 }
 
 .home-schedule__row {
   display: grid;
-  grid-template-columns: minmax(90px, 0.8fr) minmax(0, 1.2fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
   align-items: center;
-  gap: 16px;
-  padding: 17px 20px;
+  gap: 8px 12px;
+  padding: 12px clamp(10px, 2vw, 16px);
 }
 
 .home-schedule__row + .home-schedule__row {
@@ -163,9 +129,7 @@
 
 .home-schedule dt {
   color: var(--green);
-  font-size: 0.76rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  font-size: 0.875rem;
   font-weight: 700;
 }
 
@@ -173,12 +137,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 6px 14px;
+  gap: 4px 12px;
   margin: 0;
   color: var(--text-light);
-  font-size: 1.08rem;
-  font-stretch: semi-expanded;
-  font-weight: 800;
+  font-size: 1rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
 }
 
 .home-schedule__row--stacked dd {
@@ -208,7 +172,7 @@
 
 .home-times__button {
   display: inline-block;
-  margin-top: 24px;
+  margin-top: 20px;
   padding: 12px 28px;
   background: var(--green);
   color: white;
@@ -248,7 +212,7 @@
 
 /* Quick links */
 .home-quick-links {
-  padding: 40px 0 60px;
+  padding: 0 0 48px;
   background: var(--bg-warm);
 }
 
@@ -256,6 +220,12 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+}
+
+@media (min-width: 900px) {
+  .quick-links-grid {
+    gap: 24px;
+  }
 }
 
 @media (min-width: 640px) {
