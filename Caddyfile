@@ -6,6 +6,8 @@ www.sanpablodelacruz.com {
     file_server
     encode gzip zstd
 
+    reverse_proxy /api/carrera/reservas 127.0.0.1:8091
+
     # Security headers
     header {
         X-Content-Type-Options nosniff

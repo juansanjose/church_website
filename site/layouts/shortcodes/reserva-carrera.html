@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="/carrera-assets/reserva.css">
+<div class="race-booking" data-race-booking>
+  <form id="race-form" method="post" action="/api/carrera/reservas">
+    <h2>Reserva de dorsales</h2>
+    <label for="race-first">Nombre</label>
+    <input id="race-first" name="nombre" autocomplete="given-name" maxlength="80" required>
+    <label for="race-last">Apellidos</label>
+    <input id="race-last" name="apellidos" autocomplete="family-name" maxlength="100" required>
+    <label for="race-email">Correo electrónico</label>
+    <input id="race-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+
+    {{ range slice (dict "name" "adultos" "label" "Adultos" "detail" "15 € por dorsal" "price" 15) (dict "name" "ninos" "label" "Niños" "detail" "De 3 a 12 años · 5 € por dorsal" "price" 5) (dict "name" "menores" "label" "Menores de 3 años" "detail" "Gratis" "price" 0) }}
+    <div class="race-quantity" data-price="{{ .price }}">
+      <div>
+        <label for="race-{{ .name }}">{{ .label }}</label>
+        <small id="race-{{ .name }}-detail">{{ .detail }}</small>
+      </div>
+      <button type="button" data-step="-1" aria-label="Reducir cantidad de {{ .label | lower }}">−</button>
+      <input id="race-{{ .name }}" name="{{ .name }}" type="number" min="0" max="99" value="0" inputmode="numeric" aria-describedby="race-{{ .name }}-detail" required>
+      <button type="button" data-step="1" aria-label="Aumentar cantidad de {{ .label | lower }}">+</button>
+    </div>
+    {{ end }}
+
+    <div hidden><label for="race-website">Sitio web</label><input id="race-website" name="website" tabindex="-1" autocomplete="off"></div>
+    <p class="race-total">Total <output id="race-total" aria-live="polite">0,00 €</output></p>
+    <p><a href="/politica-privacidad.html">Política de privacidad</a></p>
+    <button class="race-submit" type="submit" disabled>Reservar dorsales</button>
+    <noscript><p>Activa JavaScript para enviar la reserva.</p></noscript>
+    <p id="race-error" role="alert" hidden></p>
+  </form>
+
+  <section id="race-confirmation" hidden aria-labelledby="race-confirmation-title">
+    <h2 id="race-confirmation-title" tabindex="-1">Reserva recibida</h2>
+    <p>Referencia <strong id="race-reference"></strong></p>
+    <div id="race-payment">
+      <p>Importe pendiente <strong id="race-amount"></strong></p>
+      <p>Escribe esta referencia en el campo «Concepto». Si otra persona paga por ti, debe usar la misma referencia.</p>
+      <button id="race-copy" type="button">Copiar concepto</button>
+      <span id="race-copy-status" role="status"></span>
+      <div id="race-bizum" hidden>
+        <h3>Pago por Bizum</h3>
+        <p id="race-bizum-details"></p>
+      </div>
+      <h3>Transferencia bancaria</h3>
+      <p id="race-transfer"></p>
+    </div>
+    <h3>Recogida de dorsales</h3>
+    <p id="race-pickup"></p>
+  </section>
+</div>
+<script src="/carrera-assets/reserva.js" type="module"></script>

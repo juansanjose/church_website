@@ -8,6 +8,8 @@ on:
     branches: [main]
     paths:
       - 'site/**'
+      - 'scripts/race-reservations.py'
+      - 'scripts/church-race.service'
       - 'Caddyfile'
       - '.github/workflows/deploy.yml'
       - 'Makefile'
@@ -52,6 +54,26 @@ jobs:
         with:
           name: public
           path: public/
+
+      - name: Deploy race reservation service
+        env:
+          CHURCH_RACE_ENV: ${{ secrets.CHURCH_RACE_ENV }}
+        run: |
+          set -euo pipefail
+          if [[ -z "$CHURCH_RACE_ENV" ]]; then
+            exit 0
+          fi
+          install -D -m 0644 scripts/race-reservations.py /opt/church-race/race-reservations.py
+          install -m 0644 scripts/church-race.service /etc/systemd/system/church-race.service
+          umask 077
+          config=$(mktemp /etc/church-race.env.XXXXXX)
+          trap 'rm -f "$config"' EXIT
+          printf '%s\n' "$CHURCH_RACE_ENV" > "$config"
+          mv "$config" /etc/church-race.env
+          systemctl daemon-reload
+          systemctl enable church-race.service
+          systemctl restart church-race.service
+          curl --fail --silent --show-error --retry 5 --retry-connrefused http://127.0.0.1:8091/health > /dev/null
 
       - name: Deploy site
         env:

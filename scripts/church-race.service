@@ -1,0 +1,16 @@
+[Unit]
+Description=Parish race reservations
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+EnvironmentFile=/etc/church-race.env
+ExecStart=/usr/bin/python3 /opt/church-race/race-reservations.py
+DynamicUser=yes
+StateDirectory=church-race
+UMask=0077
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
