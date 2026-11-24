@@ -14,9 +14,6 @@ www.sanpablodelacruz.com {
         Content-Security-Policy "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src 'self'; font-src 'self';"
     }
 
-    # Handle trailing slashes consistently
-    try_files {path} {path}/ =404
-
     # Custom error page
     handle_errors {
         rewrite * /404.html
