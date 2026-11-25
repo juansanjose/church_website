@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enlaces · Parroquia San Pablo de la Cruz</title>
+<meta name="description" content="Parroquia San Pablo de la Cruz: enlaces a nuestra web y a la vida de la comunidad.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Allura&display=swap">
+<style>
+/*
+VOICE: sereno, alegre y acogedor, como la invitación de @parroquiaspc.
+IDEA: una estampa o recordatorio parroquial que se lleva en el bolsillo.
+PICTURE: el logotipo de la parroquia, cruz dorada con rayos.
+COLOUR and TYPE: crema cálido, salvia y oro; Playfair Display, Cormorant Garamond y Allura.
+LAYOUT: una sola columna centrada, pensada para el móvil desde Instagram.
+*/
+:root{
+  color-scheme:light;
+  --bg:#FBF6EE;
+  --ink:#22382A;
+  --green:#2E4A37;
+  --sage:#5E7A45;
+  --sage-soft:rgba(180,195,167,.55);
+  --gold:#B8963A;
+  --gold-soft:#C9A646;
+  --brush:#E9D392;
+  --line:#D9C99A;
+}
+*{box-sizing:border-box;min-width:0}
+html,body{height:100%}
+body{
+  margin:0;
+  min-height:100%;
+  color:var(--ink);
+  font:500 19px/1.5 'Cormorant Garamond',Georgia,serif;
+  overflow-x:clip;
+  background:
+    radial-gradient(ellipse 420px 360px at 100% 0%,rgba(228,200,128,.38),rgba(228,200,128,0) 70%),
+    radial-gradient(ellipse 460px 400px at 0% 100%,rgba(180,195,167,.55),rgba(180,195,167,0) 70%),
+    radial-gradient(ellipse 340px 300px at 85% 92%,rgba(242,214,190,.45),rgba(242,214,190,0) 70%),
+    linear-gradient(160deg,#FFFDF9 0%,#FBF6EE 60%,#F6EFE3 100%);
+  background-attachment:fixed;
+}
+main{
+  max-width:480px;
+  margin:0 auto;
+  padding:clamp(40px,9vh,72px) 24px 40px;
+  display:flex;flex-direction:column;align-items:center;text-align:center;
+  min-height:100vh;
+}
+.logo{margin:0;line-height:0}
+.logo img{display:block;width:min(316px,78vw);height:auto}
+.address{margin:14px 0 0;font-size:18px;line-height:1.3;color:#4F6340;letter-spacing:.02em}
+.handle{
+  position:relative;
+  margin-top:16px;
+  padding:6px 26px;
+  font-family:'Playfair Display',Georgia,serif;
+  font-style:italic;font-weight:600;font-size:21px;
+  color:var(--ink);
+}
+.handle svg{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
+.handle span{position:relative}
+.heart{margin-top:18px;width:26px;height:26px}
+.intro{
+  margin:18px 0 0;
+  background:var(--sage-soft);
+  border-radius:24px;
+  padding:20px 24px;
+  font-style:italic;
+  font-size:20px;
+  line-height:1.35;
+  color:var(--ink);
+  text-wrap:balance;
+}
+.links{list-style:none;margin:30px 0 0;padding:0;width:100%;display:flex;flex-direction:column;gap:14px}
+.link{
+  display:flex;align-items:center;gap:16px;
+  min-height:64px;
+  padding:12px 20px 12px 14px;
+  background:#FFFFFF;
+  border:1px solid var(--line);
+  border-radius:20px;
+  text-decoration:none;
+  color:var(--ink);
+  text-align:left;
+  box-shadow:0 1px 0 rgba(184,150,58,.12),0 10px 24px -18px rgba(46,74,55,.45);
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.link:hover{transform:translateY(-2px);border-color:var(--gold-soft);box-shadow:0 1px 0 rgba(184,150,58,.18),0 16px 30px -18px rgba(46,74,55,.5)}
+.link:focus-visible{outline:2px solid var(--sage);outline-offset:3px}
+.link .ico{
+  flex:none;width:44px;height:44px;border-radius:50%;
+  display:grid;place-items:center;
+  background:#F4EBD3;
+}
+.link .txt{flex:1;display:flex;flex-direction:column}
+.link .t{font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:18px;line-height:1.2}
+.link .s{font-size:17px;line-height:1.25;color:#4F6340}
+.link .arrow{flex:none}
+.divider{width:60px;height:1.5px;background:var(--gold-soft);margin:34px 0 0;border:0}
+.blessing{
+  margin:18px 0 0;
+  font-family:Allura,cursive;
+  font-size:34px;line-height:1.15;
+  color:#4F6340;
+  text-wrap:balance;
+}
+footer{margin-top:auto;padding-top:40px;font-size:15px;color:#4F6340;letter-spacing:.02em}
+@media(prefers-reduced-motion:reduce){
+  .link{transition:none}
+}
+</style>
+</head>
+<body>
+<main>
+  <h1 class="logo"><img src="/images/enlaces/logo-parroquia.webp" width="316" height="133" alt="Parroquia San Pablo de la Cruz"></h1>
+  <p class="address">Avenida de los Madroños, 40. Madrid, España</p>
+
+  <div class="handle">
+    <svg viewBox="0 0 560 96" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M14 30 C 60 18, 140 22, 220 16 C 300 10, 400 18, 470 14 C 510 12, 540 16, 552 22 L 546 30 L 556 38 L 548 50 L 554 60 C 520 74, 440 78, 360 80 C 280 84, 180 80, 100 84 C 60 86, 30 82, 8 74 L 16 64 L 4 54 L 14 44 L 6 36 Z" fill="#E9D392" opacity="0.85"/>
+    </svg>
+    <span>@parroquiaspc</span>
+  </div>
+
+  <svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-7.5-10.4A4.3 4.3 0 0 1 12 7.9a4.3 4.3 0 0 1 7.5 2.7C19.5 16.4 12 21 12 21z" fill="#C9A646"/></svg>
+
+  <p class="intro">Avisos, celebraciones, encuentros y la vida de nuestra comunidad.</p>
+
+  <ul class="links">
+    <li>
+      <a class="link" href="https://www.sanpablodelacruz.com" target="_blank" rel="noopener">
+        <span class="ico" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2E4A37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 4l9 6.5"/><path d="M5.5 9v11h13V9"/><path d="M12 7.2v3.6M10.2 9h3.6"/><path d="M10 20v-4.5a2 2 0 0 1 4 0V20"/></svg>
+        </span>
+        <span class="txt">
+          <span class="t">Nuestra web</span>
+          <span class="s">Horarios, sacramentos y actividades</span>
+        </span>
+        <svg class="arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B8963A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+      </a>
+    </li>
+  </ul>
+
+  <hr class="divider">
+  <p class="blessing">Ven como eres. Aquí hay un lugar para ti.</p>
+
+  <footer>Parroquia San Pablo de la Cruz</footer>
+</main>
+</body>
+</html>
