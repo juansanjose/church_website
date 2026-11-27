@@ -2,7 +2,7 @@
 title: "Noticias"
 slug: "noticias-de-la-parroquia-2"
 date: "2026-05-23T23:56:45"
-lastmod: "2026-11-16T12:00:00+01:00"
+lastmod: "2026-11-27T12:25:00+01:00"
 url: "/noticias-de-la-parroquia-2/"
 description: "Últimas noticias, eventos y actividades de la Parroquia San Pablo de la Cruz."
 custom_css: |
@@ -36,6 +36,14 @@ custom_css: |
 ---
 
 ## Próximos Eventos
+
+### Carrera Familiar Solidaria
+
+Participa en familia y colabora con Cáritas parroquial, que recibirá todo lo recaudado. También puedes colaborar con un Dorsal 0 si no puedes participar.
+
+[Reserva tus dorsales para la Carrera Familiar Solidaria](/carrera-familiar-solidaria/)
+
+---
 
 ### Encuentro Fe y Vida con Paco Arango — jueves 26 de noviembre
 

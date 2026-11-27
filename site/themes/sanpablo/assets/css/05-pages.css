@@ -248,6 +248,10 @@
   transition: box-shadow 0.2s, transform 0.2s;
 }
 
+.quick-link--wide {
+  grid-column: 1 / -1;
+}
+
 .quick-link:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-3px);
