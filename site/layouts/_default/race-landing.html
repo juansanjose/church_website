@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Carrera Familiar Solidaria · Parroquia San Pablo de la Cruz</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+{{ define "head" }}
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--bosque:#2E4A37;--bosque2:#22382A;--olivo:#7A8F6A;--salvia:#B4C3A7;--arena:#F2E9D8;--dorado:#CDA434;--crema:#FBF7EF;--texto:#22302A;--suave:#56645B;--r:28px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:Manrope,system-ui,sans-serif;color:var(--texto);background:var(--crema);line-height:1.55;font-size:16.5px;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:.98;margin:0;letter-spacing:-.01em;color:var(--bosque)}
+.race-page{margin:0;font-family:Manrope,system-ui,sans-serif;color:var(--texto);background:var(--crema);line-height:1.55;font-size:16.5px;overflow-x:clip;-webkit-font-smoothing:antialiased}
+.race-page :is(h1,h2,h3){font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:.98;margin:0;letter-spacing:-.01em;color:var(--bosque)}
 em.i{font-style:italic;color:var(--olivo)}
 .wrap{max-width:1200px;margin:0 auto;padding:0 20px}
 .tag{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--bosque);background:#fff;border:1px solid rgba(180,195,167,.8);padding:8px 14px;border-radius:999px}
@@ -25,24 +18,23 @@ em.i{font-style:italic;color:var(--olivo)}
 .btn .ar svg{width:15px;height:15px}
 .btn-ghost{background:transparent;color:var(--crema);border:1.5px solid rgba(251,247,239,.4)}
 .btn-ghost:hover{background:rgba(251,247,239,.1);box-shadow:none}
-section{padding:110px 0}
+:where(.race-page) section{padding:110px 0}
 .head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:46px}
 .head h2{font-size:clamp(40px,6vw,76px);max-width:720px;margin-top:16px}
 .head p{max-width:380px;color:var(--suave);margin:0}
 
 /* NAV */
-nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:50;width:min(1160px,calc(100% - 24px));display:flex;align-items:center;justify-content:space-between;gap:14px;padding:8px 8px 8px 14px;border-radius:999px;background:rgba(251,247,239,.78);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border:1px solid rgba(255,255,255,.6);box-shadow:0 10px 30px -18px rgba(34,56,42,.5);transition:background .3s}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.race-nav{position:sticky;top:calc(var(--parish-header-height) + 8px);z-index:45;margin:8px auto 0;width:min(1160px,calc(100% - 24px));display:flex;align-items:center;justify-content:space-between;gap:14px;padding:8px 8px 8px 14px;border-radius:999px;background:rgba(251,247,239,.78);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border:1px solid rgba(255,255,255,.6);box-shadow:0 10px 30px -18px rgba(34,56,42,.5);transition:background .3s}
+.brand{display:flex;flex:none;align-items:center;gap:10px;text-decoration:none}
 .brand img{width:38px;height:38px;border-radius:50%;background:#fff;object-fit:contain;padding:3px}
 .brand b{font-family:"Cormorant Garamond",serif;font-size:19px;color:var(--bosque);font-weight:700;line-height:1}
 .brand small{display:block;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--suave);font-weight:700;margin-bottom:2px}
 .links{display:flex;gap:4px}
 .links a{font-size:14px;font-weight:600;color:var(--bosque);text-decoration:none;padding:10px 14px;border-radius:999px;transition:background .2s}
 .links a:hover{background:rgba(180,195,167,.35)}
-nav .btn{min-height:44px;font-size:14px;padding:0 20px}
 
 /* HERO */
-.hero{background:var(--bosque2);color:var(--crema);padding:130px 0 0;position:relative;overflow:hidden;border-radius:0 0 48px 48px}
+.hero{background:var(--bosque2);color:var(--crema);padding:clamp(2rem,6vw,5rem) 0 0;position:relative;overflow:hidden;border-radius:0 0 48px 48px}
 .hero .grain{position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(205,164,52,.18),transparent 40%),radial-gradient(circle at 10% 90%,rgba(122,143,106,.35),transparent 45%);pointer-events:none}
 .hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
 .hero .tag{background:rgba(255,255,255,.08);color:var(--crema);border-color:rgba(255,255,255,.18)}
@@ -196,22 +188,22 @@ details p{margin:0 0 20px;color:var(--suave)}
 .cierre-box .btn{background:var(--bosque2);color:var(--crema)}
 .cierre-box .btn .ar{background:var(--dorado);color:var(--bosque2)}
 .cierre-box .btn:hover{box-shadow:0 14px 30px -8px rgba(34,56,42,.6)}
-footer{padding:30px 20px 40px;text-align:center;color:var(--suave);font-size:14px}
-footer b{font-family:"Cormorant Garamond",serif;font-size:20px;color:var(--bosque)}
+.race-footer{font-family:Manrope,system-ui,sans-serif;padding:30px 20px 40px;text-align:center;color:var(--suave);font-size:14px}
+.race-footer b{font-family:"Cormorant Garamond",serif;font-size:20px;color:var(--bosque)}
 .pend{background:rgba(205,164,52,.32);padding:0 6px;border-radius:6px}
 
 .sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;transform:translateY(140%);transition:transform .4s cubic-bezier(.2,.8,.2,1);display:none}
 .sticky .btn{width:100%;box-shadow:0 14px 30px rgba(0,0,0,.3)}
 .sticky.show{transform:none}
 
-body.reveal .rv{opacity:0;transform:translateY(34px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--d,0) * 90ms)}
-body.reveal .rv.on{opacity:1;transform:none}
+body.reveal .race-page .rv{opacity:0;transform:translateY(34px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--d,0) * 90ms)}
+body.reveal .race-page .rv.on{opacity:1;transform:none}
 
 @media (max-width:900px){
-  section{padding:76px 0}
-  .links{display:none}
+  :where(.race-page) section{padding:76px 0}
+  .links{overflow-x:auto;white-space:nowrap}
   .brand b{font-size:16px}
-  .hero{padding-top:110px;border-radius:0 0 32px 32px}
+  .hero{border-radius:0 0 32px 32px}
   .hero .wrap,.causa-grid,.insc-grid,.faq-grid{grid-template-columns:1fr}
   .foto{max-width:460px}
   .sello{left:auto;right:-6px;top:-20px;width:104px;height:104px}.sello b{font-size:32px}
@@ -227,7 +219,7 @@ body.reveal .rv.on{opacity:1;transform:none}
   .logos{grid-template-columns:repeat(2,minmax(0,1fr))}
   .exp,.insc,.cierre-box{border-radius:32px}
   .sticky{display:block}
-  footer{padding-bottom:100px}
+  .race-footer{padding-bottom:100px}
   .marquee span{font-size:26px}
 }
 /* Logos */
@@ -247,7 +239,7 @@ body.reveal .rv.on{opacity:1;transform:none}
 .f-legal{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:14px;font-size:13px}.f-legal a{color:var(--suave);text-decoration:none}.f-legal a:hover{color:var(--bosque)}
 
 /* ===== Versión luminosa ===== */
-body{background:#FFFDF9}
+.race-page{background:#FFFDF9}
 .hero{background:linear-gradient(180deg,#FFFDF9 0%,#F8F2E4 100%);color:var(--texto);border-radius:0}
 .hero .grain{background:radial-gradient(circle at 80% 14%,rgba(205,164,52,.32),transparent 40%),radial-gradient(circle at 8% 88%,rgba(180,195,167,.4),transparent 45%);animation:luz 9s ease-in-out infinite alternate}
 @keyframes luz{to{opacity:.65;transform:translate(-2%,2%) scale(1.05)}}
@@ -305,8 +297,8 @@ body{background:#FFFDF9}
 @media (max-width:900px){.c1,.c4,.c5{grid-column:auto}}
 @media (max-width:900px){.fbox .row{grid-template-columns:1fr 1fr!important;gap:12px!important}}
 @media (max-width:480px){.fbox .row{grid-template-columns:1fr!important;gap:0!important}}
-body{background:#fff}
-nav{background:rgba(255,255,255,.85)}
+.race-page{background:#fff}
+.race-nav{background:rgba(255,255,255,.85)}
 .hero{background:#fff}
 .hero .grain{background:radial-gradient(circle at 82% 12%,rgba(205,164,52,.16),transparent 38%),radial-gradient(circle at 6% 92%,rgba(180,195,167,.18),transparent 40%)}
 .foto img{box-shadow:0 40px 80px -50px rgba(46,74,55,.35)}
@@ -333,7 +325,7 @@ details[open]{background:#FCFCFA}
 .tag{background:#fff;border-color:#E3E8DE}
 
 /* ===== Espaciado compacto ===== */
-section{padding:56px 0}
+:where(.race-page) section{padding:56px 0}
 .datos{padding:20px 0 0}
 .head{margin-bottom:30px}
 .hero{padding-bottom:0}
@@ -341,11 +333,11 @@ section{padding:56px 0}
 .cierre{padding:0 0 10px}
 .cierre-box{padding:64px 30px}
 #faq{padding-top:10px!important}
-@media (max-width:900px){section{padding:44px 0}.marquee{margin-top:36px}.cierre-box{padding:48px 22px}}
+@media (max-width:900px){:where(.race-page) section{padding:44px 0}.marquee{margin-top:36px}.cierre-box{padding:48px 22px}}
 
 /* ===== Ancho expandido ===== */
 .wrap{max-width:1560px;padding:0 clamp(20px,4vw,64px)}
-nav{width:calc(100% - clamp(24px,4vw,64px))}
+.race-nav{width:calc(100% - clamp(24px,4vw,64px))}
 .exp,.insc{border-radius:0}
 .cierre .wrap{max-width:none}
 .cierre-box{border-radius:36px}
@@ -654,7 +646,7 @@ nav{width:calc(100% - clamp(24px,4vw,64px))}
 }
 /* Tablet */
 @media (min-width:641px) and (max-width:900px){
-  body{font-size:16px}
+  .race-page{font-size:16px}
   .hero h1{font-size:clamp(60px,9vw,80px)}
   .hero p.lead{font-size:17px;max-width:600px}
   .foto{margin-left:auto;margin-right:auto;max-width:520px}
@@ -668,11 +660,10 @@ nav{width:calc(100% - clamp(24px,4vw,64px))}
 }
 /* Móvil */
 @media (max-width:640px){
-  body{font-size:15px;line-height:1.55}
-  section{padding:40px 0}
+  .race-page{font-size:15px;line-height:1.55}
+  :where(.race-page) section{padding:40px 0}
   .tag{font-size:10.5px;padding:7px 12px}
   .btn{font-size:15px;min-height:50px;padding:0 22px}
-  nav .btn{font-size:13px;min-height:40px;padding:0 16px}
   .hero h1{font-size:46px;margin:16px 0 16px}
   .hero p.lead{font-size:15.5px;margin-bottom:24px}
   .hero .nota{font-size:13px}
@@ -705,7 +696,7 @@ nav{width:calc(100% - clamp(24px,4vw,64px))}
   .contador button{width:40px;height:40px}
   summary{font-size:15px;padding:17px 0}
   .horario{font-size:13px}
-  footer{font-size:13px}
+  .race-footer{font-size:13px}
 }
 @media (max-width:380px){
   .hero h1{font-size:40px}
@@ -719,25 +710,27 @@ nav{width:calc(100% - clamp(24px,4vw,64px))}
 .btn:not(.btn-ghost){box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 10px 24px -12px rgba(179,140,34,.7)}
 .btn::after{background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.65) 50%,transparent 70%)}
 .fa-n{background:linear-gradient(160deg,#F3D978 0%,#CDA434 55%,#B08A20 100%);-webkit-background-clip:text;background-clip:text;color:transparent!important;text-shadow:none!important;filter:drop-shadow(0 6px 18px rgba(205,164,52,.38))}
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}body.reveal .rv{opacity:1;transform:none}.hero h1 span>i{transform:none}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}body.reveal .race-page .rv{opacity:1;transform:none}.hero h1 span>i{transform:none}}
 .delay-1{--d:1}
 .delay-2{--d:2}
 .delay-3{--d:3}
 .rc-head .al-label{color:var(--olivo)}
 #faq{padding-top:20px}
-#inscripcion{scroll-margin-top:80px}
+.race-page{--parish-header-height:73px}
+@media (min-width:1024px){.race-page{--parish-header-height:85px}}
+.race-page section[id],.race-page .hero,.race-page .recorrido{scroll-margin-top:calc(var(--parish-header-height) + 88px)}
 #race-quantities{border:0;margin:0;padding:0;min-width:0}
 #race-error:not([hidden]){display:block}
 #inscripcion [hidden]{display:none!important}
 #race-form button:disabled{opacity:.65;cursor:default}
 </style>
-</head>
-<body>
+{{ end }}
 
-<nav>
+{{ define "main" }}
+<div class="race-page">
+<nav class="race-nav" aria-label="Navegación de la carrera">
   <a class="brand" href="#inicio"><img class="logo-h" src="/images/carrera/parroquia.webp" alt="Parroquia San Pablo de la Cruz"></a>
   <div class="links"><a href="#causa">Por qué corremos</a><a href="#experiencia">Programa</a><a href="#recorrido">El recorrido</a><a href="#inscripcion">Inscríbete</a><a href="#faq">Preguntas</a></div>
-  <a class="btn" href="#inscripcion">Comprar dorsal</a>
 </nav>
 
 <!-- HERO -->
@@ -997,11 +990,13 @@ nav{width:calc(100% - clamp(24px,4vw,64px))}
   </div>
 </section>
 
-<footer><div class="f-logos"><img class="f-spc" src="/images/carrera/parroquia.webp" alt="Parroquia San Pablo de la Cruz"><span class="f-sep"></span><span class="f-con">A beneficio de</span><img class="f-car" src="/images/carrera/caritas.webp" alt="Cáritas parroquial"><span class="f-sep"></span><span class="f-con">Patrocina</span><img class="f-dal" src="/images/carrera/logotipo-dallington.webp" alt="Dallington School"></div>La alegría, un modo estable de ser · Instagram: @parroquiaspc<div class="f-legal"><a href="aviso-legal.html">Aviso legal</a><a href="politica-privacidad.html">Política de privacidad</a><a href="politica-cookies.html">Política de cookies</a></div></footer>
-
 <div class="sticky" id="sticky"><a class="btn" href="#inscripcion">Quiero mis dorsales</a></div>
 
 <script src="/carrera-assets/informacion.js" defer></script>
 <script src="/carrera-assets/reserva.js" type="module"></script>
-</body>
-</html>
+</div>
+{{ end }}
+
+{{ define "footer" }}
+<footer class="race-footer"><div class="f-logos"><img class="f-spc" src="/images/carrera/parroquia.webp" alt="Parroquia San Pablo de la Cruz"><span class="f-sep"></span><span class="f-con">A beneficio de</span><img class="f-car" src="/images/carrera/caritas.webp" alt="Cáritas parroquial"><span class="f-sep"></span><span class="f-con">Patrocina</span><img class="f-dal" src="/images/carrera/logotipo-dallington.webp" alt="Dallington School"></div>La alegría, un modo estable de ser · Instagram: @parroquiaspc<div class="f-legal"><a href="/aviso-legal.html">Aviso legal</a><a href="/politica-privacidad.html">Política de privacidad</a><a href="/politica-cookies.html">Política de cookies</a></div></footer>
+{{ end }}

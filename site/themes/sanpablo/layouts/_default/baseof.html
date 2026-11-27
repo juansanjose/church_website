@@ -59,6 +59,7 @@
     {{ block "main" . }}{{ end }}
   </main>
 
+  {{ block "footer" . }}
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-info">
@@ -83,6 +84,7 @@
       </nav>
     </div>
   </footer>
+  {{ end }}
 
   {{ $js := resources.Get "js/main.js" | resources.Minify | resources.Fingerprint }}
   <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
