@@ -23,16 +23,6 @@ em.i{font-style:italic;color:var(--olivo)}
 .head h2{font-size:clamp(40px,6vw,76px);max-width:720px;margin-top:16px}
 .head p{max-width:380px;color:var(--suave);margin:0}
 
-/* NAV */
-.race-nav{position:sticky;top:calc(var(--parish-header-height) + 8px);z-index:45;margin:8px auto 0;width:min(1160px,calc(100% - 24px));display:flex;align-items:center;justify-content:space-between;gap:14px;padding:8px 8px 8px 14px;border-radius:999px;background:rgba(251,247,239,.78);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border:1px solid rgba(255,255,255,.6);box-shadow:0 10px 30px -18px rgba(34,56,42,.5);transition:background .3s}
-.brand{display:flex;flex:none;align-items:center;gap:10px;text-decoration:none}
-.brand img{width:38px;height:38px;border-radius:50%;background:#fff;object-fit:contain;padding:3px}
-.brand b{font-family:"Cormorant Garamond",serif;font-size:19px;color:var(--bosque);font-weight:700;line-height:1}
-.brand small{display:block;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--suave);font-weight:700;margin-bottom:2px}
-.links{display:flex;gap:4px}
-.links a{font-size:14px;font-weight:600;color:var(--bosque);text-decoration:none;padding:10px 14px;border-radius:999px;transition:background .2s}
-.links a:hover{background:rgba(180,195,167,.35)}
-
 /* HERO */
 .hero{background:var(--bosque2);color:var(--crema);padding:clamp(2rem,6vw,5rem) 0 0;position:relative;overflow:hidden;border-radius:0 0 48px 48px}
 .hero .grain{position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(205,164,52,.18),transparent 40%),radial-gradient(circle at 10% 90%,rgba(122,143,106,.35),transparent 45%);pointer-events:none}
@@ -201,8 +191,6 @@ body.reveal .race-page .rv.on{opacity:1;transform:none}
 
 @media (max-width:900px){
   :where(.race-page) section{padding:76px 0}
-  .links{overflow-x:auto;white-space:nowrap}
-  .brand b{font-size:16px}
   .hero{border-radius:0 0 32px 32px}
   .hero .wrap,.causa-grid,.insc-grid,.faq-grid{grid-template-columns:1fr}
   .foto{max-width:460px}
@@ -223,7 +211,6 @@ body.reveal .race-page .rv.on{opacity:1;transform:none}
   .marquee span{font-size:26px}
 }
 /* Logos */
-.logo-h{height:46px;width:auto;display:block;background:none!important;padding:0!important;border-radius:0!important}
 .caritas-ico{width:46px;height:46px;border-radius:14px;margin-bottom:28px;display:block}
 .caritas-logo{width:86px;height:86px;border-radius:20px;position:relative;z-index:1;box-shadow:0 14px 30px -14px rgba(180,30,40,.45);margin-bottom:22px}
 .cien{justify-content:flex-start}
@@ -234,7 +221,6 @@ body.reveal .race-page .rv.on{opacity:1;transform:none}
 .f-sep{width:1px;height:46px;background:rgba(180,195,167,.8)}
 .f-con{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--olivo)}
 .f-car{width:56px;height:56px;border-radius:12px}
-@media (max-width:900px){.logo-h{height:38px}}
 
 .f-legal{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:14px;font-size:13px}.f-legal a{color:var(--suave);text-decoration:none}.f-legal a:hover{color:var(--bosque)}
 
@@ -298,7 +284,6 @@ body.reveal .race-page .rv.on{opacity:1;transform:none}
 @media (max-width:900px){.fbox .row{grid-template-columns:1fr 1fr!important;gap:12px!important}}
 @media (max-width:480px){.fbox .row{grid-template-columns:1fr!important;gap:0!important}}
 .race-page{background:#fff}
-.race-nav{background:rgba(255,255,255,.85)}
 .hero{background:#fff}
 .hero .grain{background:radial-gradient(circle at 82% 12%,rgba(205,164,52,.16),transparent 38%),radial-gradient(circle at 6% 92%,rgba(180,195,167,.18),transparent 40%)}
 .foto img{box-shadow:0 40px 80px -50px rgba(46,74,55,.35)}
@@ -337,7 +322,6 @@ details[open]{background:#FCFCFA}
 
 /* ===== Ancho expandido ===== */
 .wrap{max-width:1560px;padding:0 clamp(20px,4vw,64px)}
-.race-nav{width:calc(100% - clamp(24px,4vw,64px))}
 .exp,.insc{border-radius:0}
 .cierre .wrap{max-width:none}
 .cierre-box{border-radius:36px}
@@ -357,8 +341,6 @@ details[open]{background:#FCFCFA}
 .caritas-ico{width:auto!important;height:52px!important;border-radius:0!important;margin-bottom:22px}
 .caritas-logo{width:auto!important;height:104px!important;border-radius:0!important;box-shadow:none!important}
 .cien .caritas-logo{align-self:flex-start;object-fit:contain}
-.brand img.logo-h{width:auto;height:46px;border-radius:0;padding:0;background:none}
-@media (max-width:900px){.brand img.logo-h{height:38px}}
 .f-car{width:auto!important;height:62px!important;border-radius:0!important}
 .f-dal{height:70px;width:auto}
 @media (max-width:640px){.sponsor{flex-direction:column;text-align:center}.sp-txt p{margin:0 auto}}
@@ -625,7 +607,6 @@ details[open]{background:#FCFCFA}
 /* Números rectos (que el 1 no parezca una I ni el 0 una o) */
 .contador output,.resumen b,.cuenta b,.paso .n,.cien .n,.precios span,.pr-n,.fa-n,.fh-dia b{font-variant-numeric:lining-nums}
 
-@media (max-width:1180px){.links a{padding:10px 9px;font-size:13.5px}}
 /* Programa simplificado (4 pasos) */
 .programa.p4 .pr{padding:26px 24px 26px}
 .programa.p4 .pr h3{font-size:26px;margin:0}
@@ -718,7 +699,7 @@ details[open]{background:#FCFCFA}
 #faq{padding-top:20px}
 .race-page{--parish-header-height:73px}
 @media (min-width:1024px){.race-page{--parish-header-height:85px}}
-.race-page section[id],.race-page .hero,.race-page .recorrido{scroll-margin-top:calc(var(--parish-header-height) + 88px)}
+.race-page section[id],.race-page .hero,.race-page .recorrido{scroll-margin-top:calc(var(--parish-header-height) + 16px)}
 #race-quantities{border:0;margin:0;padding:0;min-width:0}
 #race-error:not([hidden]){display:block}
 #inscripcion [hidden]{display:none!important}
@@ -728,11 +709,6 @@ details[open]{background:#FCFCFA}
 
 {{ define "main" }}
 <div class="race-page">
-<nav class="race-nav" aria-label="Navegación de la carrera">
-  <a class="brand" href="#inicio"><img class="logo-h" src="/images/carrera/parroquia.webp" alt="Parroquia San Pablo de la Cruz"></a>
-  <div class="links"><a href="#causa">Por qué corremos</a><a href="#experiencia">Programa</a><a href="#recorrido">El recorrido</a><a href="#inscripcion">Inscríbete</a><a href="#faq">Preguntas</a></div>
-</nav>
-
 <!-- HERO -->
 <header class="hero" id="inicio">
   <div class="grain"></div>
