@@ -2,12 +2,21 @@ const CABECERAS = [
   "Referencia", "Fecha de reserva", "Nombre", "Apellidos", "Email",
   "Adultos", "Niños", "Menores de 3 años", "Dorsal 0 (€)", "Total (€)", "Estado", "Correo en Gmail",
 ];
+const COLUMNA_ESTADO = 11;
+const COLUMNA_GMAIL = 13;
+const ESTADOS = ["Pendiente de pago", "Pagado", "Listo para recoger", "Dorsales entregados"];
+
+function onOpen() {
+  SpreadsheetApp.getUi().createMenu("Carrera")
+    .addItem("Sincronizar ahora", "sincronizarReservas")
+    .addToUi();
+}
 
 function instalarSincronizacion() {
   sincronizarReservas();
-  if (!ScriptApp.getProjectTriggers().some((trigger) => trigger.getHandlerFunction() === "sincronizarReservas")) {
-    ScriptApp.newTrigger("sincronizarReservas").timeBased().everyMinutes(15).create();
-  }
+  const oldTriggers = ScriptApp.getProjectTriggers().filter((trigger) => trigger.getHandlerFunction() === "sincronizarReservas");
+  ScriptApp.newTrigger("sincronizarReservas").timeBased().everyMinutes(5).create();
+  oldTriggers.forEach((trigger) => ScriptApp.deleteTrigger(trigger));
 }
 
 function sincronizarReservas() {
@@ -30,14 +39,24 @@ function sincronizarReservas() {
       sheet.setFrozenRows(1);
       sheet.getRange("A1:L1").setFontWeight("bold");
     }
+    const gmailHeader = sheet.getRange(1, COLUMNA_GMAIL);
+    if (gmailHeader.isBlank()) {
+      gmailHeader.setValue("Estado importado de Gmail");
+      sheet.hideColumns(COLUMNA_GMAIL);
+    } else if (gmailHeader.getValue() !== "Estado importado de Gmail") {
+      throw new Error("La columna M de Reservas está ocupada.");
+    }
     const existing = new Map();
     const lastRow = sheet.getLastRow();
     if (lastRow > 1) {
-      sheet.getRange(2, 1, lastRow - 1, CABECERAS.length).getValues().forEach((values, index) => {
-        existing.set(values[0], { row: index + 2, status: values[10] });
+      sheet.getRange(2, 1, lastRow - 1, COLUMNA_GMAIL).getValues().forEach((values, index) => {
+        existing.set(values[0], {
+          row: index + 2, status: values[COLUMNA_ESTADO - 1], gmailStatus: values[COLUMNA_GMAIL - 1],
+        });
       });
     }
     const labels = new Map((Gmail.Users.Labels.list("me").labels || []).map(({ id, name }) => [id, name]));
+    const statusLabels = new Map([...labels].filter(([, name]) => ESTADOS.includes(name)).map(([id, name]) => [name, id]));
     let pageToken;
     const imported = [];
     do {
@@ -52,17 +71,25 @@ function sincronizarReservas() {
           const body = cuerpoTexto(message.payload);
           const reservation = leerReserva(body);
           if (!reservation || !subject.startsWith("[Carrera] " + reservation[0] + " |")) continue;
-          const status = estadoReserva(message.labelIds || [], labels, reservation[8]);
+          const messageLabels = message.labelIds || [];
           const previous = existing.get(reservation[0]);
+          const status = estadoReserva(messageLabels, labels, reservation[8], previous?.gmailStatus);
           if (previous) {
-            if (previous.row && status !== previous.status) sheet.getRange(previous.row, 11).setValue(status);
+            if (previous.row) {
+              const next = estadoSincronizado(previous.status, status, previous.gmailStatus);
+              ajustarEtiqueta(id, messageLabels, statusLabels, next);
+              if (previous.status !== next) sheet.getRange(previous.row, COLUMNA_ESTADO).setValue(next);
+              if (previous.gmailStatus !== next) sheet.getRange(previous.row, COLUMNA_GMAIL).setValue(next);
+              existing.set(reservation[0], {});
+            }
             continue;
           }
+          ajustarEtiqueta(id, messageLabels, statusLabels, status);
           const [reference, first, last, email, adults, children, infants, donation, total] = reservation;
           imported.push([
             reference, new Date(Number(message.internalDate)), first, last, email,
             adults, children, infants, donation, total, status,
-            "https://mail.google.com/mail/u/0/#all/" + id,
+            "https://mail.google.com/mail/u/0/#all/" + id, status,
           ]);
           existing.set(reference, {});
         }
@@ -71,11 +98,17 @@ function sincronizarReservas() {
     } while (pageToken);
     if (imported.length) {
       const firstRow = sheet.getLastRow() + 1;
-      sheet.getRange(firstRow, 1, imported.length, CABECERAS.length).setValues(imported);
+      sheet.getRange(firstRow, 1, imported.length, COLUMNA_GMAIL).setValues(imported);
       sheet.getRange(firstRow, 2, imported.length, 1).setNumberFormat("dd/MM/yyyy HH:mm");
       sheet.getRange(firstRow, 9, imported.length, 2).setNumberFormat('0.00 "€"');
     }
+    const reservationCount = sheet.getLastRow() - 1;
+    if (reservationCount > 0) {
+      const rule = SpreadsheetApp.newDataValidation().requireValueInList(ESTADOS, true).setAllowInvalid(false).build();
+      sheet.getRange(2, COLUMNA_ESTADO, reservationCount, 1).setDataValidation(rule);
+    }
     SpreadsheetApp.flush();
+    sheet.autoResizeColumns(1, CABECERAS.length);
   } finally {
     lock.releaseLock();
   }
@@ -114,9 +147,24 @@ function leerReserva(body) {
   return [reference, safe(first), safe(field("Apellidos")), safe(email), ...quantities.map(Number), donation, total];
 }
 
-function estadoReserva(ids, labels, total) {
+function estadoReserva(ids, labels, total, previousStatus) {
   const applied = ids.map((id) => (labels.get(id) || "").split("/").pop().toLowerCase());
-  if (applied.includes("dorsales entregados")) return "Dorsales entregados";
-  if (applied.includes("pagado")) return "Pagado";
-  return total === 0 ? "Listo para recoger" : "Pendiente de pago";
+  const states = ESTADOS.slice().reverse().filter((state) => applied.includes(state.toLowerCase()));
+  return states.find((state) => state !== previousStatus) ?? states[0] ??
+    (total === 0 ? "Listo para recoger" : "Pendiente de pago");
+}
+
+function estadoSincronizado(sheetStatus, gmailStatus, previousStatus) {
+  if (previousStatus && sheetStatus !== previousStatus && ESTADOS.includes(sheetStatus)) return sheetStatus;
+  return gmailStatus;
+}
+
+function ajustarEtiqueta(thread, applied, statusLabels, status) {
+  const target = statusLabels.get(status);
+  if (!target) throw new Error("Falta la etiqueta de Gmail " + status + ".");
+  const addLabelIds = applied.includes(target) ? [] : [target];
+  const removeLabelIds = [...statusLabels.values()].filter((id) => id !== target && applied.includes(id));
+  if (addLabelIds.length || removeLabelIds.length) {
+    Gmail.Users.Threads.modify({ addLabelIds, removeLabelIds }, "me", thread);
+  }
 }

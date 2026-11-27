@@ -110,10 +110,10 @@ sender reaches the parish inbox. Configure Gmail filters for that sender:
 - Free reservations have a subject containing `[Carrera]` and `Sin pago`. Apply
   `Carrera` and `Listo para recoger`.
 
-Staff replace `Pendiente de pago` with `Pagado` after matching the reference and amount
-in the bank, then apply `Dorsales entregados` after pickup. The [Google Sheet
-automation](scripts/carrera-sheet/README.md) mirrors these labels and imports each
-reservation from its email. The registration and thank-you pages are published at
+Staff select `Pagado` in the Google Sheet after matching the reference and amount
+in the bank, then select `Dorsales entregados` after pickup. The [Google Sheet
+automation](scripts/carrera-sheet/README.md) imports each reservation from its email and
+synchronizes its status with Gmail in both directions. The registration and thank-you pages are published at
 `/carrera-familiar-solidaria/` and `/carrera-familiar-solidaria/gracias/`.
 
 ## License
