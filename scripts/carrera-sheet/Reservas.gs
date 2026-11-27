@@ -19,7 +19,7 @@ function sincronizarReservas() {
     if (!/^[\w.!#$%&'*+/=?^{}|~-]+@[\w.-]+\.[a-z]{2,}$/i.test(sender)) {
       throw new Error("Configura REMITENTE_RESERVAS con la dirección del remitente SMTP.");
     }
-    if (Gmail.Users.getProfile("me").emailAddress.toLowerCase() !== "sanpablodelacruz@gmail.com") {
+    if (Gmail.Users.getProfile("me").emailAddress.toLowerCase() !== "sanpablodelacruz.madrid@gmail.com") {
       throw new Error("Ejecuta el proyecto desde la cuenta de Gmail de la parroquia.");
     }
 

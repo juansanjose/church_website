@@ -16,7 +16,7 @@ from pathlib import Path
 from time import time
 from uuid import UUID
 
-PARISH_EMAIL = "sanpablodelacruz@gmail.com"
+PARISH_EMAIL = "sanpablodelacruz.madrid@gmail.com"
 API_PATH = "/api/carrera/reservas"
 CATEGORIES = (
     ("adultos", "Adultos", 1500),

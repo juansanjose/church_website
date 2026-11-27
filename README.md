@@ -89,7 +89,7 @@ Review the privacy notice for the selected SMTP provider before launch.
 
 Set the repository Actions secret `CHURCH_RACE_ENV` using the credentials of an authorized
 SMTP sender that supports implicit TLS.
-The recipient is always `sanpablodelacruz@gmail.com`.
+The recipient is always `sanpablodelacruz.madrid@gmail.com`.
 
 ```dotenv
 RACE_SMTP_HOST=

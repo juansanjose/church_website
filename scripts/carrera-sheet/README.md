@@ -1,6 +1,6 @@
 # Hoja de reservas de la Carrera Familiar Solidaria
 
-1. Desde `sanpablodelacruz@gmail.com`, crea una hoja privada titulada **Carrera Familiar Solidaria — Reservas**.
+1. Desde `sanpablodelacruz.madrid@gmail.com`, crea una hoja privada titulada **Carrera Familiar Solidaria — Reservas**.
 2. En **Extensiones → Apps Script**, pega el contenido de [Reservas.gs](Reservas.gs) en el archivo de código.
 3. En la configuración del proyecto, activa la visualización del manifiesto y sustituye `appsscript.json` por el [manifiesto adjunto](appsscript.json). Se usa Gmail de solo lectura y acceso de edición a la hoja vinculada.
 4. Añade la propiedad del script `REMITENTE_RESERVAS` con la dirección exacta configurada como remitente de los correos de la carrera.

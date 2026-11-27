@@ -39,7 +39,7 @@ class ReservationsTest(unittest.TestCase):
         order = race.parse_order({**self.form, "total_cents": 1})
         _, reservation = race.save_order(self.database, order)
         email = race.make_message(reservation, "sender@example.invalid")
-        self.assertEqual(str(email["To"]), "sanpablodelacruz@gmail.com")
+        self.assertEqual(str(email["To"]), "sanpablodelacruz.madrid@gmail.com")
         self.assertEqual(reservation["total_cents"], 3500)
         self.assertIn("CARRERA-0001 | María García López | 35,00 €", str(email["Subject"]))
         self.assertIn("Referencia / concepto de pago: CARRERA-0001", email.get_content())
