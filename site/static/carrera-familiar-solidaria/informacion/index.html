@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carrera Familiar Solidaria · Parroquia San Pablo de la Cruz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bosque:#2E4A37;--bosque2:#22382A;--olivo:#7A8F6A;--salvia:#B4C3A7;--arena:#F2E9D8;--dorado:#CDA434;--crema:#FBF7EF;--texto:#22302A;--suave:#56645B;--r:28px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Manrope,system-ui,sans-serif;color:var(--texto);background:var(--crema);line-height:1.55;font-size:16.5px;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:.98;margin:0;letter-spacing:-.01em;color:var(--bosque)}
+em.i{font-style:italic;color:var(--olivo)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.tag{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--bosque);background:#fff;border:1px solid rgba(180,195,167,.8);padding:8px 14px;border-radius:999px}
+.tag i{width:7px;height:7px;border-radius:50%;background:var(--dorado);display:block;animation:pulso 1.8s infinite}
+@keyframes pulso{0%{box-shadow:0 0 0 0 rgba(205,164,52,.7)}70%{box-shadow:0 0 0 9px rgba(205,164,52,0)}100%{box-shadow:0 0 0 0 rgba(205,164,52,0)}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:999px;background:var(--dorado);color:var(--bosque2);font-weight:800;font-size:16px;text-decoration:none;border:0;cursor:pointer;font-family:inherit;transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s;position:relative;overflow:hidden;white-space:nowrap}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px -8px rgba(205,164,52,.6)}
+.btn .ar{width:30px;height:30px;border-radius:50%;background:var(--bosque2);color:var(--dorado);display:grid;place-items:center;margin-right:-14px;transition:transform .25s}
+.btn:hover .ar{transform:rotate(-45deg)}
+.btn .ar svg{width:15px;height:15px}
+.btn-ghost{background:transparent;color:var(--crema);border:1.5px solid rgba(251,247,239,.4)}
+.btn-ghost:hover{background:rgba(251,247,239,.1);box-shadow:none}
+section{padding:110px 0}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:46px}
+.head h2{font-size:clamp(40px,6vw,76px);max-width:720px;margin-top:16px}
+.head p{max-width:380px;color:var(--suave);margin:0}
+
+/* NAV */
+nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:50;width:min(1160px,calc(100% - 24px));display:flex;align-items:center;justify-content:space-between;gap:14px;padding:8px 8px 8px 14px;border-radius:999px;background:rgba(251,247,239,.78);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border:1px solid rgba(255,255,255,.6);box-shadow:0 10px 30px -18px rgba(34,56,42,.5);transition:background .3s}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand img{width:38px;height:38px;border-radius:50%;background:#fff;object-fit:contain;padding:3px}
+.brand b{font-family:"Cormorant Garamond",serif;font-size:19px;color:var(--bosque);font-weight:700;line-height:1}
+.brand small{display:block;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--suave);font-weight:700;margin-bottom:2px}
+.links{display:flex;gap:4px}
+.links a{font-size:14px;font-weight:600;color:var(--bosque);text-decoration:none;padding:10px 14px;border-radius:999px;transition:background .2s}
+.links a:hover{background:rgba(180,195,167,.35)}
+nav .btn{min-height:44px;font-size:14px;padding:0 20px}
+
+/* HERO */
+.hero{background:var(--bosque2);color:var(--crema);padding:130px 0 0;position:relative;overflow:hidden;border-radius:0 0 48px 48px}
+.hero .grain{position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(205,164,52,.18),transparent 40%),radial-gradient(circle at 10% 90%,rgba(122,143,106,.35),transparent 45%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.hero .tag{background:rgba(255,255,255,.08);color:var(--crema);border-color:rgba(255,255,255,.18)}
+.hero h1{color:var(--crema);font-size:clamp(58px,9.4vw,138px);margin:22px 0 22px;line-height:.86}
+.hero h1 span{display:block;overflow:hidden}
+.hero h1 span>i{display:inline-block;font-style:normal;transform:translateY(105%);animation:sube .9s cubic-bezier(.2,.8,.2,1) forwards}
+.hero h1 span:nth-child(2)>i{animation-delay:.12s}
+.hero h1 span:nth-child(3)>i{animation-delay:.24s;font-style:italic;color:var(--dorado)}
+@keyframes sube{to{transform:none}}
+.hero p.lead{font-size:18px;color:#D9E2D2;max-width:500px;margin:0 0 30px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hero .nota{font-size:14px;color:var(--salvia);margin-top:18px}
+.foto{position:relative}
+.foto img{width:100%;aspect-ratio:3/3.7;object-fit:cover;border-radius:200px 200px var(--r) var(--r);display:block;filter:saturate(1.05)}
+.sello{position:absolute;left:-36px;top:38%;width:128px;height:128px;border-radius:50%;background:var(--dorado);color:var(--bosque2);display:grid;place-items:center;text-align:center;animation:gira 18s linear infinite}
+.sello svg{position:absolute;inset:0;width:100%;height:100%}
+.sello b{font-family:"Cormorant Garamond",serif;font-size:40px;line-height:1;animation:gira 18s linear infinite reverse}
+@keyframes gira{to{transform:rotate(360deg)}}
+.cuenta{position:absolute;right:16px;bottom:16px;left:16px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:10px;border-radius:22px;background:rgba(34,56,42,.55);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.15)}
+.cuenta div{text-align:center}
+.cuenta b{display:block;font-family:"Cormorant Garamond",serif;font-size:34px;line-height:1;font-variant-numeric:tabular-nums}
+.cuenta span{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--salvia);font-weight:700}
+.marquee{margin-top:80px;border-top:1px solid rgba(255,255,255,.12);padding:22px 0;overflow:hidden;white-space:nowrap}
+.marquee .track{display:inline-flex;animation:mq 30s linear infinite}
+.marquee span{font-family:"Cormorant Garamond",serif;font-size:34px;color:var(--crema);padding:0 26px;display:inline-flex;align-items:center;gap:52px}
+.marquee span::after{content:"✦";color:var(--dorado);font-size:18px}
+.marquee span:nth-child(even){font-style:italic;color:var(--salvia)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* DATOS (bento) */
+.datos{padding:26px 0 0}
+.bento4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.tile{background:#fff;border-radius:var(--r);padding:26px;border:1px solid rgba(180,195,167,.55);transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}
+.tile:hover{transform:translateY(-6px);box-shadow:0 24px 40px -28px rgba(34,56,42,.5)}
+.tile .ico{width:46px;height:46px;border-radius:14px;background:var(--arena);display:grid;place-items:center;color:var(--bosque);margin-bottom:28px}
+.tile .ico svg{width:22px;height:22px}
+.tile small{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--olivo);margin-bottom:6px}
+.tile b{font-family:"Cormorant Garamond",serif;font-size:32px;font-weight:600;color:var(--bosque);line-height:1}
+.tile.dark{background:var(--bosque);border-color:var(--bosque)}
+.tile.dark .ico{background:rgba(205,164,52,.18);color:var(--dorado)}
+.tile.dark small{color:var(--salvia)}
+.tile.dark b{color:var(--crema)}
+
+/* CAUSA */
+.causa-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:14px}
+.causa-txt{background:var(--arena);border-radius:var(--r);padding:52px}
+.causa-txt h2{font-size:clamp(38px,5vw,64px);margin:18px 0 22px}
+.causa-txt p{color:var(--suave);margin:0 0 14px;max-width:560px;font-size:17px}
+.causa-txt strong{color:var(--bosque)}
+.cien{background:var(--bosque);color:var(--crema);border-radius:var(--r);padding:44px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;min-height:340px}
+.cien .n{font-family:"Cormorant Garamond",serif;font-size:clamp(110px,14vw,180px);line-height:.8;color:var(--dorado);font-weight:700}
+.cien .n sup{font-size:.4em;vertical-align:top}
+.cien p{font-family:"Cormorant Garamond",serif;font-size:30px;margin:0;line-height:1.1}
+.cien .logo-bg{position:absolute;right:-40px;top:-30px;width:220px;opacity:.09;filter:grayscale(1) brightness(3)}
+
+/* EXPERIENCIA (bento 6) */
+.exp{background:#fff;border-radius:48px}
+.bento6{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
+.card{border-radius:var(--r);padding:30px;background:var(--crema);border:1px solid rgba(180,195,167,.55);position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.2,.8,.2,1),background .35s,color .35s;min-height:230px;display:flex;flex-direction:column;justify-content:flex-end}
+.card:hover{transform:translateY(-6px)}
+.card .num{position:absolute;top:24px;right:28px;font-family:"Cormorant Garamond",serif;font-size:20px;color:var(--olivo);font-style:italic}
+.card svg{width:36px;height:36px;color:var(--olivo);position:absolute;top:26px;left:28px;transition:transform .4s}
+.card:hover svg{transform:scale(1.15) rotate(-6deg)}
+.card h3{font-size:30px;margin-bottom:8px}
+.card p{margin:0;color:var(--suave);font-size:15.5px}
+.c1{grid-column:span 3;background:var(--bosque);border-color:var(--bosque)}
+.c1 h3,.c1 p{color:var(--crema)}.c1 p{color:#D3DCCB}.c1 svg{color:var(--dorado)}.c1 .num{color:var(--salvia)}
+.c2{grid-column:span 3}
+.c3,.c4,.c5{grid-column:span 2}
+.c4{background:var(--dorado);border-color:var(--dorado)}
+.c4 p{color:var(--bosque2)}.c4 svg,.c4 .num{color:var(--bosque2)}
+.c6{grid-column:span 6;min-height:auto;flex-direction:row;align-items:center;gap:22px;padding:28px 30px;background:var(--arena)}
+.c6 svg{position:static;flex:none}
+.c6 .num{position:static;margin-left:auto}
+
+/* PASOS */
+.pasos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;position:relative}
+.paso{border-radius:var(--r);padding:34px 30px;background:#fff;border:1px solid rgba(180,195,167,.55);position:relative}
+.paso .n{font-family:"Cormorant Garamond",serif;font-size:96px;line-height:.8;color:transparent;-webkit-text-stroke:1.5px var(--olivo);font-weight:700;margin-bottom:20px;display:block}
+.paso h3{font-size:30px;margin-bottom:8px}
+.paso p{margin:0;color:var(--suave)}
+.paso:not(:last-child)::after{content:"";position:absolute;right:-22px;top:62px;width:30px;height:30px;border-radius:50%;background:var(--dorado) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2322382A' stroke-width='2.4'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center/15px no-repeat;z-index:2}
+
+/* FORM */
+.insc{background:var(--bosque2);border-radius:48px;color:var(--crema);position:relative;overflow:hidden}
+.insc .grain{position:absolute;inset:0;background:radial-gradient(circle at 0% 0%,rgba(205,164,52,.16),transparent 40%);pointer-events:none}
+.insc-grid{position:relative;display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.insc h2{color:var(--crema);font-size:clamp(44px,6vw,80px);margin:18px 0 18px}
+.insc h2 em{font-style:italic;color:var(--dorado)}
+.insc .tag{background:rgba(255,255,255,.08);color:var(--crema);border-color:rgba(255,255,255,.18)}
+.insc .lead{color:#D3DCCB;max-width:420px;margin:0 0 26px}
+.resumen{border-radius:22px;border:1px solid rgba(255,255,255,.15);padding:22px 24px;max-width:420px;background:rgba(255,255,255,.04)}
+.resumen div{display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;color:var(--salvia);font-size:15px}
+.resumen div:last-child{border-top:1px dashed rgba(255,255,255,.2);margin-top:8px;padding-top:14px;color:var(--crema)}
+.resumen b{font-family:"Cormorant Garamond",serif;font-size:42px;color:var(--dorado);line-height:1}
+.fbox{background:var(--crema);color:var(--texto);border-radius:var(--r);padding:38px;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field{position:relative;margin-bottom:12px}
+.field input{width:100%;font:inherit;font-size:16px;padding:24px 16px 8px;border:1.5px solid #D2D9CC;border-radius:16px;background:#fff;color:var(--texto);min-height:60px;transition:border-color .2s,box-shadow .2s}
+.field label{position:absolute;left:17px;top:19px;font-size:15px;color:var(--suave);pointer-events:none;transition:all .2s ease}
+.field input:focus,.field input:not(:placeholder-shown){outline:none}
+.field input:focus{border-color:var(--olivo);box-shadow:0 0 0 4px rgba(122,143,106,.18)}
+.field input:focus+label,.field input:not(:placeholder-shown)+label{top:8px;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--olivo)}
+.contador{display:flex;align-items:center;justify-content:space-between;gap:14px;background:#fff;border:1.5px solid #D2D9CC;border-radius:16px;padding:10px 10px 10px 16px;margin-bottom:12px}
+.contador .lbl{font-size:15px;color:var(--suave)}
+.contador .ctl{display:flex;align-items:center;gap:6px}
+.contador button{width:44px;height:44px;border-radius:12px;border:0;background:var(--arena);color:var(--bosque);font-size:22px;cursor:pointer;font-family:inherit;transition:background .2s,color .2s}
+.contador button:hover{background:var(--bosque);color:var(--crema)}
+.contador output{font-family:"Cormorant Garamond",serif;font-size:32px;font-weight:700;min-width:40px;text-align:center;color:var(--bosque)}
+.pop{animation:pop .35s cubic-bezier(.2,.8,.2,1)}
+@keyframes pop{40%{transform:scale(1.25)}}
+.opt{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-radius:16px;background:var(--arena);margin-bottom:12px;cursor:pointer;font-size:14px;color:var(--suave)}
+.opt strong{color:var(--bosque)}
+.opt input,.check input{width:20px;height:20px;accent-color:var(--bosque);flex:none;margin:1px 0 0}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--suave);margin:4px 0 16px}
+.check a{color:var(--bosque)}
+.fbox .btn{width:100%}
+.err{color:#9A3324;font-size:13px;display:none;margin:0 0 12px}
+.ok{display:none;text-align:center;padding:30px 0}
+.ok .ring{width:84px;height:84px;border-radius:50%;background:var(--bosque);display:grid;place-items:center;margin:0 auto 16px;animation:pop .6s}
+.ok svg{width:40px;height:40px;color:var(--dorado)}
+.ok h3{font-size:42px;margin-bottom:8px}
+.ok p{color:var(--suave);margin:0}
+.seg{text-align:center;font-size:13px;color:var(--suave);margin:12px 0 0}
+
+/* PATROCINADORES */
+.logos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.slot{aspect-ratio:16/10;border-radius:var(--r);border:1.5px dashed var(--salvia);background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--olivo);font-size:13px;font-weight:600;transition:transform .3s,border-color .3s}
+.slot:hover{transform:translateY(-4px);border-color:var(--olivo)}
+.slot svg{width:28px;height:28px}
+.mini{margin-top:22px;color:var(--suave);font-size:15px}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+.faq-grid h2{font-size:clamp(40px,5vw,64px);margin-top:16px}
+details{background:#fff;border:1px solid rgba(180,195,167,.55);border-radius:20px;padding:0 22px;margin-bottom:10px;transition:background .3s}
+details[open]{background:var(--arena)}
+summary{cursor:pointer;list-style:none;padding:20px 0;font-weight:700;color:var(--bosque);display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:16.5px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";width:32px;height:32px;flex:none;border-radius:50%;background:var(--bosque) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D4AF37' stroke-width='2.4'%3E%3Cpath d='M12 5v14M5 12h14'/%3E%3C/svg%3E") center/14px no-repeat;transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:0 0 20px;color:var(--suave)}
+
+/* CIERRE */
+.cierre{padding:0 0 20px}
+.cierre-box{background:var(--dorado);border-radius:48px;padding:90px 30px;text-align:center;position:relative;overflow:hidden}
+.cierre-box h2{font-size:clamp(46px,8vw,112px);color:var(--bosque2);line-height:.9;margin:18px 0 20px}
+.cierre-box h2 em{font-style:italic}
+.cierre-box p{color:var(--bosque2);max-width:560px;margin:0 auto 30px;font-size:17px}
+.cierre-box .tag{background:rgba(255,255,255,.4);border-color:transparent}
+.cierre-box .btn{background:var(--bosque2);color:var(--crema)}
+.cierre-box .btn .ar{background:var(--dorado);color:var(--bosque2)}
+.cierre-box .btn:hover{box-shadow:0 14px 30px -8px rgba(34,56,42,.6)}
+footer{padding:30px 20px 40px;text-align:center;color:var(--suave);font-size:14px}
+footer b{font-family:"Cormorant Garamond",serif;font-size:20px;color:var(--bosque)}
+.pend{background:rgba(205,164,52,.32);padding:0 6px;border-radius:6px}
+
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;transform:translateY(140%);transition:transform .4s cubic-bezier(.2,.8,.2,1);display:none}
+.sticky .btn{width:100%;box-shadow:0 14px 30px rgba(0,0,0,.3)}
+.sticky.show{transform:none}
+
+body.reveal .rv{opacity:0;transform:translateY(34px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--d,0) * 90ms)}
+body.reveal .rv.on{opacity:1;transform:none}
+
+@media (max-width:900px){
+  section{padding:76px 0}
+  .links{display:none}
+  .brand b{font-size:16px}
+  .hero{padding-top:110px;border-radius:0 0 32px 32px}
+  .hero .wrap,.causa-grid,.insc-grid,.faq-grid{grid-template-columns:1fr}
+  .foto{max-width:460px}
+  .sello{left:auto;right:-6px;top:-20px;width:104px;height:104px}.sello b{font-size:32px}
+  .bento4{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .bento6{grid-template-columns:1fr}
+  .c1,.c2,.c3,.c4,.c5,.c6{grid-column:auto}
+  .c6{flex-direction:column;align-items:flex-start}.c6 .num{margin-left:0}
+  .pasos{grid-template-columns:1fr}
+  .paso:not(:last-child)::after{right:auto;left:50%;top:auto;bottom:-22px;transform:translateX(-50%) rotate(90deg)}
+  .causa-txt,.fbox{padding:30px 22px}
+  .cien{min-height:260px;padding:32px}
+  .row{grid-template-columns:1fr;gap:0}
+  .logos{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .exp,.insc,.cierre-box{border-radius:32px}
+  .sticky{display:block}
+  footer{padding-bottom:100px}
+  .marquee span{font-size:26px}
+}
+/* Logos */
+.logo-h{height:46px;width:auto;display:block;background:none!important;padding:0!important;border-radius:0!important}
+.caritas-ico{width:46px;height:46px;border-radius:14px;margin-bottom:28px;display:block}
+.caritas-logo{width:86px;height:86px;border-radius:20px;position:relative;z-index:1;box-shadow:0 14px 30px -14px rgba(180,30,40,.45);margin-bottom:22px}
+.cien{justify-content:flex-start}
+.cien .n{margin-top:auto}
+.cien .logo-bg{right:-30px;top:auto;bottom:-30px;width:240px}
+.f-logos{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;margin-bottom:16px}
+.f-spc{height:64px;width:auto}
+.f-sep{width:1px;height:46px;background:rgba(180,195,167,.8)}
+.f-con{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--olivo)}
+.f-car{width:56px;height:56px;border-radius:12px}
+@media (max-width:900px){.logo-h{height:38px}}
+
+.f-legal{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:14px;font-size:13px}.f-legal a{color:var(--suave);text-decoration:none}.f-legal a:hover{color:var(--bosque)}
+
+/* ===== Versión luminosa ===== */
+body{background:#FFFDF9}
+.hero{background:linear-gradient(180deg,#FFFDF9 0%,#F8F2E4 100%);color:var(--texto);border-radius:0}
+.hero .grain{background:radial-gradient(circle at 80% 14%,rgba(205,164,52,.32),transparent 40%),radial-gradient(circle at 8% 88%,rgba(180,195,167,.4),transparent 45%);animation:luz 9s ease-in-out infinite alternate}
+@keyframes luz{to{opacity:.65;transform:translate(-2%,2%) scale(1.05)}}
+.hero .tag{background:#fff;color:var(--bosque);border-color:rgba(180,195,167,.8)}
+.hero h1{color:var(--bosque)}
+.hero h1 span:nth-child(3)>i{color:var(--olivo)}
+.hero p.lead{color:var(--suave)}
+.hero .nota{color:var(--suave)}
+.btn-ghost{color:var(--bosque);border-color:rgba(46,74,55,.28)}
+.btn-ghost:hover{background:rgba(180,195,167,.22)}
+.foto img{box-shadow:0 50px 90px -45px rgba(205,164,52,.75)}
+.cuenta{background:rgba(255,255,255,.78);border-color:rgba(255,255,255,.95);color:var(--bosque);box-shadow:0 10px 30px -18px rgba(34,56,42,.4)}
+.cuenta span{color:var(--olivo)}
+.marquee{border-top-color:rgba(180,195,167,.6)}
+.marquee span{color:var(--bosque)}
+.marquee span:nth-child(even){color:var(--olivo)}
+.tile{border-color:rgba(180,195,167,.45)}
+.tile.dark{background:#EEF3EA;border-color:#DCE6D3}
+.tile.dark .ico{background:#fff;color:var(--bosque)}
+.tile.dark small{color:var(--olivo)}
+.tile.dark b{color:var(--bosque)}
+.causa-txt{background:#F8F3E7}
+.cien{background:radial-gradient(circle at 70% 10%,rgba(205,164,52,.35),transparent 55%),#FFF9EA;color:var(--bosque);border:1px solid #F1E5C2}
+.cien .n{color:var(--bosque)}
+.cien .logo-bg{filter:none;opacity:.13}
+.card{background:#FFFDF9}
+.c1{background:#EEF3EA;border-color:#DCE6D3}
+.c1 h3{color:var(--bosque)}.c1 p{color:var(--suave)}.c1 svg,.c1 .num{color:var(--olivo)}
+.c4{background:#FBF3DA;border-color:#F1E3B5}
+.c4 p{color:var(--suave)}.c4 svg,.c4 .num{color:var(--bosque)}
+.c6{background:#F8F3E7}
+.insc{background:linear-gradient(180deg,#F8F2E4 0%,#FFFDF9 100%);color:var(--texto)}
+.insc .grain{background:radial-gradient(circle at 12% 10%,rgba(205,164,52,.26),transparent 40%)}
+.insc h2{color:var(--bosque)}
+.insc h2 em{color:var(--olivo)}
+.insc .tag{background:#fff;color:var(--bosque);border-color:rgba(180,195,167,.8)}
+.insc .lead{color:var(--suave)}
+.resumen{background:#fff;border-color:rgba(180,195,167,.6)}
+.resumen div{color:var(--suave)}
+.resumen div:last-child{color:var(--bosque);border-top-color:rgba(180,195,167,.8)}
+.resumen b{color:var(--bosque)}
+.fbox{background:#fff;box-shadow:0 40px 80px -50px rgba(34,56,42,.45);border:1px solid rgba(180,195,167,.4)}
+.field input,.contador{background:#FFFDF9}
+.cierre-box{background:radial-gradient(circle at 50% -10%,rgba(205,164,52,.42),transparent 60%),#FBF6E9;border:1px solid #F1E5C2}
+.cierre-box h2{color:var(--bosque)}
+.cierre-box h2 em{color:var(--olivo)}
+.cierre-box p{color:var(--suave)}
+.cierre-box .tag{background:#fff;border-color:rgba(180,195,167,.8)}
+.cierre-box .btn{background:var(--dorado);color:var(--bosque2)}
+.cierre-box .btn .ar{background:var(--bosque2);color:var(--dorado)}
+.cierre-box .btn:hover{box-shadow:0 14px 30px -8px rgba(205,164,52,.6)}
+
+/* ===== Blanco predominante ===== */
+.c1,.c4,.c5{grid-column:span 2}
+@media (max-width:900px){.c1,.c4,.c5{grid-column:auto}}
+@media (max-width:900px){.fbox .row{grid-template-columns:1fr 1fr!important;gap:12px!important}}
+@media (max-width:480px){.fbox .row{grid-template-columns:1fr!important;gap:0!important}}
+body{background:#fff}
+nav{background:rgba(255,255,255,.85)}
+.hero{background:#fff}
+.hero .grain{background:radial-gradient(circle at 82% 12%,rgba(205,164,52,.16),transparent 38%),radial-gradient(circle at 6% 92%,rgba(180,195,167,.18),transparent 40%)}
+.foto img{box-shadow:0 40px 80px -50px rgba(46,74,55,.35)}
+.tile,.tile.dark{background:#fff;border-color:#ECEFE8;box-shadow:0 1px 0 rgba(46,74,55,.03)}
+.tile .ico,.tile.dark .ico{background:#F6F8F3}
+.causa-txt{background:#fff;border:1px solid #ECEFE8}
+.cien{background:radial-gradient(circle at 75% 0%,rgba(205,164,52,.14),transparent 55%),#fff;border:1px solid #ECEFE8}
+.exp{background:#fff}
+.card,.c1,.c4,.c6{background:#fff;border-color:#ECEFE8}
+.c1 svg,.c1 .num{color:var(--olivo)}
+.c4 svg,.c4 .num{color:#B8952A}
+.paso{background:#fff;border-color:#ECEFE8}
+.insc{background:#fff;border-top:1px solid #F1F3EE;border-bottom:1px solid #F1F3EE}
+.insc .grain{background:radial-gradient(circle at 10% 10%,rgba(205,164,52,.12),transparent 40%)}
+.resumen{background:#FCFCFA;border-color:#ECEFE8}
+.fbox{border-color:#ECEFE8;box-shadow:0 40px 80px -55px rgba(46,74,55,.35)}
+.field input,.contador{background:#fff;border-color:#E3E8DE}
+.contador button{background:#F6F8F3}
+.opt{background:#FCFAF4}
+.slot{background:#fff;border-color:#DDE5D6}
+details{background:#fff;border-color:#ECEFE8}
+details[open]{background:#FCFCFA}
+.cierre-box{background:radial-gradient(circle at 50% -10%,rgba(205,164,52,.2),transparent 55%),#fff;border:1px solid #ECEFE8}
+.tag{background:#fff;border-color:#E3E8DE}
+
+/* ===== Espaciado compacto ===== */
+section{padding:56px 0}
+.datos{padding:20px 0 0}
+.head{margin-bottom:30px}
+.hero{padding-bottom:0}
+.marquee{margin-top:50px}
+.cierre{padding:0 0 10px}
+.cierre-box{padding:64px 30px}
+#faq{padding-top:10px!important}
+@media (max-width:900px){section{padding:44px 0}.marquee{margin-top:36px}.cierre-box{padding:48px 22px}}
+
+/* ===== Ancho expandido ===== */
+.wrap{max-width:1560px;padding:0 clamp(20px,4vw,64px)}
+nav{width:calc(100% - clamp(24px,4vw,64px))}
+.exp,.insc{border-radius:0}
+.cierre .wrap{max-width:none}
+.cierre-box{border-radius:36px}
+.hero .wrap{gap:clamp(40px,5vw,90px)}
+.hero p.lead,.causa-txt p{max-width:640px}
+.head h2{max-width:900px}
+.faq-grid{grid-template-columns:.7fr 1.3fr}
+@media (max-width:900px){.faq-grid{grid-template-columns:1fr}}
+
+/* Patrocinador y Cáritas parroquial */
+.sponsor{display:flex;align-items:center;gap:clamp(24px,4vw,56px);background:#fff;border:1px solid #ECEFE8;border-radius:28px;padding:clamp(26px,4vw,44px);max-width:900px}
+.sp-logo{flex:none;width:clamp(120px,16vw,170px)}
+.sp-logo img{width:100%;height:auto;display:block}
+.sp-label{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--olivo);margin-bottom:8px}
+.sp-txt h3{font-size:clamp(34px,4vw,46px);margin-bottom:10px}
+.sp-txt p{margin:0;color:var(--suave);max-width:520px}
+.caritas-ico{width:auto!important;height:52px!important;border-radius:0!important;margin-bottom:22px}
+.caritas-logo{width:auto!important;height:104px!important;border-radius:0!important;box-shadow:none!important}
+.cien .caritas-logo{align-self:flex-start;object-fit:contain}
+.brand img.logo-h{width:auto;height:46px;border-radius:0;padding:0;background:none}
+@media (max-width:900px){.brand img.logo-h{height:38px}}
+.f-car{width:auto!important;height:62px!important;border-radius:0!important}
+.f-dal{height:70px;width:auto}
+@media (max-width:640px){.sponsor{flex-direction:column;text-align:center}.sp-txt p{margin:0 auto}}
+
+/* Programa, pago y destinataria */
+.programa{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;position:relative}
+.programa::before{content:"";position:absolute;left:4%;right:4%;top:44px;height:2px;background:repeating-linear-gradient(90deg,var(--dorado) 0 8px,transparent 8px 16px);opacity:.6}
+.pr{position:relative;background:#fff;border:1px solid #ECEFE8;border-radius:28px;padding:30px 26px 28px;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.pr:hover{transform:translateY(-6px)}
+.pr-n{position:absolute;top:22px;right:24px;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:20px;color:var(--olivo)}
+.pr-hora{display:inline-block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--bosque);background:#F6F8F3;border:1px solid #E3E8DE;border-radius:999px;padding:6px 12px;margin-bottom:20px;position:relative;z-index:1}
+.pr svg{display:block;width:34px;height:34px;color:var(--olivo);margin-bottom:14px}
+.pr h3{font-size:28px;margin-bottom:8px}
+.pr p{margin:0;color:var(--suave);font-size:15.5px}
+.pr-meta{background:radial-gradient(circle at 80% 0%,rgba(205,164,52,.18),transparent 60%),#fff;border-color:#F1E5C2}
+.pr-meta svg{color:#B8952A}
+.dest-tag{display:inline-block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:#B3261E;background:#FDF0EF;border:1px solid #F5D3D0;border-radius:999px;padding:6px 12px;margin-bottom:10px;align-self:flex-start;position:relative;z-index:1}
+.pago{margin-top:16px;max-width:420px;background:#fff;border:1px solid rgba(180,195,167,.6);border-radius:22px;padding:20px 24px}
+.pg-label{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--olivo);margin-bottom:8px}
+.pg-row{display:flex;justify-content:space-between;gap:16px;padding:7px 0;border-bottom:1px dashed #E3E8DE;font-size:15px}
+.pg-k{color:var(--suave)}
+.pg-v{color:var(--bosque);font-weight:600;text-align:right}
+.pg-dest{display:flex;align-items:center;gap:12px;margin-top:14px;font-size:14px;color:var(--suave)}
+.pg-dest img{height:40px;width:auto;flex:none}
+.pg-dest strong{color:#B3261E}
+.ok p{margin:0 0 10px}
+.ok-dest{font-size:14px}
+@media (max-width:900px){.programa{grid-template-columns:1fr}.programa::before{display:none}}
+
+/* Domingo de la Alegría (sutil) */
+.gaudete{color:#B5577A}
+.alegria{margin-top:22px;display:flex;align-items:center;gap:clamp(22px,4vw,48px);padding:28px clamp(24px,4vw,44px);border-radius:28px;border:1px solid #F3DDE5;background:radial-gradient(circle at 12% 50%,rgba(217,143,166,.14),transparent 45%),#fff}
+.al-velas{flex:none;width:clamp(120px,14vw,160px)}
+.velas{width:100%;height:auto;display:block}
+.llama{transform-origin:center bottom;transform-box:fill-box;animation:llama 2.4s ease-in-out infinite}
+.l2{animation-delay:.5s}.l3{animation-delay:1s}
+@keyframes llama{0%,100%{transform:scale(1) rotate(0)}30%{transform:scale(1.08,.94) rotate(-3deg)}60%{transform:scale(.95,1.06) rotate(2deg)}}
+.al-label{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:#B5577A;margin-bottom:6px}
+.al-txt h3{font-size:clamp(30px,3.4vw,40px);margin-bottom:6px}
+.al-txt h3 em{color:#B5577A}
+.al-cita{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:22px;color:var(--bosque);margin:0 0 6px}
+.al-cita span{font-family:Manrope,sans-serif;font-style:normal;font-size:12px;letter-spacing:.1em;color:var(--olivo);margin-left:6px}
+.al-txt p:last-child{margin:0;color:var(--suave);max-width:640px}
+@media (max-width:640px){.alegria{flex-direction:column;text-align:center}.al-txt p:last-child{margin:0 auto}}
+
+.tile .det{display:block;font-size:13px;color:var(--suave);margin-top:6px;line-height:1.4}
+.tile .det a{color:var(--bosque);font-weight:700}
+.pg-v small{display:block;font-size:12px;font-weight:500;color:var(--suave);margin-top:2px}
+.pg-v{white-space:nowrap}
+/* Precios por edad y horario */
+.sello b{display:flex;flex-direction:column;align-items:center;line-height:1}
+.sello b small{font-family:Manrope,sans-serif;font-size:10px;font-weight:800;letter-spacing:.06em;margin-top:4px}
+.contador .lbl small{display:block;font-size:12px;color:var(--olivo);margin-top:2px}
+.lema{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:30px;color:var(--olivo);margin:6px 0 16px!important}
+.horario{list-style:none;margin:10px 0 0;padding:0;font-size:14px;color:var(--suave)}
+.horario li{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px dashed #E3E8DE}
+.horario li:last-child{border-bottom:0}
+.horario span{font-weight:700;color:var(--bosque)}
+
+/* ===== Más luz y vida ===== */
+.hero{background:radial-gradient(ellipse at 78% 18%,rgba(244,200,90,.30),transparent 42%),radial-gradient(ellipse at 95% 60%,rgba(232,150,140,.16),transparent 40%),radial-gradient(ellipse at 5% 95%,rgba(180,195,167,.30),transparent 45%),linear-gradient(180deg,#FFFDF7 0%,#FFF8EA 100%)!important}
+.hero .grain{display:none}
+.bokeh{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.bokeh i{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(244,200,90,.55),rgba(244,200,90,0) 70%);animation:flota 14s ease-in-out infinite}
+.bokeh i:nth-child(1){width:90px;height:90px;left:8%;top:18%}
+.bokeh i:nth-child(2){width:40px;height:40px;left:30%;top:70%;animation-delay:-3s}
+.bokeh i:nth-child(3){width:120px;height:120px;left:55%;top:8%;animation-delay:-6s;opacity:.7}
+.bokeh i:nth-child(4){width:30px;height:30px;left:46%;top:44%;animation-delay:-2s}
+.bokeh i:nth-child(5){width:70px;height:70px;left:88%;top:12%;animation-delay:-8s}
+.bokeh i:nth-child(6){width:50px;height:50px;left:92%;top:72%;animation-delay:-5s;background:radial-gradient(circle,rgba(232,150,160,.45),transparent 70%)}
+.bokeh i:nth-child(7){width:26px;height:26px;left:20%;top:48%;animation-delay:-9s}
+.bokeh i:nth-child(8){width:60px;height:60px;left:66%;top:86%;animation-delay:-4s;background:radial-gradient(circle,rgba(180,195,167,.6),transparent 70%)}
+.bokeh i:nth-child(9){width:34px;height:34px;left:4%;top:78%;animation-delay:-7s}
+.bokeh i:nth-child(10){width:22px;height:22px;left:74%;top:34%;animation-delay:-1s}
+.bokeh i:nth-child(11){width:80px;height:80px;left:38%;top:20%;animation-delay:-11s;opacity:.5}
+.bokeh i:nth-child(12){width:28px;height:28px;left:82%;top:50%;animation-delay:-12s;background:radial-gradient(circle,rgba(232,150,160,.5),transparent 70%)}
+@keyframes flota{0%,100%{transform:translate(0,0) scale(1);opacity:.85}50%{transform:translate(14px,-22px) scale(1.12);opacity:.45}}
+.foto{isolation:isolate}
+.rayos{position:absolute;left:50%;top:38%;width:150%;height:auto;transform:translate(-50%,-50%);z-index:-1;stroke:#E9B949;stroke-width:2.2;stroke-linecap:round;opacity:.55;animation:gira 80s linear infinite}
+@keyframes giraR{to{transform:translate(-50%,-50%) rotate(360deg)}}
+.rayos{animation-name:giraR}
+.foto img{box-shadow:0 40px 90px -40px rgba(233,185,73,.65)!important}
+/* franja en movimiento: banda dorada luminosa */
+.marquee{background:linear-gradient(90deg,#FBEFCB,#FFF7E3 50%,#FBEFCB);border-top:0!important;margin-top:56px;padding:18px 0}
+.marquee span:nth-child(even){color:#B5577A!important}
+/* datos clave con iconos de color */
+.bento4 .tile:nth-child(1) .ico{background:#FCF1D6;color:#B8862A}
+.bento4 .tile:nth-child(2) .ico{background:#FBE3E5;color:#B5577A}
+.bento4 .tile:nth-child(3) .ico{background:#E6EFE1;color:var(--bosque)}
+.tile:hover{box-shadow:0 24px 44px -26px rgba(233,185,73,.55)}
+/* causa con luz cálida */
+.causa-txt{background:radial-gradient(circle at 100% 0%,rgba(244,200,90,.16),transparent 50%),#FFFCF4!important;border-color:#F4EAD0!important}
+.causa-txt .lema{color:#B5577A!important;font-size:clamp(28px,3vw,36px)!important;line-height:1.1}
+/* programa: iconos en círculos de color */
+.pr svg{width:52px;height:52px;padding:12px;border-radius:50%;box-sizing:border-box}
+.programa .pr:nth-child(1) svg{background:#FBE3E5;color:#B5577A}
+.programa .pr:nth-child(2) svg{background:#E6EFE1;color:var(--bosque)}
+.programa .pr:nth-child(3) svg{background:#FCF1D6;color:#B8862A}
+.programa .pr:nth-child(4) svg{background:#EAE5F2;color:#7A6A9A}
+.pr:hover{box-shadow:0 26px 46px -28px rgba(233,185,73,.55)}
+/* cómo participar: números dorados */
+.paso .n{-webkit-text-stroke:1.5px #D4A93A!important}
+.paso{background:radial-gradient(circle at 0% 0%,rgba(244,200,90,.10),transparent 50%),#fff!important}
+/* inscripción y cierre: más sol */
+.insc{background:radial-gradient(ellipse at 10% 0%,rgba(244,200,90,.22),transparent 45%),radial-gradient(ellipse at 100% 100%,rgba(232,150,160,.10),transparent 45%),#FFFCF5!important}
+.cierre-box{background:radial-gradient(ellipse at 50% -10%,rgba(244,200,90,.45),transparent 58%),radial-gradient(ellipse at 0% 100%,rgba(232,150,160,.14),transparent 45%),#FFFCF4!important;border-color:#F4EAD0!important}
+/* botón con brillo */
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.5) 50%,transparent 70%);transform:translateX(-120%);animation:brillo 3.6s ease-in-out infinite;pointer-events:none}
+.btn-ghost::after{display:none}
+@keyframes brillo{60%,100%{transform:translateX(120%)}}
+
+/* Fecha destacada en portada */
+.fecha-hero{display:inline-flex;align-items:center;gap:18px;padding:10px 22px 10px 10px;border-radius:26px;background:#fff;border:1px solid #F1E3B5;box-shadow:0 18px 40px -24px rgba(201,154,46,.55)}
+.fh-dia{display:flex;flex-direction:column;align-items:center;justify-content:center;width:92px;height:104px;border-radius:18px;background:linear-gradient(160deg,#E9C65A,#CDA434);color:var(--bosque2);box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
+.fh-dia b{font-family:"Cormorant Garamond",serif;font-size:58px;line-height:.9;font-weight:700}
+.fh-sem,.fh-mes{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.fh-txt{display:flex;flex-direction:column;gap:4px}
+.fh-alegria{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:30px;line-height:1.05;color:#B5577A}
+.fh-det{font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--bosque)}
+@media (max-width:640px){.fecha-hero{gap:14px;padding-right:16px}.fh-dia{width:78px;height:90px}.fh-dia b{font-size:48px}.fh-alegria{font-size:24px}.fh-det{font-size:11px}}
+
+/* Sello con precios claros */
+.sello{width:150px!important;height:150px!important}
+.precios{display:flex;align-items:center;gap:7px;animation:gira 18s linear infinite reverse}
+.precios span{display:flex;flex-direction:column;align-items:center;font-family:"Cormorant Garamond",serif;font-weight:700;font-size:27px;line-height:1;color:var(--bosque2)}
+.precios small{font-family:Manrope,sans-serif;font-size:8.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px}
+.precios i{width:1px;height:30px;background:rgba(34,56,42,.35)}
+@media (max-width:900px){.sello{width:120px!important;height:120px!important}.precios span{font-size:22px}.precios small{font-size:7.5px}}
+
+.precio-linea{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.precio-linea span{font-size:14px;color:var(--suave);background:#fff;border:1px solid #EEE6CF;border-radius:999px;padding:7px 14px}
+.precio-linea b{color:var(--bosque);font-weight:800}
+
+/* Haces de sol entre los árboles */
+.rayos{display:none}
+.haces{position:absolute;left:-35%;right:-25%;top:-30%;bottom:-5%;z-index:-1;pointer-events:none}
+.haces i{position:absolute;top:0;height:120%;background:linear-gradient(180deg,rgba(255,222,130,.85),rgba(255,222,130,.35) 45%,rgba(255,222,130,0) 85%);transform-origin:top center;filter:blur(12px);border-radius:50%;animation:haz 9s ease-in-out infinite}
+.haces i:nth-child(1){left:18%;width:60px;transform:rotate(24deg)}
+.haces i:nth-child(2){left:32%;width:110px;transform:rotate(26deg);animation-delay:-2s}
+.haces i:nth-child(3){left:47%;width:40px;transform:rotate(25deg);animation-delay:-4s}
+.haces i:nth-child(4){left:58%;width:130px;transform:rotate(27deg);animation-delay:-6s}
+.haces i:nth-child(5){left:72%;width:70px;transform:rotate(24deg);animation-delay:-1s}
+.haces i:nth-child(6){left:84%;width:50px;transform:rotate(26deg);animation-delay:-5s}
+.haces i:nth-child(7){left:94%;width:90px;transform:rotate(25deg);animation-delay:-3s}
+@keyframes haz{0%,100%{opacity:.35;translate:0 0}50%{opacity:.95;translate:14px 0}}
+.haces-foto{position:absolute;inset:0;border-radius:200px 200px var(--r) var(--r);overflow:hidden;pointer-events:none;mix-blend-mode:screen}
+.haces-foto i{position:absolute;top:-20%;height:140%;background:linear-gradient(180deg,rgba(255,238,185,.8),rgba(255,238,185,.2) 55%,transparent 85%);transform:rotate(24deg);transform-origin:top center;filter:blur(14px);animation:haz2 8s ease-in-out infinite}
+.haces-foto i:nth-child(1){left:55%;width:70px}
+.haces-foto i:nth-child(2){left:70%;width:120px;animation-delay:-2.5s}
+.haces-foto i:nth-child(3){left:86%;width:50px;animation-delay:-5s}
+.haces-foto i:nth-child(4){left:38%;width:40px;animation-delay:-3.5s}
+@keyframes haz2{0%,100%{opacity:.35;translate:0 0}50%{opacity:.95;translate:-10px 0}}
+@media (max-width:900px){.haces{left:-20%;right:-10%}}
+
+/* Luz con movimiento */
+.haces i{animation:hazMov 6.5s ease-in-out infinite!important}
+.haces i:nth-child(2){animation-duration:8s!important}
+.haces i:nth-child(4){animation-duration:7.2s!important}
+.haces i:nth-child(6){animation-duration:9s!important}
+@keyframes hazMov{0%,100%{opacity:.25;translate:-45px 0;rotate:-3deg}50%{opacity:1;translate:45px 0;rotate:3deg}}
+.haces-foto i{animation:barrido 7s ease-in-out infinite!important}
+.haces-foto i:nth-child(2){animation-duration:9s!important;animation-delay:-3s!important}
+.haces-foto i:nth-child(3){animation-duration:6s!important;animation-delay:-1.5s!important}
+.haces-foto i:nth-child(4){animation-duration:8s!important;animation-delay:-4.5s!important}
+@keyframes barrido{0%{opacity:0;translate:120px 0}20%{opacity:.95}60%{opacity:.7}100%{opacity:0;translate:-160px 0}}
+.haces-foto b{position:absolute;width:5px;height:5px;border-radius:50%;background:rgba(255,240,190,.95);box-shadow:0 0 10px 3px rgba(255,225,140,.7);animation:mota 7s linear infinite;opacity:0}
+.haces-foto b:nth-child(5){left:62%;top:30%}
+.haces-foto b:nth-child(6){left:70%;top:18%;animation-delay:-1s}
+.haces-foto b:nth-child(7){left:78%;top:40%;animation-delay:-2s;width:4px;height:4px}
+.haces-foto b:nth-child(8){left:55%;top:12%;animation-delay:-3s}
+.haces-foto b:nth-child(9){left:84%;top:25%;animation-delay:-4s;width:3px;height:3px}
+.haces-foto b:nth-child(10){left:66%;top:48%;animation-delay:-5s}
+.haces-foto b:nth-child(11){left:90%;top:10%;animation-delay:-6s;width:4px;height:4px}
+.haces-foto b:nth-child(12){left:48%;top:35%;animation-delay:-2.5s;width:3px;height:3px}
+.haces-foto b:nth-child(13){left:74%;top:8%;animation-delay:-4.5s}
+.haces-foto b:nth-child(14){left:58%;top:52%;animation-delay:-1.5s;width:4px;height:4px}
+.haces-foto b:nth-child(15){left:82%;top:55%;animation-delay:-5.5s;width:3px;height:3px}
+.haces-foto b:nth-child(16){left:40%;top:20%;animation-delay:-3.5s}
+.haces-foto b:nth-child(17){left:94%;top:38%;animation-delay:-0.5s;width:3px;height:3px}
+.haces-foto b:nth-child(18){left:52%;top:62%;animation-delay:-6.5s}
+@keyframes mota{0%{opacity:0;translate:0 0}15%{opacity:1}70%{opacity:.8}100%{opacity:0;translate:-40px 90px}}
+
+/* Fecha opción A · línea editorial */
+.fecha-a{display:flex;align-items:center;gap:20px;margin-bottom:6px}
+.fa-n{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:108px;line-height:.8;color:var(--dorado);font-variant-numeric:lining-nums;text-shadow:0 8px 30px rgba(205,164,52,.35)}
+.fa-t{display:flex;flex-direction:column;gap:5px;border-left:1.5px solid #E9D9A6;padding-left:20px}
+.fa-t b{font-size:15px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:var(--bosque)}
+.fa-t i{font-family:"Cormorant Garamond",serif;font-size:30px;line-height:1.05;color:#B5577A}
+.fa-t small{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--suave)}
+@media (max-width:640px){.fa-n{font-size:84px}.fecha-a{gap:14px}.fa-t{padding-left:14px}.fa-t i{font-size:24px}.fa-t b{font-size:13px}.fa-t small{font-size:11px}}
+
+/* Programa de 5 pasos */
+.programa.p5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.programa.p5 .pr{padding:28px 22px 26px}
+.programa.p5 .pr h3{font-size:25px}
+.programa.p5 .pr:nth-child(1) svg{background:#FBE3E5;color:#B5577A}
+.programa.p5 .pr:nth-child(2) svg{background:#E6EFE1;color:var(--bosque)}
+.programa.p5 .pr:nth-child(3) svg{background:#E3EEF0;color:#3F6E78}
+.programa.p5 .pr:nth-child(4) svg{background:#EAE5F2;color:#7A6A9A}
+.programa.p5 .pr:nth-child(5) svg{background:#FCF1D6;color:#B8862A}
+@media (max-width:1200px){.programa.p5{grid-template-columns:repeat(3,minmax(0,1fr))}.programa.p5::before{display:none}}
+@media (max-width:900px){.programa.p5{grid-template-columns:1fr}}
+
+/* Recorrido */
+.pr-link{color:var(--bosque);font-weight:700;white-space:nowrap}
+.recorrido{margin-top:22px;display:grid;grid-template-columns:minmax(220px,.8fr) 2fr;gap:clamp(22px,4vw,56px);align-items:start;padding:30px clamp(24px,4vw,44px);border-radius:28px;background:#fff;border:1px solid #ECEFE8;scroll-margin-top:110px}
+.rc-head h3{font-size:clamp(30px,3.4vw,40px)}
+.rc-pasos{list-style:none;margin:0;padding:0;position:relative}
+.rc-pasos::before{content:"";position:absolute;left:9px;top:10px;bottom:14px;border-left:2px dashed #D9C88C}
+.rc-pasos li{display:flex;gap:18px;padding:0 0 18px;position:relative}
+.rc-pasos li:last-child{padding-bottom:0}
+.rc-pt{flex:none;width:20px;height:20px;border-radius:50%;background:#fff;border:3px solid var(--olivo);margin-top:3px;position:relative;z-index:1}
+.rc-pt.salida{border-color:var(--bosque);background:var(--bosque)}
+.rc-pt.rojo{border-color:#C2493B}
+.rc-pt.meta{border-color:#CDA434;background:#CDA434}
+.rc-pt.marcha{border-color:#3F6E78}
+.rc-pasos b{display:block;font-family:"Cormorant Garamond",serif;font-size:23px;font-weight:600;color:var(--bosque);line-height:1.1;margin-bottom:3px}
+.rc-pasos p{margin:0;color:var(--suave);font-size:15.5px}
+.rc-pasos a{color:var(--bosque);font-weight:700;white-space:nowrap}
+@media (max-width:900px){.recorrido{grid-template-columns:1fr}}
+
+/* Marcha separada del recorrido */
+.rc-despues{grid-column:2;margin-top:-8px}
+.rc-sep{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--olivo);margin-bottom:14px}
+.rc-sep::before,.rc-sep::after{content:"";flex:1;height:1px;background:#E3E8DE}
+.rc-sep::before{flex:0 0 24px}
+.rc-marcha{display:flex;gap:18px;background:#F6F9F7;border:1px dashed #C9D9DC;border-radius:18px;padding:14px 18px}
+.rc-marcha b{display:block;font-family:"Cormorant Garamond",serif;font-size:23px;font-weight:600;color:var(--bosque);line-height:1.1;margin-bottom:3px}
+.rc-marcha p{margin:0;color:var(--suave);font-size:15.5px}
+.rc-marcha a{color:var(--bosque);font-weight:700;white-space:nowrap}
+@media (max-width:900px){.rc-despues{grid-column:1}}
+
+/* Dorsal 0 */
+.d0-sec{padding-top:10px}
+.d0{display:grid;grid-template-columns:auto 1fr;gap:clamp(28px,5vw,70px);align-items:center;padding:clamp(28px,4vw,52px);border-radius:32px;background:radial-gradient(ellipse at 0% 0%,rgba(232,150,160,.18),transparent 50%),radial-gradient(ellipse at 100% 100%,rgba(244,200,90,.22),transparent 50%),#FFFCF7;border:1px solid #F3DDE5}
+.d0-bib{position:relative;width:clamp(200px,22vw,270px);aspect-ratio:4/3;background:#fff;border-radius:18px;border:1px solid #EADBA8;box-shadow:0 30px 60px -30px rgba(181,87,122,.45);display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-4deg);animation:bib 6s ease-in-out infinite}
+@keyframes bib{50%{transform:rotate(-1deg) translateY(-6px)}}
+.d0-bib small{font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:var(--olivo)}
+.d0-bib b{font-family:Manrope,sans-serif;font-weight:800;font-size:clamp(84px,9vw,110px);line-height:1;color:#B5577A}
+.d0-bib em{font-family:"Cormorant Garamond",serif;font-size:17px;color:var(--bosque)}
+.d0-pin{position:absolute;top:12px;left:14px;width:10px;height:10px;border-radius:50%;border:1.5px dashed #C9B77A}
+.d0-pin.r{left:auto;right:14px}
+.d0-txt h2{font-size:clamp(46px,6vw,72px);margin:14px 0 12px}
+.d0-txt h2 em{font-style:normal;color:#B5577A;font-family:Manrope,sans-serif;font-weight:800;font-size:.82em;font-variant-numeric:lining-nums}
+.d0-lead{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(22px,2.4vw,28px);line-height:1.25;color:var(--bosque);margin:0 0 12px}
+.d0-txt p{color:var(--suave);max-width:640px;margin:0 0 22px}
+.chip-d0{font-size:14px;color:#8C3F5B;background:#FDF0F3;border:1px solid #F3D3DE;border-radius:999px;padding:7px 14px;text-decoration:none}
+.chip-d0 b{color:#B5577A;font-weight:800}
+.chip-d0:hover{background:#FBE3EA}
+/* formulario en modo Dorsal 0 */
+.opt-d0{background:#FDF0F3!important;border:1px solid #F3D3DE}
+.opt-d0 strong{color:#B5577A!important}
+.d0-campo{display:none;margin:-4px 0 12px;background:#fff;border:1.5px solid #F3D3DE;border-radius:16px;padding:10px 16px;align-items:center;justify-content:space-between;gap:12px}
+.d0-campo label{font-size:15px;color:var(--suave);font-weight:600}
+.d0-campo input{width:110px;font:inherit;font-size:20px;font-weight:800;color:var(--bosque);border:0;border-bottom:2px solid #F3D3DE;text-align:right;padding:4px 2px;background:transparent}
+.d0-campo input:focus{outline:none;border-color:#B5577A}
+.r-cero{display:none!important}
+.modo-cero .d0-campo{display:flex}
+.modo-cero .contador{opacity:.35;pointer-events:none}
+.modo-cero .resumen div:not(.r-cero):not(:last-child){display:none!important}
+.modo-cero .r-cero{display:flex!important}
+@media (max-width:760px){.d0{grid-template-columns:1fr;text-align:center}.d0-bib{margin:0 auto}.d0-txt p{margin-left:auto;margin-right:auto}}
+
+/* Números rectos (que el 1 no parezca una I ni el 0 una o) */
+.contador output,.resumen b,.cuenta b,.paso .n,.cien .n,.precios span,.pr-n,.fa-n,.fh-dia b{font-variant-numeric:lining-nums}
+
+@media (max-width:1180px){.links a{padding:10px 9px;font-size:13.5px}}
+/* Programa simplificado (4 pasos) */
+.programa.p4 .pr{padding:26px 24px 26px}
+.programa.p4 .pr h3{font-size:26px;margin:0}
+.programa.p4 .pr-mini{margin:8px 0 0;font-size:14px;line-height:1.45;color:var(--suave)}
+.programa.p4 .pr-link{display:inline-block;margin-top:10px;font-size:14px;font-weight:800;color:var(--bosque);text-decoration:none;border-bottom:1.5px solid #CDA434}
+.programa.p4 .pr:nth-child(1) svg{background:#FBE3E5;color:#B5577A}
+.programa.p4 .pr:nth-child(2) svg{background:#E6EFE1;color:var(--bosque)}
+.programa.p4 .pr:nth-child(3) svg{background:#EAE5F2;color:#7A6A9A}
+.programa.p4 .pr:nth-child(4) svg{background:#FCF1D6;color:#B8862A}
+
+/* ===== Ajuste tablet y móvil ===== */
+.insc-grid>*,.hero .wrap>*{min-width:0}
+@media (max-width:900px){
+  .resumen,.pago{max-width:100%}
+  .insc .lead{max-width:640px}
+  .sticky{left:50%;right:auto;width:min(520px,calc(100% - 24px));transform:translate(-50%,140%)}
+  .sticky.show{transform:translate(-50%,0)}
+}
+/* Tablet */
+@media (min-width:641px) and (max-width:900px){
+  body{font-size:16px}
+  .hero h1{font-size:clamp(60px,9vw,80px)}
+  .hero p.lead{font-size:17px;max-width:600px}
+  .foto{margin-left:auto;margin-right:auto;max-width:520px}
+  .head h2,.causa-txt h2,.faq-grid h2{font-size:clamp(38px,5.6vw,50px)}
+  .insc h2,.d0-txt h2{font-size:clamp(42px,6vw,54px)}
+  .cierre-box h2{font-size:clamp(46px,7vw,64px)}
+  .bento6{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .programa,.programa.p5{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .card h3,.paso h3{font-size:27px}
+  .cien .n{font-size:130px}
+}
+/* Móvil */
+@media (max-width:640px){
+  body{font-size:15px;line-height:1.55}
+  section{padding:40px 0}
+  .tag{font-size:10.5px;padding:7px 12px}
+  .btn{font-size:15px;min-height:50px;padding:0 22px}
+  nav .btn{font-size:13px;min-height:40px;padding:0 16px}
+  .hero h1{font-size:46px;margin:16px 0 16px}
+  .hero p.lead{font-size:15.5px;margin-bottom:24px}
+  .hero .nota{font-size:13px}
+  .fa-n{font-size:72px}.fa-t i{font-size:21px}.fa-t b{font-size:11.5px;letter-spacing:.16em}.fa-t small{font-size:10px}
+  .precio-linea span{font-size:12.5px;padding:6px 11px}
+  .cuenta b{font-size:28px}.cuenta span{font-size:9px}
+  .marquee span{font-size:21px;padding:0 18px;gap:36px}
+  .head h2,.causa-txt h2,.faq-grid h2{font-size:32px}
+  .head p,.causa-txt p,.cierre-box p{font-size:15px}
+  .insc h2,.d0-txt h2{font-size:36px}
+  .cierre-box h2{font-size:40px}
+  .sp-txt h3{font-size:27px}
+  .al-txt h3,.rc-head h3{font-size:25px}
+  .al-cita{font-size:19px}
+  .lema,.causa-txt .lema{font-size:23px!important}
+  .d0-lead{font-size:18px}
+  .d0-bib{width:180px}.d0-bib b{font-size:76px}
+  .tile b{font-size:24px}.tile small{font-size:10px}
+  .card h3,.paso h3,.pr h3,.ok h3{font-size:23px}
+  .card p,.pr p{font-size:14.5px}
+  .paso .n{font-size:64px;margin-bottom:12px}
+  .cien{min-height:220px;padding:26px}
+  .cien .n{font-size:92px}.cien p{font-size:22px}
+  .resumen b{font-size:34px}.resumen div{font-size:14px}
+  .pg-row{font-size:13.5px;flex-wrap:wrap;gap:2px 12px}
+  .pg-row>*:last-child{margin-left:auto;text-align:right}
+  .field input{font-size:16px;min-height:54px}
+  .field label{font-size:14px;top:17px}
+  .contador .lbl{font-size:14px}.contador output{font-size:27px}
+  .contador button{width:40px;height:40px}
+  summary{font-size:15px;padding:17px 0}
+  .horario{font-size:13px}
+  footer{font-size:13px}
+}
+@media (max-width:380px){
+  .hero h1{font-size:40px}
+  .head h2,.causa-txt h2,.faq-grid h2{font-size:29px}
+  .insc h2,.d0-txt h2{font-size:32px}
+}
+
+/* Dorado #CDA434 con brillo */
+:root{--dorado:#CDA434;--oro-brillo:linear-gradient(135deg,#F3D978 0%,#DDB545 32%,#CDA434 58%,#B38C22 100%)}
+.btn:not(.btn-ghost),.sello,.c4,.cierre-box,.sticky .btn{background:var(--oro-brillo)!important}
+.btn:not(.btn-ghost){box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 10px 24px -12px rgba(179,140,34,.7)}
+.btn::after{background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.65) 50%,transparent 70%)}
+.fa-n{background:linear-gradient(160deg,#F3D978 0%,#CDA434 55%,#B08A20 100%);-webkit-background-clip:text;background-clip:text;color:transparent!important;text-shadow:none!important;filter:drop-shadow(0 6px 18px rgba(205,164,52,.38))}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}body.reveal .rv{opacity:1;transform:none}.hero h1 span>i{transform:none}}
+.delay-1{--d:1}
+.delay-2{--d:2}
+.delay-3{--d:3}
+.rc-head .al-label{color:var(--olivo)}
+#faq{padding-top:20px}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="brand" href="#inicio"><img class="logo-h" src="/images/carrera/parroquia.webp" alt="Parroquia San Pablo de la Cruz"></a>
+  <div class="links"><a href="#causa">Por qué corremos</a><a href="#experiencia">Programa</a><a href="#recorrido">El recorrido</a><a href="/carrera-familiar-solidaria/">Inscríbete</a><a href="#faq">Preguntas</a></div>
+  <a class="btn" href="/carrera-familiar-solidaria/">Comprar dorsal</a>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="inicio">
+  <div class="grain"></div>
+  <div class="bokeh" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="wrap">
+    <div>
+      <div class="fecha-a"><div class="fa-n">13</div><div class="fa-t"><b>Domingo · Diciembre</b><i>Domingo de la Alegría</i><small>10:00 h · Salida desde el Pinar</small></div></div>
+      <h1><span><i>Carrera</i></span><span><i>Familiar</i></span><span><i>Solidaria</i></span></h1>
+      <p class="lead">Una mañana para correr, caminar y reír en el Domingo de la Alegría: solo, con amigos o en familia. Y además, por una buena causa: todo lo recaudado irá a Cáritas parroquial. ¡Disfrutamos a la vez que ayudamos!</p>
+      <div class="ctas">
+        <a class="btn" href="/carrera-familiar-solidaria/">Quiero mis dorsales <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
+        <a class="btn btn-ghost" href="#como">Cómo participar</a>
+      </div>
+      <div class="precio-linea"><span><b>Adultos</b> 15 €</span><span><b>Niños</b> (3 a 14 años) 5 €</span><span><b>Menores de 3 años</b> gratis</span><a class="chip-d0" href="#dorsal-0"><b>Dorsal 0</b> donativo libre si no puedes venir</a></div>
+    </div>
+    <div class="foto">
+      <div class="haces" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <img src="/images/carrera/familias-corriendo.webp" alt="Familias con dorsal corriendo juntas por un parque arbolado">
+      <div class="haces-foto" aria-hidden="true"><i></i><i></i><i></i><i></i><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
+      <div class="sello" aria-label="Dorsal solidario: adultos 15 euros, niños 5 euros">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><defs><path id="c" d="M50 50m-38 0a38 38 0 1 1 76 0a38 38 0 1 1-76 0"/></defs><text font-family="Manrope" font-size="9.2" font-weight="800" letter-spacing="2.6" fill="#22382A"><textPath href="#c">DORSAL SOLIDARIO · CÁRITAS · </textPath></text></svg>
+        <div class="precios"><span><small>Adultos</small>15 €</span><i></i><span><small>Niños</small>5 €</span></div>
+      </div>
+      <div class="cuenta" aria-label="Cuenta atrás hasta la carrera">
+        <div><b id="d">00</b><span>días</span></div>
+        <div><b id="h">00</b><span>horas</span></div>
+        <div><b id="m">00</b><span>min</span></div>
+        <div><b id="s">00</b><span>seg</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Corremos juntos</span><span>2 km a tu ritmo</span><span>100 % para Cáritas</span><span>Domingo de la Alegría</span><span>Disfrutamos a la vez que ayudamos</span><span>Ven como eres</span>
+      <span>Corremos juntos</span><span>2 km a tu ritmo</span><span>100 % para Cáritas</span><span>Domingo de la Alegría</span><span>Disfrutamos a la vez que ayudamos</span><span>Ven como eres</span>
+    </div>
+  </div>
+</header>
+
+<!-- DATOS -->
+<section class="datos" aria-label="Datos clave">
+  <div class="wrap bento4">
+    <div class="tile rv"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div><small>Fecha</small><b>Dom. 13 dic.</b></div>
+    <div class="tile rv delay-1"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><small>Salida</small><b>10:00 h</b></div>
+    <div class="tile rv delay-2"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div><small>Lugar de salida</small><b>Entrada al Pinar</b><span class="det">Av. de Carondelet, frente al n.º 37 · <a href="https://www.google.com/maps/search/?api=1&amp;query=Avenida+de+Carondelet+37+Madrid" target="_blank" rel="noopener">Ver mapa</a></span></div>
+    <div class="tile dark rv delay-3"><img class="caritas-ico" src="/images/carrera/caritas.webp" alt="Logo de Cáritas parroquial"><small>A beneficio de</small><b>Cáritas parroquial</b></div>
+  </div>
+</section>
+
+<!-- CAUSA -->
+<section id="causa">
+  <div class="wrap causa-grid">
+    <div class="causa-txt rv">
+      <span class="tag">Por qué corremos</span>
+      <h2>Cada paso <em class="i">cuenta</em></h2>
+      <p>Vengas solo, con amigos o en familia, disfrutaremos juntos del Domingo de la Alegría. Y además, por una buena causa: todo lo recaudado irá a Cáritas parroquial, que acompaña durante todo el año a las familias que atraviesan momentos difíciles.</p>
+      <p class="lema">¡Disfrutamos a la vez que ayudamos!</p>
+      <p>Dorsales: adultos 15 €, niños (de 3 a 14 años) 5 € y menores de 3 años gratis. <strong>La destinataria final de todo lo recaudado es Cáritas parroquial</strong>: se le entrega íntegramente. Con el apoyo de nuestro patrocinador, Dallington School.</p>
+    </div>
+    <div class="cien rv delay-1">
+      <img class="logo-bg" src="/images/carrera/emblema-parroquia.webp" alt=""><img class="caritas-logo" src="/images/carrera/caritas.webp" alt="Cáritas parroquial">
+      <span class="dest-tag">Destinataria final</span>
+      <div class="n">100<sup>%</sup></div>
+      <p>de lo recaudado<br>para Cáritas parroquial</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCIA -->
+<section class="exp" id="experiencia">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="tag">Programa del día</span><h2 class="rv">Así será <em class="i">ese domingo</em></h2></div>
+      <p class="rv">Más que una carrera: una mañana para vivir juntos el Domingo de la Alegría.</p>
+    </div>
+    <ol class="programa p4">
+      <li class="pr rv"><span class="pr-n">01</span><span class="pr-hora">10:00 h</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3v18M7 8h10"/></svg><h3>Bendición de los corredores</h3><p class="pr-mini">Antes de la salida, en la entrada al Pinar desde la Avenida de Carondelet (frente al n.º 37).</p></li>
+      <li class="pr rv delay-1"><span class="pr-n">02</span><span class="pr-hora">10:00 h · Salida</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8" cy="7" r="3"/><circle cx="17" cy="9" r="2.3"/><path d="M2.5 20c.6-4 2.8-6 5.5-6s4.9 2 5.5 6M14 20c.4-3 1.5-4.6 3-4.6s2.7 1.6 3 4.6"/></svg><h3>La carrera</h3><p class="pr-mini">2 km aprox. recorriendo el Pinar y el Parque Juan Pablo II.</p><a class="pr-link" href="#recorrido">Ver el recorrido →</a></li>
+      <li class="pr rv delay-2"><span class="pr-n">03</span><span class="pr-hora">11:30 h</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2v6M9 5h6M5 22V12l7-4 7 4v10M9 22v-5a3 3 0 0 1 6 0v5"/></svg><h3>Santa Misa</h3><p class="pr-mini">En la Parroquia, Avenida de los Madroños, n.º 40.</p></li>
+      <li class="pr pr-meta rv delay-3"><span class="pr-n">04</span><span class="pr-hora">Para terminar</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9zM17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 3.5c0 1.2 1 1.3 1 2.5M12 3.5c0 1.2 1 1.3 1 2.5"/></svg><h3>Chocolatada</h3><p class="pr-mini">Tras la Misa, en la misma Parroquia, Avenida de los Madroños, n.º 40.</p></li>
+    </ol>
+    <div class="recorrido rv" id="recorrido">
+      <div class="rc-head"><span class="al-label">El recorrido · 2 km</span><h3>Del Pinar al Parque Juan Pablo II</h3></div>
+      <ol class="rc-pasos">
+        <li><span class="rc-pt salida"></span><div><b>Salida</b><p>Entrada al Pinar por la Avenida de Carondelet, frente al n.º 37. <a href="https://www.google.com/maps/search/?api=1&amp;query=Avenida+de+Carondelet+37+Madrid" target="_blank" rel="noopener">Ver en el mapa</a></p></div></li>
+        <li><span class="rc-pt"></span><div><b>Camino del Pinar</b><p>Recorremos el camino de tierra del Pinar, en paralelo a la Avenida del Papa Negro, hasta el Parque Juan Pablo II.</p></div></li>
+        <li><span class="rc-pt rojo"></span><div><b>Vuelta al Parque Juan Pablo II</b><p>Damos una vuelta al parque en sentido contrario a las agujas del reloj, por su carril deportivo de color rojo.</p></div></li>
+        <li><span class="rc-pt meta"></span><div><b>Meta</b><p>Al terminar la vuelta, en la puerta del parque en la confluencia de la Avenida de los Madroños con la Avenida del Papa Negro. <a href="https://www.google.com/maps/search/?api=1&amp;query=Avenida+de+los+Madro%C3%B1os+con+Avenida+del+Papa+Negro+Madrid" target="_blank" rel="noopener">Ver en el mapa</a></p></div></li>
+      </ol>
+      <div class="rc-despues">
+        <span class="rc-sep">Después de la carrera</span>
+        <div class="rc-marcha"><span class="rc-pt marcha"></span><div><b>Marcha hasta la Parroquia · 1 km aprox.</b><p>No forma parte de la carrera: caminamos todos juntos, a paso tranquilo, hasta la Parroquia (Avenida de los Madroños, n.º 40), donde continúan la Santa Misa y la chocolatada. <a href="https://www.google.com/maps/search/?api=1&amp;query=Parroquia+San+Pablo+de+la+Cruz+Avenida+de+los+Madro%C3%B1os+40+Madrid" target="_blank" rel="noopener">Ver en el mapa</a></p></div></div>
+      </div>
+    </div>
+    <div class="alegria rv">
+      <div class="al-velas"><svg class="velas" viewBox="0 0 160 70" aria-hidden="true">
+          <path d="M6 64 C 40 56, 120 56, 154 64" stroke="#7A8F6A" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <g><rect x="22" y="26" width="14" height="34" rx="3" fill="#8C7BA6"/><path class="llama" d="M29 10 C 34 17, 33 22, 29 23 C 25 22, 24 17, 29 10Z" fill="#E8B84A"/></g>
+          <g><rect x="56" y="22" width="14" height="38" rx="3" fill="#8C7BA6"/><path class="llama l2" d="M63 6 C 68 13, 67 18, 63 19 C 59 18, 58 13, 63 6Z" fill="#E8B84A"/></g>
+          <g><rect x="90" y="22" width="14" height="38" rx="3" fill="#D98FA6"/><path class="llama l3" d="M97 6 C 102 13, 101 18, 97 19 C 93 18, 92 13, 97 6Z" fill="#E8B84A"/></g>
+          <g><rect x="124" y="26" width="14" height="34" rx="3" fill="#8C7BA6" opacity=".55"/></g>
+        </svg></div>
+      <div class="al-txt">
+        <span class="al-label">Tercer domingo de Adviento</span>
+        <h3>Domingo de la <em>Alegría</em></h3>
+        <p class="al-cita">«Estad siempre alegres en el Señor» <span>Flp 4,4</span></p>
+        <p>En mitad del Adviento la Iglesia enciende la vela rosa: la Navidad ya está cerca. Ese domingo lo celebramos así, corriendo juntos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO -->
+<section id="como">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="tag">Muy fácil</span><h2 class="rv">Cómo <em class="i">participar</em></h2></div>
+    </div>
+    <div class="pasos">
+      <div class="paso rv"><span class="n">1</span><h3>Apúntate</h3><p>Rellena el formulario con tus datos y elige cuántos dorsales necesitas.</p></div>
+      <div class="paso rv delay-1"><span class="n">2</span><h3>Compra tus dorsales</h3><p>Por Bizum, transferencia o en la propia parroquia: adultos 15 €, niños (de 3 a 14 años) 5 € y menores de 3 años gratis. Todo se entrega íntegro a Cáritas parroquial.</p></div>
+      <div class="paso rv delay-2"><span class="n">3</span><h3>Recoge tu dorsal</h3><p>En la parroquia, en su horario de apertura:</p><ul class="horario"><li><span>Lunes a viernes</span>8:30–13:00 · 17:30–21:00</li><li><span>Sábados</span>11:00–13:00 · 18:00–21:00</li><li><span>Domingos</span>10:00–14:00 · 18:00–21:00</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- DORSAL 0 -->
+<section class="d0-sec" id="dorsal-0">
+  <div class="wrap">
+    <div class="d0 rv">
+      <div class="d0-bib" aria-hidden="true"><span class="d0-pin"></span><span class="d0-pin r"></span><small>Dorsal solidario</small><b>0</b><em>Cáritas parroquial</em></div>
+      <div class="d0-txt">
+        <span class="tag"><i></i>¿No puedes venir?</span>
+        <h2>Dorsal <em>0</em></h2>
+        <p class="d0-lead">Para quienes no pueden participar pero quieren contribuir igualmente con su donativo para ayudar.</p>
+        <p>La aportación es libre y, como el resto de dorsales, se entrega íntegramente a Cáritas parroquial. Aunque no estés el día 13, también formarás parte de esta carrera.</p>
+        <a class="btn" href="/carrera-familiar-solidaria/?dorsal=0">Quiero un Dorsal 0 <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PATROCINADORES -->
+<section>
+  <div class="wrap">
+    <div class="head">
+      <div><span class="tag">Gracias a</span><h2 class="rv">Nuestro <em class="i">patrocinador</em></h2></div>
+      <p class="rv">Todo lo recaudado irá a Cáritas parroquial.</p>
+    </div>
+    <div class="sponsor rv">
+      <div class="sp-logo"><img src="/images/carrera/logotipo-dallington.webp" alt="Dallington School"></div>
+      <div class="sp-txt"><span class="sp-label">Patrocinador principal</span><h3>Dallington School</h3><p>Gracias a Dallington School por acompañarnos en esta carrera solidaria y por sumarse a esta mañana tan especial.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap faq-grid">
+    <div><span class="tag">Dudas frecuentes</span><h2 class="rv">Preguntas <em class="i">frecuentes</em></h2></div>
+    <div class="rv">
+      <details><summary>¿A quién va destinado el dinero?</summary><p>La destinataria final de todo lo recaudado es Cáritas parroquial de San Pablo de la Cruz. Se le entrega íntegramente, para acompañar a las familias que atraviesan momentos difíciles.</p></details>
+      <details><summary>¿Cómo se paga el dorsal?</summary><p>Por Bizum o por transferencia bancaria, indicando en el concepto la referencia de tu reserva. También puedes pagarlo directamente en la parroquia, en su horario de apertura. Al reservar tus dorsales verás los datos de pago.</p></details>
+      <details><summary>¿Hay que estar en forma para participar?</summary><p>No hace falta. Son 2 km a tu ritmo: puedes correr, caminar o ir con el carrito. Lo importante es venir juntos.</p></details>
+      <details><summary>¿Necesita dorsal cada miembro de la familia?</summary><p>Sí, un dorsal por cada persona que participe: adultos 15 € y niños de 3 a 14 años 5 €. Los menores de 3 años no pagan, pero apúntalos para saber cuántos seremos.</p></details>
+      <details><summary>¿Cuántos kilómetros son?</summary><p>El recorrido es de 2 km, pensado para todos, pequeños y mayores.</p></details>
+      <details><summary>¿Y si no puedo ir ese día?</summary><p>Puedes comprar un <strong>Dorsal 0</strong>: es para quienes no pueden participar pero quieren contribuir igualmente con su donativo. La aportación es libre y llega íntegra a Cáritas parroquial.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CIERRE -->
+<section class="cierre">
+  <div class="wrap">
+    <div class="cierre-box rv">
+      <span class="tag">Ven como eres</span>
+      <h2>Te esperamos el <em>13 de diciembre</em></h2>
+      <p>Trae a tu familia, a tus amigos, a tus vecinos. Corramos juntos para acompañar a quienes más lo necesitan.</p>
+      <a class="btn" href="/carrera-familiar-solidaria/">Quiero mis dorsales <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<footer><div class="f-logos"><img class="f-spc" src="/images/carrera/parroquia.webp" alt="Parroquia San Pablo de la Cruz"><span class="f-sep"></span><span class="f-con">A beneficio de</span><img class="f-car" src="/images/carrera/caritas.webp" alt="Cáritas parroquial"><span class="f-sep"></span><span class="f-con">Patrocina</span><img class="f-dal" src="/images/carrera/logotipo-dallington.webp" alt="Dallington School"></div>La alegría, un modo estable de ser · Instagram: @parroquiaspc<div class="f-legal"><a href="aviso-legal.html">Aviso legal</a><a href="politica-privacidad.html">Política de privacidad</a><a href="politica-cookies.html">Política de cookies</a></div></footer>
+
+<div class="sticky" id="sticky"><a class="btn" href="/carrera-familiar-solidaria/">Quiero mis dorsales</a></div>
+
+<script src="/carrera-assets/informacion.js" defer></script>
+</body>
+</html>

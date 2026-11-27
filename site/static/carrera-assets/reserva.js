@@ -102,4 +102,5 @@ form.addEventListener("submit", async (event) => {
   }
 });
 submit.disabled = false;
+donation.checked ||= new URLSearchParams(location.search).get("dorsal") === "0";
 updateDonation();

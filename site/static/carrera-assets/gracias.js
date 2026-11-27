@@ -38,7 +38,7 @@ if (!/^CARRERA-\d{4,}$/.test(reservation?.reference ?? "") ||
     });
   }
 
-  const shareUrl = new URL("/carrera-familiar-solidaria/", location.origin);
+  const shareUrl = new URL("/carrera-familiar-solidaria/informacion/", location.origin);
   document.getElementById("whatsapp").href += encodeURIComponent(
     "¡Te invito a la Carrera Familiar Solidaria de la Parroquia San Pablo de la Cruz! " + shareUrl,
   );
