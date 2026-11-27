@@ -15,7 +15,7 @@
     </div>
   </div>
 
-  {{ if .Lastmod }}
+  {{ if and .Lastmod (not .Params.hide_lastmod) }}
   <footer class="page-footer">
     <p class="page-meta">Última actualización: {{ .Lastmod | time.Format ":date_long" }}</p>
   </footer>
