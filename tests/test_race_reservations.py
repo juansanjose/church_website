@@ -21,6 +21,7 @@ class ReservationsTest(unittest.TestCase):
             "nombre": "María",
             "apellidos": "García López",
             "email": "maria@example.invalid",
+            "privacy": "yes",
             "adultos": "2",
             "ninos": "1",
             "menores": "0",
@@ -55,3 +56,14 @@ class ReservationsTest(unittest.TestCase):
         for value in ("-1", "100", "1.5", "0"):
             with self.subTest(value=value), self.assertRaises(race.InvalidOrder):
                 race.parse_order({**self.form, "adultos": value, "ninos": "0"})
+
+    def test_dorsal_zero_is_a_donation_without_bibs(self):
+        donation = {**self.form, "adultos": "0", "ninos": "0", "donation_cents": 1250}
+        _, saved = race.save_order(self.database, race.parse_order(donation))
+        self.assertEqual(saved["total_cents"], 1250)
+        message = race.make_message(saved, "sender@example.invalid")
+        self.assertIn("Dorsal 0: 12,50 €", message.get_content())
+        with self.assertRaises(race.InvalidOrder):
+            race.parse_order({**donation, "adultos": "1"})
+        with self.assertRaises(race.InvalidOrder):
+            race.parse_order({**donation, "privacy": ""})

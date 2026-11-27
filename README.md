@@ -80,37 +80,38 @@ delivery state in `/var/lib/church-race/reservations.sqlite3`. Back up that data
 backup command and apply the parish's data retention schedule. Parish staff track payments and
 pickups in Gmail.
 
-Before launch, confirm the category ages, the payment and pickup instructions, and the treatment
-of `Dorsal fila cero`. The draft currently includes adults at €15, children aged 3–12 at €5,
-and under-threes at €0. Review the privacy notice for the selected SMTP provider.
+The form uses the supplied prices and ages: adults €15, children aged 3–14 €5, under-threes
+free, and an optional Dorsal 0 donation for someone who will not participate. Payment details
+are in `site/data/carrera.toml` and the supplied pickup schedule is on the thank-you page.
+If the bank's Bizum donation flow has a concept field, the participant enters the reservation
+reference there. A bank transfer supports the same reference, which is also in the staff email.
+Review the privacy notice for the selected SMTP provider before launch.
 
-Set the repository Actions secret `CHURCH_RACE_ENV` to the following settings, using verified
-values and the credentials of an authorized SMTP sender that supports implicit TLS.
-The recipient is always `sanpablodelacruz@gmail.com`. Omit `RACE_BIZUM` if staff cannot
-read the payment reference in the receiving bank's records.
+Set the repository Actions secret `CHURCH_RACE_ENV` using the credentials of an authorized
+SMTP sender that supports implicit TLS.
+The recipient is always `sanpablodelacruz@gmail.com`.
 
 ```dotenv
 RACE_SMTP_HOST=
 RACE_SMTP_PORT=465
 RACE_SMTP_USER=
 RACE_SMTP_PASSWORD=
-RACE_TRANSFER=
-RACE_BIZUM=
-RACE_PICKUP=
 ```
 
 Set `RACE_SMTP_FROM` if the SMTP account uses a separate verified sending address.
 Run the deploy workflow to start the service, and verify that a test notification from that
 sender reaches the parish inbox. Configure Gmail filters for that sender:
 
-- Paid reservations have a subject containing `[Carrera]` without `Sin pago`. Apply
+- Reservations with an amount due have a subject containing `[Carrera]` without `Sin pago`. Apply
   `Carrera` and `Pendiente de pago`.
 - Free reservations have a subject containing `[Carrera]` and `Sin pago`. Apply
   `Carrera` and `Listo para recoger`.
 
 Staff replace `Pendiente de pago` with `Pagado` after matching the reference and amount
-in the bank, then apply `Dorsales entregados` after pickup. Once verified, remove
-`draft: true` from the race page to publish it.
+in the bank, then apply `Dorsales entregados` after pickup. The [Google Sheet
+automation](scripts/carrera-sheet/README.md) mirrors these labels and imports each
+reservation from its email. Once SMTP delivery and the payment instructions are verified,
+remove `draft: true` from both the registration and thank-you pages to publish them.
 
 ## License
 

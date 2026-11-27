@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>¡Gracias! · Carrera Familiar Solidaria · Parroquia San Pablo de la Cruz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bosque:#2E4A37;--bosque2:#22382A;--olivo:#7A8F6A;--salvia:#B4C3A7;--dorado:#CDA434;--rosa:#B5577A;--texto:#22302A;--suave:#56645B;--linea:#ECEFE8;--r:28px}
+*{box-sizing:border-box}
+body{margin:0;font-family:Manrope,system-ui,sans-serif;color:var(--texto);line-height:1.55;font-size:16.5px;-webkit-font-smoothing:antialiased;background:radial-gradient(ellipse at 80% 0%,rgba(244,200,90,.28),transparent 45%),radial-gradient(ellipse at 0% 100%,rgba(232,150,160,.14),transparent 45%),#FFFDF7;min-height:100vh}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;color:var(--bosque);line-height:1.02;margin:0;font-variant-numeric:lining-nums}
+.wrap{max-width:980px;margin:0 auto;padding:0 clamp(18px,4vw,40px)}
+header{padding:22px 0}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px}
+header img{height:46px;width:auto;display:block}
+.volver{font-size:14px;font-weight:700;color:var(--bosque);text-decoration:none;border-bottom:1.5px solid var(--dorado)}
+.tag{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--bosque);background:#fff;border:1px solid #E3E8DE;padding:7px 14px;border-radius:999px}
+.tag i{width:7px;height:7px;border-radius:50%;background:var(--dorado);display:block}
+.hero{text-align:center;padding:30px 0 34px}
+.check{width:86px;height:86px;border-radius:50%;margin:0 auto 22px;display:grid;place-items:center;background:var(--bosque);box-shadow:0 18px 40px -18px rgba(46,74,55,.6);animation:pop .7s cubic-bezier(.2,.8,.2,1)}
+.check svg{width:40px;height:40px;color:var(--dorado)}
+@keyframes pop{0%{transform:scale(.4);opacity:0}60%{transform:scale(1.12)}100%{transform:none;opacity:1}}
+.hero h1{font-size:clamp(46px,7vw,80px);margin:16px 0 12px}
+.hero h1 em{font-style:italic;color:var(--olivo)}
+.hero p{max-width:600px;margin:0 auto;color:var(--suave);font-size:18px}
+.importe{display:inline-flex;align-items:baseline;gap:10px;margin-top:22px;background:#fff;border:1px solid #F1E3B5;border-radius:999px;padding:10px 24px;box-shadow:0 18px 40px -26px rgba(201,154,46,.6)}
+.importe span{font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--olivo)}
+.importe b{font-family:"Cormorant Garamond",serif;font-size:40px;color:var(--bosque);font-variant-numeric:lining-nums}
+.pasos{display:flex;flex-direction:column;gap:16px;padding-bottom:30px}
+.paso{background:#fff;border:1px solid var(--linea);border-radius:var(--r);padding:clamp(22px,3vw,32px);display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start}
+.num{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-family:"Cormorant Garamond",serif;font-size:26px;font-weight:700;color:var(--bosque2);background:linear-gradient(160deg,#E9C65A,#CDA434);font-variant-numeric:lining-nums}
+.paso h2{font-size:clamp(28px,3.4vw,36px);margin:6px 0 8px}
+.paso p{margin:0 0 14px;color:var(--suave)}
+.opciones{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.op{border:1px solid var(--linea);border-radius:20px;padding:16px 18px;background:#FCFCFA;display:flex;flex-direction:column;gap:6px}
+.op small{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--olivo)}
+.op b{font-size:17px;color:var(--bosque);word-break:break-word;font-variant-numeric:lining-nums}
+.op span{font-size:13px;color:var(--suave)}
+.copiar{align-self:flex-start;margin-top:4px;font:inherit;font-size:13px;font-weight:800;color:var(--bosque);background:#fff;border:1px solid #E3E8DE;border-radius:999px;padding:6px 12px;cursor:pointer}
+.copiar:hover{background:#F6F8F3}
+.concepto{margin-top:14px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;background:#FCFAF3;border:1px dashed #E8D9A8;border-radius:16px;padding:12px 16px;font-size:15px;color:var(--suave)}
+.concepto b{color:var(--bosque)}
+.horario{list-style:none;margin:0;padding:0;font-size:15px;color:var(--suave);max-width:460px}
+.horario li{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px dashed #E3E8DE}
+.horario li:last-child{border-bottom:0}
+.horario span{font-weight:700;color:var(--bosque)}
+.dia{display:flex;flex-wrap:wrap;gap:8px}
+.dia span{font-size:14px;background:#F6F8F3;border:1px solid #E3E8DE;border-radius:999px;padding:7px 14px;color:var(--bosque)}
+.dia b{font-weight:800}
+.dest{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #F5D3D0;border-radius:var(--r);padding:18px 24px;margin-bottom:16px}
+.dest img{height:54px;width:auto;flex:none}
+.dest p{margin:0;color:var(--suave)}
+.dest strong{color:#B3261E}
+.compartir{text-align:center;padding:10px 0 60px}
+.compartir p{color:var(--suave);margin:0 0 14px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;background:var(--dorado);color:var(--bosque2);font-weight:800;text-decoration:none;font-size:16px}
+.btn.sec{background:#fff;border:1.5px solid rgba(46,74,55,.25);color:var(--bosque);margin-left:8px}
+.solo-cero,.es-cero .no-cero{display:none}
+.es-cero .solo-cero{display:block}.es-cero h2 .solo-cero{display:inline}.es-cero .paso.solo-cero{display:grid}
+footer{text-align:center;color:var(--suave);font-size:13px;padding:0 0 40px}
+footer a{color:var(--suave)}
+@media (max-width:760px){.opciones{grid-template-columns:1fr}.paso{grid-template-columns:1fr;gap:10px}.btn.sec{margin:10px 0 0}}
+
+/* Dorado con brillo y ajuste tablet/móvil */
+.btn:not(.sec){background:linear-gradient(135deg,#F3D978 0%,#DDB545 32%,#CDA434 58%,#B38C22 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 10px 24px -12px rgba(179,140,34,.7)}
+.num{background:linear-gradient(135deg,#F3D978 0%,#DDB545 35%,#CDA434 62%,#B38C22 100%)}
+@media (min-width:761px) and (max-width:1000px){
+  .opciones{grid-template-columns:1fr 1fr}
+  .opciones .op:nth-child(2){grid-column:1/-1;order:1}
+  .paso h2{font-size:30px}
+}
+@media (max-width:760px){
+  .paso{display:block;padding:22px 20px}
+  .paso.solo-cero,.es-cero .paso.no-cero{display:none}.es-cero .paso.solo-cero{display:block}
+  .paso .num{float:left;width:38px;height:38px;font-size:21px;margin:0 12px 0 0}
+  .paso h2{font-size:24px;line-height:1.1;margin:7px 0 14px;min-height:38px}
+  .paso h2+p,.paso>div>p:first-of-type{clear:both}
+  .paso>div:not(.num){display:block}
+  .paso p,.horario{font-size:14.5px}
+  .hero h1{font-size:44px}
+  .hero p{font-size:15.5px}
+  .importe b{font-size:34px}.importe span{font-size:11.5px}
+  .dest{padding:16px 18px;gap:12px}.dest img{height:44px}.dest p{font-size:14px}
+  .op b{font-size:16px}
+  .concepto{font-size:14px}
+  .dia span{font-size:13px;padding:6px 12px}
+  .compartir .btn{width:100%;max-width:340px;justify-content:center}
+}
+[hidden]{display:none!important}
+.sin-pago .hero p.no-cero{display:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<p id="sin-reserva" class="wrap" hidden>Abre esta página después de <a href="/carrera-familiar-solidaria/">enviar tu reserva</a>.</p>
+<header><div class="wrap">
+  <a href="/carrera-familiar-solidaria/"><img src="/images/carrera/parroquia.webp" alt="Parroquia San Pablo de la Cruz"></a>
+  <a class="volver" href="/carrera-familiar-solidaria/">Volver a la web</a>
+</div></header>
+
+<main class="wrap" id="confirmacion" hidden>
+  <section class="hero">
+    <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5 10 17l9-10"/></svg></div>
+    <span class="tag"><i></i>Reserva recibida</span>
+    <h1>¡Gracias<span id="nombre"></span>!</h1>
+    <p class="no-cero">Tus dorsales están reservados. Solo te queda completar el pago para confirmar tu inscripción.</p>
+    <p class="solo-cero">Gracias por tu Dorsal 0: aunque no puedas venir, también formas parte de esta carrera. Solo te queda hacer tu donativo.</p>
+    <p>Referencia de la reserva <strong id="referencia"></strong></p>
+    <div class="importe"><span>Importe</span><b id="importe">—</b></div>
+  </section>
+
+  <div class="dest">
+    <img src="/images/carrera/caritas.webp" alt="Cáritas parroquial">
+    <p><strong>Destinataria final: Cáritas parroquial.</strong> Todo lo recaudado se le entrega íntegramente.</p>
+  </div>
+
+  <section class="pasos">
+    <div class="paso" id="paso-pago">
+      <div class="num">1</div>
+      <div>
+        <h2><span class="no-cero">Compra tus dorsales</span><span class="solo-cero">Completa tu donativo</span></h2>
+        <p>Elige la forma que te resulte más cómoda:</p>
+        <div class="opciones">
+          <div class="op"><small>Bizum</small><b>Código {{ hugo.Data.carrera.bizum }}</b><span>En la app de tu banco, elige «Donar» y añade la referencia como concepto. Si tu banco no permite añadirlo, paga por transferencia o en la parroquia para identificar la reserva.</span><button class="copiar" type="button" data-copiar="{{ hugo.Data.carrera.bizum }}">Copiar código</button></div>
+          <div class="op"><small>Transferencia</small><b>{{ hugo.Data.carrera.iban }}</b><span>{{ hugo.Data.carrera.banco }}</span><button class="copiar" type="button" data-copiar="{{ hugo.Data.carrera.iban }}">Copiar IBAN</button></div>
+          <div class="op"><small>En la parroquia</small><b>Avenida de los Madroños, n.º 40</b><span>En horario de apertura.</span></div>
+        </div>
+        <div class="concepto">Para transferencias y Bizum con concepto, usa <b id="concepto"></b><button class="copiar" type="button" id="copiarConcepto">Copiar</button></div>
+      </div>
+    </div>
+
+    <div class="paso no-cero">
+      <div class="num" id="numero-recogida">2</div>
+      <div>
+        <h2>Recoge tus dorsales</h2>
+        <p>En la Parroquia (Avenida de los Madroños, n.º 40), en su horario de apertura:</p>
+        <ul class="horario">
+          <li><span>Lunes a viernes</span>8:30–13:00 · 17:30–21:00</li>
+          <li><span>Sábados</span>11:00–13:00 · 18:00–21:00</li>
+          <li><span>Domingos</span>10:00–14:00 · 18:00–21:00</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="paso no-cero">
+      <div class="num" id="numero-carrera">3</div>
+      <div>
+        <h2>Nos vemos el domingo 13 de diciembre</h2>
+        <p>En la entrada al Pinar desde la Avenida de Carondelet (frente al n.º 37).</p>
+        <div class="dia"><span><b>10:00</b> Bendición de los corredores</span><span><b>10:00</b> Salida</span><span><b>11:30</b> Santa Misa</span><span>Chocolatada</span></div>
+      </div>
+    </div>
+
+    <div class="paso solo-cero">
+      <div class="num">2</div>
+      <div>
+        <h2>¡Y eso es todo!</h2>
+        <p>Con el Dorsal 0 no tienes que recoger nada. Si al final puedes venir el domingo 13 de diciembre, te esperamos a las 10:00 en la entrada al Pinar desde la Avenida de Carondelet (frente al n.º 37).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="compartir">
+    <p>¿Conoces a alguien que querría venir? Cada paso cuenta.</p>
+    <a class="btn" id="whatsapp" href="https://wa.me/?text=" target="_blank" rel="noopener">Invitar por WhatsApp</a>
+    <a class="btn sec" href="/carrera-familiar-solidaria/">Volver a la web</a>
+  </section>
+</main>
+
+<footer>Parroquia San Pablo de la Cruz · La alegría, un modo estable de ser · <a href="/politica-privacidad.html">Política de privacidad</a></footer>
+
+<script type="module" src="/carrera-assets/gracias.js"></script>
+</body>
+</html>

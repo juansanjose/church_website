@@ -1,51 +1,56 @@
 <link rel="stylesheet" href="/carrera-assets/reserva.css">
+{{ $categories := slice (dict "name" "adultos" "label" "Adultos" "detail" "15 € por dorsal" "price" 15) (dict "name" "ninos" "label" "Niños" "detail" "De 3 a 14 años · 5 € por dorsal" "price" 5) (dict "name" "menores" "label" "Menores de 3 años" "detail" "Gratis" "price" 0) }}
 <div class="race-booking" data-race-booking>
-  <form id="race-form" method="post" action="/api/carrera/reservas">
-    <h2>Reserva de dorsales</h2>
-    <label for="race-first">Nombre</label>
-    <input id="race-first" name="nombre" autocomplete="given-name" maxlength="80" required>
-    <label for="race-last">Apellidos</label>
-    <input id="race-last" name="apellidos" autocomplete="family-name" maxlength="100" required>
-    <label for="race-email">Correo electrónico</label>
-    <input id="race-email" name="email" type="email" autocomplete="email" maxlength="254" required>
-
-    {{ range slice (dict "name" "adultos" "label" "Adultos" "detail" "15 € por dorsal" "price" 15) (dict "name" "ninos" "label" "Niños" "detail" "De 3 a 12 años · 5 € por dorsal" "price" 5) (dict "name" "menores" "label" "Menores de 3 años" "detail" "Gratis" "price" 0) }}
-    <div class="race-quantity" data-price="{{ .price }}">
-      <div>
-        <label for="race-{{ .name }}">{{ .label }}</label>
-        <small id="race-{{ .name }}-detail">{{ .detail }}</small>
-      </div>
-      <button type="button" data-step="-1" aria-label="Reducir cantidad de {{ .label | lower }}">−</button>
-      <input id="race-{{ .name }}" name="{{ .name }}" type="number" min="0" max="99" value="0" inputmode="numeric" aria-describedby="race-{{ .name }}-detail" required>
-      <button type="button" data-step="1" aria-label="Aumentar cantidad de {{ .label | lower }}">+</button>
+  <aside class="race-summary" aria-labelledby="race-heading">
+    <h2 id="race-heading">Reserva tus <em>dorsales</em></h2>
+    <p>Un dorsal por cada persona que participe. Adultos 15 €, niños de 3 a 14 años 5 € y menores de 3 años gratis.</p>
+    <div class="race-card race-totals">
+      {{ range $categories }}
+      <div><span>{{ .label }} · <span id="cantidad-{{ .name }}">0</span>{{ if .price }} × {{ .price }} €{{ end }}</span><span id="subtotal-{{ .name }}">{{ if .price }}0 €{{ else }}Gratis{{ end }}</span></div>
+      {{ end }}
+      <div id="race-donation-summary" hidden><span>Dorsal 0</span><span id="subtotal-donativo">0 €</span></div>
+      <div class="race-total"><span>Total para Cáritas parroquial</span><output id="race-total" aria-live="polite">0 €</output></div>
     </div>
-    {{ end }}
+    <div class="race-card race-methods">
+      <h3>Cómo pagar</h3>
+      <dl>
+        <div><dt>Bizum</dt><dd><strong>Código {{ hugo.Data.carrera.bizum }}</strong><br><small>Opción «Donar»</small></dd></div>
+        <div><dt>Transferencia</dt><dd><strong>{{ hugo.Data.carrera.iban }}</strong><br><small>{{ hugo.Data.carrera.banco }}</small></dd></div>
+        <div><dt>En la parroquia</dt><dd><strong>En horario de apertura</strong></dd></div>
+        <div><dt>Concepto</dt><dd><strong>Referencia de tu reserva</strong></dd></div>
+      </dl>
+      <p class="race-beneficiary"><img src="/images/carrera/caritas.webp" width="34" height="40" alt=""><span><strong>Destinataria final: Cáritas parroquial.</strong> Todo lo recaudado se le entrega íntegramente.</span></p>
+    </div>
+  </aside>
 
+  <form class="race-card race-form" id="race-form" method="post" action="/api/carrera/reservas" aria-label="Reserva de dorsales">
+    <div class="race-contact">
+      <label><span>Nombre</span><input id="race-first" name="nombre" autocomplete="given-name" maxlength="80" required></label>
+      <label><span>Apellidos</span><input id="race-last" name="apellidos" autocomplete="family-name" maxlength="100" required></label>
+      <label class="race-email"><span>Email</span><input id="race-email" name="email" type="email" autocomplete="email" maxlength="254" required></label>
+    </div>
+    <fieldset id="race-quantities" aria-label="Cantidad de dorsales">
+    {{ range $categories }}
+      <div class="race-quantity" data-price="{{ .price }}" data-category="{{ .name }}">
+        <div>
+          <label for="race-{{ .name }}">{{ .label }}</label>
+          <small id="race-{{ .name }}-detail">{{ .detail }}</small>
+        </div>
+        <button type="button" data-step="-1" aria-label="Reducir cantidad de {{ .label | lower }}">−</button>
+        <input id="race-{{ .name }}" name="{{ .name }}" type="number" min="0" max="99" value="0" inputmode="numeric" aria-describedby="race-{{ .name }}-detail" required>
+        <button type="button" data-step="1" aria-label="Aumentar cantidad de {{ .label | lower }}">+</button>
+      </div>
+    {{ end }}
+    </fieldset>
+    <label class="race-check race-donation"><input id="race-donation" type="checkbox"><span><strong>Quiero un Dorsal 0.</strong> No podré participar, pero quiero colaborar con mi donativo.</span></label>
+    <label id="race-donation-field" hidden><span>Importe del donativo (€)</span><input id="race-donation-amount" type="number" min="0.01" max="9999.99" step="0.01" inputmode="decimal" disabled></label>
+    <label class="race-check"><input id="race-privacy" name="privacy" value="yes" type="checkbox" required><span>He leído y acepto la <a href="/politica-privacidad.html">política de privacidad</a>. Usaremos tus datos solo para gestionar tu inscripción.</span></label>
     <div hidden><label for="race-website">Sitio web</label><input id="race-website" name="website" tabindex="-1" autocomplete="off"></div>
-    <p class="race-total">Total <output id="race-total" aria-live="polite">0,00 €</output></p>
-    <p><a href="/politica-privacidad.html">Política de privacidad</a></p>
-    <button class="race-submit" type="submit" disabled>Reservar dorsales</button>
+    <button class="race-submit" type="submit" disabled>Reservar mis dorsales · 0 €</button>
+    <small class="race-submit-note">Tras reservar, verás cómo completar el pago por Bizum, transferencia o en la parroquia.</small>
     <noscript><p>Activa JavaScript para enviar la reserva.</p></noscript>
     <p id="race-error" role="alert" hidden></p>
+    <p id="race-saved" role="status" hidden></p>
   </form>
-
-  <section id="race-confirmation" hidden aria-labelledby="race-confirmation-title">
-    <h2 id="race-confirmation-title" tabindex="-1">Reserva recibida</h2>
-    <p>Referencia <strong id="race-reference"></strong></p>
-    <div id="race-payment">
-      <p>Importe pendiente <strong id="race-amount"></strong></p>
-      <p>Escribe esta referencia en el campo «Concepto». Si otra persona paga por ti, debe usar la misma referencia.</p>
-      <button id="race-copy" type="button">Copiar concepto</button>
-      <span id="race-copy-status" role="status"></span>
-      <div id="race-bizum" hidden>
-        <h3>Pago por Bizum</h3>
-        <p id="race-bizum-details"></p>
-      </div>
-      <h3>Transferencia bancaria</h3>
-      <p id="race-transfer"></p>
-    </div>
-    <h3>Recogida de dorsales</h3>
-    <p id="race-pickup"></p>
-  </section>
 </div>
 <script src="/carrera-assets/reserva.js" type="module"></script>

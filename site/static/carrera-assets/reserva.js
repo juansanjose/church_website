@@ -1,18 +1,29 @@
-const booking = document.querySelector("[data-race-booking]");
-const form = booking.querySelector("form");
+const form = document.getElementById("race-form");
 const submit = form.querySelector('[type="submit"]');
 const error = document.getElementById("race-error");
-const quantities = [...form.querySelectorAll("[data-price]")];
-const euros = new Intl.NumberFormat("es-ES", { style: "currency", currency: "EUR" });
+const donation = document.getElementById("race-donation");
+const donationAmount = document.getElementById("race-donation-amount");
+const quantityFields = document.getElementById("race-quantities");
+const quantities = [...quantityFields.querySelectorAll("[data-price]")];
+const euros = new Intl.NumberFormat("es-ES", { style: "currency", currency: "EUR", minimumFractionDigits: 0 });
 let previousPayload;
 let requestId;
 
 function updateTotal() {
-  const total = quantities.reduce((sum, row) => {
-    const quantity = row.querySelector("input");
-    return sum + (quantity.validity.valid ? Number(quantity.value) : 0) * Number(row.dataset.price);
-  }, 0);
-  document.getElementById("race-total").value = euros.format(total);
+  let cents = 0;
+  for (const row of quantities) {
+    const input = row.querySelector("input");
+    const quantity = !donation.checked && input.validity.valid ? Number(input.value) : 0;
+    document.getElementById("cantidad-" + row.dataset.category).textContent = quantity;
+    if (!Number(row.dataset.price)) continue;
+    const subtotal = quantity * Number(row.dataset.price);
+    document.getElementById("subtotal-" + row.dataset.category).textContent = euros.format(subtotal);
+    cents += subtotal * 100;
+  }
+  if (donation.checked && donationAmount.validity.valid) cents = Math.round(Number(donationAmount.value) * 100);
+  document.getElementById("subtotal-donativo").textContent = euros.format(donation.checked ? cents / 100 : 0);
+  document.getElementById("race-total").value = euros.format(cents / 100);
+  submit.textContent = (donation.checked ? "Reservar Dorsal 0" : "Reservar mis dorsales") + " · " + euros.format(cents / 100);
 }
 
 for (const row of quantities) {
@@ -26,11 +37,26 @@ for (const row of quantities) {
   input.addEventListener("input", updateTotal);
 }
 
+function updateDonation() {
+  quantityFields.disabled = donation.checked;
+  donationAmount.disabled = !donation.checked;
+  donationAmount.required = donation.checked;
+  document.getElementById("race-donation-field").hidden = !donation.checked;
+  document.getElementById("race-donation-summary").hidden = !donation.checked;
+  updateTotal();
+}
+donation.addEventListener("change", updateDonation);
+donationAmount.addEventListener("input", updateTotal);
+
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
+  if (submit.disabled) return;
   error.hidden = true;
-  const order = Object.fromEntries(new FormData(form));
-  if (![order.adultos, order.ninos, order.menores].some((value) => Number(value) > 0)) {
+  const order = {
+    adultos: "0", ninos: "0", menores: "0", ...Object.fromEntries(new FormData(form)),
+    donation_cents: donation.checked ? Math.round(Number(donationAmount.value) * 100) : 0,
+  };
+  if (!donation.checked && ![order.adultos, order.ninos, order.menores].some((value) => Number(value) > 0)) {
     error.textContent = "Selecciona al menos un dorsal.";
     error.hidden = false;
     return;
@@ -41,11 +67,10 @@ form.addEventListener("submit", async (event) => {
     requestId = crypto.randomUUID();
     previousPayload = payload;
   }
-  const fields = form.querySelectorAll("input");
-  fields.forEach((field) => { field.readOnly = true; });
-  const buttons = form.querySelectorAll("button");
-  buttons.forEach((button) => { button.disabled = true; });
+  const controls = [...form.elements].filter((field) => !field.disabled && field.tagName !== "FIELDSET");
+  controls.forEach((field) => { field.disabled = true; });
   submit.textContent = "Enviando…";
+  let saved = false;
   try {
     const response = await fetch(form.action, {
       method: "POST",
@@ -54,36 +79,27 @@ form.addEventListener("submit", async (event) => {
     });
     const result = await response.json();
     if (!response.ok) throw new Error(result.error || "No se pudo enviar la reserva.");
-    document.getElementById("race-reference").textContent = result.reference;
-    document.getElementById("race-amount").textContent = euros.format(result.total_cents / 100);
-    document.getElementById("race-transfer").textContent = result.transfer;
-    document.getElementById("race-bizum-details").textContent = result.bizum;
-    document.getElementById("race-bizum").hidden = !result.bizum;
-    document.getElementById("race-pickup").textContent = result.pickup;
-    document.getElementById("race-payment").hidden = result.total_cents === 0;
-    form.hidden = true;
-    document.getElementById("race-confirmation").hidden = false;
-    document.getElementById("race-confirmation-title").focus();
+    saved = true;
+    try {
+      sessionStorage.setItem("carrera-reservation", JSON.stringify(result));
+      location.assign("/carrera-familiar-solidaria/gracias/");
+    } catch {
+      const status = document.getElementById("race-saved");
+      status.textContent = "Reserva recibida. Referencia: " + result.reference + ". Importe: " + euros.format(result.total_cents / 100) + ".";
+      status.hidden = false;
+      submit.textContent = "Reserva recibida";
+    }
   } catch (failure) {
     error.textContent = failure instanceof SyntaxError || failure instanceof TypeError
       ? "No se pudo conectar. Vuelve a intentar con los mismos datos."
       : failure.message;
     error.hidden = false;
   } finally {
-    fields.forEach((field) => { field.readOnly = false; });
-    buttons.forEach((button) => { button.disabled = false; });
-    submit.textContent = "Reservar dorsales";
-  }
-});
-
-document.getElementById("race-copy").addEventListener("click", async () => {
-  const reference = document.getElementById("race-reference").textContent;
-  const status = document.getElementById("race-copy-status");
-  try {
-    await navigator.clipboard.writeText(reference);
-    status.textContent = "Concepto copiado.";
-  } catch {
-    status.textContent = "Copia manualmente la referencia que aparece arriba.";
+    if (!saved) {
+      controls.forEach((field) => { field.disabled = false; });
+      updateDonation();
+    }
   }
 });
 submit.disabled = false;
+updateDonation();

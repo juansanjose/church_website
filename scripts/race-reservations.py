@@ -41,6 +41,8 @@ def reference(order):
 def parse_order(data):
     if not isinstance(data, dict) or data.get("website"):
         raise InvalidOrder("Revisa los datos de la reserva.")
+    if data.get("privacy") != "yes":
+        raise InvalidOrder("Confirma que has leído la política de privacidad.")
     order = {}
     for field, limit in (("nombre", 80), ("apellidos", 100), ("email", 254)):
         value = data.get(field)
@@ -61,9 +63,16 @@ def parse_order(data):
         if not isinstance(value, str) or not re.fullmatch(r"[0-9]{1,2}", value):
             raise InvalidOrder("Introduce una cantidad entre 0 y 99 en cada categoría.")
         order[field] = int(value)
-    if not any(order[field] for field, _, _ in CATEGORIES):
+    donation = data.get("donation_cents", 0)
+    if type(donation) is not int or not 0 <= donation <= 999999:
+        raise InvalidOrder("Introduce un importe válido para el Dorsal 0.")
+    participants = sum(order[field] for field, _, _ in CATEGORIES)
+    if donation and participants:
+        raise InvalidOrder("El Dorsal 0 es para quienes no participarán en la carrera.")
+    if not (participants or donation):
         raise InvalidOrder("Selecciona al menos un dorsal.")
-    order["total_cents"] = sum(order[field] * price for field, _, price in CATEGORIES)
+    order["donation_cents"] = donation
+    order["total_cents"] = donation + sum(order[field] * price for field, _, price in CATEGORIES)
     return order
 
 
@@ -80,12 +89,15 @@ def initialize(database):
                 adultos INTEGER NOT NULL,
                 ninos INTEGER NOT NULL,
                 menores INTEGER NOT NULL,
+                donation_cents INTEGER NOT NULL DEFAULT 0,
                 total_cents INTEGER NOT NULL,
                 created_at INTEGER NOT NULL,
                 email_sent INTEGER,
                 next_attempt INTEGER NOT NULL DEFAULT 0
             )
         """)
+        if "donation_cents" not in {column[1] for column in connection.execute("PRAGMA table_info(reservations)")}:
+            connection.execute("ALTER TABLE reservations ADD COLUMN donation_cents INTEGER NOT NULL DEFAULT 0")
 
 
 def save_order(database, order):
@@ -107,8 +119,8 @@ def save_order(database, order):
             return 429, {"error": BUSY}
         inserted = connection.execute("""
             INSERT INTO reservations
-                (request_id, nombre, apellidos, email, adultos, ninos, menores, total_cents, created_at)
-            VALUES (:request_id, :nombre, :apellidos, :email, :adultos, :ninos, :menores, :total_cents, :created_at)
+                (request_id, nombre, apellidos, email, adultos, ninos, menores, donation_cents, total_cents, created_at)
+            VALUES (:request_id, :nombre, :apellidos, :email, :adultos, :ninos, :menores, :donation_cents, :total_cents, :created_at)
         """, {**order, "created_at": now})
         return 201, connection.execute(
             "SELECT * FROM reservations WHERE id = ?", (inserted.lastrowid,)
@@ -133,12 +145,15 @@ def make_message(order, sender):
         f"Estado al recibir la reserva: {'Sin pago' if free else 'Pendiente de pago'}",
         "",
         f"Nombre y apellidos: {name}",
+        f"Nombre: {order['nombre']}",
+        f"Apellidos: {order['apellidos']}",
         f"Email de contacto: {order['email']}",
         "",
     ]
     for field, label, price in CATEGORIES:
         quantity = order[field]
         lines.append(f"{label}: {quantity} × {amount(price)} = {amount(quantity * price)}")
+    lines.append(f"Dorsal 0: {amount(order['donation_cents'])}")
     lines.extend(("", f"Importe a comprobar: {total}"))
     message.set_content("\n".join(lines))
     return message
@@ -230,7 +245,7 @@ class ReservationHandler(BaseHTTPRequestHandler):
         self.reply(status, {
             "reference": reference(saved),
             "total_cents": saved["total_cents"],
-            **self.server.payment,
+            "dorsal_cero": saved["donation_cents"] > 0,
         })
 
 
@@ -243,19 +258,13 @@ def serve():
         "password": os.environ["RACE_SMTP_PASSWORD"],
         "sender": os.environ.get("RACE_SMTP_FROM") or os.environ["RACE_SMTP_USER"],
     }
-    payment = {
-        "transfer": os.environ["RACE_TRANSFER"].strip(),
-        "bizum": os.environ.get("RACE_BIZUM", "").strip(),
-        "pickup": os.environ["RACE_PICKUP"].strip(),
-    }
-    if not all(smtp.values()) or not payment["transfer"] or not payment["pickup"]:
-        raise ValueError("Configure SMTP, bank transfer and bib pickup details.")
+    if not all(smtp.values()):
+        raise ValueError("Configure SMTP for race notification delivery.")
     initialize(database)
     with ThreadingHTTPServer(("127.0.0.1", int(os.environ.get("RACE_PORT", "8091"))),
                              ReservationHandler) as server:
         server.database = database
         server.origin = os.environ.get("RACE_ORIGIN", "https://www.sanpablodelacruz.com")
-        server.payment = payment
         server.notification = threading.Event()
         threading.Thread(target=send_notifications, daemon=True,
                          args=(database, smtp, server.notification)).start()
