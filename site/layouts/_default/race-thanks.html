@@ -42,8 +42,11 @@ header img{height:46px;width:auto;display:block}
 .op span{font-size:13px;color:var(--suave)}
 .copiar{align-self:flex-start;margin-top:4px;font:inherit;font-size:13px;font-weight:800;color:var(--bosque);background:#fff;border:1px solid #E3E8DE;border-radius:999px;padding:6px 12px;cursor:pointer}
 .copiar:hover{background:#F6F8F3}
-.concepto{margin-top:14px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;background:#FCFAF3;border:1px dashed #E8D9A8;border-radius:16px;padding:12px 16px;font-size:15px;color:var(--suave)}
-.concepto b{color:var(--bosque)}
+.concepto{margin:0 0 16px;padding:14px 16px;border:2px solid #C49B35;border-radius:16px;background:#FFF6DB;color:var(--bosque)}
+.concepto-dato{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;margin:4px 0 8px}
+.concepto-dato b{font-size:clamp(22px,5vw,30px);line-height:1.2;overflow-wrap:anywhere}
+.concepto .copiar{margin:0;min-height:44px}
+.paso .concepto p{margin:0;color:var(--bosque)}
 .horario{list-style:none;margin:0;padding:0;font-size:15px;color:var(--suave);max-width:460px}
 .horario li{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px dashed #E3E8DE}
 .horario li:last-child{border-bottom:0}
@@ -51,10 +54,6 @@ header img{height:46px;width:auto;display:block}
 .dia{display:flex;flex-wrap:wrap;gap:8px}
 .dia span{font-size:14px;background:#F6F8F3;border:1px solid #E3E8DE;border-radius:999px;padding:7px 14px;color:var(--bosque)}
 .dia b{font-weight:800}
-.dest{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #F5D3D0;border-radius:var(--r);padding:18px 24px;margin-bottom:16px}
-.dest img{height:54px;width:auto;flex:none}
-.dest p{margin:0;color:var(--suave)}
-.dest strong{color:#B3261E}
 .compartir{text-align:center;padding:10px 0 60px}
 .compartir p{color:var(--suave);margin:0 0 14px}
 .btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;background:var(--dorado);color:var(--bosque2);font-weight:800;text-decoration:none;font-size:16px}
@@ -84,7 +83,6 @@ footer a{color:var(--suave)}
   .hero h1{font-size:44px}
   .hero p{font-size:15.5px}
   .importe b{font-size:34px}.importe span{font-size:11.5px}
-  .dest{padding:16px 18px;gap:12px}.dest img{height:44px}.dest p{font-size:14px}
   .op b{font-size:16px}
   .concepto{font-size:14px}
   .dia span{font-size:13px;padding:6px 12px}
@@ -109,27 +107,28 @@ footer a{color:var(--suave)}
     <h1>¡Gracias<span id="nombre"></span>!</h1>
     <p class="no-cero">Tus dorsales están reservados. Solo te queda completar el pago para confirmar tu inscripción.</p>
     <p class="solo-cero">Gracias por tu Dorsal 0: aunque no puedas venir, también formas parte de esta carrera. Solo te queda hacer tu donativo.</p>
-    <p>Referencia de la reserva <strong id="referencia"></strong></p>
+    <p id="referencia-gratuita" hidden>Referencia de la reserva <strong id="referencia"></strong></p>
     <div class="importe"><span>Importe</span><b id="importe">—</b></div>
   </section>
-
-  <div class="dest">
-    <img src="/images/carrera/caritas.webp" alt="Cáritas parroquial">
-    <p><strong>Destinataria final: Cáritas parroquial.</strong> Todo lo recaudado se le entrega íntegramente.</p>
-  </div>
 
   <section class="pasos">
     <div class="paso" id="paso-pago">
       <div class="num">1</div>
       <div>
         <h2><span class="no-cero">Compra tus dorsales</span><span class="solo-cero">Completa tu donativo</span></h2>
-        <p>Elige la forma que te resulte más cómoda:</p>
+        <div class="concepto">
+          <strong>Referencia de la reserva</strong>
+          <div class="concepto-dato">
+            <b id="concepto"></b>
+            <button class="copiar" type="button" id="copiarConcepto">Copiar concepto</button>
+          </div>
+          <p>Escribe este código en el campo «Concepto» de la transferencia o del Bizum si tu banco lo permite. Si pagas en la parroquia, muestra este código.</p>
+        </div>
         <div class="opciones">
           <div class="op"><small>Bizum</small><b>Código {{ hugo.Data.carrera.bizum }}</b><span>En la app de tu banco, elige «Donar» y añade la referencia como concepto. Si tu banco no permite añadirlo, paga por transferencia o en la parroquia para identificar la reserva.</span><button class="copiar" type="button" data-copiar="{{ hugo.Data.carrera.bizum }}">Copiar código</button></div>
           <div class="op"><small>Transferencia</small><b>{{ hugo.Data.carrera.iban }}</b><span>{{ hugo.Data.carrera.banco }}</span><button class="copiar" type="button" data-copiar="{{ hugo.Data.carrera.iban }}">Copiar IBAN</button></div>
           <div class="op"><small>En la parroquia</small><b>Avenida de los Madroños, n.º 40</b><span>En horario de apertura.</span></div>
         </div>
-        <div class="concepto">Para transferencias y Bizum con concepto, usa <b id="concepto"></b><button class="copiar" type="button" id="copiarConcepto">Copiar</button></div>
       </div>
     </div>
 

@@ -20,6 +20,7 @@ if (!/^CARRERA-\d{4,}$/.test(reservation?.reference ?? "") ||
   if (cents === 0) {
     document.body.classList.add("sin-pago");
     document.getElementById("paso-pago").hidden = true;
+    document.getElementById("referencia-gratuita").hidden = false;
     document.getElementById("numero-recogida").textContent = "1";
     document.getElementById("numero-carrera").textContent = "2";
   }
