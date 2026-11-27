@@ -29,8 +29,16 @@ if ("IntersectionObserver" in window) {
   document.querySelectorAll(".rv").forEach((element) => reveal.observe(element));
 
   const sticky = document.getElementById("sticky");
-  const stickyVisibility = new IntersectionObserver(([entry]) => {
-    sticky.classList.toggle("show", !entry.isIntersecting);
+  const hero = document.querySelector(".hero");
+  const registration = document.getElementById("inscripcion");
+  const visible = new Set([hero]);
+  const stickyVisibility = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) visible.add(entry.target);
+      else visible.delete(entry.target);
+    }
+    sticky.classList.toggle("show", visible.size === 0);
   });
-  stickyVisibility.observe(document.querySelector(".hero"));
+  stickyVisibility.observe(hero);
+  stickyVisibility.observe(registration);
 }

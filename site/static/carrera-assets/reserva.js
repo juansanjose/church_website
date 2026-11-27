@@ -1,5 +1,7 @@
 const form = document.getElementById("race-form");
 const submit = form.querySelector('[type="submit"]');
+const submitLabel = document.getElementById("race-submit-label");
+const registration = document.getElementById("inscripcion");
 const error = document.getElementById("race-error");
 const donation = document.getElementById("race-donation");
 const donationAmount = document.getElementById("race-donation-amount");
@@ -13,7 +15,8 @@ function updateTotal() {
   let cents = 0;
   for (const row of quantities) {
     const input = row.querySelector("input");
-    const quantity = !donation.checked && input.validity.valid ? Number(input.value) : 0;
+    row.querySelector("output").value = input.value;
+    const quantity = donation.checked ? 0 : Number(input.value);
     document.getElementById("cantidad-" + row.dataset.category).textContent = quantity;
     if (!Number(row.dataset.price)) continue;
     const subtotal = quantity * Number(row.dataset.price);
@@ -23,7 +26,7 @@ function updateTotal() {
   if (donation.checked && donationAmount.validity.valid) cents = Math.round(Number(donationAmount.value) * 100);
   document.getElementById("subtotal-donativo").textContent = euros.format(donation.checked ? cents / 100 : 0);
   document.getElementById("race-total").value = euros.format(cents / 100);
-  submit.textContent = (donation.checked ? "Reservar Dorsal 0" : "Reservar mis dorsales") + " · " + euros.format(cents / 100);
+  submitLabel.textContent = (donation.checked ? "Reservar Dorsal 0" : "Reservar mis dorsales") + " · " + euros.format(cents / 100);
 }
 
 for (const row of quantities) {
@@ -34,10 +37,10 @@ for (const row of quantities) {
       updateTotal();
     });
   }
-  input.addEventListener("input", updateTotal);
 }
 
 function updateDonation() {
+  registration.classList.toggle("modo-cero", donation.checked);
   quantityFields.disabled = donation.checked;
   donationAmount.disabled = !donation.checked;
   donationAmount.required = donation.checked;
@@ -47,6 +50,12 @@ function updateDonation() {
 }
 donation.addEventListener("change", updateDonation);
 donationAmount.addEventListener("input", updateTotal);
+for (const link of document.querySelectorAll("[data-dorsal0]")) {
+  link.addEventListener("click", () => {
+    donation.checked = true;
+    updateDonation();
+  });
+}
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -69,7 +78,7 @@ form.addEventListener("submit", async (event) => {
   }
   const controls = [...form.elements].filter((field) => !field.disabled && field.tagName !== "FIELDSET");
   controls.forEach((field) => { field.disabled = true; });
-  submit.textContent = "Enviando…";
+  submitLabel.textContent = "Enviando…";
   let saved = false;
   try {
     const response = await fetch(form.action, {
@@ -87,7 +96,7 @@ form.addEventListener("submit", async (event) => {
       const status = document.getElementById("race-saved");
       status.textContent = "Reserva recibida. Referencia: " + result.reference + ". Importe: " + euros.format(result.total_cents / 100) + ".";
       status.hidden = false;
-      submit.textContent = "Reserva recibida";
+      submitLabel.textContent = "Reserva recibida";
     }
   } catch (failure) {
     error.textContent = failure instanceof SyntaxError || failure instanceof TypeError

@@ -41,7 +41,7 @@ custom_css: |
 
 Participa en familia y colabora con Cáritas parroquial, que recibirá todo lo recaudado. También puedes colaborar con un Dorsal 0 si no puedes participar.
 
-[Consulta el programa y reserva tus dorsales](/carrera-familiar-solidaria/informacion/)
+[Consulta el programa y reserva tus dorsales](/carrera-familiar-solidaria/)
 
 ---
 

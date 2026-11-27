@@ -725,14 +725,19 @@ nav{width:calc(100% - clamp(24px,4vw,64px))}
 .delay-3{--d:3}
 .rc-head .al-label{color:var(--olivo)}
 #faq{padding-top:20px}
+#inscripcion{scroll-margin-top:80px}
+#race-quantities{border:0;margin:0;padding:0;min-width:0}
+#race-error:not([hidden]){display:block}
+#inscripcion [hidden]{display:none!important}
+#race-form button:disabled{opacity:.65;cursor:default}
 </style>
 </head>
 <body>
 
 <nav>
   <a class="brand" href="#inicio"><img class="logo-h" src="/images/carrera/parroquia.webp" alt="Parroquia San Pablo de la Cruz"></a>
-  <div class="links"><a href="#causa">Por qué corremos</a><a href="#experiencia">Programa</a><a href="#recorrido">El recorrido</a><a href="/carrera-familiar-solidaria/">Inscríbete</a><a href="#faq">Preguntas</a></div>
-  <a class="btn" href="/carrera-familiar-solidaria/">Comprar dorsal</a>
+  <div class="links"><a href="#causa">Por qué corremos</a><a href="#experiencia">Programa</a><a href="#recorrido">El recorrido</a><a href="#inscripcion">Inscríbete</a><a href="#faq">Preguntas</a></div>
+  <a class="btn" href="#inscripcion">Comprar dorsal</a>
 </nav>
 
 <!-- HERO -->
@@ -745,7 +750,7 @@ nav{width:calc(100% - clamp(24px,4vw,64px))}
       <h1><span><i>Carrera</i></span><span><i>Familiar</i></span><span><i>Solidaria</i></span></h1>
       <p class="lead">Una mañana para correr, caminar y reír en el Domingo de la Alegría: solo, con amigos o en familia. Y además, por una buena causa: todo lo recaudado irá a Cáritas parroquial. ¡Disfrutamos a la vez que ayudamos!</p>
       <div class="ctas">
-        <a class="btn" href="/carrera-familiar-solidaria/">Quiero mis dorsales <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
+        <a class="btn" href="#inscripcion">Quiero mis dorsales <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
         <a class="btn btn-ghost" href="#como">Cómo participar</a>
       </div>
       <div class="precio-linea"><span><b>Adultos</b> 15 €</span><span><b>Niños</b> (3 a 14 años) 5 €</span><span><b>Menores de 3 años</b> gratis</span><a class="chip-d0" href="#dorsal-0"><b>Dorsal 0</b> donativo libre si no puedes venir</a></div>
@@ -871,8 +876,82 @@ nav{width:calc(100% - clamp(24px,4vw,64px))}
         <h2>Dorsal <em>0</em></h2>
         <p class="d0-lead">Para quienes no pueden participar pero quieren contribuir igualmente con su donativo para ayudar.</p>
         <p>La aportación es libre y, como el resto de dorsales, se entrega íntegramente a Cáritas parroquial. Aunque no estés el día 13, también formarás parte de esta carrera.</p>
-        <a class="btn" href="/carrera-familiar-solidaria/?dorsal=0">Quiero un Dorsal 0 <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
+        <a class="btn" href="#inscripcion" data-dorsal0>Quiero un Dorsal 0 <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSCRIPCIÓN -->
+<section class="insc" id="inscripcion">
+  <div class="grain"></div>
+  <div class="wrap insc-grid">
+    <div class="rv">
+      <span class="tag">Inscripción</span>
+      <h2>Reserva tus <em>dorsales</em></h2>
+      <p class="lead">Un dorsal por cada persona que participe: adultos 15 €, niños (de 3 a 14 años) 5 € y menores de 3 años gratis.</p>
+      <div class="resumen" aria-live="polite">
+        <div><span>Adultos · <span id="cantidad-adultos">0</span> × 15 €</span><span id="subtotal-adultos">0 €</span></div>
+        <div><span>Niños · <span id="cantidad-ninos">0</span> × 5 €</span><span id="subtotal-ninos">0 €</span></div>
+        <div><span>Menores de 3 años · <span id="cantidad-menores">0</span></span><span>Gratis</span></div>
+        <div class="r-cero" id="race-donation-summary" hidden><span>Dorsal 0 · donativo</span><span id="subtotal-donativo">0 €</span></div>
+        <div><span>Total para Cáritas parroquial</span><b><output id="race-total">0 €</output></b></div>
+      </div>
+      <div class="pago">
+          <span class="pg-label">Cómo pagar</span>
+          <div class="pg-row"><span class="pg-k">Bizum</span><span class="pg-v">Código {{ hugo.Data.carrera.bizum }}<small>opción «Donar» en tu Bizum</small></span></div>
+          <div class="pg-row"><span class="pg-k">Transferencia</span><span class="pg-v">{{ hugo.Data.carrera.iban }}<small>{{ hugo.Data.carrera.banco }}</small></span></div>
+          <div class="pg-row"><span class="pg-k">En la parroquia</span><span class="pg-v">En horario de apertura</span></div>
+          <div class="pg-row"><span class="pg-k">Concepto</span><span class="pg-v">Referencia de tu reserva</span></div>
+          <div class="pg-dest"><img src="/images/carrera/caritas.webp" alt=""><span><strong>Destinataria final: Cáritas parroquial.</strong> Todo lo recaudado se le entrega íntegramente.</span></div>
+        </div>
+    </div>
+    <div class="fbox rv delay-1">
+      <form id="race-form" action="/api/carrera/reservas" method="post" aria-label="Reserva de dorsales">
+        <div class="row">
+          <div class="field"><input type="text" id="nombre" name="nombre" maxlength="80" placeholder=" " autocomplete="given-name" required><label for="nombre">Nombre</label></div>
+          <div class="field"><input type="text" id="apellidos" name="apellidos" maxlength="100" placeholder=" " autocomplete="family-name" required><label for="apellidos">Apellidos</label></div>
+        </div>
+        <div class="field"><input type="email" id="email" name="email" maxlength="254" placeholder=" " autocomplete="email" required><label for="email">Email</label></div>
+        <fieldset id="race-quantities" aria-label="Cantidad de dorsales">
+          <div class="contador" data-price="15" data-category="adultos">
+            <span class="lbl">Adultos<small>15 € por dorsal</small></span>
+            <div class="ctl">
+              <button type="button" data-step="-1" aria-label="Quitar adultos">−</button>
+              <output>0</output>
+              <input type="number" name="adultos" min="0" max="99" value="0" hidden>
+              <button type="button" data-step="1" aria-label="Añadir adultos">+</button>
+            </div>
+          </div>
+          <div class="contador" data-price="5" data-category="ninos">
+            <span class="lbl">Niños<small>de 3 a 14 años · 5 €</small></span>
+            <div class="ctl">
+              <button type="button" data-step="-1" aria-label="Quitar niños">−</button>
+              <output>0</output>
+              <input type="number" name="ninos" min="0" max="99" value="0" hidden>
+              <button type="button" data-step="1" aria-label="Añadir niños">+</button>
+            </div>
+          </div>
+          <div class="contador" data-price="0" data-category="menores">
+            <span class="lbl">Menores de 3 años<small>gratis</small></span>
+            <div class="ctl">
+              <button type="button" data-step="-1" aria-label="Quitar menores de 3 años">−</button>
+              <output>0</output>
+              <input type="number" name="menores" min="0" max="99" value="0" hidden>
+              <button type="button" data-step="1" aria-label="Añadir menores de 3 años">+</button>
+            </div>
+          </div>
+        </fieldset>
+        <label class="opt opt-d0"><input type="checkbox" id="race-donation"><span><strong>Quiero un Dorsal 0:</strong> no podré participar, pero quiero colaborar con mi donativo.</span></label>
+        <div class="d0-campo" id="race-donation-field" hidden><label for="race-donation-amount">Tu donativo (€)</label><input type="number" id="race-donation-amount" min="0.01" max="9999.99" step="0.01" inputmode="decimal" disabled></div>
+        <label class="check"><input type="checkbox" id="race-privacy" name="privacy" value="yes" required><span>He leído y acepto la <a href="/politica-privacidad.html">política de privacidad</a>. Usaremos tus datos solo para gestionar tu inscripción.</span></label>
+        <div hidden><label for="race-website">Sitio web</label><input id="race-website" name="website" tabindex="-1" autocomplete="off"></div>
+        <p class="err" id="race-error" role="alert" hidden></p>
+        <button class="btn" type="submit" disabled><span id="race-submit-label">Reservar mis dorsales · 0 €</span> <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></button>
+        <p class="seg">Tras reservar, verás cómo completar el pago por Bizum, transferencia o en la parroquia.</p>
+      </form>
+      <p id="race-saved" role="status" hidden></p>
+      <noscript><p>Activa JavaScript para enviar la reserva.</p></noscript>
     </div>
   </div>
 </section>
@@ -913,15 +992,16 @@ nav{width:calc(100% - clamp(24px,4vw,64px))}
       <span class="tag">Ven como eres</span>
       <h2>Te esperamos el <em>13 de diciembre</em></h2>
       <p>Trae a tu familia, a tus amigos, a tus vecinos. Corramos juntos para acompañar a quienes más lo necesitan.</p>
-      <a class="btn" href="/carrera-familiar-solidaria/">Quiero mis dorsales <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
+      <a class="btn" href="#inscripcion">Quiero mis dorsales <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
     </div>
   </div>
 </section>
 
 <footer><div class="f-logos"><img class="f-spc" src="/images/carrera/parroquia.webp" alt="Parroquia San Pablo de la Cruz"><span class="f-sep"></span><span class="f-con">A beneficio de</span><img class="f-car" src="/images/carrera/caritas.webp" alt="Cáritas parroquial"><span class="f-sep"></span><span class="f-con">Patrocina</span><img class="f-dal" src="/images/carrera/logotipo-dallington.webp" alt="Dallington School"></div>La alegría, un modo estable de ser · Instagram: @parroquiaspc<div class="f-legal"><a href="aviso-legal.html">Aviso legal</a><a href="politica-privacidad.html">Política de privacidad</a><a href="politica-cookies.html">Política de cookies</a></div></footer>
 
-<div class="sticky" id="sticky"><a class="btn" href="/carrera-familiar-solidaria/">Quiero mis dorsales</a></div>
+<div class="sticky" id="sticky"><a class="btn" href="#inscripcion">Quiero mis dorsales</a></div>
 
 <script src="/carrera-assets/informacion.js" defer></script>
+<script src="/carrera-assets/reserva.js" type="module"></script>
 </body>
 </html>
