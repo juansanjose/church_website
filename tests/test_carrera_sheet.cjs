@@ -49,3 +49,25 @@ test("Gmail updates touch only competing reservation labels", () => {
   context.ajustarEtiqueta("thread", ["paid", "INBOX", "carrera"], labels, "Pagado");
   assert.equal(JSON.stringify(changes), JSON.stringify([[{ addLabelIds: ["paid"], removeLabelIds: ["pending"] }, "me", "thread"]]));
 });
+
+test("immediately syncs edits to reservation status cells", () => {
+  const context = vm.createContext({});
+  vm.runInContext(script, context);
+  const calls = [];
+  context.sincronizarReservas = (...args) => calls.push(args);
+  const edit = (name, row, start, end) => context.alCambiarEstado({
+    range: {
+      getSheet: () => ({ getName: () => name }),
+      getLastRow: () => row,
+      getColumn: () => start,
+      getLastColumn: () => end,
+    },
+  });
+  edit("Reservas", 1, 11, 11);
+  edit("Otra hoja", 4, 11, 11);
+  edit("Reservas", 4, 2, 10);
+  edit("Reservas", 2, 11, 11);
+  edit("Reservas", 4, 10, 12);
+  context.sincronizarGmail();
+  assert.deepEqual(calls, [[], [], [true]]);
+});

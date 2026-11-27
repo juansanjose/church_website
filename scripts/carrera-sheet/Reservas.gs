@@ -3,8 +3,10 @@ const CABECERAS = [
   "Adultos", "Niños", "Menores de 3 años", "Dorsal 0 (€)", "Total (€)", "Estado", "Correo en Gmail",
 ];
 const COLUMNA_ESTADO = 11;
+const COLUMNA_ENLACE = 12;
 const COLUMNA_GMAIL = 13;
 const ESTADOS = ["Pendiente de pago", "Pagado", "Listo para recoger", "Dorsales entregados"];
+const HISTORIAL_GMAIL = "ULTIMO_HISTORIAL_GMAIL";
 
 function onOpen() {
   SpreadsheetApp.getUi().createMenu("Carrera")
@@ -14,23 +16,40 @@ function onOpen() {
 
 function instalarSincronizacion() {
   sincronizarReservas();
-  const oldTriggers = ScriptApp.getProjectTriggers().filter((trigger) => trigger.getHandlerFunction() === "sincronizarReservas");
-  ScriptApp.newTrigger("sincronizarReservas").timeBased().everyMinutes(5).create();
+  const handlers = ["sincronizarReservas", "sincronizarGmail", "alCambiarEstado"];
+  const oldTriggers = ScriptApp.getProjectTriggers().filter((trigger) => handlers.includes(trigger.getHandlerFunction()));
+  ScriptApp.newTrigger("alCambiarEstado").forSpreadsheet(SpreadsheetApp.getActive()).onEdit().create();
+  ScriptApp.newTrigger("sincronizarGmail").timeBased().everyMinutes(1).create();
   oldTriggers.forEach((trigger) => ScriptApp.deleteTrigger(trigger));
 }
 
-function sincronizarReservas() {
+function alCambiarEstado(event) {
+  const range = event.range;
+  if (range.getSheet().getName() === "Reservas" && range.getLastRow() >= 2 &&
+      range.getColumn() <= COLUMNA_ESTADO && range.getLastColumn() >= COLUMNA_ESTADO) {
+    sincronizarReservas();
+  }
+}
+
+function sincronizarGmail() {
+  sincronizarReservas(true);
+}
+
+function sincronizarReservas(soloSiHayCambios = false) {
   const lock = LockService.getScriptLock();
   if (!lock.tryLock(5000)) return;
   try {
-    const configured = PropertiesService.getScriptProperties().getProperty("REMITENTE_RESERVAS") || "";
+    const properties = PropertiesService.getScriptProperties();
+    const configured = properties.getProperty("REMITENTE_RESERVAS") || "";
     const sender = configured.trim().toLowerCase();
     if (!/^[\w.!#$%&'*+/=?^{}|~-]+@[\w.-]+\.[a-z]{2,}$/i.test(sender)) {
       throw new Error("Configura REMITENTE_RESERVAS con la dirección del remitente SMTP.");
     }
-    if (Gmail.Users.getProfile("me").emailAddress.toLowerCase() !== "sanpablodelacruz.madrid@gmail.com") {
+    const profile = Gmail.Users.getProfile("me");
+    if (profile.emailAddress.toLowerCase() !== "sanpablodelacruz.madrid@gmail.com") {
       throw new Error("Ejecuta el proyecto desde la cuenta de Gmail de la parroquia.");
     }
+    const historyId = String(profile.historyId || "");
 
     const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
     const sheet = spreadsheet.getSheetByName("Reservas") || spreadsheet.insertSheet("Reservas");
@@ -55,6 +74,8 @@ function sincronizarReservas() {
         });
       });
     }
+    if (soloSiHayCambios === true && historyId && historyId === properties.getProperty(HISTORIAL_GMAIL) &&
+        ![...existing.values()].some(({ status, gmailStatus }) => status !== gmailStatus)) return;
     const labels = new Map((Gmail.Users.Labels.list("me").labels || []).map(({ id, name }) => [id, name]));
     const statusLabels = new Map([...labels].filter(([, name]) => ESTADOS.includes(name)).map(([id, name]) => [name, id]));
     let pageToken;
@@ -107,11 +128,33 @@ function sincronizarReservas() {
       const rule = SpreadsheetApp.newDataValidation().requireValueInList(ESTADOS, true).setAllowInvalid(false).build();
       sheet.getRange(2, COLUMNA_ESTADO, reservationCount, 1).setDataValidation(rule);
     }
-    SpreadsheetApp.flush();
-    sheet.autoResizeColumns(1, CABECERAS.length);
+    ajustarColumnas(sheet, reservationCount);
+    if (historyId) properties.setProperty(HISTORIAL_GMAIL, historyId);
   } finally {
     lock.releaseLock();
   }
+}
+
+function ajustarColumnas(sheet, reservationCount) {
+  if (reservationCount > 0) {
+    const links = sheet.getRange(2, COLUMNA_ENLACE, reservationCount, 1).getValues();
+    links.forEach(([url], index) => {
+      if (typeof url === "string" && url.startsWith("https://mail.google.com/mail/u/0/#all/")) {
+        const link = SpreadsheetApp.newRichTextValue().setText("Abrir correo").setLinkUrl(url).build();
+        sheet.getRange(index + 2, COLUMNA_ENLACE).setRichTextValue(link);
+      }
+    });
+  }
+  const visible = sheet.getRange(1, 1, reservationCount + 1, CABECERAS.length);
+  visible.setWrap(false);
+  SpreadsheetApp.flush();
+  sheet.autoResizeColumns(1, CABECERAS.length);
+  for (let column = 1; column <= CABECERAS.length; column++) {
+    sheet.setColumnWidth(column, Math.min(sheet.getColumnWidth(column) + 12, 420));
+  }
+  visible.setWrap(true);
+  SpreadsheetApp.flush();
+  sheet.autoResizeRows(1, reservationCount + 1);
 }
 
 function cuerpoTexto(part) {
