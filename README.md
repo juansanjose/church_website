@@ -74,7 +74,7 @@ make rollback
 
 ## Carrera Familiar Solidaria
 
-Preview the draft at `http://localhost:8080/carrera-familiar-solidaria/` with `make serve`.
+Preview the registration at `http://localhost:8080/carrera-familiar-solidaria/` with `make serve`.
 The form submits to the Python service via Caddy. The service keeps reservations and notification
 delivery state in `/var/lib/church-race/reservations.sqlite3`. Back up that database using SQLite's
 backup command and apply the parish's data retention schedule. Parish staff track payments and
@@ -90,6 +90,9 @@ Review the privacy notice for the selected SMTP provider before launch.
 Set the repository Actions secret `CHURCH_RACE_ENV` using the credentials of an authorized
 SMTP sender that supports implicit TLS.
 The recipient is always `sanpablodelacruz.madrid@gmail.com`.
+On `moneymachine`, SMTP uses outbound TCP 465. The host's
+`church-smtp-egress.service` preserves the public-interface blocks on outbound TCP
+25 and 587 while the Netcup Mail block policy is detached.
 
 ```dotenv
 RACE_SMTP_HOST=
@@ -110,8 +113,8 @@ sender reaches the parish inbox. Configure Gmail filters for that sender:
 Staff replace `Pendiente de pago` with `Pagado` after matching the reference and amount
 in the bank, then apply `Dorsales entregados` after pickup. The [Google Sheet
 automation](scripts/carrera-sheet/README.md) mirrors these labels and imports each
-reservation from its email. Once SMTP delivery and the payment instructions are verified,
-remove `draft: true` from both the registration and thank-you pages to publish them.
+reservation from its email. The registration and thank-you pages are published at
+`/carrera-familiar-solidaria/` and `/carrera-familiar-solidaria/gracias/`.
 
 ## License
 

@@ -83,7 +83,13 @@ function sincronizarReservas() {
 
 function cuerpoTexto(part) {
   if (part.mimeType === "text/plain" && part.body?.data) {
-    return Utilities.newBlob(Utilities.base64DecodeWebSafe(part.body.data)).getDataAsString("UTF-8");
+    const data = part.body.data;
+    if (typeof data !== "string") {
+      return Utilities.newBlob(Array.from(data)).getDataAsString("UTF-8");
+    }
+    const base64 = data.replace(/-/g, "+").replace(/_/g, "/").replace(/=+$/, "");
+    const padded = base64.padEnd(Math.ceil(base64.length / 4) * 4, "=");
+    return Utilities.newBlob(Utilities.base64Decode(padded)).getDataAsString("UTF-8");
   }
   for (const nested of part.parts || []) {
     const body = cuerpoTexto(nested);
